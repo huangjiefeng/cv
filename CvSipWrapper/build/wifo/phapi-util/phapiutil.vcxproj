@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E6F04090-4F52-4BD5-A1EA-CD5EBEE48777}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>phapiutil.dir\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>phapiutil.dir\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <OutDir>MinSizeRel\</OutDir>
+    <IntDir>phapiutil.dir\MinSizeRel\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <OutDir>RelWithDebInfo\</OutDir>
+    <IntDir>phapiutil.dir\RelWithDebInfo\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\libs\owutil;..\..\..\libs\owutil\cutil\msvc;..\..\..\libs\owutil\cutil\strndup;..\..\..\wifo\phapi-util\include;..\..\..\wifo\phapi-util\include\phapi-util\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling />
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;PHAPIUTIL_DLL;BUILD_PHAPIUTIL_DLL;DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)wifo/phapi-util/Debug/phapiutil.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEBUG;WIN32;CMAKE_INTDIR="Debug";BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEBUG;WIN32;CMAKE_INTDIR="Debug";BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file D:/qutecom-2.2/build/debug/</Message>
+      <Command>xcopy "$(TargetPath)" "$(SolutionDir)$(Configuration)\" /Y
+xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)\" /Y
+xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).pdb" "$(SolutionDir)$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\libs\owutil\cutil\Debug\owcutil.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\..\libs\owutil\cutil\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SolutionDir)wifo/phapi-util/Debug/phapiutil.pdb</ProgramDatabaseFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(SolutionDir)wifo/phapi-util/Debug/phapiutil.lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling />
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEBUG;CMAKE_INTDIR="Release";PHAPIUTIL_DLL;BUILD_PHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)wifo/phapi-util/Release/phapiutil.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEBUG;WIN32;CMAKE_INTDIR="Release";BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEBUG;WIN32;CMAKE_INTDIR="Release";BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)build/release/</Message>
+      <Command>xcopy "$(TargetPath)" "$(SolutionDir)$(Configuration)\" /Y
+xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\libs\owutil\cutil\Release\owcutil.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)wifo\phapi-util\Release\phapiutil.dll</OutputFile>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\..\libs\owutil\cutil\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SolutionDir)wifo\phapi-util\Release\phapiutil.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)wifo\phapi-util\Release\phapiutil.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling />
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEBUG;WIN32;CMAKE_INTDIR="MinSizeRel";BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:/qutecom-2.2/build/wifo/phapi-util/MinSizeRel/phapiutil.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEBUG;WIN32;CMAKE_INTDIR="MinSizeRel";BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEBUG;WIN32;CMAKE_INTDIR="MinSizeRel";BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file D:/qutecom-2.2/build/debug/</Message>
+      <Command>D:\cmake2.6\bin\cmake.exe -E copy_if_different "D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.dll" "D:/qutecom-2.2/build/debug/"
+D:\cmake2.6\bin\cmake.exe -E copy_if_different "D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.pdb" "D:/qutecom-2.2/build/debug/"</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\libs\owutil\cutil\MinSizeRel\owcutil.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>D:\qutecom-2.2\build\wifo\phapi-util\MinSizeRel\phapiutil.dll</OutputFile>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\..\libs\owutil\cutil\MinSizeRel\$(OutDir);..\..\libs\owutil\cutil\MinSizeRel;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>D:\qutecom-2.2\build\wifo\phapi-util\MinSizeRel\phapiutil.pdb</ProgramDatabaseFile>
+      <ImportLibrary>D:\qutecom-2.2\build\wifo\phapi-util\MinSizeRel\phapiutil.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling />
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEBUG;WIN32;CMAKE_INTDIR="RelWithDebInfo";BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:/qutecom-2.2/build/wifo/phapi-util/RelWithDebInfo/phapiutil.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEBUG;WIN32;CMAKE_INTDIR="RelWithDebInfo";BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEBUG;WIN32;CMAKE_INTDIR="RelWithDebInfo";BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file D:/qutecom-2.2/build/debug/</Message>
+      <Command>D:\cmake2.6\bin\cmake.exe -E copy_if_different "D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.dll" "D:/qutecom-2.2/build/debug/"
+D:\cmake2.6\bin\cmake.exe -E copy_if_different "D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.pdb" "D:/qutecom-2.2/build/debug/"</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\libs\owutil\cutil\RelWithDebInfo\owcutil.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>D:\qutecom-2.2\build\wifo\phapi-util\RelWithDebInfo\phapiutil.dll</OutputFile>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\..\libs\owutil\cutil\RelWithDebInfo\$(OutDir);..\..\libs\owutil\cutil\RelWithDebInfo;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>D:\qutecom-2.2\build\wifo\phapi-util\RelWithDebInfo\phapiutil.pdb</ProgramDatabaseFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>D:\qutecom-2.2\build\wifo\phapi-util\RelWithDebInfo\phapiutil.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\wifo\phapi-util\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/qutecom-2.2/wifo/phapi-util/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(CMAKE_DIR)\bin\cmake.exe -HD:/qutecom-2.2 -BD:/qutecom-2.2/build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\wifo\phapi-util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/qutecom-2.2/wifo/phapi-util/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\cmake2.6\bin\cmake.exe -HD:/qutecom-2.2 -BD:/qutecom-2.2/build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/qutecom-2.2/wifo/phapi-util/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\cmake2.6\bin\cmake.exe -HD:/qutecom-2.2 -BD:/qutecom-2.2/build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/qutecom-2.2/wifo/phapi-util/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\cmake2.6\bin\cmake.exe -HD:/qutecom-2.2 -BD:/qutecom-2.2/build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\wifo\phapi-util\src\util.c" />
+    <ClCompile Include="..\..\..\wifo\phapi-util\src\comparator.c" />
+    <ClCompile Include="..\..\..\wifo\phapi-util\src\linkedlist.c" />
+    <ClCompile Include="..\..\..\wifo\phapi-util\src\mappinglist.c" />
+    <ClCompile Include="..\..\..\wifo\phapi-util\src\phSharedLib.c" />
+    <ClCompile Include="..\..\..\wifo\phapi-util\src\msvc\unistd.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\owutil\cutil\owcutil.vcxproj">
+      <Project>{0964eeb5-953e-4819-8761-e2ad226e19f5}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

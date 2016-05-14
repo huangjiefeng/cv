@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+   <specVersion>
+      <major>1</major>
+      <minor>0</minor>
+   </specVersion>
+   <actionList>
+      <action>
+	 <name>ShutDown</name>
+      </action>
+      <action>
+         <name>LogOff</name>
+      </action>
+      <action>
+         <name>CursorCtrl</name>
+         <argumentList>
+	    <argument>
+               <name>CtrlType</name>
+               <direction>in</direction>
+               <relatedStateVariable>ctrlType</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>Offset_x</name>
+               <direction>in</direction>
+               <relatedStateVariable>offset_x</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>Offset_y</name>
+               <direction>in</direction>
+               <relatedStateVariable>offset_y</relatedStateVariable>
+            </argument>         
+         </argumentList>
+      </action>
+      <action>
+         <name>SetVolume</name>
+         <argumentList>
+            <argument>
+               <name>VolumeDirection</name>
+               <direction>in</direction>
+               <relatedStateVariable>volumeDirection</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>VolumeValue</name>
+               <direction>in</direction>
+               <relatedStateVariable>volumeValue</relatedStateVariable>
+            </argument>         
+         </argumentList>
+      </action>
+      <action>
+         <name>SetGlobalService</name>
+         <argumentList>
+            <argument>
+               <name>V4GlobalService</name>
+               <direction>in</direction>
+               <relatedStateVariable>v4GlobalService</relatedStateVariable>
+            </argument>  
+	    <argument>
+               <name>V6GlobalService</name>
+               <direction>in</direction>
+               <relatedStateVariable>v6GlobalService</relatedStateVariable>
+            </argument> 
+         </argumentList>
+      </action>
+   </actionList>
+   <serviceStateTable>
+      <stateVariable sendEvents="no">
+         <name>ctrlType</name>
+         <dataType>int</dataType>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>offset_x</name>
+         <dataType>int</dataType>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>offset_y</name>
+         <dataType>int</dataType>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>volumeDirection</name>
+         <dataType>string</dataType>
+         <defaultValue>null</defaultValue>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>volumeValue</name>
+         <dataType>string</dataType>
+         <defaultValue>null</defaultValue>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>v4GlobalService</name>
+         <dataType>string</dataType>
+         <defaultValue>null</defaultValue>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>v6GlobalService</name>
+         <dataType>string</dataType>
+         <defaultValue>null</defaultValue>
+      </stateVariable>
+   </serviceStateTable>
+</scpd>

@@ -1,0 +1,528 @@
+<ui version="4.0" >
+ <class>WengoPhoneWindow</class>
+ <widget class="QMainWindow" name="WengoPhoneWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>@product@</string>
+  </property>
+  <widget class="QWidget" name="centralWidget" >
+   <property name="autoFillBackground" >
+    <bool>false</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" >
+    <property name="margin" >
+     <number>0</number>
+    </property>
+    <property name="spacing" >
+     <number>0</number>
+    </property>
+    <item row="0" column="0" >
+     <widget class="QtProfileBar" name="profileBar" >
+      <property name="maximumSize" >
+       <size>
+        <width>16777215</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" >
+     <widget class="QFrame" name="frame" >
+      <property name="frameShape" >
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>9</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QWidget" native="1" name="tabWidget" >
+         <layout class="QGridLayout" name="gridLayout_2" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>0</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QWidget" native="1" name="tabDialpad" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QWidget" native="1" name="dialWidget" >
+         <layout class="QGridLayout" name="gridLayout_3" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>0</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QWidget" native="1" name="dialDialpad" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0" >
+     <widget class="QtCallBar" name="callBar" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="lineWidth" >
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp" >
+    <property name="title" >
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionShowWengoForum" />
+    <addaction name="actionWengoFAQ" />
+    <addaction name="separator" />
+    <addaction name="actionShowAbout" />
+   </widget>
+   <widget class="QMenu" name="menuActions" >
+    <property name="title" >
+     <string>&amp;Actions</string>
+    </property>
+    <addaction name="actionCreateConferenceCall" />
+    <addaction name="separator" />
+    <addaction name="actionSendSms" />
+    <addaction name="separator" />
+    <addaction name="actionAcceptCall" />
+    <addaction name="actionHangUpCall" />
+    <addaction name="actionHoldResumeCall" />
+   </widget>
+   <widget class="QMenu" name="menuTools" >
+    <property name="title" >
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="actionShowFileTransfer" />
+    <addaction name="separator" />
+    <addaction name="actionShowConfig" />
+    <addaction name="separator" />
+    <addaction name="actionOpenChatWindow" />
+    <addaction name="separator" />
+    <addaction name="actionToggleVideo" />
+   </widget>
+   <widget class="QMenu" name="menuWengo" >
+    <property name="title" >
+     <string>系统</string>
+    </property>
+    <addaction name="actionEditMyProfile" />
+    <addaction name="actionLogOff" />
+    <addaction name="separator" />
+    <addaction name="actionShowWengoAccount" />
+    <addaction name="actionWengoServices" />
+    <addaction name="separator" />
+    <addaction name="actionClose" />
+    <addaction name="actionQuit" />
+   </widget>
+   <addaction name="menuWengo" />
+   <addaction name="menuActions" />
+   <addaction name="menuTools" />
+   <addaction name="menuHelp" />
+  </widget>
+  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QToolBar" name="toolBar" >
+   <property name="contextMenuPolicy" >
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+   <property name="windowTitle" >
+    <string>ToolBar</string>
+   </property>
+   <property name="movable" >
+    <bool>false</bool>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize" >
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle" >
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAddContact" />
+   <addaction name="actionSearchWengoContact" />
+   <addaction name="actionCreateConferenceCall" />
+   <addaction name="actionSendSms" />
+  </widget>
+  <action name="actionShowWengoAccount" >
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="text" >
+    <string>View My @company@ Account...</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionClose" >
+   <property name="icon" >
+    <iconset>
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Close</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionShowWengoForum" >
+   <property name="text" >
+    <string>@company@...</string>
+   </property>
+  </action>
+  <action name="actionShowAbout" >
+   <property name="text" >
+    <string>&amp;About...</string>
+   </property>
+  </action>
+  <action name="actionAddContact" >
+   <property name="icon" >
+    <iconset resource="../../../resources/wengophone.qrc" >
+     <normaloff>:/pics/iconbar/add_contact.png</normaloff>:/pics/iconbar/add_contact.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Add &amp;Contact...</string>
+   </property>
+   <property name="iconText" >
+    <string>Add</string>
+   </property>
+   <property name="toolTip" >
+    <string>Add Contact</string>
+   </property>
+   <property name="visible" >
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionShowConfig" >
+   <property name="text" >
+    <string>视频设置</string>
+   </property>
+  </action>
+  <action name="actionSendSms" >
+   <property name="icon" >
+    <iconset resource="../../../resources/wengophone.qrc" >
+     <normaloff>:/pics/iconbar/sms.png</normaloff>:/pics/iconbar/sms.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Send SMS...</string>
+   </property>
+   <property name="iconText" >
+    <string>SMS</string>
+   </property>
+   <property name="toolTip" >
+    <string>Send SMS</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionEditMyProfile" >
+   <property name="text" >
+    <string>View My &amp;Profile...</string>
+   </property>
+   <property name="iconText" >
+    <string>View My Profile</string>
+   </property>
+   <property name="toolTip" >
+    <string>View My Profile</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionCreateConferenceCall" >
+   <property name="icon" >
+    <iconset resource="../../../resources/wengophone.qrc" >
+     <normaloff>:/pics/iconbar/conference.png</normaloff>:/pics/iconbar/conference.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Start &amp;Conference...</string>
+   </property>
+   <property name="iconText" >
+    <string>Conference</string>
+   </property>
+   <property name="toolTip" >
+    <string>Start Conference</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionWengoFAQ" >
+   <property name="text" >
+    <string>@company@ &amp;Wiki/FAQ...</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionWengoServices" >
+   <property name="text" >
+    <string>Learn more about @company@ Services...</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionShowHideOfflineContacts" >
+   <property name="icon" >
+    <iconset>
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text" >
+    <string>Show/Hide Unavailable &amp;Contacts</string>
+   </property>
+  </action>
+  <action name="actionClearChatSessions" >
+   <property name="text" >
+    <string>&amp;Chat Sessions</string>
+   </property>
+  </action>
+  <action name="actionClearAll" >
+   <property name="text" >
+    <string>&amp;All</string>
+   </property>
+  </action>
+  <action name="actionSearchWengoContact" >
+   <property name="icon" >
+    <iconset resource="../../../resources/wengophone.qrc" >
+     <normaloff>:/pics/iconbar/search_contact.png</normaloff>:/pics/iconbar/search_contact.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Find Contact...</string>
+   </property>
+   <property name="iconText" >
+    <string>Search</string>
+   </property>
+   <property name="toolTip" >
+    <string>Find @company@ Contacts</string>
+   </property>
+  </action>
+  <action name="actionAcceptCall" >
+   <property name="icon" >
+    <iconset>
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text" >
+    <string>添加联系人</string>
+   </property>
+  </action>
+  <action name="actionHangUpCall" >
+   <property name="icon" >
+    <iconset>
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text" >
+    <string>sip呼叫</string>
+   </property>
+  </action>
+  <action name="actionHoldResumeCall" >
+   <property name="icon" >
+    <iconset>
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Hold/Resume</string>
+   </property>
+   <property name="visible" >
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionShowHideContactGroups" >
+   <property name="icon" >
+    <iconset>
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text" >
+    <string>Show/Hide &amp;Groups</string>
+   </property>
+  </action>
+  <action name="actionLogOff" >
+   <property name="text" >
+    <string>Log &amp;Off...</string>
+   </property>
+   <property name="iconText" >
+    <string>Log Off</string>
+   </property>
+   <property name="toolTip" >
+    <string>Log Off</string>
+   </property>
+  </action>
+  <action name="actionOpenChatWindow" >
+   <property name="text" >
+    <string>网络设置</string>
+   </property>
+   <property name="iconText" >
+    <string>Show Chat Window</string>
+   </property>
+   <property name="toolTip" >
+    <string>Show Chat Window</string>
+   </property>
+  </action>
+  <action name="actionClearOutgoingCalls" >
+   <property name="text" >
+    <string>&amp;Outgoing Calls</string>
+   </property>
+  </action>
+  <action name="actionClearIncomingCalls" >
+   <property name="text" >
+    <string>&amp;Incoming Calls</string>
+   </property>
+  </action>
+  <action name="actionClearMissedCalls" >
+   <property name="text" >
+    <string>&amp;Missed Calls</string>
+   </property>
+  </action>
+  <action name="actionToggleVideo" >
+   <property name="icon" >
+    <iconset>
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text" >
+    <string>Global Service设置</string>
+   </property>
+  </action>
+  <action name="actionClearSms" >
+   <property name="text" >
+    <string>Short Text &amp;Messages (SMS)</string>
+   </property>
+  </action>
+  <action name="actionShowFileTransfer" >
+   <property name="checkable" >
+    <bool>false</bool>
+   </property>
+   <property name="icon" >
+    <iconset>
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text" >
+    <string>音频设置</string>
+   </property>
+   <property name="shortcut" >
+    <string/>
+   </property>
+  </action>
+  <action name="actionClearRejectedCalls" >
+   <property name="text" >
+    <string>Rejected Calls</string>
+   </property>
+  </action>
+  <action name="actionQuit" >
+   <property name="text" >
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="shortcutContext" >
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="actionToolBarTextUnderIcons" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>&amp;Text Under Icons</string>
+   </property>
+  </action>
+  <action name="actionToolBarIconsOnly" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>&amp;Icons Only</string>
+   </property>
+  </action>
+  <action name="actionToolBarHidden" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>&amp;Hidden</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QtProfileBar</class>
+   <extends>QFrame</extends>
+   <header>profilebar/QtProfileBar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QtCallBar</class>
+   <extends>QFrame</extends>
+   <header>callbar/QtCallBar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../resources/wengophone.qrc" />
+  <include location="../../../resources/wengophone.qrc" />
+ </resources>
+ <connections/>
+</ui>

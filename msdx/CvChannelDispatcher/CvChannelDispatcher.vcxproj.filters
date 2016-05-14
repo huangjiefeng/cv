@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="dbus_service">
+      <UniqueIdentifier>{23f1c155-92c3-4afe-8d10-8e9b6e5e4fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbus_client">
+      <UniqueIdentifier>{df9030b6-43a4-4856-8c46-133470635c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{0fefc055-d216-4dc6-abdf-4c46b431810c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MediaController">
+      <UniqueIdentifier>{7e458ab9-78df-4925-a5e4-b22ffcd8d130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{9a66f536-b98e-4f49-b466-2e78600b94a0}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{3ffbb46b-29c2-4f15-b828-965af06daefe}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\DEBUG_NOAEC">
+      <UniqueIdentifier>{7d7c4eb7-0d7e-4197-8591-f13743e6e55a}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_ChannelDispatcherAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChannelDispatcherAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChannelDispatcherAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvChannelDispatcherService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_CvChannelDispatcherService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvChannelDispatcherService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_CvScreenMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvScreenMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvScreenMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvStreamedMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_CvStreamedMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvStreamedMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvTestMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvTestMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_CvTestMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channelDispatcher\service\ChannelDispatcherAdaptor.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="CvChannelDispatcherService.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channel\type\screenMedia\client\CvScreenMediaIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channel\type\streamedMedia\client\CvStreamedMediaIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channel\type\testMedia\client\CvTestMediaIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\log\Log.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\ProcessManager.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BaseMediaController.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BaseMediaController.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_BaseMediaController.cpp">
+      <Filter>Generated Files\DEBUG_NOAEC</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseMediaController.cpp">
+      <Filter>MediaController</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_StreamMediaController.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_StreamMediaController.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_StreamMediaController.cpp">
+      <Filter>Generated Files\DEBUG_NOAEC</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamMediaController.cpp">
+      <Filter>MediaController</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaControllerFactory.cpp">
+      <Filter>MediaController</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ScreenMediaController.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ScreenMediaController.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_ScreenMediaController.cpp">
+      <Filter>Generated Files\DEBUG_NOAEC</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenMediaController.cpp">
+      <Filter>MediaController</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TestMediaController.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TestMediaController.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_TestMediaController.cpp">
+      <Filter>Generated Files\DEBUG_NOAEC</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMediaController.cpp">
+      <Filter>MediaController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\BackupManager\BackupManager.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CvChannelDispatcher.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\include\dbus\channelDispatcher\service\ChannelDispatcherAdaptor.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CvChannelDispatcherService.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\screenMedia\client\CvScreenMediaIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\streamedMedia\client\CvStreamedMediaIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\testMedia\client\CvTestMediaIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="util\ProcessManager.h">
+      <Filter>Util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channelDispatcher\common\ChannelDispatcherServiceCommon.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\log\Log.h">
+      <Filter>Util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BaseMediaController.h">
+      <Filter>MediaController</Filter>
+    </CustomBuild>
+    <CustomBuild Include="StreamMediaController.h">
+      <Filter>MediaController</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ScreenMediaController.h">
+      <Filter>MediaController</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TestMediaController.h">
+      <Filter>MediaController</Filter>
+    </CustomBuild>
+    <CustomBuild Include="IMediaControl.h">
+      <Filter>MediaController</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MediaControllerFactory.h">
+      <Filter>MediaController</Filter>
+    </ClInclude>
+    <ClInclude Include="ISpecMediaControl.h">
+      <Filter>MediaController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\BackupManager\BackupManager.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

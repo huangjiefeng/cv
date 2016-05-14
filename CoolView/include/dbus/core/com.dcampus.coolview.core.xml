@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.core">
+    <method name="TeleCommand">
+		<arg type="i" name="command_index" direction="in" />
+		<arg type="ay" name="intput_array" direction="in" />
+    </method>
+  </interface>
+</node>

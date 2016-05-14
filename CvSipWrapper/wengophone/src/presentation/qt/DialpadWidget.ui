@@ -1,0 +1,475 @@
+<ui version="4.0" >
+ <class>DialpadWidget</class>
+ <widget class="QWidget" name="DialpadWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <property name="leftMargin" >
+    <number>9</number>
+   </property>
+   <property name="topMargin" >
+    <number>9</number>
+   </property>
+   <property name="rightMargin" >
+    <number>9</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>9</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="topFrame" >
+     <layout class="QHBoxLayout" >
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <property name="leftMargin" >
+       <number>0</number>
+      </property>
+      <property name="topMargin" >
+       <number>0</number>
+      </property>
+      <property name="rightMargin" >
+       <number>0</number>
+      </property>
+      <property name="bottomMargin" >
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <property name="leftMargin" >
+         <number>0</number>
+        </property>
+        <property name="topMargin" >
+         <number>0</number>
+        </property>
+        <property name="rightMargin" >
+         <number>0</number>
+        </property>
+        <property name="bottomMargin" >
+         <number>0</number>
+        </property>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>127</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="UpQComboBox" name="audioSmileysComboBox" >
+          <property name="minimumSize" >
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>127</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget" >
+     <property name="minimumSize" >
+      <size>
+       <width>150</width>
+       <height>198</height>
+      </size>
+     </property>
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="classicDialpadPage" >
+      <layout class="QVBoxLayout" >
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <property name="leftMargin" >
+        <number>0</number>
+       </property>
+       <property name="topMargin" >
+        <number>0</number>
+       </property>
+       <property name="rightMargin" >
+        <number>0</number>
+       </property>
+       <property name="bottomMargin" >
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" >
+         <property name="spacing" >
+          <number>6</number>
+         </property>
+         <property name="leftMargin" >
+          <number>0</number>
+         </property>
+         <property name="topMargin" >
+          <number>0</number>
+         </property>
+         <property name="rightMargin" >
+          <number>0</number>
+         </property>
+         <property name="bottomMargin" >
+          <number>0</number>
+         </property>
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QGridLayout" >
+           <property name="leftMargin" >
+            <number>0</number>
+           </property>
+           <property name="topMargin" >
+            <number>0</number>
+           </property>
+           <property name="rightMargin" >
+            <number>0</number>
+           </property>
+           <property name="bottomMargin" >
+            <number>0</number>
+           </property>
+           <property name="horizontalSpacing" >
+            <number>0</number>
+           </property>
+           <property name="verticalSpacing" >
+            <number>0</number>
+           </property>
+           <item row="3" column="2" >
+            <widget class="QToolButton" name="poundButton" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/12_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" >
+            <widget class="QToolButton" name="oneButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/1_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" >
+            <widget class="QToolButton" name="starButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/10_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" >
+            <widget class="QToolButton" name="sevenButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/7_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" >
+            <widget class="QToolButton" name="twoButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/2_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" >
+            <widget class="QToolButton" name="threeButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/3_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2" >
+            <widget class="QToolButton" name="sixButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/6_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1" >
+            <widget class="QToolButton" name="fiveButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/5_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2" >
+            <widget class="QToolButton" name="nineButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/9_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" >
+            <widget class="QToolButton" name="fourButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/4_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1" >
+            <widget class="QToolButton" name="zeroButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/11_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1" >
+            <widget class="QToolButton" name="eightButton" >
+             <property name="icon" >
+              <iconset resource="../../../resources/wengophone.qrc" >:/pics/dialpad/8_on.png</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="autoRaise" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>20</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="svgDialpadPage" >
+      <layout class="QVBoxLayout" >
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <property name="leftMargin" >
+        <number>0</number>
+       </property>
+       <property name="topMargin" >
+        <number>0</number>
+       </property>
+       <property name="rightMargin" >
+        <number>0</number>
+       </property>
+       <property name="bottomMargin" >
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QtSVGDialpad" name="qtSVGDialpad" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Expanding" hsizetype="Ignored" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2" >
+         <property name="text" >
+          <string>Click on the various color changing items to send sounds to your interlocutor.</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>UpQComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qtutil/UpQComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QtSVGDialpad</class>
+   <extends>QFrame</extends>
+   <header>QtSVGDialpad.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../resources/wengophone.qrc" />
+ </resources>
+ <connections/>
+</ui>

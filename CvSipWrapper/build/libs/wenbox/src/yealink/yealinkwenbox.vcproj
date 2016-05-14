@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="yealinkwenbox"
+	ProjectGUID="{2F52C168-1FCB-4E13-8B97-640CD6BC37DE}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="yealinkwenbox.dir\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\libs\wenbox\src\yealink;D:\boost\boost_1_34_1;"
+				BasicRuntimeChecks="1"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/wenbox/src/yealink/Debug/yealinkwenbox.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\libs\wenbox\src\yealink;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/wenbox/src/yealink/yealinkwenbox.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/wenbox/src/yealink/yealinkwenbox.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\..\owutil\cutil\Debug\owcutil.lib ..\..\..\owutil\util\Debug\owutil.lib ..\..\Debug\owwenbox.lib ..\..\..\owutil\shlibloader\Debug\owshlibloader.lib ..\..\..\..\..\libs\wenbox\src\yealink\YLTELBOX.lib ..\..\..\owutil\util\Debug\owutil.lib ..\..\..\owutil\cutil\Debug\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\wenbox\src\yealink\Debug\yealinkwenbox.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\..\owutil\cutil\Debug\$(OutDir),..\..\..\owutil\cutil\Debug,..\..\..\owutil\util\Debug\$(OutDir),..\..\..\owutil\util\Debug,..\..\Debug\$(OutDir),..\..\Debug,..\..\..\owutil\shlibloader\Debug\$(OutDir),..\..\..\owutil\shlibloader\Debug,$(SolutionDir)..\libs\wenbox\src\yealink\$(OutDir),$(SolutionDir)..\libs\wenbox\src\yealink"
+				ProgramDataBaseFile="$(SolutionDir)libs\wenbox\src\yealink\Debug\yealinkwenbox.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)libs\wenbox\src\yealink\Debug\yealinkwenbox.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="yealinkwenbox.dir\Release"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\libs\wenbox\src\yealink;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/wenbox/src/yealink/Release/yealinkwenbox.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\libs\wenbox\src\yealink;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/wenbox/src/yealink/yealinkwenbox.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/wenbox/src/yealink/yealinkwenbox.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\..\owutil\cutil\Release\owcutil.lib ..\..\..\owutil\util\Release\owutil.lib ..\..\Release\owwenbox.lib ..\..\..\owutil\shlibloader\Release\owshlibloader.lib ..\..\..\..\..\libs\wenbox\src\yealink\YLTELBOX.lib ..\..\..\owutil\util\Release\owutil.lib ..\..\..\owutil\cutil\Release\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\wenbox\src\yealink\Release\yealinkwenbox.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\..\owutil\cutil\Release\$(OutDir),..\..\..\owutil\cutil\Release,..\..\..\owutil\util\Release\$(OutDir),..\..\..\owutil\util\Release,..\..\Release\$(OutDir),..\..\Release,..\..\..\owutil\shlibloader\Release\$(OutDir),..\..\..\owutil\shlibloader\Release,$(SolutionDir)..\libs\wenbox\src\yealink\$(OutDir),$(SolutionDir)..\libs\wenbox\src\yealink"
+				ProgramDataBaseFile="$(SolutionDir)libs\wenbox\src\yealink\Release\yealinkwenbox.pdb"
+				ImportLibrary="$(SolutionDir)libs\wenbox\src\yealink\Release\yealinkwenbox.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="yealinkwenbox.dir\MinSizeRel"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\libs\wenbox\src\yealink;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/wenbox/src/yealink/MinSizeRel/yealinkwenbox.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\libs\wenbox\src\yealink;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/wenbox/src/yealink/yealinkwenbox.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/wenbox/src/yealink/yealinkwenbox.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\..\owutil\cutil\MinSizeRel\owcutil.lib ..\..\..\owutil\util\MinSizeRel\owutil.lib ..\..\MinSizeRel\owwenbox.lib ..\..\..\owutil\shlibloader\MinSizeRel\owshlibloader.lib ..\..\..\..\..\libs\wenbox\src\yealink\YLTELBOX.lib ..\..\..\owutil\util\MinSizeRel\owutil.lib ..\..\..\owutil\cutil\MinSizeRel\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\wenbox\src\yealink\MinSizeRel\yealinkwenbox.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\..\owutil\cutil\MinSizeRel\$(OutDir),..\..\..\owutil\cutil\MinSizeRel,..\..\..\owutil\util\MinSizeRel\$(OutDir),..\..\..\owutil\util\MinSizeRel,..\..\MinSizeRel\$(OutDir),..\..\MinSizeRel,..\..\..\owutil\shlibloader\MinSizeRel\$(OutDir),..\..\..\owutil\shlibloader\MinSizeRel,$(SolutionDir)..\libs\wenbox\src\yealink\$(OutDir),$(SolutionDir)..\libs\wenbox\src\yealink"
+				ProgramDataBaseFile="$(SolutionDir)libs\wenbox\src\yealink\MinSizeRel\yealinkwenbox.pdb"
+				ImportLibrary="$(SolutionDir)libs\wenbox\src\yealink\MinSizeRel\yealinkwenbox.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="yealinkwenbox.dir\RelWithDebInfo"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\libs\wenbox\src\yealink;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/wenbox/src/yealink/RelWithDebInfo/yealinkwenbox.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\libs\wenbox\src\yealink;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWWENBOX_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BUILD_OWWENBOX_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_YEALINKWENBOX_DLL -DYEALINKWENBOX_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/wenbox/src/yealink/yealinkwenbox.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/wenbox/src/yealink/yealinkwenbox.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\..\owutil\cutil\RelWithDebInfo\owcutil.lib ..\..\..\owutil\util\RelWithDebInfo\owutil.lib ..\..\RelWithDebInfo\owwenbox.lib ..\..\..\owutil\shlibloader\RelWithDebInfo\owshlibloader.lib ..\..\..\..\..\libs\wenbox\src\yealink\YLTELBOX.lib ..\..\..\owutil\util\RelWithDebInfo\owutil.lib ..\..\..\owutil\cutil\RelWithDebInfo\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\wenbox\src\yealink\RelWithDebInfo\yealinkwenbox.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\..\owutil\cutil\RelWithDebInfo\$(OutDir),..\..\..\owutil\cutil\RelWithDebInfo,..\..\..\owutil\util\RelWithDebInfo\$(OutDir),..\..\..\owutil\util\RelWithDebInfo,..\..\RelWithDebInfo\$(OutDir),..\..\RelWithDebInfo,..\..\..\owutil\shlibloader\RelWithDebInfo\$(OutDir),..\..\..\owutil\shlibloader\RelWithDebInfo,$(SolutionDir)..\libs\wenbox\src\yealink\$(OutDir),$(SolutionDir)..\libs\wenbox\src\yealink"
+				ProgramDataBaseFile="$(SolutionDir)libs\wenbox\src\yealink\RelWithDebInfo\yealinkwenbox.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)libs\wenbox\src\yealink\RelWithDebInfo\yealinkwenbox.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\libs\wenbox\src\yealink\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/wenbox/src/yealink/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\wenbox\src\yealink\CMakeLists.txt;$(SolutionDir)..\libs\wenbox\src\yealink\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/wenbox/src/yealink/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\wenbox\src\yealink\CMakeLists.txt;$(SolutionDir)..\libs\wenbox\src\yealink\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/wenbox/src/yealink/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\wenbox\src\yealink\CMakeLists.txt;$(SolutionDir)..\libs\wenbox\src\yealink\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/wenbox/src/yealink/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\wenbox\src\yealink\CMakeLists.txt;$(SolutionDir)..\libs\wenbox\src\yealink\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\libs\wenbox\src\yealink\YealinkWenbox.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

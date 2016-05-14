@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="dbus_service">
+      <UniqueIdentifier>{6e809b8f-0edb-4fd2-9edd-2353d9d4ac7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbus_client">
+      <UniqueIdentifier>{b4a5fe08-bcd0-4327-85ad-e9b6e81bd88b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{65ba2ee6-7958-4d05-9246-ac82fdfe7ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{207980cc-17ef-44a4-b50d-d92557c72a81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{19bb4854-1c55-4769-9918-e7146de59161}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{6f6e1e3f-9e72-4f07-8fb6-ada35a470c5a}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{0fe0aa0b-2786-4d87-ba90-da6f3ea33ec5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kinectinfowidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaWindowManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qtconferenceroom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtConfrenceVideoWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtMeetingPlaceWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtScreenShare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtScreenWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_ConferenceRoomAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ConferenceRoomAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConferenceRoomAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ConferenceRoomService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConferenceRoomService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_ConferenceRoomService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_CvCoreIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvCoreIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvCoreIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvStreamedMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvStreamedMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_CvStreamedMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_kinectIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_kinectIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_kinectIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_kinectinfowidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_kinectinfowidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_kinectinfowidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MediaWindowManager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MediaWindowManager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_MediaWindowManager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_qtconferenceroom.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtconferenceroom.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtconferenceroom.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_QtConfrenceVideoWindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QtConfrenceVideoWindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtConfrenceVideoWindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_QtMeetingPlaceWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtMeetingPlaceWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QtMeetingPlaceWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_QtScreenShare.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QtScreenShare.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtScreenShare.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtScreenWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_QtScreenWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QtScreenWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TelecontrollerAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TelecontrollerAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_TelecontrollerAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_TelecontrollerIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TelecontrollerIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TelecontrollerIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_VideoFrame.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VideoFrame.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VideoFrame.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_cvconferenceroom.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\conferenceRoom\service\ConferenceRoomAdaptor.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="ConferenceRoomService.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\telecontroller\service\TelecontrollerAdaptor.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channelDispatcher\client\ChannelDispatcherIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\core\client\CvCoreIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channel\type\streamedMedia\client\CvStreamedMediaIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\kinect\client\kinectIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\telecontroller\client\TelecontrollerIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\log\Log.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="QoSReportReceiverThread.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\udp\UdpReceiver.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="conference_video_overlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_conference_video_overlay.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_conference_video_overlay.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QoSReportReceiverThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QoSReportReceiverThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ini\Ini.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ini\CVIniConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="record_ctrl_panel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_record_ctrl_panel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_record_ctrl_panel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ini\TxConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="record_advanced_panel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_record_advanced_panel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_record_advanced_panel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\desktop\screen_helper.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_screen_helper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_screen_helper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ProcessManager.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CvConferenceRoom.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="kinectinfowidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MediaWindowManager.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qtconferenceroom.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtConfrenceVideoWindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtMeetingPlaceWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtScreenShare.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtScreenWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="VideoFrame.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ConfrenceVideoWindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cvconferenceroom.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="kinectinfowidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MeetingPlaceWidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qtconferenceroom.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="screenShare.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\application.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\close_normal.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cvconferenceroom.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\mediaWaiting.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\MicrophoneRed.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\qt_zh_CN.qm">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\stopaudio.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\stopvideo.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\conferenceRoom\service\ConferenceRoomAdaptor.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ConferenceRoomService.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\telecontroller\service\TelecontrollerAdaptor.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channelDispatcher\client\ChannelDispatcherIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\core\client\CvCoreIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\streamedMedia\client\CvStreamedMediaIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\kinect\client\kinectIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\telecontroller\client\TelecontrollerIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uicommon.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_ConfrenceVideoWindow.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_cvconferenceroom.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_kinectinfowidget.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_MeetingPlaceWidget.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_qtconferenceroom.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_screenShare.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\conferenceRoom\common\ConferenceRoomServiceCommon.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\kinect\common\KinectServiceCommon.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\log\Log.h">
+      <Filter>Log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QoSReportReceiverThread.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\udp\UdpReceiver.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="conference_video_overlay.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="conference_video_overlay.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\ini\Ini.h">
+      <Filter>config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="record_ctrl_panel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="record_ctrl_panel.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="record_advanced_panel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="record_advanced_panel.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\desktop\screen_helper.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_conference_video_overlay.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\ini\CVIniConfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_record_ctrl_panel.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\ini\TxConfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_record_advanced_panel.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\ProcessManager.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

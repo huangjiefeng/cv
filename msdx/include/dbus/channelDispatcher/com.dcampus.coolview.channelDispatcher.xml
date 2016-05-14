@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.channelDispatcher">
+    <method name="CreateChannel">
+      <arg type="s" name="channel_id" direction="in" />   <!--channel_id -->
+	  <arg type="s" name="channel_type" direction="in" />	<!--channel type :channel's dbus service name-->
+      <arg type="ay" name="input_garray" direction="in" />	<!--params for channel-->
+    </method>
+	<method name="ReleaseChannel">
+		<arg type="s" name="channel_id" direction="in" />  <!--channel_id-->
+		<arg type="s" name="channel_type" direction="in" />	<!--channel type :channel's dbus service name-->
+	</method>
+    <method name="ModifyChannel">
+		<arg type="s" name="channel_id" direction="in" />   <!--channel_id-->
+		<arg type="s" name="channel_type" direction="in" />	 <!--channel type :channel's dbus service name-->
+        <arg type="i" name="modify_type" direction="in" />	 <!--modify action's type-->
+	    <arg type="ay" name="input_garray" direction="in" /> <!--channel modify params-->
+	</method>
+	<method name="Destroy" >							<!--destroy channelDispatcher , release all channels-->
+	</method>
+	<method name="ChannelStateChanged">					<!--channel reports to the dispatcher that its state is changed-->
+		<arg type="s" name="channel_id" direction="in" />
+		<arg type="s" name="user_id" direction="in" />
+		<arg type="s" name="channel_type" direction="in" />
+		<arg type="i" name="channel_state" direction="in" />	<!--current channel state-->
+	</method>
+	<signal name="NofityChannelStateChanged"> <!--dispatcher reports to coolview that a channel state is changed-->
+		<arg type="s" name="channel_id" direction="out" />
+		<arg type="s" name="user_id" direction="out" />
+		<arg type="s" name="channel_type" direction="out" />
+		<arg type="i" name="channel_state" direction="out" />
+	</signal>
+  </interface>
+</node>

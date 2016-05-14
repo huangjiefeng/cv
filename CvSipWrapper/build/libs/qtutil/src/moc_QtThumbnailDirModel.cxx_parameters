@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:/qutecom-2.2/build/libs/qtutil/src/moc_QtThumbnailDirModel.cxx
+D:/qutecom-2.2/libs/qtutil/src/QtThumbnailDirModel.h

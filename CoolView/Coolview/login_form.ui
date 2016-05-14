@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginForm</class>
+ <widget class="QWidget" name="LoginForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CoolView登录</string>
+  </property>
+  <widget class="QPushButton" name="ipConfigButton">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>510</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>网络配置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="weblibConfigButton">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>510</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Weblib设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deviceConfigButton">
+   <property name="geometry">
+    <rect>
+     <x>716</x>
+     <y>510</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设备设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>814</x>
+     <y>510</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关机</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>442</x>
+     <y>510</y>
+     <width>63</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::RightArrow</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginButton">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>360</y>
+     <width>278</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="autoLoginCheckbox">
+   <property name="geometry">
+    <rect>
+     <x>792</x>
+     <y>318</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="rememberCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>624</x>
+     <y>318</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="warningLabel">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>512</y>
+     <width>271</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userNameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>716</x>
+     <y>70</y>
+     <width>177</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="realmComboBox">
+   <property name="geometry">
+    <rect>
+     <x>716</x>
+     <y>252</y>
+     <width>177</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>sip.ccnl.scut.edu.cn</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sip2.ccnl.scut.edu.cn</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="passwordLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>716</x>
+     <y>132</y>
+     <width>177</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="refreshIPListButton">
+   <property name="geometry">
+    <rect>
+     <x>864</x>
+     <y>186</y>
+     <width>35</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>35</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="IPListComboBox">
+   <property name="geometry">
+    <rect>
+     <x>716</x>
+     <y>190</y>
+     <width>143</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+   </property>
+  </widget>
+  <zorder>refreshIPListButton</zorder>
+  <zorder>warningLabel</zorder>
+  <zorder>ipConfigButton</zorder>
+  <zorder>rememberCheckBox</zorder>
+  <zorder>cancelButton</zorder>
+  <zorder>IPListComboBox</zorder>
+  <zorder>autoLoginCheckbox</zorder>
+  <zorder>userNameLineEdit</zorder>
+  <zorder>realmComboBox</zorder>
+  <zorder>passwordLineEdit</zorder>
+  <zorder>deviceConfigButton</zorder>
+  <zorder>toolButton</zorder>
+  <zorder>weblibConfigButton</zorder>
+  <zorder>loginButton</zorder>
+ </widget>
+ <resources>
+  <include location="CoolView.qrc"/>
+ </resources>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>2</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>2</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

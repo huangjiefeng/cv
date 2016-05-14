@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="dbus_service">
+      <UniqueIdentifier>{e7684ad2-ebd3-40e4-a857-013ba8602560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbus_client">
+      <UniqueIdentifier>{f4db915f-1902-4a3e-8312-6a2e56240f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{e2aa6480-6004-408e-b22c-e1877a22f29d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CpuUsage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PerformanceUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_CvCoreIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvCoreIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvCoreIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_CvPerfMonitorAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvPerfMonitorAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvPerfMonitorAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvPerfMonitorService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvPerfMonitorService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_CvPerfMonitorService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_CvPerfProcessIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvPerfProcessIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvPerfProcessIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MediaMonitorThread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_MediaMonitorThread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MediaMonitorThread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MonitorThread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_PC\moc_MonitorThread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MonitorThread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\performance\monitor\service\CvPerfMonitorAdaptor.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="CvPerfMonitorService.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channelDispatcher\client\ChannelDispatcherIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\core\client\CvCoreIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\performance\process\client\CvPerfProcessIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\log\Log.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaMonitorThread.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorActionExecutor.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorThread.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ProcessManager.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CvMonitor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\include\dbus\performance\monitor\service\CvPerfMonitorAdaptor.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CvPerfMonitorService.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channelDispatcher\client\ChannelDispatcherIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\core\client\CvCoreIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\performance\process\client\CvPerfProcessIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MediaMonitorThread.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MonitorThread.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CvMonitor.exe.manifest" />
+    <CustomBuild Include="CpuUsage.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PerfCounters.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PerformanceUtil.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\performance\monitor\common\CvPerfMonitorServiceCommon.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\performance\monitor\common\MonitorConfigCommon.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\core\common\CvCoreServiceCommon.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\testMedia\TestMediaServiceCommon.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\log\Log.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MonitorActionExecutor.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\ProcessManager.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

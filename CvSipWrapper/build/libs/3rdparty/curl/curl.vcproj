@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="curl"
+	ProjectGUID="{07F0C439-AB80-4F9D-A381-F99F6717F95B}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="curl.dir\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;"
+				BasicRuntimeChecks="1"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/curl/Debug/curl.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/curl/curl.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/curl/curl.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib winmm.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\curl\Debug\curl.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32"
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\curl\Debug\curl.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\curl\Debug\curl.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="curl.dir\Release"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/curl/Release/curl.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/curl/curl.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/curl/curl.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib winmm.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\curl\Release\curl.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32"
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\curl\Release\curl.pdb"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\curl\Release\curl.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="curl.dir\MinSizeRel"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/curl/MinSizeRel/curl.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/curl/curl.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/curl/curl.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib winmm.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\curl\MinSizeRel\curl.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32"
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\curl\MinSizeRel\curl.pdb"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\curl\MinSizeRel\curl.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="curl.dir\RelWithDebInfo"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/curl/RelWithDebInfo/curl.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BUILDING_LIBCURL,CURL_DISABLE_FILE,CURL_DISABLE_LDAP,CURL_DISABLE_DICT,CURL_DISABLE_TELNET,CURL_DISABLE_TFTP,USE_SSLEAY,USE_OPENSSL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_CURL_DLL -DCURL_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/curl/curl.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/curl/curl.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib winmm.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\curl\RelWithDebInfo\curl.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32"
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\curl\RelWithDebInfo\curl.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\curl\RelWithDebInfo\curl.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/curl/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/curl/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/curl/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/curl/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\base64.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\connect.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\content_encoding.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\cookie.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\easy.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\escape.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\formdata.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\ftp.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\getenv.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\getinfo.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\gtls.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\hash.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\hostares.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\hostasyn.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\hostip.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\hostip4.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\hostip6.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\hostsyn.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\hostthre.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\http.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\http_chunks.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\http_digest.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\http_negotiate.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\http_ntlm.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\if2ip.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\inet_ntop.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\inet_pton.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\krb4.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\llist.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\md5.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\memdebug.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\mprintf.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\multi.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\netrc.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\parsedate.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\progress.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\security.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\select.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\sendf.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\share.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\socks.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\speedcheck.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\splay.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\sslgen.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\ssluse.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\strequal.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\strerror.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\strtok.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\strtoofft.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\timeval.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\transfer.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\url.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\curl\lib\version.c">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

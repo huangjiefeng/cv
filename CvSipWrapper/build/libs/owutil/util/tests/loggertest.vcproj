@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="loggertest"
+	ProjectGUID="{F072D707-F98B-473E-82DA-E1F6F04273D5}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="loggertest.dir\Debug"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"
+				BasicRuntimeChecks="1"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/owutil/util/tests/Debug/loggertest.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/util/tests/loggertest.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/util/tests/loggertest.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\cutil\Debug\owcutil.lib ..\Debug\owutil.lib Rpcrt4.lib ..\..\cutil\Debug\owcutil.lib "
+				OutputFile="$(SolutionDir)libs\owutil\util\tests\Debug\loggertest.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\cutil\Debug\$(OutDir),..\..\cutil\Debug,..\Debug\$(OutDir),..\Debug"
+				ProgramDataBaseFile="$(SolutionDir)libs/owutil/util/tests/Debug/loggertest.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\owutil\util\tests\Debug\loggertest.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="loggertest.dir\Release"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/owutil/util/tests/Release/loggertest.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/util/tests/loggertest.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/util/tests/loggertest.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\cutil\Release\owcutil.lib ..\Release\owutil.lib Rpcrt4.lib ..\..\cutil\Release\owcutil.lib "
+				OutputFile="$(SolutionDir)libs\owutil\util\tests\Release\loggertest.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\cutil\Release\$(OutDir),..\..\cutil\Release,..\Release\$(OutDir),..\Release"
+				ProgramDataBaseFile="$(SolutionDir)libs/owutil/util/tests/Release/loggertest.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\owutil\util\tests\Release\loggertest.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="loggertest.dir\MinSizeRel"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/owutil/util/tests/MinSizeRel/loggertest.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/util/tests/loggertest.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/util/tests/loggertest.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\cutil\MinSizeRel\owcutil.lib ..\MinSizeRel\owutil.lib Rpcrt4.lib ..\..\cutil\MinSizeRel\owcutil.lib "
+				OutputFile="$(SolutionDir)libs\owutil\util\tests\MinSizeRel\loggertest.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\cutil\MinSizeRel\$(OutDir),..\..\cutil\MinSizeRel,..\MinSizeRel\$(OutDir),..\MinSizeRel"
+				ProgramDataBaseFile="$(SolutionDir)libs/owutil/util/tests/MinSizeRel/loggertest.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\owutil\util\tests\MinSizeRel\loggertest.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="loggertest.dir\RelWithDebInfo"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/owutil/util/tests/RelWithDebInfo/loggertest.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/util/tests/loggertest.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/util/tests/loggertest.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\cutil\RelWithDebInfo\owcutil.lib ..\RelWithDebInfo\owutil.lib Rpcrt4.lib ..\..\cutil\RelWithDebInfo\owcutil.lib "
+				OutputFile="$(SolutionDir)libs\owutil\util\tests\RelWithDebInfo\loggertest.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\cutil\RelWithDebInfo\$(OutDir),..\..\cutil\RelWithDebInfo,..\RelWithDebInfo\$(OutDir),..\RelWithDebInfo"
+				ProgramDataBaseFile="$(SolutionDir)libs/owutil/util/tests/RelWithDebInfo/loggertest.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\owutil\util\tests\RelWithDebInfo\loggertest.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\tests\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/owutil/util/tests/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\owutil\util\tests\CMakeLists.txt;$(SolutionDir)..\libs\owutil\util\tests\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/owutil/util/tests/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\owutil\util\tests\CMakeLists.txt;$(SolutionDir)..\libs\owutil\util\tests\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/owutil/util/tests/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\owutil\util\tests\CMakeLists.txt;$(SolutionDir)..\libs\owutil\util\tests\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/owutil/util/tests/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\owutil\util\tests\CMakeLists.txt;$(SolutionDir)..\libs\owutil\util\tests\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\tests\LoggerTest.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

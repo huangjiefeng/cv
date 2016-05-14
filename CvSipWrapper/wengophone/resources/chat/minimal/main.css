@@ -1,0 +1,9 @@
+.incoming {
+	color: #0b9dd5;
+    font-weight: bold;
+}
+
+.outgoing {
+	color: #ef3800;
+    font-weight: bold;
+}

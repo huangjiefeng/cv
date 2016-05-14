@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Setup">
+      <UniqueIdentifier>{b47f2eb8-f6b6-43e2-b9fb-a770eaf0382f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Filters">
+      <UniqueIdentifier>{1c1fd7a0-d73b-4be6-98eb-8b8c99972e31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{228f2bd8-84c8-45b4-ba58-384480496efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\H264">
+      <UniqueIdentifier>{77ac4bc5-f3b8-4c33-a7dd-a5b4f94c70d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Sender">
+      <UniqueIdentifier>{7a5fb16f-9f35-4b29-9458-73b767906dfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Receiver">
+      <UniqueIdentifier>{9265d699-7f9f-4d60-b7d4-9f91647dfa91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\3rdparty">
+      <UniqueIdentifier>{28b8c308-8407-4e24-8b60-979b496f417e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\3rdparty\mediastreamer2">
+      <UniqueIdentifier>{fe2b1c97-c347-443e-b7a6-9ce9a31a6cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{2f0ce362-d66c-4c3e-9b5f-d21eb18bc200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{ced4225c-3175-451a-9305-0f77a38f5ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{e5e81ae7-2571-4c35-82b6-c4f12e840580}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="setup.cpp">
+      <Filter>Setup</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_sender_filter.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="rtp_receiver_filter.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mediastreamer2\src\voip\rfc3984.c">
+      <Filter>Core\3rdparty\mediastreamer2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mediastreamer2\src\base\msqueue.c">
+      <Filter>Core\3rdparty\mediastreamer2</Filter>
+    </ClCompile>
+    <ClCompile Include="core\receive_controller.cpp">
+      <Filter>Core\Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="core\ortp_receiver.cpp">
+      <Filter>Core\Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\generic_frame_reassembler.cpp">
+      <Filter>Core\Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\H264\bit_stream.cpp">
+      <Filter>Core\H264</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\H264\h264_nal.cpp">
+      <Filter>Core\H264</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\H264\h264_rtp_packer.cpp">
+      <Filter>Core\H264</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\H264\h264_stream_parser.cpp">
+      <Filter>Core\H264</Filter>
+    </ClCompile>
+    <ClCompile Include="core\media_frame.cpp">
+      <Filter>Core\Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="core\h264_frame_reassembler.cpp">
+      <Filter>Core\Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="core\aac_frame_reassembler.cpp">
+      <Filter>Core\Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="core\audio_deliver_strategy.cpp">
+      <Filter>Core\Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="core\video_deliver_strategy.cpp">
+      <Filter>Core\Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\util.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ortp_packet.cpp">
+      <Filter>Core\Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\media_sync.cpp">
+      <Filter>Core\Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Log\Log.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ortp_unit.cpp">
+      <Filter>Core\Sender</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\frame_units.cpp">
+      <Filter>Core\Sender</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ortp_sender.cpp">
+      <Filter>Core\Sender</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\h264_frame_splitter.cpp">
+      <Filter>Core\Sender</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\aac_frame_splitter.cpp">
+      <Filter>Core\Sender</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\audio_frame_splitter.cpp">
+      <Filter>Core\Sender</Filter>
+    </ClCompile>
+    <ClCompile Include="ortp_logger.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rtp_sender_filter.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="guids.h">
+      <Filter>Setup</Filter>
+    </ClInclude>
+    <ClInclude Include="rtp_receiver_filter.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="rtp_sender_config_interface.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mediastreamer2\include\mediastreamer2\mscommon.h">
+      <Filter>Core\3rdparty\mediastreamer2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mediastreamer2\include\mediastreamer2\msqueue.h">
+      <Filter>Core\3rdparty\mediastreamer2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mediastreamer2\include\mediastreamer2\rfc3984.h">
+      <Filter>Core\3rdparty\mediastreamer2</Filter>
+    </ClInclude>
+    <ClInclude Include="rtp_receiver_config_interface.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="core\receive_controller.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="core\ortp_receiver.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\receive_interfaces.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\generic_frame_reassembler.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\core_defs.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\H264\bit_stream.h">
+      <Filter>Core\H264</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\H264\h264_nal.h">
+      <Filter>Core\H264</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\H264\h264_rtp_packer.h">
+      <Filter>Core\H264</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\H264\h264_stream_parser.h">
+      <Filter>Core\H264</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\circular_buffer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\media_frame.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="core\h264_frame_reassembler.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="core\aac_frame_reassembler.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="core\audio_deliver_strategy.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\classic_ptr_helper.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="core\video_deliver_strategy.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\util.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtpStat.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ortp_packet.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\media_sync.h">
+      <Filter>Core\Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Log\Log.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\send_interfaces.h">
+      <Filter>Core\Sender</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ortp_unit.h">
+      <Filter>Core\Sender</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\frame_units.h">
+      <Filter>Core\Sender</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ortp_sender.h">
+      <Filter>Core\Sender</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\h264_frame_splitter.h">
+      <Filter>Core\Sender</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\aac_frame_splitter.h">
+      <Filter>Core\Sender</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\audio_frame_splitter.h">
+      <Filter>Core\Sender</Filter>
+    </ClInclude>
+    <ClInclude Include="ortp_logger.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rtpware3.def">
+      <Filter>Setup</Filter>
+    </None>
+  </ItemGroup>
+</Project>

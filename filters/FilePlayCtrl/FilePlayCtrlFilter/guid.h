@@ -1,0 +1,14 @@
+
+#ifndef SCUT_FILE_PLAY_CTRL_GUIDS_H
+#define SCUT_FILE_PLAY_CTRL_GUIDS_H
+
+
+// {0AFD076D-3EF3-4178-939F-09972E916241}
+DEFINE_GUID(CLSID_SCUTFilePlayCtrl, 
+            0xafd076d, 0x3ef3, 0x4178, 0x93, 0x9f, 0x9, 0x97, 0x2e, 0x91, 0x62, 0x41);
+
+// {238B36E2-87FC-4087-A19F-3B8A0C3D9013}
+DEFINE_GUID(IID_IFilePlayCtrl, 
+            0x238b36e2, 0x87fc, 0x4087, 0xa1, 0x9f, 0x3b, 0x8a, 0xc, 0x3d, 0x90, 0x13);
+
+#endif

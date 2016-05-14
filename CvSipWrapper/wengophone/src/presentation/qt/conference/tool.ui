@@ -1,0 +1,1110 @@
+<ui version="4.0" >
+ <class>toolbar</class>
+ <widget class="QWidget" name="toolbar" >
+  <property name="windowModality" >
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Expanding" hsizetype="Preferred" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" >
+   <item row="0" column="0" >
+    <widget class="QDockWidget" name="dockWidget_2" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize" >
+      <size>
+       <width>360</width>
+       <height>547</height>
+      </size>
+     </property>
+     <property name="maximumSize" >
+      <size>
+       <width>360</width>
+       <height>600</height>
+      </size>
+     </property>
+     <property name="acceptDrops" >
+      <bool>true</bool>
+     </property>
+     <property name="floating" >
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="dockWidgetContents_3" >
+      <layout class="QVBoxLayout" name="verticalLayout" >
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3" >
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2" >
+           <item>
+            <widget class="QPushButton" name="callingButton" >
+             <property name="minimumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolTip" >
+              <string>呼叫</string>
+             </property>
+             <property name="text" >
+              <string>呼叫</string>
+             </property>
+             <property name="icon" >
+              <iconset>
+               <normaloff>:/image/phone.jpg</normaloff>:/image/phone.jpg</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="checkable" >
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="conferenceButton" >
+             <property name="minimumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolTip" >
+              <string>会议</string>
+             </property>
+             <property name="text" >
+              <string>会议</string>
+             </property>
+             <property name="icon" >
+              <iconset>
+               <normaloff>:/image/member.jpg</normaloff>:/image/member.jpg</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>35</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="checkable" >
+              <bool>false</bool>
+             </property>
+             <property name="checked" >
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="settingButton" >
+             <property name="minimumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolTip" >
+              <string>设置</string>
+             </property>
+             <property name="statusTip" >
+              <string/>
+             </property>
+             <property name="text" >
+              <string>配置</string>
+             </property>
+             <property name="icon" >
+              <iconset>
+               <normaloff>:/image/setting.bmp</normaloff>:/image/setting.bmp</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="checkable" >
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="messageButton" >
+             <property name="minimumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolTip" >
+              <string>短信息</string>
+             </property>
+             <property name="whatsThis" >
+              <string/>
+             </property>
+             <property name="text" >
+              <string>消息</string>
+             </property>
+             <property name="icon" >
+              <iconset>
+               <normaloff>:/image/message.jpg</normaloff>:/image/message.jpg</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>35</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="checkable" >
+              <bool>false</bool>
+             </property>
+             <property name="checked" >
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="monitorButton" >
+             <property name="minimumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolTip" >
+              <string>监控</string>
+             </property>
+             <property name="text" >
+              <string>监控</string>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>35</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="checkable" >
+              <bool>false</bool>
+             </property>
+             <property name="checked" >
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="helpButton" >
+             <property name="minimumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolTip" >
+              <string>帮助</string>
+             </property>
+             <property name="text" >
+              <string>帮助</string>
+             </property>
+             <property name="icon" >
+              <iconset>
+               <normaloff>:/image/help.ico</normaloff>:/image/help.ico</iconset>
+             </property>
+             <property name="iconSize" >
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_3" >
+             <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0" >
+              <size>
+               <width>37</width>
+               <height>600</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="logOutButton" >
+             <property name="minimumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolTip" >
+              <string>注销帐号</string>
+             </property>
+             <property name="text" >
+              <string>注销</string>
+             </property>
+             <property name="icon" >
+              <iconset>
+               <normaloff>:/image/kopeteavailable.bmp</normaloff>:/image/kopeteavailable.bmp</iconset>
+             </property>
+             <property name="checkable" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="quitButton" >
+             <property name="minimumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolTip" >
+              <string>退出会议</string>
+             </property>
+             <property name="text" >
+              <string>退出</string>
+             </property>
+             <property name="icon" >
+              <iconset>
+               <normaloff>:/image/goto.bmp</normaloff>:/image/goto.bmp</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_7" >
+           <item>
+            <widget class="QTabWidget" name="conInfoTabWidget" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Preferred" hsizetype="Expanding" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize" >
+              <size>
+               <width>290</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>290</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="tabShape" >
+              <enum>QTabWidget::Rounded</enum>
+             </property>
+             <property name="currentIndex" >
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="confListTab" >
+              <attribute name="title" >
+               <string>会议列表</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="memberListTab" >
+              <attribute name="title" >
+               <string>会议人员</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTabWidget" name="settingTabWidget" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Preferred" hsizetype="Expanding" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize" >
+              <size>
+               <width>290</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>290</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="currentIndex" >
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="videoSettingTab" >
+              <attribute name="title" >
+               <string>摄像机</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="audioSettingTab" >
+              <attribute name="title" >
+               <string>音频</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="displaySettingTab" >
+              <attribute name="title" >
+               <string>显示</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="sipGroupBox" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize" >
+              <size>
+               <width>290</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>290</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="title" >
+              <string>Sip呼叫</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="advanceGroupBox" >
+             <property name="minimumSize" >
+              <size>
+               <width>290</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>290</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="title" >
+              <string>网络状况</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="helpGroupBox" >
+             <property name="minimumSize" >
+              <size>
+               <width>290</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>290</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="title" >
+              <string>帮助</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="messageGroupBox" >
+             <property name="minimumSize" >
+              <size>
+               <width>290</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>290</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="title" >
+              <string>短消息</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="CoolView.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>callingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>conInfoTabWidget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>51</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>267</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>callingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>settingTabWidget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>57</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>265</x>
+     <y>406</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>callingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sipGroupBox</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>47</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>264</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>callingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>advanceGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>57</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>276</x>
+     <y>552</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>callingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>messageGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>60</x>
+     <y>305</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>204</x>
+     <y>698</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>conferenceButton</sender>
+   <signal>clicked()</signal>
+   <receiver>conInfoTabWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>60</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>265</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>conferenceButton</sender>
+   <signal>clicked()</signal>
+   <receiver>settingTabWidget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>57</x>
+     <y>316</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>267</x>
+     <y>406</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>conferenceButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sipGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>42</x>
+     <y>316</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>271</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>conferenceButton</sender>
+   <signal>clicked()</signal>
+   <receiver>advanceGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>33</x>
+     <y>316</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>266</x>
+     <y>552</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>conferenceButton</sender>
+   <signal>clicked()</signal>
+   <receiver>messageGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>60</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>206</x>
+     <y>698</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>conInfoTabWidget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>49</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>264</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>settingTabWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>45</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>262</x>
+     <y>406</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sipGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>49</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>280</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>advanceGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>39</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>260</x>
+     <y>552</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>messageGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>60</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>207</x>
+     <y>698</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>messageButton</sender>
+   <signal>clicked()</signal>
+   <receiver>conInfoTabWidget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>45</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>265</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>messageButton</sender>
+   <signal>clicked()</signal>
+   <receiver>settingTabWidget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>53</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>285</x>
+     <y>406</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>messageButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sipGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>58</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>266</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>messageButton</sender>
+   <signal>clicked()</signal>
+   <receiver>advanceGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>60</x>
+     <y>443</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>267</x>
+     <y>552</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>messageButton</sender>
+   <signal>clicked()</signal>
+   <receiver>messageGroupBox</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>51</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>231</x>
+     <y>698</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>monitorButton</sender>
+   <signal>clicked()</signal>
+   <receiver>conInfoTabWidget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>48</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>269</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>monitorButton</sender>
+   <signal>clicked()</signal>
+   <receiver>settingTabWidget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>56</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>260</x>
+     <y>406</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>monitorButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sipGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>50</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>262</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>monitorButton</sender>
+   <signal>clicked()</signal>
+   <receiver>advanceGroupBox</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>53</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>270</x>
+     <y>552</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>monitorButton</sender>
+   <signal>clicked()</signal>
+   <receiver>messageGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>44</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>206</x>
+     <y>698</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>callingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>helpGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>40</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>213</x>
+     <y>606</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>conferenceButton</sender>
+   <signal>clicked()</signal>
+   <receiver>helpGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>25</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>168</x>
+     <y>595</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settingButton</sender>
+   <signal>clicked()</signal>
+   <receiver>helpGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>29</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>128</x>
+     <y>606</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>messageButton</sender>
+   <signal>clicked()</signal>
+   <receiver>helpGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>32</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>141</x>
+     <y>617</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>monitorButton</sender>
+   <signal>clicked()</signal>
+   <receiver>helpGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>22</x>
+     <y>475</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>128</x>
+     <y>615</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>helpButton</sender>
+   <signal>clicked()</signal>
+   <receiver>helpGroupBox</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>33</x>
+     <y>521</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>134</x>
+     <y>609</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>helpButton</sender>
+   <signal>clicked()</signal>
+   <receiver>messageGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>49</x>
+     <y>520</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>126</x>
+     <y>669</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>helpButton</sender>
+   <signal>clicked()</signal>
+   <receiver>advanceGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>46</x>
+     <y>513</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>131</x>
+     <y>531</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>helpButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sipGroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>37</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>140</x>
+     <y>474</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>helpButton</sender>
+   <signal>clicked()</signal>
+   <receiver>settingTabWidget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>35</x>
+     <y>510</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>111</x>
+     <y>397</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>helpButton</sender>
+   <signal>clicked()</signal>
+   <receiver>conInfoTabWidget</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>34</x>
+     <y>515</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>138</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

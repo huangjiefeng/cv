@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5AA73361-D200-4162-B85C-3C3BBCF12B07}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>owimwrapper.dir\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>owimwrapper.dir\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <OutDir>MinSizeRel\</OutDir>
+    <IntDir>owimwrapper.dir\MinSizeRel\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <OutDir>RelWithDebInfo\</OutDir>
+    <IntDir>owimwrapper.dir\RelWithDebInfo\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /wd4251 /wd4275 /wd4675 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\tinyxml;$(BoostDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)libs/imwrapper/Debug/owimwrapper.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\tinyxml;D:\boost\boost_1_34_1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <OutputFile>$(SolutionDir)libs\imwrapper\Debug\owimwrapper.lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /wd4251 /wd4275 /wd4675 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\tinyxml;$(BoostDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;RELEASE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)libs/imwrapper/Release/owimwrapper.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\tinyxml;D:\boost\boost_1_34_1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <OutputFile>$(SolutionDir)libs\imwrapper\Release\owimwrapper.lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /wd4251 /wd4275 /wd4675 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\tinyxml;$(BoostDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)libs/imwrapper/MinSizeRel/owimwrapper.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\tinyxml;D:\boost\boost_1_34_1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <OutputFile>$(SolutionDir)libs\imwrapper\MinSizeRel\owimwrapper.lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /wd4251 /wd4275 /wd4675 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\tinyxml;$(BoostDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)libs/imwrapper/RelWithDebInfo/owimwrapper.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\tinyxml;D:\boost\boost_1_34_1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;DEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <OutputFile>$(SolutionDir)libs\imwrapper\RelWithDebInfo\owimwrapper.lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="$(SolutionDir)..\libs\imwrapper\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule $(SolutionDir)..\libs/imwrapper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\libs\imwrapper\CMakeLists.txt;$(SolutionDir)..\libs\imwrapper\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule $(SolutionDir)..\libs/imwrapper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)..\libs\imwrapper\CMakeLists.txt;$(SolutionDir)..\libs\imwrapper\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule $(SolutionDir)..\libs/imwrapper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)..\libs\imwrapper\CMakeLists.txt;$(SolutionDir)..\libs\imwrapper\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule $(SolutionDir)..\libs/imwrapper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\libs\imwrapper\CMakeLists.txt;$(SolutionDir)..\libs\imwrapper\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\Account.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\EnumIMProtocol.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\EnumPresenceState.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMAccount.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMAccountList.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMAccountListFileStorage.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMAccountListXMLSerializer.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMAccountListXMLSerializer1.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMAccountParameters.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMAccountParametersXMLSerializer.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMAccountXMLSerializer.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMAccountXMLSerializer1.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMChatSession.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMContact.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMContactSet.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMContactXMLSerializer.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMContactXMLSerializer1.cpp" />
+    <ClCompile Include="$(SolutionDir)..\libs\imwrapper\src\IMWrapperFactory.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

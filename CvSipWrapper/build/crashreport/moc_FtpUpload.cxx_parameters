@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:\qutecom-2.2\build\crashreport\moc_FtpUpload.cxx
+D:\qutecom-2.2\crashreport\FtpUpload.h

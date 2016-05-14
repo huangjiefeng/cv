@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>683</width>
+    <height>528</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="uploadpage"/>
+      <widget class="QWidget" name="settingpage"/>
+      <widget class="QWidget" name="historypage"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="showUploadAction"/>
+   <addaction name="uploadSettingAction"/>
+   <addaction name="showHistoryAction"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="showUploadAction">
+   <property name="text">
+    <string>正在上传</string>
+   </property>
+   <property name="toolTip">
+    <string>查看上传队列</string>
+   </property>
+  </action>
+  <action name="uploadSettingAction">
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="toolTip">
+    <string>设置上传参数</string>
+   </property>
+  </action>
+  <action name="showHistoryAction">
+   <property name="text">
+    <string>上传历史</string>
+   </property>
+   <property name="toolTip">
+    <string>上传历史</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

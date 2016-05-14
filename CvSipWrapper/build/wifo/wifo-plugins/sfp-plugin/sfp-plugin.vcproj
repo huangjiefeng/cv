@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="sfp-plugin"
+	ProjectGUID="{3050EC50-A08A-47D2-82DF-B23F96D4E311}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="sfp-plugin.dir\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				BasicRuntimeChecks="1"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/wifo-plugins/sfp-plugin/Debug/sfp-plugin.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/wifo-plugins/sfp-plugin/sfp-plugin.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/wifo-plugins/sfp-plugin/sfp-plugin.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\..\libs\owutil\cutil\Debug\owcutil.lib ..\..\phapi-util\Debug\phapiutil.lib ..\..\phapi\Debug\phapi.lib ..\..\owbase\Debug\owbase.lib ..\..\owsl\Debug\owsl.lib ..\..\eXosip\transport_manager\Debug\transport_manager.lib ..\..\sVoIP\Debug\svoip.lib ..\..\libosip2\Debug\osip2.lib ..\..\eXosip\Debug\exosip.lib ..\..\..\libs\3rdparty\curl\Debug\curl.lib ..\..\..\libs\3rdparty\pthread\Debug\pthread.lib ..\..\phapi-util\Debug\phapiutil.lib ..\..\eXosip\transport_manager\Debug\transport_manager.lib ..\..\owsl\Debug\owsl.lib ..\..\owbase\Debug\owbase.lib ..\..\..\libs\3rdparty\curl\Debug\curl.lib ..\..\sVoIP\Debug\svoip.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\srtp\Debug\srtp.lib ..\..\libosip2\Debug\osip2.lib ..\..\..\libs\3rdparty\pthread\Debug\pthread.lib ws2_32.lib ..\..\ortp\Debug\ortp.lib ws2_32.lib ..\..\phapi\stun\Debug\stun.lib ..\..\phapi\gsm\Debug\gsm.lib ..\..\phapi\fidlib\Debug\fidlib.lib ..\..\phapi\speexec\Debug\speexec.lib ..\..\..\libs\timer\Debug\wtimer.lib ..\..\phapi\g722\Debug\g722.lib ..\..\phapi\g726\Debug\g726.lib ..\..\phapi\msdirent\Debug\msdirent.lib ..\..\..\libs\webcam\Debug\webcam.lib ..\..\..\libs\pixertool\Debug\pixertool.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\libs\owutil\thread\Debug\owthread.lib ..\..\..\libs\owutil\util\Debug\owutil.lib ..\..\..\libs\owutil\cutil\Debug\owcutil.lib Rpcrt4.lib comsuppw.lib user32.lib shell32.lib advapi32.lib wininet.lib iphlpapi.lib strmiids.lib ole32.lib comsupp.lib ..\..\..\libs\3rdparty\portaudio\Debug\portaudio.lib winmm.lib "
+				OutputFile="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\Debug\sfp-plugin.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\..\..\libs\owutil\cutil\Debug\$(OutDir),..\..\..\libs\owutil\cutil\Debug,..\..\phapi-util\Debug\$(OutDir),..\..\phapi-util\Debug,..\..\phapi\Debug\$(OutDir),..\..\phapi\Debug,..\..\owbase\Debug\$(OutDir),..\..\owbase\Debug,..\..\owsl\Debug\$(OutDir),..\..\owsl\Debug,..\..\eXosip\transport_manager\Debug\$(OutDir),..\..\eXosip\transport_manager\Debug,..\..\sVoIP\Debug\$(OutDir),..\..\sVoIP\Debug,..\..\libosip2\Debug\$(OutDir),..\..\libosip2\Debug,..\..\eXosip\Debug\$(OutDir),..\..\eXosip\Debug,..\..\..\libs\3rdparty\curl\Debug\$(OutDir),..\..\..\libs\3rdparty\curl\Debug,..\..\..\libs\3rdparty\pthread\Debug\$(OutDir),..\..\..\libs\3rdparty\pthread\Debug,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32,..\..\srtp\Debug\$(OutDir),..\..\srtp\Debug,..\..\ortp\Debug\$(OutDir),..\..\ortp\Debug,..\..\phapi\stun\Debug\$(OutDir),..\..\phapi\stun\Debug,..\..\phapi\gsm\Debug\$(OutDir),..\..\phapi\gsm\Debug,..\..\phapi\fidlib\Debug\$(OutDir),..\..\phapi\fidlib\Debug,..\..\phapi\speexec\Debug\$(OutDir),..\..\phapi\speexec\Debug,..\..\..\libs\timer\Debug\$(OutDir),..\..\..\libs\timer\Debug,..\..\phapi\g722\Debug\$(OutDir),..\..\phapi\g722\Debug,..\..\phapi\g726\Debug\$(OutDir),..\..\phapi\g726\Debug,..\..\phapi\msdirent\Debug\$(OutDir),..\..\phapi\msdirent\Debug,..\..\..\libs\webcam\Debug\$(OutDir),..\..\..\libs\webcam\Debug,..\..\..\libs\pixertool\Debug\$(OutDir),..\..\..\libs\pixertool\Debug,..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\libs\owutil\thread\Debug\$(OutDir),..\..\..\libs\owutil\thread\Debug,..\..\..\libs\owutil\util\Debug\$(OutDir),..\..\..\libs\owutil\util\Debug,..\..\..\libs\3rdparty\portaudio\Debug\$(OutDir),..\..\..\libs\3rdparty\portaudio\Debug"
+				ProgramDataBaseFile="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\Debug\sfp-plugin.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\Debug\sfp-plugin.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="sfp-plugin.dir\Release"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/wifo-plugins/sfp-plugin/Release/sfp-plugin.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/wifo-plugins/sfp-plugin/sfp-plugin.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/wifo-plugins/sfp-plugin/sfp-plugin.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\..\libs\owutil\cutil\Release\owcutil.lib ..\..\phapi-util\Release\phapiutil.lib ..\..\phapi\Release\phapi.lib ..\..\owbase\Release\owbase.lib ..\..\owsl\Release\owsl.lib ..\..\eXosip\transport_manager\Release\transport_manager.lib ..\..\sVoIP\Release\svoip.lib ..\..\libosip2\Release\osip2.lib ..\..\eXosip\Release\exosip.lib ..\..\..\libs\3rdparty\curl\Release\curl.lib ..\..\..\libs\3rdparty\pthread\Release\pthread.lib ..\..\phapi-util\Release\phapiutil.lib ..\..\eXosip\transport_manager\Release\transport_manager.lib ..\..\owsl\Release\owsl.lib ..\..\owbase\Release\owbase.lib ..\..\..\libs\3rdparty\curl\Release\curl.lib ..\..\sVoIP\Release\svoip.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\srtp\Release\srtp.lib ..\..\libosip2\Release\osip2.lib ..\..\..\libs\3rdparty\pthread\Release\pthread.lib ws2_32.lib ..\..\ortp\Release\ortp.lib ws2_32.lib ..\..\phapi\stun\Release\stun.lib ..\..\phapi\gsm\Release\gsm.lib ..\..\phapi\fidlib\Release\fidlib.lib ..\..\phapi\speexec\Release\speexec.lib ..\..\..\libs\timer\Release\wtimer.lib ..\..\phapi\g722\Release\g722.lib ..\..\phapi\g726\Release\g726.lib ..\..\phapi\msdirent\Release\msdirent.lib ..\..\..\libs\webcam\Release\webcam.lib ..\..\..\libs\pixertool\Release\pixertool.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\libs\owutil\thread\Release\owthread.lib ..\..\..\libs\owutil\util\Release\owutil.lib ..\..\..\libs\owutil\cutil\Release\owcutil.lib Rpcrt4.lib comsuppw.lib user32.lib shell32.lib advapi32.lib wininet.lib iphlpapi.lib strmiids.lib ole32.lib comsupp.lib ..\..\..\libs\3rdparty\portaudio\Release\portaudio.lib winmm.lib "
+				OutputFile="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\Release\sfp-plugin.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\..\..\libs\owutil\cutil\Release\$(OutDir),..\..\..\libs\owutil\cutil\Release,..\..\phapi-util\Release\$(OutDir),..\..\phapi-util\Release,..\..\phapi\Release\$(OutDir),..\..\phapi\Release,..\..\owbase\Release\$(OutDir),..\..\owbase\Release,..\..\owsl\Release\$(OutDir),..\..\owsl\Release,..\..\eXosip\transport_manager\Release\$(OutDir),..\..\eXosip\transport_manager\Release,..\..\sVoIP\Release\$(OutDir),..\..\sVoIP\Release,..\..\libosip2\Release\$(OutDir),..\..\libosip2\Release,..\..\eXosip\Release\$(OutDir),..\..\eXosip\Release,..\..\..\libs\3rdparty\curl\Release\$(OutDir),..\..\..\libs\3rdparty\curl\Release,..\..\..\libs\3rdparty\pthread\Release\$(OutDir),..\..\..\libs\3rdparty\pthread\Release,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32,..\..\srtp\Release\$(OutDir),..\..\srtp\Release,..\..\ortp\Release\$(OutDir),..\..\ortp\Release,..\..\phapi\stun\Release\$(OutDir),..\..\phapi\stun\Release,..\..\phapi\gsm\Release\$(OutDir),..\..\phapi\gsm\Release,..\..\phapi\fidlib\Release\$(OutDir),..\..\phapi\fidlib\Release,..\..\phapi\speexec\Release\$(OutDir),..\..\phapi\speexec\Release,..\..\..\libs\timer\Release\$(OutDir),..\..\..\libs\timer\Release,..\..\phapi\g722\Release\$(OutDir),..\..\phapi\g722\Release,..\..\phapi\g726\Release\$(OutDir),..\..\phapi\g726\Release,..\..\phapi\msdirent\Release\$(OutDir),..\..\phapi\msdirent\Release,..\..\..\libs\webcam\Release\$(OutDir),..\..\..\libs\webcam\Release,..\..\..\libs\pixertool\Release\$(OutDir),..\..\..\libs\pixertool\Release,..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\libs\owutil\thread\Release\$(OutDir),..\..\..\libs\owutil\thread\Release,..\..\..\libs\owutil\util\Release\$(OutDir),..\..\..\libs\owutil\util\Release,..\..\..\libs\3rdparty\portaudio\Release\$(OutDir),..\..\..\libs\3rdparty\portaudio\Release"
+				ProgramDataBaseFile="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\Release\sfp-plugin.pdb"
+				ImportLibrary="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\Release\sfp-plugin.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="sfp-plugin.dir\MinSizeRel"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/wifo-plugins/sfp-plugin/MinSizeRel/sfp-plugin.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/wifo-plugins/sfp-plugin/sfp-plugin.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/wifo-plugins/sfp-plugin/sfp-plugin.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\..\libs\owutil\cutil\MinSizeRel\owcutil.lib ..\..\phapi-util\MinSizeRel\phapiutil.lib ..\..\phapi\MinSizeRel\phapi.lib ..\..\owbase\MinSizeRel\owbase.lib ..\..\owsl\MinSizeRel\owsl.lib ..\..\eXosip\transport_manager\MinSizeRel\transport_manager.lib ..\..\sVoIP\MinSizeRel\svoip.lib ..\..\libosip2\MinSizeRel\osip2.lib ..\..\eXosip\MinSizeRel\exosip.lib ..\..\..\libs\3rdparty\curl\MinSizeRel\curl.lib ..\..\..\libs\3rdparty\pthread\MinSizeRel\pthread.lib ..\..\phapi-util\MinSizeRel\phapiutil.lib ..\..\eXosip\transport_manager\MinSizeRel\transport_manager.lib ..\..\owsl\MinSizeRel\owsl.lib ..\..\owbase\MinSizeRel\owbase.lib ..\..\..\libs\3rdparty\curl\MinSizeRel\curl.lib ..\..\sVoIP\MinSizeRel\svoip.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\srtp\MinSizeRel\srtp.lib ..\..\libosip2\MinSizeRel\osip2.lib ..\..\..\libs\3rdparty\pthread\MinSizeRel\pthread.lib ws2_32.lib ..\..\ortp\MinSizeRel\ortp.lib ws2_32.lib ..\..\phapi\stun\MinSizeRel\stun.lib ..\..\phapi\gsm\MinSizeRel\gsm.lib ..\..\phapi\fidlib\MinSizeRel\fidlib.lib ..\..\phapi\speexec\MinSizeRel\speexec.lib ..\..\..\libs\timer\MinSizeRel\wtimer.lib ..\..\phapi\g722\MinSizeRel\g722.lib ..\..\phapi\g726\MinSizeRel\g726.lib ..\..\phapi\msdirent\MinSizeRel\msdirent.lib ..\..\..\libs\webcam\MinSizeRel\webcam.lib ..\..\..\libs\pixertool\MinSizeRel\pixertool.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\libs\owutil\thread\MinSizeRel\owthread.lib ..\..\..\libs\owutil\util\MinSizeRel\owutil.lib ..\..\..\libs\owutil\cutil\MinSizeRel\owcutil.lib Rpcrt4.lib comsuppw.lib user32.lib shell32.lib advapi32.lib wininet.lib iphlpapi.lib strmiids.lib ole32.lib comsupp.lib ..\..\..\libs\3rdparty\portaudio\MinSizeRel\portaudio.lib winmm.lib "
+				OutputFile="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\MinSizeRel\sfp-plugin.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\..\..\libs\owutil\cutil\MinSizeRel\$(OutDir),..\..\..\libs\owutil\cutil\MinSizeRel,..\..\phapi-util\MinSizeRel\$(OutDir),..\..\phapi-util\MinSizeRel,..\..\phapi\MinSizeRel\$(OutDir),..\..\phapi\MinSizeRel,..\..\owbase\MinSizeRel\$(OutDir),..\..\owbase\MinSizeRel,..\..\owsl\MinSizeRel\$(OutDir),..\..\owsl\MinSizeRel,..\..\eXosip\transport_manager\MinSizeRel\$(OutDir),..\..\eXosip\transport_manager\MinSizeRel,..\..\sVoIP\MinSizeRel\$(OutDir),..\..\sVoIP\MinSizeRel,..\..\libosip2\MinSizeRel\$(OutDir),..\..\libosip2\MinSizeRel,..\..\eXosip\MinSizeRel\$(OutDir),..\..\eXosip\MinSizeRel,..\..\..\libs\3rdparty\curl\MinSizeRel\$(OutDir),..\..\..\libs\3rdparty\curl\MinSizeRel,..\..\..\libs\3rdparty\pthread\MinSizeRel\$(OutDir),..\..\..\libs\3rdparty\pthread\MinSizeRel,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32,..\..\srtp\MinSizeRel\$(OutDir),..\..\srtp\MinSizeRel,..\..\ortp\MinSizeRel\$(OutDir),..\..\ortp\MinSizeRel,..\..\phapi\stun\MinSizeRel\$(OutDir),..\..\phapi\stun\MinSizeRel,..\..\phapi\gsm\MinSizeRel\$(OutDir),..\..\phapi\gsm\MinSizeRel,..\..\phapi\fidlib\MinSizeRel\$(OutDir),..\..\phapi\fidlib\MinSizeRel,..\..\phapi\speexec\MinSizeRel\$(OutDir),..\..\phapi\speexec\MinSizeRel,..\..\..\libs\timer\MinSizeRel\$(OutDir),..\..\..\libs\timer\MinSizeRel,..\..\phapi\g722\MinSizeRel\$(OutDir),..\..\phapi\g722\MinSizeRel,..\..\phapi\g726\MinSizeRel\$(OutDir),..\..\phapi\g726\MinSizeRel,..\..\phapi\msdirent\MinSizeRel\$(OutDir),..\..\phapi\msdirent\MinSizeRel,..\..\..\libs\webcam\MinSizeRel\$(OutDir),..\..\..\libs\webcam\MinSizeRel,..\..\..\libs\pixertool\MinSizeRel\$(OutDir),..\..\..\libs\pixertool\MinSizeRel,..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\libs\owutil\thread\MinSizeRel\$(OutDir),..\..\..\libs\owutil\thread\MinSizeRel,..\..\..\libs\owutil\util\MinSizeRel\$(OutDir),..\..\..\libs\owutil\util\MinSizeRel,..\..\..\libs\3rdparty\portaudio\MinSizeRel\$(OutDir),..\..\..\libs\3rdparty\portaudio\MinSizeRel"
+				ProgramDataBaseFile="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\MinSizeRel\sfp-plugin.pdb"
+				ImportLibrary="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\MinSizeRel\sfp-plugin.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="sfp-plugin.dir\RelWithDebInfo"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/wifo-plugins/sfp-plugin/RelWithDebInfo/sfp-plugin.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PHAPIUTIL_DLL,PHAPI_DLL,OWBASE_DLL,OWSL_DLL,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,CURL_DLL,PTHREAD_DLL,BUILD_SFP_PLUGIN_DLL,WIN32,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_SFP_PLUGIN_DLL -DSFP_PLUGIN_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/wifo-plugins/sfp-plugin/sfp-plugin.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/wifo-plugins/sfp-plugin/sfp-plugin.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\..\libs\owutil\cutil\RelWithDebInfo\owcutil.lib ..\..\phapi-util\RelWithDebInfo\phapiutil.lib ..\..\phapi\RelWithDebInfo\phapi.lib ..\..\owbase\RelWithDebInfo\owbase.lib ..\..\owsl\RelWithDebInfo\owsl.lib ..\..\eXosip\transport_manager\RelWithDebInfo\transport_manager.lib ..\..\sVoIP\RelWithDebInfo\svoip.lib ..\..\libosip2\RelWithDebInfo\osip2.lib ..\..\eXosip\RelWithDebInfo\exosip.lib ..\..\..\libs\3rdparty\curl\RelWithDebInfo\curl.lib ..\..\..\libs\3rdparty\pthread\RelWithDebInfo\pthread.lib ..\..\phapi-util\RelWithDebInfo\phapiutil.lib ..\..\eXosip\transport_manager\RelWithDebInfo\transport_manager.lib ..\..\owsl\RelWithDebInfo\owsl.lib ..\..\owbase\RelWithDebInfo\owbase.lib ..\..\..\libs\3rdparty\curl\RelWithDebInfo\curl.lib ..\..\sVoIP\RelWithDebInfo\svoip.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\srtp\RelWithDebInfo\srtp.lib ..\..\libosip2\RelWithDebInfo\osip2.lib ..\..\..\libs\3rdparty\pthread\RelWithDebInfo\pthread.lib ws2_32.lib ..\..\ortp\RelWithDebInfo\ortp.lib ws2_32.lib ..\..\phapi\stun\RelWithDebInfo\stun.lib ..\..\phapi\gsm\RelWithDebInfo\gsm.lib ..\..\phapi\fidlib\RelWithDebInfo\fidlib.lib ..\..\phapi\speexec\RelWithDebInfo\speexec.lib ..\..\..\libs\timer\RelWithDebInfo\wtimer.lib ..\..\phapi\g722\RelWithDebInfo\g722.lib ..\..\phapi\g726\RelWithDebInfo\g726.lib ..\..\phapi\msdirent\RelWithDebInfo\msdirent.lib ..\..\..\libs\webcam\RelWithDebInfo\webcam.lib ..\..\..\libs\pixertool\RelWithDebInfo\pixertool.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\libs\owutil\thread\RelWithDebInfo\owthread.lib ..\..\..\libs\owutil\util\RelWithDebInfo\owutil.lib ..\..\..\libs\owutil\cutil\RelWithDebInfo\owcutil.lib Rpcrt4.lib comsuppw.lib user32.lib shell32.lib advapi32.lib wininet.lib iphlpapi.lib strmiids.lib ole32.lib comsupp.lib ..\..\..\libs\3rdparty\portaudio\RelWithDebInfo\portaudio.lib winmm.lib "
+				OutputFile="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\RelWithDebInfo\sfp-plugin.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\..\..\libs\owutil\cutil\RelWithDebInfo\$(OutDir),..\..\..\libs\owutil\cutil\RelWithDebInfo,..\..\phapi-util\RelWithDebInfo\$(OutDir),..\..\phapi-util\RelWithDebInfo,..\..\phapi\RelWithDebInfo\$(OutDir),..\..\phapi\RelWithDebInfo,..\..\owbase\RelWithDebInfo\$(OutDir),..\..\owbase\RelWithDebInfo,..\..\owsl\RelWithDebInfo\$(OutDir),..\..\owsl\RelWithDebInfo,..\..\eXosip\transport_manager\RelWithDebInfo\$(OutDir),..\..\eXosip\transport_manager\RelWithDebInfo,..\..\sVoIP\RelWithDebInfo\$(OutDir),..\..\sVoIP\RelWithDebInfo,..\..\libosip2\RelWithDebInfo\$(OutDir),..\..\libosip2\RelWithDebInfo,..\..\eXosip\RelWithDebInfo\$(OutDir),..\..\eXosip\RelWithDebInfo,..\..\..\libs\3rdparty\curl\RelWithDebInfo\$(OutDir),..\..\..\libs\3rdparty\curl\RelWithDebInfo,..\..\..\libs\3rdparty\pthread\RelWithDebInfo\$(OutDir),..\..\..\libs\3rdparty\pthread\RelWithDebInfo,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32,..\..\srtp\RelWithDebInfo\$(OutDir),..\..\srtp\RelWithDebInfo,..\..\ortp\RelWithDebInfo\$(OutDir),..\..\ortp\RelWithDebInfo,..\..\phapi\stun\RelWithDebInfo\$(OutDir),..\..\phapi\stun\RelWithDebInfo,..\..\phapi\gsm\RelWithDebInfo\$(OutDir),..\..\phapi\gsm\RelWithDebInfo,..\..\phapi\fidlib\RelWithDebInfo\$(OutDir),..\..\phapi\fidlib\RelWithDebInfo,..\..\phapi\speexec\RelWithDebInfo\$(OutDir),..\..\phapi\speexec\RelWithDebInfo,..\..\..\libs\timer\RelWithDebInfo\$(OutDir),..\..\..\libs\timer\RelWithDebInfo,..\..\phapi\g722\RelWithDebInfo\$(OutDir),..\..\phapi\g722\RelWithDebInfo,..\..\phapi\g726\RelWithDebInfo\$(OutDir),..\..\phapi\g726\RelWithDebInfo,..\..\phapi\msdirent\RelWithDebInfo\$(OutDir),..\..\phapi\msdirent\RelWithDebInfo,..\..\..\libs\webcam\RelWithDebInfo\$(OutDir),..\..\..\libs\webcam\RelWithDebInfo,..\..\..\libs\pixertool\RelWithDebInfo\$(OutDir),..\..\..\libs\pixertool\RelWithDebInfo,..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\libs\owutil\thread\RelWithDebInfo\$(OutDir),..\..\..\libs\owutil\thread\RelWithDebInfo,..\..\..\libs\owutil\util\RelWithDebInfo\$(OutDir),..\..\..\libs\owutil\util\RelWithDebInfo,..\..\..\libs\3rdparty\portaudio\RelWithDebInfo\$(OutDir),..\..\..\libs\3rdparty\portaudio\RelWithDebInfo"
+				ProgramDataBaseFile="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\RelWithDebInfo\sfp-plugin.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)wifo\wifo-plugins\sfp-plugin\RelWithDebInfo\sfp-plugin.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/wifo-plugins/sfp-plugin/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\CMakeLists.txt;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/wifo-plugins/sfp-plugin/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\CMakeLists.txt;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/wifo-plugins/sfp-plugin/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\CMakeLists.txt;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/wifo-plugins/sfp-plugin/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\CMakeLists.txt;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\src\sfp-parser.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\src\sfp-plugin.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\src\sfp-transfer.c">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

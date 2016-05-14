@@ -1,0 +1,1810 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="lrelease"
+	ProjectGUID="{F01A6DE0-6B06-4971-B7A6-BC8B05736DF5}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="lrelease.dir\Debug"
+			ConfigurationType="10"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\sipwrapper\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\gnutls\gnutls-2.5.5\include;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1\libpurple;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1;$(SolutionDir)..\libs\imwrapper\src\purple;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\libs\sipwrapper\src\phapi;$(SolutionDir)..\libs\imwrapper\src\multiim\..\multiim;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\wengophone\src;$(SolutionDir)..\wengophone\src\model\coipmanager\include;$(SolutionDir)..\wengophone\src\model\coipmanager\filesessionmanager\include;$(SolutionDir)..\wengophone\src\buildid;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\3rdparty\psiidle\psiidle\..;$(SolutionDir)..\libs\trayicon;$(SolutionDir)..\libs\owbrowser\include;$(SolutionDir)..\libs\softupdater\include;$(SolutionDir)wengophone\src\presentation\qt;$(SolutionDir)..\wengophone\src\presentation\qt;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				ExceptionHandling="FALSE"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\sipwrapper\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\gnutls\gnutls-2.5.5\include;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1\libpurple;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1;$(SolutionDir)..\libs\imwrapper\src\purple;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\libs\sipwrapper\src\phapi;$(SolutionDir)..\libs\imwrapper\src\multiim\..\multiim;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\wengophone\src;$(SolutionDir)..\wengophone\src\model\coipmanager\include;$(SolutionDir)..\wengophone\src\model\coipmanager\filesessionmanager\include;$(SolutionDir)..\wengophone\src\buildid;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\3rdparty\psiidle\psiidle\..;$(SolutionDir)..\libs\trayicon;$(SolutionDir)..\libs\owbrowser\include;$(SolutionDir)..\libs\softupdater\include;$(SolutionDir)wengophone\src\presentation\qt;$(SolutionDir)..\wengophone\src\presentation\qt;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="lrelease.dir\Release"
+			ConfigurationType="10"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\sipwrapper\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\gnutls\gnutls-2.5.5\include;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1\libpurple;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1;$(SolutionDir)..\libs\imwrapper\src\purple;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\libs\sipwrapper\src\phapi;$(SolutionDir)..\libs\imwrapper\src\multiim\..\multiim;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\wengophone\src;$(SolutionDir)..\wengophone\src\model\coipmanager\include;$(SolutionDir)..\wengophone\src\model\coipmanager\filesessionmanager\include;$(SolutionDir)..\wengophone\src\buildid;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\3rdparty\psiidle\psiidle\..;$(SolutionDir)..\libs\trayicon;$(SolutionDir)..\libs\owbrowser\include;$(SolutionDir)..\libs\softupdater\include;$(SolutionDir)wengophone\src\presentation\qt;$(SolutionDir)..\wengophone\src\presentation\qt;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				ExceptionHandling="FALSE"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\sipwrapper\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\gnutls\gnutls-2.5.5\include;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1\libpurple;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1;$(SolutionDir)..\libs\imwrapper\src\purple;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\libs\sipwrapper\src\phapi;$(SolutionDir)..\libs\imwrapper\src\multiim\..\multiim;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\wengophone\src;$(SolutionDir)..\wengophone\src\model\coipmanager\include;$(SolutionDir)..\wengophone\src\model\coipmanager\filesessionmanager\include;$(SolutionDir)..\wengophone\src\buildid;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\3rdparty\psiidle\psiidle\..;$(SolutionDir)..\libs\trayicon;$(SolutionDir)..\libs\owbrowser\include;$(SolutionDir)..\libs\softupdater\include;$(SolutionDir)wengophone\src\presentation\qt;$(SolutionDir)..\wengophone\src\presentation\qt;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="lrelease.dir\MinSizeRel"
+			ConfigurationType="10"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\sipwrapper\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\gnutls\gnutls-2.5.5\include;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1\libpurple;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1;$(SolutionDir)..\libs\imwrapper\src\purple;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\libs\sipwrapper\src\phapi;$(SolutionDir)..\libs\imwrapper\src\multiim\..\multiim;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\wengophone\src;$(SolutionDir)..\wengophone\src\model\coipmanager\include;$(SolutionDir)..\wengophone\src\model\coipmanager\filesessionmanager\include;$(SolutionDir)..\wengophone\src\buildid;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\3rdparty\psiidle\psiidle\..;$(SolutionDir)..\libs\trayicon;$(SolutionDir)..\libs\owbrowser\include;$(SolutionDir)..\libs\softupdater\include;$(SolutionDir)wengophone\src\presentation\qt;$(SolutionDir)..\wengophone\src\presentation\qt;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				ExceptionHandling="FALSE"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\sipwrapper\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\gnutls\gnutls-2.5.5\include;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1\libpurple;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1;$(SolutionDir)..\libs\imwrapper\src\purple;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\libs\sipwrapper\src\phapi;$(SolutionDir)..\libs\imwrapper\src\multiim\..\multiim;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\wengophone\src;$(SolutionDir)..\wengophone\src\model\coipmanager\include;$(SolutionDir)..\wengophone\src\model\coipmanager\filesessionmanager\include;$(SolutionDir)..\wengophone\src\buildid;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\3rdparty\psiidle\psiidle\..;$(SolutionDir)..\libs\trayicon;$(SolutionDir)..\libs\owbrowser\include;$(SolutionDir)..\libs\softupdater\include;$(SolutionDir)wengophone\src\presentation\qt;$(SolutionDir)..\wengophone\src\presentation\qt;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="lrelease.dir\RelWithDebInfo"
+			ConfigurationType="10"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\sipwrapper\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\gnutls\gnutls-2.5.5\include;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1\libpurple;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1;$(SolutionDir)..\libs\imwrapper\src\purple;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\libs\sipwrapper\src\phapi;$(SolutionDir)..\libs\imwrapper\src\multiim\..\multiim;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\wengophone\src;$(SolutionDir)..\wengophone\src\model\coipmanager\include;$(SolutionDir)..\wengophone\src\model\coipmanager\filesessionmanager\include;$(SolutionDir)..\wengophone\src\buildid;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\3rdparty\psiidle\psiidle\..;$(SolutionDir)..\libs\trayicon;$(SolutionDir)..\libs\owbrowser\include;$(SolutionDir)..\libs\softupdater\include;$(SolutionDir)wengophone\src\presentation\qt;$(SolutionDir)..\wengophone\src\presentation\qt;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				ExceptionHandling="FALSE"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gthread;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gobject;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\sipwrapper\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\gnutls\gnutls-2.5.5\include;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1\libpurple;$(SolutionDir)..\libs\3rdparty\libpurple\pidgin-2.5.1;$(SolutionDir)..\libs\imwrapper\src\purple;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\wifo-plugins\sfp-plugin\include;$(SolutionDir)..\libs\sipwrapper\src\phapi;$(SolutionDir)..\libs\imwrapper\src\multiim\..\multiim;$(SolutionDir)..\libs\wenbox\include;$(SolutionDir)..\wengophone\src;$(SolutionDir)..\wengophone\src\model\coipmanager\include;$(SolutionDir)..\wengophone\src\model\coipmanager\filesessionmanager\include;$(SolutionDir)..\wengophone\src\buildid;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\3rdparty\psiidle\psiidle\..;$(SolutionDir)..\libs\trayicon;$(SolutionDir)..\libs\owbrowser\include;$(SolutionDir)..\libs\softupdater\include;$(SolutionDir)wengophone\src\presentation\qt;$(SolutionDir)..\wengophone\src\presentation\qt;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,WEBCAM_DLL,OWBASE_DLL,OWSL_DLL,QT_DLL,QT_NO_KEYWORDS,ENABLE_ILBC=1,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,GLIB_DLL,GTHREAD_DLL,GMODULE_DLL,GOBJECT_DLL,G_GNUC_NULL_TERMINATED=,LIBPURPLE_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PHAPI_DLL,PHAPIUTIL_DLL,SFP_PLUGIN_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,PSIIDLE_DLL,MULTIIMWRAPPER,OWMEMORYDUMP_DLL,ENABLE_CRASHREPORT,DISABLE_CALL_FORWARD,DISABLE_SMS,DISABLE_VOICE_MAIL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)wengophone\src\presentation\qt\CMakeFiles\lrelease">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\wengophone\src\presentation\qt\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wengophone/src/presentation/qt/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\CMakeLists.txt;$(SolutionDir)..\wengophone\src\presentation\qt\buildconfig.h.cmake;$(SolutionDir)..\wengophone\src\presentation\qt\win32\application.rc;$(SolutionDir)..\wengophone\src\presentation\qt\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wengophone/src/presentation/qt/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\CMakeLists.txt;$(SolutionDir)..\wengophone\src\presentation\qt\buildconfig.h.cmake;$(SolutionDir)..\wengophone\src\presentation\qt\win32\application.rc;$(SolutionDir)..\wengophone\src\presentation\qt\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wengophone/src/presentation/qt/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\CMakeLists.txt;$(SolutionDir)..\wengophone\src\presentation\qt\buildconfig.h.cmake;$(SolutionDir)..\wengophone\src\presentation\qt\win32\application.rc;$(SolutionDir)..\wengophone\src\presentation\qt\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wengophone/src/presentation/qt/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\CMakeLists.txt;$(SolutionDir)..\wengophone\src\presentation\qt\buildconfig.h.cmake;$(SolutionDir)..\wengophone\src\presentation\qt\win32\application.rc;$(SolutionDir)..\wengophone\src\presentation\qt\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="CMake Rules"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)wengophone\src\presentation\qt\CMakeFiles\lrelease.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description=""
+					CommandLine=""
+					AdditionalDependencies="$(SolutionDir)debug\lang\qtwengophone_bg.qm;$(SolutionDir)debug\lang\qtwengophone_ca.qm;$(SolutionDir)debug\lang\qtwengophone_cs.qm;$(SolutionDir)debug\lang\qtwengophone_cy.qm;$(SolutionDir)debug\lang\qtwengophone_da.qm;$(SolutionDir)debug\lang\qtwengophone_de.qm;$(SolutionDir)debug\lang\qtwengophone_el.qm;$(SolutionDir)debug\lang\qtwengophone_en.qm;$(SolutionDir)debug\lang\qtwengophone_en_GB.qm;$(SolutionDir)debug\lang\qtwengophone_eo.qm;$(SolutionDir)debug\lang\qtwengophone_es.qm;$(SolutionDir)debug\lang\qtwengophone_fi.qm;$(SolutionDir)debug\lang\qtwengophone_fr.qm;$(SolutionDir)debug\lang\qtwengophone_gl.qm;$(SolutionDir)debug\lang\qtwengophone_he.qm;$(SolutionDir)debug\lang\qtwengophone_hi.qm;$(SolutionDir)debug\lang\qtwengophone_hu.qm;$(SolutionDir)debug\lang\qtwengophone_it.qm;$(SolutionDir)debug\lang\qtwengophone_ja.qm;$(SolutionDir)debug\lang\qtwengophone_ku.qm;$(SolutionDir)debug\lang\qtwengophone_lv.qm;$(SolutionDir)debug\lang\qtwengophone_mn.qm;$(SolutionDir)debug\lang\qtwengophone_nb.qm;$(SolutionDir)debug\lang\qtwengophone_nl.qm;$(SolutionDir)debug\lang\qtwengophone_pl.qm;$(SolutionDir)debug\lang\qtwengophone_pt.qm;$(SolutionDir)debug\lang\qtwengophone_pt_BR.qm;$(SolutionDir)debug\lang\qtwengophone_ro.qm;$(SolutionDir)debug\lang\qtwengophone_ru.qm;$(SolutionDir)debug\lang\qtwengophone_sk.qm;$(SolutionDir)debug\lang\qtwengophone_sl.qm;$(SolutionDir)debug\lang\qtwengophone_sr.qm;$(SolutionDir)debug\lang\qtwengophone_sv.qm;$(SolutionDir)debug\lang\qtwengophone_tr.qm;$(SolutionDir)debug\lang\qtwengophone_uz.qm;$(SolutionDir)debug\lang\qtwengophone_vi.qm;$(SolutionDir)debug\lang\qtwengophone_zh.qm;$(SolutionDir)debug\lang\qtwengophone_zh_CN.qm;$(SolutionDir)debug\lang\qtwengophone_zh_HK.qm;"
+					Outputs="$(SolutionDir)wengophone\src\presentation\qt\CMakeFiles\lrelease"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description=""
+					CommandLine=""
+					AdditionalDependencies="$(SolutionDir)debug\lang\qtwengophone_bg.qm;$(SolutionDir)debug\lang\qtwengophone_ca.qm;$(SolutionDir)debug\lang\qtwengophone_cs.qm;$(SolutionDir)debug\lang\qtwengophone_cy.qm;$(SolutionDir)debug\lang\qtwengophone_da.qm;$(SolutionDir)debug\lang\qtwengophone_de.qm;$(SolutionDir)debug\lang\qtwengophone_el.qm;$(SolutionDir)debug\lang\qtwengophone_en.qm;$(SolutionDir)debug\lang\qtwengophone_en_GB.qm;$(SolutionDir)debug\lang\qtwengophone_eo.qm;$(SolutionDir)debug\lang\qtwengophone_es.qm;$(SolutionDir)debug\lang\qtwengophone_fi.qm;$(SolutionDir)debug\lang\qtwengophone_fr.qm;$(SolutionDir)debug\lang\qtwengophone_gl.qm;$(SolutionDir)debug\lang\qtwengophone_he.qm;$(SolutionDir)debug\lang\qtwengophone_hi.qm;$(SolutionDir)debug\lang\qtwengophone_hu.qm;$(SolutionDir)debug\lang\qtwengophone_it.qm;$(SolutionDir)debug\lang\qtwengophone_ja.qm;$(SolutionDir)debug\lang\qtwengophone_ku.qm;$(SolutionDir)debug\lang\qtwengophone_lv.qm;$(SolutionDir)debug\lang\qtwengophone_mn.qm;$(SolutionDir)debug\lang\qtwengophone_nb.qm;$(SolutionDir)debug\lang\qtwengophone_nl.qm;$(SolutionDir)debug\lang\qtwengophone_pl.qm;$(SolutionDir)debug\lang\qtwengophone_pt.qm;$(SolutionDir)debug\lang\qtwengophone_pt_BR.qm;$(SolutionDir)debug\lang\qtwengophone_ro.qm;$(SolutionDir)debug\lang\qtwengophone_ru.qm;$(SolutionDir)debug\lang\qtwengophone_sk.qm;$(SolutionDir)debug\lang\qtwengophone_sl.qm;$(SolutionDir)debug\lang\qtwengophone_sr.qm;$(SolutionDir)debug\lang\qtwengophone_sv.qm;$(SolutionDir)debug\lang\qtwengophone_tr.qm;$(SolutionDir)debug\lang\qtwengophone_uz.qm;$(SolutionDir)debug\lang\qtwengophone_vi.qm;$(SolutionDir)debug\lang\qtwengophone_zh.qm;$(SolutionDir)debug\lang\qtwengophone_zh_CN.qm;$(SolutionDir)debug\lang\qtwengophone_zh_HK.qm;"
+					Outputs="$(SolutionDir)wengophone\src\presentation\qt\CMakeFiles\lrelease"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description=""
+					CommandLine=""
+					AdditionalDependencies="$(SolutionDir)debug\lang\qtwengophone_bg.qm;$(SolutionDir)debug\lang\qtwengophone_ca.qm;$(SolutionDir)debug\lang\qtwengophone_cs.qm;$(SolutionDir)debug\lang\qtwengophone_cy.qm;$(SolutionDir)debug\lang\qtwengophone_da.qm;$(SolutionDir)debug\lang\qtwengophone_de.qm;$(SolutionDir)debug\lang\qtwengophone_el.qm;$(SolutionDir)debug\lang\qtwengophone_en.qm;$(SolutionDir)debug\lang\qtwengophone_en_GB.qm;$(SolutionDir)debug\lang\qtwengophone_eo.qm;$(SolutionDir)debug\lang\qtwengophone_es.qm;$(SolutionDir)debug\lang\qtwengophone_fi.qm;$(SolutionDir)debug\lang\qtwengophone_fr.qm;$(SolutionDir)debug\lang\qtwengophone_gl.qm;$(SolutionDir)debug\lang\qtwengophone_he.qm;$(SolutionDir)debug\lang\qtwengophone_hi.qm;$(SolutionDir)debug\lang\qtwengophone_hu.qm;$(SolutionDir)debug\lang\qtwengophone_it.qm;$(SolutionDir)debug\lang\qtwengophone_ja.qm;$(SolutionDir)debug\lang\qtwengophone_ku.qm;$(SolutionDir)debug\lang\qtwengophone_lv.qm;$(SolutionDir)debug\lang\qtwengophone_mn.qm;$(SolutionDir)debug\lang\qtwengophone_nb.qm;$(SolutionDir)debug\lang\qtwengophone_nl.qm;$(SolutionDir)debug\lang\qtwengophone_pl.qm;$(SolutionDir)debug\lang\qtwengophone_pt.qm;$(SolutionDir)debug\lang\qtwengophone_pt_BR.qm;$(SolutionDir)debug\lang\qtwengophone_ro.qm;$(SolutionDir)debug\lang\qtwengophone_ru.qm;$(SolutionDir)debug\lang\qtwengophone_sk.qm;$(SolutionDir)debug\lang\qtwengophone_sl.qm;$(SolutionDir)debug\lang\qtwengophone_sr.qm;$(SolutionDir)debug\lang\qtwengophone_sv.qm;$(SolutionDir)debug\lang\qtwengophone_tr.qm;$(SolutionDir)debug\lang\qtwengophone_uz.qm;$(SolutionDir)debug\lang\qtwengophone_vi.qm;$(SolutionDir)debug\lang\qtwengophone_zh.qm;$(SolutionDir)debug\lang\qtwengophone_zh_CN.qm;$(SolutionDir)debug\lang\qtwengophone_zh_HK.qm;"
+					Outputs="$(SolutionDir)wengophone\src\presentation\qt\CMakeFiles\lrelease"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description=""
+					CommandLine=""
+					AdditionalDependencies="$(SolutionDir)debug\lang\qtwengophone_bg.qm;$(SolutionDir)debug\lang\qtwengophone_ca.qm;$(SolutionDir)debug\lang\qtwengophone_cs.qm;$(SolutionDir)debug\lang\qtwengophone_cy.qm;$(SolutionDir)debug\lang\qtwengophone_da.qm;$(SolutionDir)debug\lang\qtwengophone_de.qm;$(SolutionDir)debug\lang\qtwengophone_el.qm;$(SolutionDir)debug\lang\qtwengophone_en.qm;$(SolutionDir)debug\lang\qtwengophone_en_GB.qm;$(SolutionDir)debug\lang\qtwengophone_eo.qm;$(SolutionDir)debug\lang\qtwengophone_es.qm;$(SolutionDir)debug\lang\qtwengophone_fi.qm;$(SolutionDir)debug\lang\qtwengophone_fr.qm;$(SolutionDir)debug\lang\qtwengophone_gl.qm;$(SolutionDir)debug\lang\qtwengophone_he.qm;$(SolutionDir)debug\lang\qtwengophone_hi.qm;$(SolutionDir)debug\lang\qtwengophone_hu.qm;$(SolutionDir)debug\lang\qtwengophone_it.qm;$(SolutionDir)debug\lang\qtwengophone_ja.qm;$(SolutionDir)debug\lang\qtwengophone_ku.qm;$(SolutionDir)debug\lang\qtwengophone_lv.qm;$(SolutionDir)debug\lang\qtwengophone_mn.qm;$(SolutionDir)debug\lang\qtwengophone_nb.qm;$(SolutionDir)debug\lang\qtwengophone_nl.qm;$(SolutionDir)debug\lang\qtwengophone_pl.qm;$(SolutionDir)debug\lang\qtwengophone_pt.qm;$(SolutionDir)debug\lang\qtwengophone_pt_BR.qm;$(SolutionDir)debug\lang\qtwengophone_ro.qm;$(SolutionDir)debug\lang\qtwengophone_ru.qm;$(SolutionDir)debug\lang\qtwengophone_sk.qm;$(SolutionDir)debug\lang\qtwengophone_sl.qm;$(SolutionDir)debug\lang\qtwengophone_sr.qm;$(SolutionDir)debug\lang\qtwengophone_sv.qm;$(SolutionDir)debug\lang\qtwengophone_tr.qm;$(SolutionDir)debug\lang\qtwengophone_uz.qm;$(SolutionDir)debug\lang\qtwengophone_vi.qm;$(SolutionDir)debug\lang\qtwengophone_zh.qm;$(SolutionDir)debug\lang\qtwengophone_zh_CN.qm;$(SolutionDir)debug\lang\qtwengophone_zh_HK.qm;"
+					Outputs="$(SolutionDir)wengophone\src\presentation\qt\CMakeFiles\lrelease"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_bg.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_bg.ts -qm $(SolutionDir)debug/lang/qtwengophone_bg.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_bg.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_bg.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_bg.ts -qm $(SolutionDir)debug/lang/qtwengophone_bg.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_bg.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_bg.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_bg.ts -qm $(SolutionDir)debug/lang/qtwengophone_bg.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_bg.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_bg.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_bg.ts -qm $(SolutionDir)debug/lang/qtwengophone_bg.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_bg.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_bg.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_ca.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ca.ts -qm $(SolutionDir)debug/lang/qtwengophone_ca.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ca.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ca.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ca.ts -qm $(SolutionDir)debug/lang/qtwengophone_ca.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ca.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ca.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ca.ts -qm $(SolutionDir)debug/lang/qtwengophone_ca.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ca.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ca.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ca.ts -qm $(SolutionDir)debug/lang/qtwengophone_ca.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ca.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ca.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_cs.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_cs.ts -qm $(SolutionDir)debug/lang/qtwengophone_cs.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_cs.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_cs.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_cs.ts -qm $(SolutionDir)debug/lang/qtwengophone_cs.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_cs.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_cs.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_cs.ts -qm $(SolutionDir)debug/lang/qtwengophone_cs.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_cs.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_cs.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_cs.ts -qm $(SolutionDir)debug/lang/qtwengophone_cs.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_cs.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_cs.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_cy.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_cy.ts -qm $(SolutionDir)debug/lang/qtwengophone_cy.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_cy.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_cy.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_cy.ts -qm $(SolutionDir)debug/lang/qtwengophone_cy.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_cy.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_cy.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_cy.ts -qm $(SolutionDir)debug/lang/qtwengophone_cy.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_cy.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_cy.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_cy.ts -qm $(SolutionDir)debug/lang/qtwengophone_cy.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_cy.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_cy.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_da.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_da.ts -qm $(SolutionDir)debug/lang/qtwengophone_da.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_da.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_da.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_da.ts -qm $(SolutionDir)debug/lang/qtwengophone_da.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_da.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_da.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_da.ts -qm $(SolutionDir)debug/lang/qtwengophone_da.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_da.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_da.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_da.ts -qm $(SolutionDir)debug/lang/qtwengophone_da.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_da.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_da.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_de.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_de.ts -qm $(SolutionDir)debug/lang/qtwengophone_de.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_de.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_de.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_de.ts -qm $(SolutionDir)debug/lang/qtwengophone_de.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_de.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_de.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_de.ts -qm $(SolutionDir)debug/lang/qtwengophone_de.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_de.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_de.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_de.ts -qm $(SolutionDir)debug/lang/qtwengophone_de.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_de.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_de.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_el.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_el.ts -qm $(SolutionDir)debug/lang/qtwengophone_el.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_el.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_el.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_el.ts -qm $(SolutionDir)debug/lang/qtwengophone_el.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_el.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_el.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_el.ts -qm $(SolutionDir)debug/lang/qtwengophone_el.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_el.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_el.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_el.ts -qm $(SolutionDir)debug/lang/qtwengophone_el.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_el.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_el.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_en.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_en.ts -qm $(SolutionDir)debug/lang/qtwengophone_en.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_en.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_en.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_en.ts -qm $(SolutionDir)debug/lang/qtwengophone_en.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_en.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_en.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_en.ts -qm $(SolutionDir)debug/lang/qtwengophone_en.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_en.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_en.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_en.ts -qm $(SolutionDir)debug/lang/qtwengophone_en.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_en.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_en.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_en_GB.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_en_GB.ts -qm $(SolutionDir)debug/lang/qtwengophone_en_GB.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_en_GB.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_en_GB.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_en_GB.ts -qm $(SolutionDir)debug/lang/qtwengophone_en_GB.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_en_GB.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_en_GB.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_en_GB.ts -qm $(SolutionDir)debug/lang/qtwengophone_en_GB.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_en_GB.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_en_GB.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_en_GB.ts -qm $(SolutionDir)debug/lang/qtwengophone_en_GB.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_en_GB.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_en_GB.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_eo.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_eo.ts -qm $(SolutionDir)debug/lang/qtwengophone_eo.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_eo.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_eo.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_eo.ts -qm $(SolutionDir)debug/lang/qtwengophone_eo.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_eo.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_eo.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_eo.ts -qm $(SolutionDir)debug/lang/qtwengophone_eo.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_eo.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_eo.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_eo.ts -qm $(SolutionDir)debug/lang/qtwengophone_eo.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_eo.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_eo.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_es.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_es.ts -qm $(SolutionDir)debug/lang/qtwengophone_es.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_es.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_es.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_es.ts -qm $(SolutionDir)debug/lang/qtwengophone_es.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_es.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_es.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_es.ts -qm $(SolutionDir)debug/lang/qtwengophone_es.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_es.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_es.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_es.ts -qm $(SolutionDir)debug/lang/qtwengophone_es.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_es.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_es.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_fi.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_fi.ts -qm $(SolutionDir)debug/lang/qtwengophone_fi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_fi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_fi.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_fi.ts -qm $(SolutionDir)debug/lang/qtwengophone_fi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_fi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_fi.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_fi.ts -qm $(SolutionDir)debug/lang/qtwengophone_fi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_fi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_fi.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_fi.ts -qm $(SolutionDir)debug/lang/qtwengophone_fi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_fi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_fi.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_fr.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_fr.ts -qm $(SolutionDir)debug/lang/qtwengophone_fr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_fr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_fr.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_fr.ts -qm $(SolutionDir)debug/lang/qtwengophone_fr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_fr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_fr.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_fr.ts -qm $(SolutionDir)debug/lang/qtwengophone_fr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_fr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_fr.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_fr.ts -qm $(SolutionDir)debug/lang/qtwengophone_fr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_fr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_fr.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_gl.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_gl.ts -qm $(SolutionDir)debug/lang/qtwengophone_gl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_gl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_gl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_gl.ts -qm $(SolutionDir)debug/lang/qtwengophone_gl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_gl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_gl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_gl.ts -qm $(SolutionDir)debug/lang/qtwengophone_gl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_gl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_gl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_gl.ts -qm $(SolutionDir)debug/lang/qtwengophone_gl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_gl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_gl.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_he.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_he.ts -qm $(SolutionDir)debug/lang/qtwengophone_he.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_he.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_he.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_he.ts -qm $(SolutionDir)debug/lang/qtwengophone_he.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_he.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_he.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_he.ts -qm $(SolutionDir)debug/lang/qtwengophone_he.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_he.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_he.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_he.ts -qm $(SolutionDir)debug/lang/qtwengophone_he.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_he.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_he.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_hi.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_hi.ts -qm $(SolutionDir)debug/lang/qtwengophone_hi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_hi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_hi.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_hi.ts -qm $(SolutionDir)debug/lang/qtwengophone_hi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_hi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_hi.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_hi.ts -qm $(SolutionDir)debug/lang/qtwengophone_hi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_hi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_hi.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_hi.ts -qm $(SolutionDir)debug/lang/qtwengophone_hi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_hi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_hi.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_hu.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_hu.ts -qm $(SolutionDir)debug/lang/qtwengophone_hu.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_hu.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_hu.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_hu.ts -qm $(SolutionDir)debug/lang/qtwengophone_hu.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_hu.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_hu.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_hu.ts -qm $(SolutionDir)debug/lang/qtwengophone_hu.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_hu.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_hu.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_hu.ts -qm $(SolutionDir)debug/lang/qtwengophone_hu.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_hu.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_hu.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_it.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_it.ts -qm $(SolutionDir)debug/lang/qtwengophone_it.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_it.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_it.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_it.ts -qm $(SolutionDir)debug/lang/qtwengophone_it.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_it.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_it.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_it.ts -qm $(SolutionDir)debug/lang/qtwengophone_it.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_it.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_it.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_it.ts -qm $(SolutionDir)debug/lang/qtwengophone_it.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_it.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_it.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_ja.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ja.ts -qm $(SolutionDir)debug/lang/qtwengophone_ja.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ja.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ja.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ja.ts -qm $(SolutionDir)debug/lang/qtwengophone_ja.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ja.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ja.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ja.ts -qm $(SolutionDir)debug/lang/qtwengophone_ja.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ja.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ja.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ja.ts -qm $(SolutionDir)debug/lang/qtwengophone_ja.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ja.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ja.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_ku.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ku.ts -qm $(SolutionDir)debug/lang/qtwengophone_ku.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ku.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ku.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ku.ts -qm $(SolutionDir)debug/lang/qtwengophone_ku.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ku.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ku.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ku.ts -qm $(SolutionDir)debug/lang/qtwengophone_ku.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ku.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ku.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ku.ts -qm $(SolutionDir)debug/lang/qtwengophone_ku.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ku.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ku.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_lv.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_lv.ts -qm $(SolutionDir)debug/lang/qtwengophone_lv.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_lv.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_lv.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_lv.ts -qm $(SolutionDir)debug/lang/qtwengophone_lv.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_lv.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_lv.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_lv.ts -qm $(SolutionDir)debug/lang/qtwengophone_lv.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_lv.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_lv.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_lv.ts -qm $(SolutionDir)debug/lang/qtwengophone_lv.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_lv.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_lv.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_mn.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_mn.ts -qm $(SolutionDir)debug/lang/qtwengophone_mn.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_mn.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_mn.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_mn.ts -qm $(SolutionDir)debug/lang/qtwengophone_mn.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_mn.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_mn.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_mn.ts -qm $(SolutionDir)debug/lang/qtwengophone_mn.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_mn.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_mn.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_mn.ts -qm $(SolutionDir)debug/lang/qtwengophone_mn.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_mn.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_mn.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_nb.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_nb.ts -qm $(SolutionDir)debug/lang/qtwengophone_nb.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_nb.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_nb.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_nb.ts -qm $(SolutionDir)debug/lang/qtwengophone_nb.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_nb.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_nb.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_nb.ts -qm $(SolutionDir)debug/lang/qtwengophone_nb.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_nb.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_nb.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_nb.ts -qm $(SolutionDir)debug/lang/qtwengophone_nb.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_nb.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_nb.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_nl.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_nl.ts -qm $(SolutionDir)debug/lang/qtwengophone_nl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_nl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_nl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_nl.ts -qm $(SolutionDir)debug/lang/qtwengophone_nl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_nl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_nl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_nl.ts -qm $(SolutionDir)debug/lang/qtwengophone_nl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_nl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_nl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_nl.ts -qm $(SolutionDir)debug/lang/qtwengophone_nl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_nl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_nl.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_pl.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pl.ts -qm $(SolutionDir)debug/lang/qtwengophone_pl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pl.ts -qm $(SolutionDir)debug/lang/qtwengophone_pl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pl.ts -qm $(SolutionDir)debug/lang/qtwengophone_pl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pl.ts -qm $(SolutionDir)debug/lang/qtwengophone_pl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pl.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_pt.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pt.ts -qm $(SolutionDir)debug/lang/qtwengophone_pt.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pt.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pt.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pt.ts -qm $(SolutionDir)debug/lang/qtwengophone_pt.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pt.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pt.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pt.ts -qm $(SolutionDir)debug/lang/qtwengophone_pt.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pt.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pt.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pt.ts -qm $(SolutionDir)debug/lang/qtwengophone_pt.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pt.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pt.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_pt_BR.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pt_BR.ts -qm $(SolutionDir)debug/lang/qtwengophone_pt_BR.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pt_BR.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pt_BR.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pt_BR.ts -qm $(SolutionDir)debug/lang/qtwengophone_pt_BR.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pt_BR.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pt_BR.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pt_BR.ts -qm $(SolutionDir)debug/lang/qtwengophone_pt_BR.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pt_BR.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pt_BR.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_pt_BR.ts -qm $(SolutionDir)debug/lang/qtwengophone_pt_BR.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_pt_BR.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_pt_BR.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_ro.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ro.ts -qm $(SolutionDir)debug/lang/qtwengophone_ro.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ro.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ro.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ro.ts -qm $(SolutionDir)debug/lang/qtwengophone_ro.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ro.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ro.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ro.ts -qm $(SolutionDir)debug/lang/qtwengophone_ro.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ro.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ro.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ro.ts -qm $(SolutionDir)debug/lang/qtwengophone_ro.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ro.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ro.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_ru.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ru.ts -qm $(SolutionDir)debug/lang/qtwengophone_ru.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ru.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ru.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ru.ts -qm $(SolutionDir)debug/lang/qtwengophone_ru.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ru.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ru.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ru.ts -qm $(SolutionDir)debug/lang/qtwengophone_ru.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ru.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ru.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_ru.ts -qm $(SolutionDir)debug/lang/qtwengophone_ru.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_ru.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_ru.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_sk.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sk.ts -qm $(SolutionDir)debug/lang/qtwengophone_sk.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sk.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sk.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sk.ts -qm $(SolutionDir)debug/lang/qtwengophone_sk.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sk.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sk.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sk.ts -qm $(SolutionDir)debug/lang/qtwengophone_sk.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sk.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sk.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sk.ts -qm $(SolutionDir)debug/lang/qtwengophone_sk.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sk.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sk.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_sl.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sl.ts -qm $(SolutionDir)debug/lang/qtwengophone_sl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sl.ts -qm $(SolutionDir)debug/lang/qtwengophone_sl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sl.ts -qm $(SolutionDir)debug/lang/qtwengophone_sl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sl.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sl.ts -qm $(SolutionDir)debug/lang/qtwengophone_sl.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sl.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sl.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_sr.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sr.ts -qm $(SolutionDir)debug/lang/qtwengophone_sr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sr.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sr.ts -qm $(SolutionDir)debug/lang/qtwengophone_sr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sr.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sr.ts -qm $(SolutionDir)debug/lang/qtwengophone_sr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sr.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sr.ts -qm $(SolutionDir)debug/lang/qtwengophone_sr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sr.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_sv.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sv.ts -qm $(SolutionDir)debug/lang/qtwengophone_sv.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sv.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sv.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sv.ts -qm $(SolutionDir)debug/lang/qtwengophone_sv.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sv.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sv.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sv.ts -qm $(SolutionDir)debug/lang/qtwengophone_sv.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sv.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sv.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_sv.ts -qm $(SolutionDir)debug/lang/qtwengophone_sv.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_sv.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_sv.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_tr.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_tr.ts -qm $(SolutionDir)debug/lang/qtwengophone_tr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_tr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_tr.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_tr.ts -qm $(SolutionDir)debug/lang/qtwengophone_tr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_tr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_tr.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_tr.ts -qm $(SolutionDir)debug/lang/qtwengophone_tr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_tr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_tr.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_tr.ts -qm $(SolutionDir)debug/lang/qtwengophone_tr.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_tr.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_tr.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_uz.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_uz.ts -qm $(SolutionDir)debug/lang/qtwengophone_uz.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_uz.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_uz.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_uz.ts -qm $(SolutionDir)debug/lang/qtwengophone_uz.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_uz.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_uz.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_uz.ts -qm $(SolutionDir)debug/lang/qtwengophone_uz.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_uz.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_uz.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_uz.ts -qm $(SolutionDir)debug/lang/qtwengophone_uz.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_uz.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_uz.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_vi.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_vi.ts -qm $(SolutionDir)debug/lang/qtwengophone_vi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_vi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_vi.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_vi.ts -qm $(SolutionDir)debug/lang/qtwengophone_vi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_vi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_vi.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_vi.ts -qm $(SolutionDir)debug/lang/qtwengophone_vi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_vi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_vi.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_vi.ts -qm $(SolutionDir)debug/lang/qtwengophone_vi.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_vi.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_vi.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_zh.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_zh_CN.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh_CN.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh_CN.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh_CN.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh_CN.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh_CN.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh_CN.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh_CN.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh_CN.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh_CN.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh_CN.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh_CN.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh_CN.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh_CN.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh_CN.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh_CN.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh_CN.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)debug\lang\qtwengophone_zh_HK.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh_HK.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh_HK.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh_HK.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh_HK.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh_HK.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh_HK.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh_HK.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh_HK.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh_HK.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh_HK.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh_HK.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh_HK.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Runs lrelease command"
+					CommandLine="cd ..\..\..\..\..\wengophone\src\presentation\qt&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\lrelease.exe -nounfinished -verbose $(SolutionDir)..\wengophone/src/presentation/qt/lang/qtwengophone_zh_HK.ts -qm $(SolutionDir)debug/lang/qtwengophone_zh_HK.qm"
+					AdditionalDependencies="$(SolutionDir)..\wengophone\src\presentation\qt\lang\qtwengophone_zh_HK.ts;"
+					Outputs="$(SolutionDir)debug\lang\qtwengophone_zh_HK.qm"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

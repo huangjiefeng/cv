@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{23f3ae8d-dc02-4705-ad05-ff13db7e91c7}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{7a8baaf1-cdb2-454f-9b72-9fb75609b229}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{189a20a6-c4ad-48e9-a8d1-ae9ade28f499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{6e931797-aaf5-4214-8572-bd74387e80e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{90577263-1d29-40ee-b8b9-8e8cb66facc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components">
+      <UniqueIdentifier>{ed295190-c8e9-4ff5-8775-969f1bf5092c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\db">
+      <UniqueIdentifier>{62df1340-ba5d-4f37-abb3-f8dddfba1541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\dbus_service">
+      <UniqueIdentifier>{7751338f-561f-4169-9910-74fbc42625f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\loop_job">
+      <UniqueIdentifier>{aa9a5d86-dd8e-4de0-9e15-5c72c087c873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\soap">
+      <UniqueIdentifier>{5513bfad-5804-44d6-81ee-cca1f5b40ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\soap\gSoap">
+      <UniqueIdentifier>{f88ebc36-cc13-40a3-9fab-cd5cc70e9972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbus">
+      <UniqueIdentifier>{54405e79-5c10-4566-96e8-2d2d840cff73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_baseloopjob.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_baseloopjob.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_cleaner.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_cleaner.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_optimizer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_optimizer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_txmonitorservice.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_txmonitorservice.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileScanner.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="baseloopjob.cpp">
+      <Filter>components\loop_job</Filter>
+    </ClCompile>
+    <ClCompile Include="cleaner.cpp">
+      <Filter>components\loop_job</Filter>
+    </ClCompile>
+    <ClCompile Include="optimizer.cpp">
+      <Filter>components\loop_job</Filter>
+    </ClCompile>
+    <ClCompile Include="txmonitorservice.cpp">
+      <Filter>components\dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_monitor_window.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_monitor_window.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="monitor_window.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ini\Ini.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ini\TxConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ini\CVIniConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_upload_status_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_upload_status_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="upload_status_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scheduler.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scheduler.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scheduler.cpp">
+      <Filter>components\loop_job</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\txMonitor\service\TxMonitorAdaptor.cpp">
+      <Filter>components\dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TxMonitorAdaptor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TxMonitorAdaptor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="record_db_controller.cpp">
+      <Filter>components\db</Filter>
+    </ClCompile>
+    <ClCompile Include="record_sqlite_db.cpp">
+      <Filter>components\db</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_db_browser_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_db_browser_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="db_browser_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_component_manager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_component_manager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="component_manager.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_file_browser_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_file_browser_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="file_browser_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_record_sqlite_db.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_record_sqlite_db.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_record_db_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_record_db_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TxControllerIf.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TxControllerIf.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\txController\client\TxControllerIf.cpp">
+      <Filter>dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tx_web_service_wrapper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tx_web_service_wrapper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="tx_web_service_wrapper.cpp">
+      <Filter>components\soap</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tx_web_service_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tx_web_service_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="tx_web_service_controller.cpp">
+      <Filter>components\soap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\gSoap\common\stdsoap2.cpp">
+      <Filter>components\soap\gSoap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\gSoap\env\envC.cpp">
+      <Filter>components\soap\gSoap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\tx\WebService\cvtx\tx_soapC.cpp">
+      <Filter>components\soap\gSoap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\tx\WebService\cvtx\tx_soapCvTxService.cpp">
+      <Filter>components\soap\gSoap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="baseloopjob.h">
+      <Filter>components\loop_job</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cleaner.h">
+      <Filter>components\loop_job</Filter>
+    </CustomBuild>
+    <CustomBuild Include="optimizer.h">
+      <Filter>components\loop_job</Filter>
+    </CustomBuild>
+    <CustomBuild Include="txmonitorservice.h">
+      <Filter>components\dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FileScanner.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Log.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Util.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="monitor_window.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="monitor_window.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\ini\Ini.h">
+      <Filter>config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\ini\TxConfig.h">
+      <Filter>config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="upload_status_widget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="upload_status_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scheduler.h">
+      <Filter>components\loop_job</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\txMonitor\service\TxMonitorAdaptor.h">
+      <Filter>components\dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="db_browser_widget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="db_browser_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="component_manager.h">
+      <Filter>components</Filter>
+    </CustomBuild>
+    <CustomBuild Include="file_browser_widget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="file_browser_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="record_sqlite_db.h">
+      <Filter>components\db</Filter>
+    </CustomBuild>
+    <CustomBuild Include="record_db_interface.h">
+      <Filter>components\db</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\txController\client\TxControllerIf.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_web_service_wrapper.h">
+      <Filter>components\soap</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_web_service_controller.h">
+      <Filter>components\soap</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_monitor_window.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\ini\CVIniConfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_upload_status_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scheduler_types.h">
+      <Filter>components\loop_job</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\dbus\txMonitor\common\TxMonitorServiceCommon.h">
+      <Filter>components\dbus_service</Filter>
+    </ClInclude>
+    <ClInclude Include="record_db_controller.h">
+      <Filter>components\db</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_db_browser_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_file_browser_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gSoap\common\stdsoap2.h">
+      <Filter>components\soap\gSoap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tx\WebService\cvtx\tx_soapCvTxService.h">
+      <Filter>components\soap\gSoap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tx\WebService\cvtx\tx_soapH.h">
+      <Filter>components\soap\gSoap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tx\WebService\cvtx\tx_soapStub.h">
+      <Filter>components\soap\gSoap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TxMonitor.rc" />
+  </ItemGroup>
+</Project>

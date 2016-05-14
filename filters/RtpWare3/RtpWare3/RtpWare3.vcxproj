@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1A225578-C796-4474-B9D0-3295ED8FBF5D}</ProjectGuid>
+    <RootNamespace>RtpWare3</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\_build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\_build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\oRTP\include;..\mediastreamer2\include;..\include;$(SolutionDir)..\common</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ENDIAN_LITTLE;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProfileGuidedDatabase>$(IntDir)$(TargetName).pgd</ProfileGuidedDatabase>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>strmbasd.lib;winmm.lib;Ws2_32.lib;Iphlpapi.lib;quartz.lib;ortp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>rtpware3.def</ModuleDefinitionFile>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(OutDir)lib\</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>Regsvr32 /s $(TargetPath)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Regsvr32...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\oRTP\include;..\mediastreamer2\include;..\include;$(SolutionDir)..\common</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ENDIAN_LITTLE;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProfileGuidedDatabase>$(IntDir)$(TargetName).pgd</ProfileGuidedDatabase>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>strmbase.lib;winmm.lib;Ws2_32.lib;Iphlpapi.lib;quartz.lib;ortp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>rtpware3.def</ModuleDefinitionFile>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir)lib\</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>Regsvr32 /s $(TargetPath)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Regsvr32...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="rtpware3.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\Log\Log.cpp" />
+    <ClCompile Include="..\mediastreamer2\src\base\msqueue.c" />
+    <ClCompile Include="..\mediastreamer2\src\voip\rfc3984.c" />
+    <ClCompile Include="core\aac_frame_reassembler.cpp" />
+    <ClCompile Include="Core\aac_frame_splitter.cpp" />
+    <ClCompile Include="core\audio_deliver_strategy.cpp" />
+    <ClCompile Include="Core\audio_frame_splitter.cpp" />
+    <ClCompile Include="Core\generic_frame_reassembler.cpp" />
+    <ClCompile Include="Core\H264\bit_stream.cpp" />
+    <ClCompile Include="Core\H264\h264_nal.cpp" />
+    <ClCompile Include="Core\H264\h264_rtp_packer.cpp" />
+    <ClCompile Include="Core\H264\h264_stream_parser.cpp" />
+    <ClCompile Include="core\h264_frame_reassembler.cpp" />
+    <ClCompile Include="Core\h264_frame_splitter.cpp" />
+    <ClCompile Include="core\media_frame.cpp" />
+    <ClCompile Include="Core\media_sync.cpp" />
+    <ClCompile Include="Core\frame_units.cpp" />
+    <ClCompile Include="Core\ortp_packet.cpp" />
+    <ClCompile Include="Core\ortp_unit.cpp" />
+    <ClCompile Include="core\receive_controller.cpp" />
+    <ClCompile Include="core\ortp_receiver.cpp" />
+    <ClCompile Include="Core\ortp_sender.cpp" />
+    <ClCompile Include="core\video_deliver_strategy.cpp" />
+    <ClCompile Include="ortp_logger.cpp" />
+    <ClCompile Include="rtp_receiver_filter.cpp" />
+    <ClCompile Include="rtp_sender_filter.cpp" />
+    <ClCompile Include="setup.cpp" />
+    <ClCompile Include="Util\util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\Log\Log.h" />
+    <ClInclude Include="..\include\RtpStat.h" />
+    <ClInclude Include="..\mediastreamer2\include\mediastreamer2\mscommon.h" />
+    <ClInclude Include="..\mediastreamer2\include\mediastreamer2\msqueue.h" />
+    <ClInclude Include="..\mediastreamer2\include\mediastreamer2\rfc3984.h" />
+    <ClInclude Include="core\aac_frame_reassembler.h" />
+    <ClInclude Include="Core\aac_frame_splitter.h" />
+    <ClInclude Include="Core\audio_frame_splitter.h" />
+    <ClInclude Include="Core\core_defs.h" />
+    <ClInclude Include="core\audio_deliver_strategy.h" />
+    <ClInclude Include="Core\generic_frame_reassembler.h" />
+    <ClInclude Include="Core\H264\bit_stream.h" />
+    <ClInclude Include="Core\H264\h264_nal.h" />
+    <ClInclude Include="Core\H264\h264_rtp_packer.h" />
+    <ClInclude Include="Core\H264\h264_stream_parser.h" />
+    <ClInclude Include="core\h264_frame_reassembler.h" />
+    <ClInclude Include="Core\h264_frame_splitter.h" />
+    <ClInclude Include="Core\media_frame.h" />
+    <ClInclude Include="Core\media_sync.h" />
+    <ClInclude Include="Core\frame_units.h" />
+    <ClInclude Include="Core\ortp_packet.h" />
+    <ClInclude Include="Core\ortp_unit.h" />
+    <ClInclude Include="core\receive_controller.h" />
+    <ClInclude Include="core\ortp_receiver.h" />
+    <ClInclude Include="Core\receive_interfaces.h" />
+    <ClInclude Include="Core\ortp_sender.h" />
+    <ClInclude Include="Core\send_interfaces.h" />
+    <ClInclude Include="core\video_deliver_strategy.h" />
+    <ClInclude Include="guids.h" />
+    <ClInclude Include="ortp_logger.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="rtp_receiver_config_interface.h" />
+    <ClInclude Include="rtp_receiver_filter.h" />
+    <ClInclude Include="rtp_sender_config_interface.h" />
+    <ClInclude Include="rtp_sender_filter.h" />
+    <ClInclude Include="Util\circular_buffer.h" />
+    <ClInclude Include="Util\classic_ptr_helper.h" />
+    <ClInclude Include="Util\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

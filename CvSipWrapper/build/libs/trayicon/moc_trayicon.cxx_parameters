@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:/qutecom-2.2/build/libs/trayicon/moc_trayicon.cxx
+D:/qutecom-2.2/libs/trayicon/trayicon.h

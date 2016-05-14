@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6894F0E5-38F2-46F9-98A9-790F81322322}</ProjectGuid>
+    <RootNamespace>exosip</RootNamespace>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>exosip.dir\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>exosip.dir\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\wifo\eXosip\transport_manager;..\..\..\wifo\owsl\include;..\..\..\wifo\owbase\include;..\..\..\wifo\sVoIP\include;..\..\..\wifo\libosip2\include;..\..\..\wifo\libosip2\include\osipparser2;..\..\..\wifo\eXosip\include;..\..\..\wifo\eXosip\include\eXosip;..\..\..\wifo\eXosip\src\ow_osip;..\..\..\libs\3rdparty\pthread\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OWBASE_DLL;OWSL_DLL;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)\Debug\exosip.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)\Debug\exosip.lib</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)\_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OWBASE_DLL;OWSL_DLL;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)" /Y</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OWBASE_DLL;OWSL_DLL;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\libs\3rdparty\pthread\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\wifo\eXosip\transport_manager;..\..\..\wifo\owsl\include;..\..\..\wifo\owbase\include;..\..\..\wifo\sVoIP\include;..\..\..\wifo\libosip2\include;..\..\..\wifo\libosip2\include\osipparser2;..\..\..\wifo\eXosip\include;..\..\..\wifo\eXosip\include\eXosip;..\..\..\wifo\eXosip\src\ow_osip;..\..\..\libs\3rdparty\pthread\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OWBASE_DLL;OWSL_DLL;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)\wifo\eXosip\Release\exosip.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)\Release\exosip.lib</OutputFile>
+    </Lib>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OWBASE_DLL;OWSL_DLL;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)\$(Configuration)\$(ProjectName).lib" "$(SolutionDir)\_lib\Release\" /Y
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OWBASE_DLL;OWSL_DLL;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\libs\3rdparty\pthread\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\base64.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\eXosip.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\eXutils.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jauth.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jcall.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jcallback.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jdialog.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jevents.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jfreinds.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jidentity.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jmsg.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jnotify.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jpipe.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jreg.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jrequest.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jresponse.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jsubscribe.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\jsubscribers.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\misc.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\ow_osip\osip_negotiation.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\ow_osip\ow_osip.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\owsip_account.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\sdp_offans.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\eXosip\src\udp.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(SolutionDir)..\wifo\eXosip\CMakeLists.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\wifo\eXosip\include\eXosip\eXosip.h" />
+    <ClInclude Include="..\..\..\wifo\eXosip\src\ow_osip\osip_negotiation.h" />
+    <ClInclude Include="..\..\..\wifo\eXosip\src\ow_osip\ow_osip.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

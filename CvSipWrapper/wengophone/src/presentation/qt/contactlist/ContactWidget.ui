@@ -1,0 +1,237 @@
+<ui version="4.0" >
+ <class>ContactWidget</class>
+ <widget class="QWidget" name="ContactWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>336</width>
+    <height>98</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy>
+    <hsizetype>5</hsizetype>
+    <vsizetype>0</vsizetype>
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="autoFillBackground" >
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>0</number>
+   </property>
+   <property name="spacing" >
+    <number>0</number>
+   </property>
+   <item row="3" column="1" >
+    <widget class="QToolButton" name="landlineButton" >
+     <property name="text" >
+      <string>No landline phone number set</string>
+     </property>
+     <property name="icon" >
+      <iconset resource="../../../../resources/wengophone.qrc" >:/pics/contact/landline.png</iconset>
+     </property>
+     <property name="toolButtonStyle" >
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+     <property name="autoRaise" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" >
+    <widget class="QToolButton" name="mobileButton" >
+     <property name="text" >
+      <string>No mobile phone number set</string>
+     </property>
+     <property name="icon" >
+      <iconset resource="../../../../resources/wengophone.qrc" >:/pics/contact/mobile.png</iconset>
+     </property>
+     <property name="toolButtonStyle" >
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+     <property name="autoRaise" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item rowspan="4" row="0" column="2" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>16</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="callButton" >
+       <property name="minimumSize" >
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="icon" >
+        <iconset resource="../../../../resources/wengophone.qrc" >:/pics/contact/call.png</iconset>
+       </property>
+       <property name="autoRaise" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="chatButton" >
+       <property name="minimumSize" >
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="icon" >
+        <iconset resource="../../../../resources/wengophone.qrc" >:/pics/contact/chat.png</iconset>
+       </property>
+       <property name="autoRaise" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="smsButton" >
+       <property name="minimumSize" >
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="icon" >
+        <iconset resource="../../../../resources/wengophone.qrc" >:/pics/contact/sms.png</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="autoRaise" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="sendFileButton" >
+       <property name="minimumSize" >
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset resource="../../../../resources/wengophone.qrc" >:/pics/actions/send_file.png</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="autoRaise" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>119</width>
+         <height>15</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType" >
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item rowspan="3" row="1" column="0" >
+    <widget class="QToolButton" name="avatarButton" >
+     <property name="sizePolicy" >
+      <sizepolicy>
+       <hsizetype>0</hsizetype>
+       <vsizetype>0</vsizetype>
+       <horstretch>0</horstretch>
+       <verstretch>7</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip" >
+      <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Click to edit this contact&lt;/p>&lt;/body>&lt;/html></string>
+     </property>
+     <property name="icon" >
+      <iconset resource="../../../../resources/wengophone.qrc" >:/pics/avatar_background.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="autoRaise" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>callButton</tabstop>
+  <tabstop>chatButton</tabstop>
+  <tabstop>smsButton</tabstop>
+  <tabstop>avatarButton</tabstop>
+  <tabstop>mobileButton</tabstop>
+  <tabstop>landlineButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../../../resources/wengophone.qrc" />
+ </resources>
+ <connections/>
+</ui>

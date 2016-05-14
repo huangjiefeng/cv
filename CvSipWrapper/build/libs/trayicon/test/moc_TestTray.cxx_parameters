@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:/qutecom-2.2/build/libs/trayicon/test/moc_TestTray.cxx
+D:/qutecom-2.2/libs/trayicon/test/TestTray.h

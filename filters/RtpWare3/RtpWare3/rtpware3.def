@@ -1,0 +1,13 @@
+;===========================================================================
+;  Copyright (c) SCUT.  All Rights Reserved.
+;===========================================================================
+
+LIBRARY     RtpWare3.dll
+
+EXPORTS
+            DllMain                 PRIVATE
+            DllGetClassObject       PRIVATE
+            DllCanUnloadNow         PRIVATE
+            DllRegisterServer       PRIVATE
+            DllUnregisterServer     PRIVATE
+

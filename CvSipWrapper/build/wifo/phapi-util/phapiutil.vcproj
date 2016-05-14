@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="phapiutil"
+	ProjectGUID="{E6F04090-4F52-4BD5-A1EA-CD5EBEE48777}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="phapiutil.dir\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;"
+				BasicRuntimeChecks="1"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="D:/qutecom-2.2/build/wifo/phapi-util/Debug/phapiutil.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file D:/qutecom-2.2/build/debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.dll&quot; &quot;D:/qutecom-2.2/build/debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.pdb&quot; &quot;D:/qutecom-2.2/build/debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\libs\owutil\cutil\Debug\owcutil.lib ws2_32.lib "
+				OutputFile="D:\qutecom-2.2\build\wifo\phapi-util\Debug\phapiutil.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\..\libs\owutil\cutil\Debug\$(OutDir),..\..\libs\owutil\cutil\Debug"
+				ProgramDataBaseFile="D:\qutecom-2.2\build\wifo\phapi-util\Debug\phapiutil.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="D:\qutecom-2.2\build\wifo\phapi-util\Debug\phapiutil.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="phapiutil.dir\Release"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="D:/qutecom-2.2/build/wifo/phapi-util/Release/phapiutil.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file D:/qutecom-2.2/build/debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.dll&quot; &quot;D:/qutecom-2.2/build/debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.pdb&quot; &quot;D:/qutecom-2.2/build/debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\libs\owutil\cutil\Release\owcutil.lib ws2_32.lib "
+				OutputFile="D:\qutecom-2.2\build\wifo\phapi-util\Release\phapiutil.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\..\libs\owutil\cutil\Release\$(OutDir),..\..\libs\owutil\cutil\Release"
+				ProgramDataBaseFile="D:\qutecom-2.2\build\wifo\phapi-util\Release\phapiutil.pdb"
+				ImportLibrary="D:\qutecom-2.2\build\wifo\phapi-util\Release\phapiutil.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="phapiutil.dir\MinSizeRel"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="D:/qutecom-2.2/build/wifo/phapi-util/MinSizeRel/phapiutil.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file D:/qutecom-2.2/build/debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.dll&quot; &quot;D:/qutecom-2.2/build/debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.pdb&quot; &quot;D:/qutecom-2.2/build/debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\libs\owutil\cutil\MinSizeRel\owcutil.lib ws2_32.lib "
+				OutputFile="D:\qutecom-2.2\build\wifo\phapi-util\MinSizeRel\phapiutil.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\..\libs\owutil\cutil\MinSizeRel\$(OutDir),..\..\libs\owutil\cutil\MinSizeRel"
+				ProgramDataBaseFile="D:\qutecom-2.2\build\wifo\phapi-util\MinSizeRel\phapiutil.pdb"
+				ImportLibrary="D:\qutecom-2.2\build\wifo\phapi-util\MinSizeRel\phapiutil.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="phapiutil.dir\RelWithDebInfo"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="D:/qutecom-2.2/build/wifo/phapi-util/RelWithDebInfo/phapiutil.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="D:\qutecom-2.2\libs\owutil;D:\qutecom-2.2\libs\owutil\cutil\msvc;D:\qutecom-2.2\libs\owutil\cutil\strndup;D:\qutecom-2.2\wifo\phapi-util\include;D:\qutecom-2.2\wifo\phapi-util\include\phapi-util\msvc;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,WIN32,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_PHAPIUTIL_DLL -DPHAPIUTIL_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file D:/qutecom-2.2/build/debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.dll&quot; &quot;D:/qutecom-2.2/build/debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;D:/qutecom-2.2/build/wifo/phapi-util/phapiutil.pdb&quot; &quot;D:/qutecom-2.2/build/debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\libs\owutil\cutil\RelWithDebInfo\owcutil.lib ws2_32.lib "
+				OutputFile="D:\qutecom-2.2\build\wifo\phapi-util\RelWithDebInfo\phapiutil.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\..\libs\owutil\cutil\RelWithDebInfo\$(OutDir),..\..\libs\owutil\cutil\RelWithDebInfo"
+				ProgramDataBaseFile="D:\qutecom-2.2\build\wifo\phapi-util\RelWithDebInfo\phapiutil.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="D:\qutecom-2.2\build\wifo\phapi-util\RelWithDebInfo\phapiutil.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule D:/qutecom-2.2/wifo/phapi-util/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -HD:/qutecom-2.2 -BD:/qutecom-2.2/build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule D:/qutecom-2.2/wifo/phapi-util/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -HD:/qutecom-2.2 -BD:/qutecom-2.2/build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule D:/qutecom-2.2/wifo/phapi-util/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -HD:/qutecom-2.2 -BD:/qutecom-2.2/build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule D:/qutecom-2.2/wifo/phapi-util/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -HD:/qutecom-2.2 -BD:/qutecom-2.2/build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;D:\qutecom-2.2\wifo\phapi-util\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="D:\qutecom-2.2\wifo\phapi-util\src\util.c">
+			</File>
+			<File
+				RelativePath="D:\qutecom-2.2\wifo\phapi-util\src\comparator.c">
+			</File>
+			<File
+				RelativePath="D:\qutecom-2.2\wifo\phapi-util\src\linkedlist.c">
+			</File>
+			<File
+				RelativePath="D:\qutecom-2.2\wifo\phapi-util\src\mappinglist.c">
+			</File>
+			<File
+				RelativePath="D:\qutecom-2.2\wifo\phapi-util\src\phSharedLib.c">
+			</File>
+			<File
+				RelativePath="D:\qutecom-2.2\wifo\phapi-util\src\msvc\unistd.c">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

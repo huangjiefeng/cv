@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:\qutecom-2.2\build\wengophone\src\model\network\moc_NetworkObserver.cxx
+D:\qutecom-2.2\wengophone\src\model\network\NetworkObserver.h

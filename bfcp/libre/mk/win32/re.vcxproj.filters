@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\base64">
+      <UniqueIdentifier>{57a2185f-f989-48fa-9193-e56d5aa44740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bfcp">
+      <UniqueIdentifier>{6363c83f-2f20-45ba-a009-939b83a19936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\conf">
+      <UniqueIdentifier>{3e346636-af08-4998-9dee-88e22a0fe465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\crc32">
+      <UniqueIdentifier>{3141ffaa-986d-40a1-93f2-388032b57be1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dbg">
+      <UniqueIdentifier>{13ddf0e5-ef52-48fd-b708-d35e865ae9be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dns">
+      <UniqueIdentifier>{0f30fc2b-4b56-4fbd-9b55-8fcfe597bc12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fmt">
+      <UniqueIdentifier>{3a90d788-4dca-4ae4-aa8d-ed937e825916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hash">
+      <UniqueIdentifier>{ea323c82-a180-4213-a0a9-b2fdda9c15d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hmac">
+      <UniqueIdentifier>{a78f964c-cc35-47e1-aa3e-b50a4e96cc54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\httpauth">
+      <UniqueIdentifier>{9d496bfa-3bca-41a9-87f0-874556afa46e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ice">
+      <UniqueIdentifier>{ae5274a8-e495-44bf-b4b2-c4457f2fdcca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\jbuf">
+      <UniqueIdentifier>{8d9b676a-c788-4207-8275-0481dd54c9c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\list">
+      <UniqueIdentifier>{11b4a3af-9edd-4b84-b3bc-5ec51f6c3546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lock">
+      <UniqueIdentifier>{061854d9-7b73-474d-a810-c278a7d48628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main">
+      <UniqueIdentifier>{0a6c356d-6b4c-4a63-909a-e004712004f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mbuf">
+      <UniqueIdentifier>{2b9fd916-0042-4e3e-81e4-fafb5c20baf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\md5">
+      <UniqueIdentifier>{ceaf2a8b-17de-4fef-9b5d-a0bae3c4dbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mem">
+      <UniqueIdentifier>{6ce4bf61-62f8-40de-94f8-060763f08726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mod">
+      <UniqueIdentifier>{97b57ccd-7d05-4868-88bc-bc4e1235ba53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\natbd">
+      <UniqueIdentifier>{ea9dd844-bb58-472e-a0b3-fc5cb268aba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net">
+      <UniqueIdentifier>{1d20b0a8-19bf-4c35-bae7-fe863bf50284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rtp">
+      <UniqueIdentifier>{a7836fc2-c407-47ee-b628-1b37e11c1369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sa">
+      <UniqueIdentifier>{6335867c-b487-4cab-a038-2be4a1377c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sdp">
+      <UniqueIdentifier>{a16699ca-9099-4ef7-b92e-9329651444f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sha">
+      <UniqueIdentifier>{0344e52f-d50e-492e-a7ee-c89c8016251b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sip">
+      <UniqueIdentifier>{349b583c-57f4-4834-95b0-f7ea7944fbf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sipreg">
+      <UniqueIdentifier>{e2b4f1da-5b10-485b-af92-ede45645a49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sipsess">
+      <UniqueIdentifier>{8bd14c1a-ee08-45b5-aef3-ef30825d45bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sipevent">
+      <UniqueIdentifier>{5c5a3801-f284-4a56-9b3a-8b611876d2cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stun">
+      <UniqueIdentifier>{94ca1936-5137-4d87-b98d-ffe556e9fbf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sys">
+      <UniqueIdentifier>{70c3901a-8734-4464-9ec1-3a58a2e4d12d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tcp">
+      <UniqueIdentifier>{3a2b6640-0691-4b1f-860d-874c12bca4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tmr">
+      <UniqueIdentifier>{464adb65-e24e-491f-9a8a-9208e0f3a0f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\turn">
+      <UniqueIdentifier>{0cf89a44-6d89-4e47-808e-3142f64b6350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\udp">
+      <UniqueIdentifier>{5bff30dc-a164-4fad-9ba2-b807868adbe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\uri">
+      <UniqueIdentifier>{b5fbd07b-6060-46a5-9f6f-24c98a961618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\telev">
+      <UniqueIdentifier>{f83aeb6a-dcdf-441f-80fc-803e208a5600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\base64\b64.c">
+      <Filter>Source Files\base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bfcp\attr.c">
+      <Filter>Source Files\bfcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bfcp\conn.c">
+      <Filter>Source Files\bfcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bfcp\msg.c">
+      <Filter>Source Files\bfcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bfcp\reply.c">
+      <Filter>Source Files\bfcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bfcp\request.c">
+      <Filter>Source Files\bfcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\conf\conf.c">
+      <Filter>Source Files\conf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crc32\crc32.c">
+      <Filter>Source Files\crc32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dbg\dbg.c">
+      <Filter>Source Files\dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dns\client.c">
+      <Filter>Source Files\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dns\cstr.c">
+      <Filter>Source Files\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dns\dname.c">
+      <Filter>Source Files\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dns\hdr.c">
+      <Filter>Source Files\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dns\ns.c">
+      <Filter>Source Files\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dns\rr.c">
+      <Filter>Source Files\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dns\rrlist.c">
+      <Filter>Source Files\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dns\win32\srv.c">
+      <Filter>Source Files\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmt\ch.c">
+      <Filter>Source Files\fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmt\pl.c">
+      <Filter>Source Files\fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmt\print.c">
+      <Filter>Source Files\fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmt\prm.c">
+      <Filter>Source Files\fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmt\regex.c">
+      <Filter>Source Files\fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmt\str.c">
+      <Filter>Source Files\fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmt\str_error.c">
+      <Filter>Source Files\fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmt\time.c">
+      <Filter>Source Files\fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hash\func.c">
+      <Filter>Source Files\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hash\hash.c">
+      <Filter>Source Files\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hmac\hmac_sha1.c">
+      <Filter>Source Files\hmac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\httpauth\basic.c">
+      <Filter>Source Files\httpauth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\httpauth\digest.c">
+      <Filter>Source Files\httpauth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\cand.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\candpair.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\chklist.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\comp.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\connchk.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\gather.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\ice.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\icem.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\icesdp.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\icestr.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\stunsrv.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ice\util.c">
+      <Filter>Source Files\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jbuf\jbuf.c">
+      <Filter>Source Files\jbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\list\list.c">
+      <Filter>Source Files\list</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lock\win32\lock.c">
+      <Filter>Source Files\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\main\init.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\main\main.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\main\method.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mbuf\mbuf.c">
+      <Filter>Source Files\mbuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md5\md5.c">
+      <Filter>Source Files\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md5\wrap.c">
+      <Filter>Source Files\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mem\mem.c">
+      <Filter>Source Files\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod\win32\dll.c">
+      <Filter>Source Files\mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod\mod.c">
+      <Filter>Source Files\mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\natbd\filtering.c">
+      <Filter>Source Files\natbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\natbd\genalg.c">
+      <Filter>Source Files\natbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\natbd\hairpinning.c">
+      <Filter>Source Files\natbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\natbd\lifetime.c">
+      <Filter>Source Files\natbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\natbd\mapping.c">
+      <Filter>Source Files\natbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\natbd\natstr.c">
+      <Filter>Source Files\natbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\if.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\net.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\netstr.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\rt.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\sock.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\sockopt.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\win32\wif.c">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rtp\fb.c">
+      <Filter>Source Files\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rtp\member.c">
+      <Filter>Source Files\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rtp\ntp.c">
+      <Filter>Source Files\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rtp\pkt.c">
+      <Filter>Source Files\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rtp\rr.c">
+      <Filter>Source Files\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rtp\rtcp.c">
+      <Filter>Source Files\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rtp\rtp.c">
+      <Filter>Source Files\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rtp\sdes.c">
+      <Filter>Source Files\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rtp\sess.c">
+      <Filter>Source Files\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rtp\source.c">
+      <Filter>Source Files\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sa\ntop.c">
+      <Filter>Source Files\sa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sa\printaddr.c">
+      <Filter>Source Files\sa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sa\pton.c">
+      <Filter>Source Files\sa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sa\sa.c">
+      <Filter>Source Files\sa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sdp\attr.c">
+      <Filter>Source Files\sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sdp\format.c">
+      <Filter>Source Files\sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sdp\media.c">
+      <Filter>Source Files\sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sdp\msg.c">
+      <Filter>Source Files\sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sdp\session.c">
+      <Filter>Source Files\sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sdp\str.c">
+      <Filter>Source Files\sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sha\sha1.c">
+      <Filter>Source Files\sha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\addr.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\auth.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\cseq.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\ctrans.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\dialog.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\keepalive.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\keepalive_udp.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\msg.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\param.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\reply.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\request.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\sip.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\strans.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\transp.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sip\via.c">
+      <Filter>Source Files\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipreg\reg.c">
+      <Filter>Source Files\sipreg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipsess\accept.c">
+      <Filter>Source Files\sipsess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipsess\ack.c">
+      <Filter>Source Files\sipsess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipsess\close.c">
+      <Filter>Source Files\sipsess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipsess\connect.c">
+      <Filter>Source Files\sipsess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipsess\info.c">
+      <Filter>Source Files\sipsess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipsess\listen.c">
+      <Filter>Source Files\sipsess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipsess\modify.c">
+      <Filter>Source Files\sipsess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipsess\reply.c">
+      <Filter>Source Files\sipsess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipsess\request.c">
+      <Filter>Source Files\sipsess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipsess\sess.c">
+      <Filter>Source Files\sipsess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipevent\listen.c">
+      <Filter>Source Files\sipevent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipevent\msg.c">
+      <Filter>Source Files\sipevent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipevent\notify.c">
+      <Filter>Source Files\sipevent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sipevent\subscribe.c">
+      <Filter>Source Files\sipevent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\addr.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\attr.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\ctrans.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\dnsdisc.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\hdr.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\ind.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\keepalive.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\msg.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\rep.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\req.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\stun.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stun\stunstr.c">
+      <Filter>Source Files\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sys\daemon.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sys\endian.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sys\fs.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sys\rand.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sys\sleep.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sys\sys.c">
+      <Filter>Source Files\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tcp\tcp.c">
+      <Filter>Source Files\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tcp\tcp_high.c">
+      <Filter>Source Files\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tmr\tmr.c">
+      <Filter>Source Files\tmr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\turn\chan.c">
+      <Filter>Source Files\turn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\turn\perm.c">
+      <Filter>Source Files\turn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\turn\turnc.c">
+      <Filter>Source Files\turn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\udp\udp.c">
+      <Filter>Source Files\udp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\uri\ucmp.c">
+      <Filter>Source Files\uri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\uri\uri.c">
+      <Filter>Source Files\uri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\uri\uric.c">
+      <Filter>Source Files\uri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\telev\telev.c">
+      <Filter>Source Files\telev</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\jbuf\mod.mk">
+      <Filter>Source Files\jbuf</Filter>
+    </None>
+    <None Include="..\..\src\list\mod.mk">
+      <Filter>Source Files\list</Filter>
+    </None>
+    <None Include="..\..\src\main\mod.mk">
+      <Filter>Source Files\main</Filter>
+    </None>
+    <None Include="..\..\src\main\symbian">
+      <Filter>Source Files\main</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\main\main.h">
+      <Filter>Source Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md5\md5.h">
+      <Filter>Source Files\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mod\mod_internal.h">
+      <Filter>Source Files\mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sa\sa.h">
+      <Filter>Source Files\sa</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

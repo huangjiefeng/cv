@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="owmemorydump"
+	ProjectGUID="{CAE6C972-B76F-4382-AE05-95E28B6F30F2}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="owmemorydump.dir\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;"
+				BasicRuntimeChecks="1"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/owutil/memorydump/Debug/owmemorydump.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/memorydump/owmemorydump.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/memorydump/owmemorydump.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\cutil\Debug\owcutil.lib ..\util\Debug\owutil.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\3rdparty\googlebreakpad\Debug\googlebreakpad.lib shlwapi.lib ..\cutil\Debug\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\owutil\memorydump\Debug\owmemorydump.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\cutil\Debug\$(OutDir),..\cutil\Debug,..\util\Debug\$(OutDir),..\util\Debug,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32,..\..\3rdparty\googlebreakpad\Debug\$(OutDir),..\..\3rdparty\googlebreakpad\Debug"
+				ProgramDataBaseFile="$(SolutionDir)libs\owutil\memorydump\Debug\owmemorydump.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)libs\owutil\memorydump\Debug\owmemorydump.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="owmemorydump.dir\Release"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/owutil/memorydump/Release/owmemorydump.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/memorydump/owmemorydump.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/memorydump/owmemorydump.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\cutil\Release\owcutil.lib ..\util\Release\owutil.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\3rdparty\googlebreakpad\Release\googlebreakpad.lib shlwapi.lib ..\cutil\Release\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\owutil\memorydump\Release\owmemorydump.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\cutil\Release\$(OutDir),..\cutil\Release,..\util\Release\$(OutDir),..\util\Release,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32,..\..\3rdparty\googlebreakpad\Release\$(OutDir),..\..\3rdparty\googlebreakpad\Release"
+				ProgramDataBaseFile="$(SolutionDir)libs\owutil\memorydump\Release\owmemorydump.pdb"
+				ImportLibrary="$(SolutionDir)libs\owutil\memorydump\Release\owmemorydump.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="owmemorydump.dir\MinSizeRel"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/owutil/memorydump/MinSizeRel/owmemorydump.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/memorydump/owmemorydump.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/memorydump/owmemorydump.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\cutil\MinSizeRel\owcutil.lib ..\util\MinSizeRel\owutil.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\3rdparty\googlebreakpad\MinSizeRel\googlebreakpad.lib shlwapi.lib ..\cutil\MinSizeRel\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\owutil\memorydump\MinSizeRel\owmemorydump.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\cutil\MinSizeRel\$(OutDir),..\cutil\MinSizeRel,..\util\MinSizeRel\$(OutDir),..\util\MinSizeRel,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32,..\..\3rdparty\googlebreakpad\MinSizeRel\$(OutDir),..\..\3rdparty\googlebreakpad\MinSizeRel"
+				ProgramDataBaseFile="$(SolutionDir)libs\owutil\memorydump\MinSizeRel\owmemorydump.pdb"
+				ImportLibrary="$(SolutionDir)libs\owutil\memorydump\MinSizeRel\owmemorydump.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="owmemorydump.dir\RelWithDebInfo"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/owutil/memorydump/RelWithDebInfo/owmemorydump.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src;$(SolutionDir)..\libs\3rdparty\googlebreakpad\src\client\windows\handler;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_OWMEMORYDUMP_DLL -DOWMEMORYDUMP_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/memorydump/owmemorydump.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/owutil/memorydump/owmemorydump.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\cutil\RelWithDebInfo\owcutil.lib ..\util\RelWithDebInfo\owutil.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\3rdparty\googlebreakpad\RelWithDebInfo\googlebreakpad.lib shlwapi.lib ..\cutil\RelWithDebInfo\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\owutil\memorydump\RelWithDebInfo\owmemorydump.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\cutil\RelWithDebInfo\$(OutDir),..\cutil\RelWithDebInfo,..\util\RelWithDebInfo\$(OutDir),..\util\RelWithDebInfo,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32,..\..\3rdparty\googlebreakpad\RelWithDebInfo\$(OutDir),..\..\3rdparty\googlebreakpad\RelWithDebInfo"
+				ProgramDataBaseFile="$(SolutionDir)libs\owutil\memorydump\RelWithDebInfo\owmemorydump.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)libs\owutil\memorydump\RelWithDebInfo\owmemorydump.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\memorydump\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/owutil/memorydump/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\owutil\memorydump\CMakeLists.txt;$(SolutionDir)..\libs\owutil\memorydump\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/owutil/memorydump/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\owutil\memorydump\CMakeLists.txt;$(SolutionDir)..\libs\owutil\memorydump\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/owutil/memorydump/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\owutil\memorydump\CMakeLists.txt;$(SolutionDir)..\libs\owutil\memorydump\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/owutil/memorydump/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\owutil\memorydump\CMakeLists.txt;$(SolutionDir)..\libs\owutil\memorydump\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\memorydump\src\MemoryDump.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\memorydump\src\win32\MSVCMemoryDump.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

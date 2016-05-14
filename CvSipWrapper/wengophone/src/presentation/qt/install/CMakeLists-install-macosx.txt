@@ -1,0 +1,248 @@
+# vim: filetype=cmake
+set(CMAKE_CURRENT_SOURCE_DIR "${SOURCE_DIR}" CACHE INTERNAL "CMake source dir" FORCE)
+set(CMAKE_SOURCE_DIR "${SOURCE_DIR}" CACHE INTERNAL "CMake source dir" FORCE)
+set(CMAKE_BINARY_DIR "${BINARY_DIR}" CACHE INTERNAL "CMake binary dir" FORCE)
+
+set(CMAKE_MODULE_PATH
+	${CMAKE_SOURCE_DIR}/owbuild
+	${CMAKE_SOURCE_DIR}/owbuild/owbuild
+)
+
+# Add macros
+include(${CMAKE_SOURCE_DIR}/owbuild/owbuild/CMakeLists.txt)
+
+# Add options/default values...
+include(${CMAKE_SOURCE_DIR}/DefineWengoOptions.cmake)
+include(${CMAKE_SOURCE_DIR}/DefineInstallationPaths.cmake)
+
+set(CMAKE_MODULE_PATH
+	${SOURCE_DIR}/owbuild/owbuild
+)
+
+set(FRAMEWORK_INSTALL_DIR
+	${BUILD_DIR}/QuteCom.app/Contents/Frameworks
+)
+
+set(DATA_INSTALL_DIR
+	${BUILD_DIR}/QuteCom.app/Contents/Resources
+)
+
+include(OWChangeIdentificationName)
+include(OWChangeInstallName)
+include(OWCopyDir)
+include(OWCopyFile)
+include(OWHdiUtil)
+
+## Copy and create the locale directories to have the Application translated by Mac OS X
+file(GLOB_RECURSE _qmFiles ${BUILD_DIR}/lang/qtwengophone_*.qm)
+
+if (_qmFiles)
+	foreach (_qm ${_qmFiles})
+		# Extract language from qm file
+		GET_FILENAME_COMPONENT(lang ${_qm} NAME_WE)
+		STRING(REPLACE "qtwengophone_" "" lang ${lang})
+		
+		make_directory(${DATA_INSTALL_DIR}/${lang}.lproj)
+	endforeach (_qm ${_qmFiles})
+endif (_qmFiles)
+ow_copy_dir(${BUILD_DIR}/lang/*.qm ${DATA_INSTALL_DIR}/lang/.)
+####
+
+## Create the Info.plist file
+file(WRITE "${BUILD_DIR}/QuteCom.app/Contents/Info.plist"
+"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n"
+"<plist version=\"1.0\">\n"
+"<dict>\n"
+"	<key>CFBundleDevelopmentRegion</key>\n"
+"	<string>English</string>\n"
+"	<key>CFBundleExecutable</key>\n"
+"	<string>QuteCom</string>\n"
+"	<key>CFBundleIconFile</key>\n"
+"	<string>wengophone.icns</string>\n"
+"	<key>CFBundleIdentifier</key>\n"
+"	<string>com.mbdsys.QuteCom</string>\n"
+"	<key>CFBundleInfoDictionaryVersion</key>\n"
+"	<string>6.0</string>\n"
+"	<key>CFBundlePackageType</key>\n"
+"	<string>APPL</string>\n"
+"	<key>CFBundleSignature</key>\n"
+"	<string>WNGP</string>\n"
+"	<key>CFBundleURLTypes</key>\n"
+"	<array>\n"
+"		<dict>\n"
+"			<key>CFBundleTypeRole</key>\n"
+"			<string>Viewer</string>\n"
+"			<key>CFBundleURLName</key>\n"
+"			<string>Wengo Me URL</string>\n"
+"			<key>CFBundleURLSchemes</key>\n"
+"			<array>\n"
+"				<string>wengo</string>\n"
+"			</array>\n"
+"		</dict>\n"
+"	</array>\n"
+"	<key>CFBundleVersion</key>\n"
+"	<string>${APPLICATION_VERSION}</string>\n"
+"</dict>\n"
+"</plist>\n"
+)
+####
+
+## Copying resources
+# WengoPhone icon
+ow_copy_file(${SOURCE_DIR}/wengophone/src/presentation/qt/macosx/template.app/Contents/Resources/wengophone.icns
+	${BUILD_DIR}/QuteCom.app/Contents/Resources/wengophone.icns
+)
+####
+
+## Copying binaries
+# Qt
+macro (ow_copy_qt libName qtLib)
+	# e.g: libName = QtCore, qtLib = /Library/Frameworks/QtCore.framework (on Mac OS X)
+	set(DEST_DIR ${FRAMEWORK_INSTALL_DIR}/${libName}.framework/Versions/4/)
+	make_directory(${DEST_DIR})
+	execute_process(
+		COMMAND cp -f ${qtLib}/Versions/4/${libName} ${DEST_DIR}
+	)
+endmacro (ow_copy_qt)
+
+string(REGEX REPLACE "\\\\" "/" QTDIR "$ENV{QTDIR}")
+find_package(Qt4 REQUIRED)
+
+set(QT_CORE "")
+set(QT_GUI "")
+set(QT_XML "")
+set(QT_SVG "")
+set(QT_NETWORK "")
+if (CMAKE_BUILD_TYPE MATCHES Debug)
+	set(QT_CORE ${QT_QTCORE_LIBRARY_DEBUG})
+	set(QT_GUI ${QT_QTGUI_LIBRARY_DEBUG})
+	set(QT_XML ${QT_QTXML_LIBRARY_DEBUG})
+	set(QT_SVG ${QT_QTSVG_LIBRARY_DEBUG})
+        set(QT_NETWORK ${QT_QTNETWORK_LIBRARY_DEBUG})
+else (CMAKE_BUILD_TYPE MATCHES Debug)
+	set(QT_CORE ${QT_QTCORE_LIBRARY_RELEASE})
+	set(QT_GUI ${QT_QTGUI_LIBRARY_RELEASE})
+	set(QT_XML ${QT_QTXML_LIBRARY_RELEASE})
+	set(QT_SVG ${QT_QTSVG_LIBRARY_RELEASE})
+        set(QT_NETWORK ${QT_QTNETWORK_LIBRARY_RELEASE})
+endif (CMAKE_BUILD_TYPE MATCHES Debug)
+
+ow_copy_qt(QtCore ${QT_CORE})
+ow_copy_qt(QtGui ${QT_GUI})
+ow_copy_qt(QtXml ${QT_XML})
+ow_copy_qt(QtSvg ${QT_SVG})
+ow_copy_qt(QtNetwork ${QT_NETWORK})
+
+make_directory(${BUILD_DIR}/QuteCom.app/Contents/plugins/)
+make_directory(${BUILD_DIR}/QuteCom.app/Contents/plugins/imageformats)
+make_directory(${BUILD_DIR}/QuteCom.app/Contents/plugins/codecs)
+
+ow_copy_file($ENV{QTDIR}/plugins/imageformats/libqgif.dylib ${BUILD_DIR}/QuteCom.app/Contents/plugins/imageformats/)
+ow_copy_file($ENV{QTDIR}/plugins/imageformats/libqico.dylib ${BUILD_DIR}/QuteCom.app/Contents/plugins/imageformats/)
+ow_copy_file($ENV{QTDIR}/plugins/imageformats/libqjpeg.dylib ${BUILD_DIR}/QuteCom.app/Contents/plugins/imageformats/)
+ow_copy_file($ENV{QTDIR}/plugins/imageformats/libqmng.dylib ${BUILD_DIR}/QuteCom.app/Contents/plugins/imageformats/)
+ow_copy_file($ENV{QTDIR}/plugins/imageformats/libqsvg.dylib ${BUILD_DIR}/QuteCom.app/Contents/plugins/imageformats/)
+ow_copy_file($ENV{QTDIR}/plugins/imageformats/libqtiff.dylib ${BUILD_DIR}/QuteCom.app/Contents/plugins/imageformats/)
+
+ow_copy_file($ENV{QTDIR}/plugins/codecs/libqkrcodecs.dylib ${BUILD_DIR}/QuteCom.app/Contents/plugins/codecs/)
+ow_copy_file($ENV{QTDIR}/plugins/codecs/libqcncodecs.dylib ${BUILD_DIR}/QuteCom.app/Contents/plugins/codecs/)
+ow_copy_file($ENV{QTDIR}/plugins/codecs/libqjpcodecs.dylib ${BUILD_DIR}/QuteCom.app/Contents/plugins/codecs/)
+ow_copy_file($ENV{QTDIR}/plugins/codecs/libqtwcodecs.dylib ${BUILD_DIR}/QuteCom.app/Contents/plugins/codecs/)
+
+# libpng12
+ow_copy_file(/usr/local/lib/libpng12.0.dylib
+	${FRAMEWORK_INSTALL_DIR}/libpng12.0.dylib
+)
+
+# libtiff
+ow_copy_file(/usr/local/lib/libtiff.3.dylib
+	${FRAMEWORK_INSTALL_DIR}/libtiff.3.dylib
+)
+
+# curl
+ow_copy_file(${CMAKE_BINARY_DIR}/libs/3rdparty/curl/libcurl.dylib
+	${FRAMEWORK_INSTALL_DIR}/libowcurl.dylib
+)
+
+ow_change_identification_name(${FRAMEWORK_INSTALL_DIR}/libowcurl.dylib libowcurl.dylib)
+
+# webcam
+ow_copy_file(${CMAKE_BINARY_DIR}/libs/webcam/libwebcam.dylib
+	${FRAMEWORK_INSTALL_DIR}/
+)
+
+# Copy PhApi
+ow_copy_file(${CMAKE_BINARY_DIR}/wifo/phapi/libphapi.dylib
+	${FRAMEWORK_INSTALL_DIR}/
+)
+
+ow_copy_file(${CMAKE_BINARY_DIR}/wifo/phapi-util/libphapiutil.dylib
+	${FRAMEWORK_INSTALL_DIR}/
+)
+
+# Copy PhApi plugins
+make_directory(${FRAMEWORK_INSTALL_DIR}/phapi-plugins/)
+
+ow_copy_file(${CMAKE_BINARY_DIR}/wifo/phapi/phspeexplugin/libphspeexplugin.so
+	${FRAMEWORK_INSTALL_DIR}/phapi-plugins/
+)
+
+ow_copy_file(${CMAKE_BINARY_DIR}/wifo/wifo-plugins/sfp-plugin/libsfp-plugin.so
+	${FRAMEWORK_INSTALL_DIR}/phapi-plugins/
+)
+
+## Change install names
+set(WENGO_EXE "${BUILD_DIR}QuteCom.app/Contents/MacOS/QuteCom")
+
+set(COPY_PYTHON_SCRIPT
+	${SOURCE_DIR}/scripts/copy_missing_libraries.py
+)
+
+set(UPDATE_LINKS_PYTHON_SCRIPT
+	${SOURCE_DIR}/scripts/update_links.py
+)
+
+# Copy missing dependencies of WengoPhone binary.
+execute_process(
+	COMMAND
+		python ${COPY_PYTHON_SCRIPT} ${BUILD_DIR}/QuteCom.app/Contents/MacOS/QuteCom ${FRAMEWORK_INSTALL_DIR}
+)
+
+execute_process(
+	COMMAND
+		python ${COPY_PYTHON_SCRIPT} ${BUILD_DIR}/QuteCom.app/Contents/MacOS/owcrashreport ${FRAMEWORK_INSTALL_DIR}
+)
+
+# Copy missing dependencies of files in ${FRAMEWORK_INSTALL_DIR}.
+execute_process(
+	COMMAND
+		python ${COPY_PYTHON_SCRIPT} ${FRAMEWORK_INSTALL_DIR}
+)
+
+# Update install names
+execute_process(
+	COMMAND
+		python ${UPDATE_LINKS_PYTHON_SCRIPT} ${BUILD_DIR}/QuteCom.app/Contents/ ${BUILD_DIR}/QuteCom.app/Contents/MacOS/QuteCom
+)
+
+execute_process(
+	COMMAND
+		python ${UPDATE_LINKS_PYTHON_SCRIPT} ${BUILD_DIR}/QuteCom.app/Contents/ ${BUILD_DIR}/QuteCom.app/Contents/MacOS/owcrashreport
+)
+
+####
+
+## Update rights on WengoPhone files
+message("Updating rights on QuteCom.app...")
+execute_process(
+	COMMAND "chmod" -R 755 ${BUILD_DIR}/QuteCom.app
+)
+####
+
+## Creates .dmg of WengoPhone
+execute_process(
+	COMMAND "rm" -r ${CMAKE_BINARY_DIR}/QuteCom.dmg
+)
+ow_hdiutil(QuteCom ${BUILD_DIR}/QuteCom.app ${CMAKE_BINARY_DIR}/QuteCom.dmg)
+####

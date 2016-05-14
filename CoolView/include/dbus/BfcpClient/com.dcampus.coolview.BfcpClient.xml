@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.BfcpClient">
+	<signal name="ClientControlSignal">
+	  <arg type="i" name="control_error" direction="out" />
+	  <arg type="i" name="client_id" direction="out" />
+	  <arg type="ay" name="client_arg" direction="out" />
+	</signal>
+	<signal name="StateChangedSignal">
+	  <arg type="i" name="client_id" direction="out" />
+	  <arg type="i" name="state" direction="out" />
+	</signal>
+	<signal name="FloorRequestInfoReceivedSignal">
+	  <arg type="i" name="client_id" direction="out" />
+	  <arg type="ay" name="data" direction="out" />
+	</signal>
+	<signal name="UserStatusReceivedSignal">
+	  <arg type="i" name="client_id" direction="out" />
+	  <arg type="ay" name="data" direction="out" />
+	</signal>
+	<signal name="FloorStatusReceivedSignal">
+	  <arg type="i" name="client_id" direction="out" />
+	  <arg type="ay" name="data" direction="out" />
+	</signal>
+	<signal name="ErrorReceivedSignal">
+	  <arg type="i" name="client_id" direction="out" />
+	  <arg type="ay" name="data" direction="out" />
+	</signal>
+	<method name="CreateClient">
+	  <arg type="ay" name="client_arg" direction="in" />
+	</method>
+	<method name="DestroyClient">
+	  <arg type="i" name="client_id" direction="in" />
+	</method>
+	<method name="SendFloorRequest">
+	  <arg type="i" name="client_id" direction="in" />
+	  <arg type="ay" name="floor_request_arg" direction="in" />
+	</method>
+	<method name="SendFloorRelease">
+	  <arg type="i" name="client_id" direction="in" />
+	  <arg type="q" name="floor_request_id" direction="in" />
+	</method>
+	<method name="SendFloorRequestQuery">
+	  <arg type="i" name="client_id" direction="in" />
+	  <arg type="q" name="floor_request_id" direction="in" />
+	</method>
+	<method name="SendUserQuery">
+	  <arg type="i" name="client_id" direction="in" />
+	  <arg type="ay" name="user_query_arg" direction="in" />
+	</method>
+	<method name="SendFloorQuery">
+	  <arg type="i" name="client_id" direction="in" />
+	  <arg type="ay" name="floor_ids" direction="in" />
+	</method>
+	<method name="SendChairAction">
+	  <arg type="i" name="client_id" direction="in" />
+	  <arg type="ay" name="chair_action_arg" direction="in" />
+	</method>
+	<method name="SendHello">
+	  <arg type="i" name="client_id" direction="in" />
+	</method>
+	<method name="SendGoodBye">
+	  <arg type="i" name="client_id" direction="in" />
+	</method>
+  </interface>
+</node>

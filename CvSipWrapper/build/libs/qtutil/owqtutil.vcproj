@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="owqtutil"
+	ProjectGUID="{9A41BC58-A4C8-44DF-AAC1-8218B10A6C26}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="owqtutil.dir\Debug"
+			ConfigurationType="4"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)libs\qtutil;$(SolutionDir)..\libs\qtutil;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				BasicRuntimeChecks="1"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/qtutil/Debug/owqtutil.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)libs\qtutil;$(SolutionDir)..\libs\qtutil;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(SolutionDir)libs\qtutil\Debug\owqtutil.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="owqtutil.dir\Release"
+			ConfigurationType="4"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)libs\qtutil;$(SolutionDir)..\libs\qtutil;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/qtutil/Release/owqtutil.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)libs\qtutil;$(SolutionDir)..\libs\qtutil;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(SolutionDir)libs\qtutil\Release\owqtutil.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="owqtutil.dir\MinSizeRel"
+			ConfigurationType="4"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)libs\qtutil;$(SolutionDir)..\libs\qtutil;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/qtutil/MinSizeRel/owqtutil.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)libs\qtutil;$(SolutionDir)..\libs\qtutil;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(SolutionDir)libs\qtutil\MinSizeRel\owqtutil.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="owqtutil.dir\RelWithDebInfo"
+			ConfigurationType="4"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)libs\qtutil;$(SolutionDir)..\libs\qtutil;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/qtutil/RelWithDebInfo/owqtutil.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)libs\qtutil;$(SolutionDir)..\libs\qtutil;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(SolutionDir)libs\qtutil\RelWithDebInfo\owqtutil.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\Wizard.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_Wizard.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/qtutil/ui_Wizard.h $(SolutionDir)..\libs/qtutil/src/Wizard.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\Wizard.ui;"
+					Outputs="$(SolutionDir)libs\qtutil\ui_Wizard.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_Wizard.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/qtutil/ui_Wizard.h $(SolutionDir)..\libs/qtutil/src/Wizard.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\Wizard.ui;"
+					Outputs="$(SolutionDir)libs\qtutil\ui_Wizard.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_Wizard.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/qtutil/ui_Wizard.h $(SolutionDir)..\libs/qtutil/src/Wizard.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\Wizard.ui;"
+					Outputs="$(SolutionDir)libs\qtutil\ui_Wizard.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_Wizard.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/qtutil/ui_Wizard.h $(SolutionDir)..\libs/qtutil/src/Wizard.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\Wizard.ui;"
+					Outputs="$(SolutionDir)libs\qtutil\ui_Wizard.h"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\ImageSelector.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_ImageSelector.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/qtutil/ui_ImageSelector.h $(SolutionDir)..\libs/qtutil/src/ImageSelector.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\ImageSelector.ui;"
+					Outputs="$(SolutionDir)libs\qtutil\ui_ImageSelector.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_ImageSelector.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/qtutil/ui_ImageSelector.h $(SolutionDir)..\libs/qtutil/src/ImageSelector.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\ImageSelector.ui;"
+					Outputs="$(SolutionDir)libs\qtutil\ui_ImageSelector.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_ImageSelector.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/qtutil/ui_ImageSelector.h $(SolutionDir)..\libs/qtutil/src/ImageSelector.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\ImageSelector.ui;"
+					Outputs="$(SolutionDir)libs\qtutil\ui_ImageSelector.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_ImageSelector.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/qtutil/ui_ImageSelector.h $(SolutionDir)..\libs/qtutil/src/ImageSelector.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\ImageSelector.ui;"
+					Outputs="$(SolutionDir)libs\qtutil\ui_ImageSelector.h"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\qtutil.qrc">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating qrc_qtutil.cxx"
+					CommandLine="D:\qt\4.4.3\bin\rcc.exe -name qtutil -o $(SolutionDir)libs/qtutil/qrc_qtutil.cxx $(SolutionDir)..\libs/qtutil/qtutil.qrc"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\pics\clear.png;$(SolutionDir)..\libs\qtutil\pics\refresh.png;$(SolutionDir)..\libs\qtutil\pics\parent_folder.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\down.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\down_hover.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\right.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\right_hover.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\up.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\up_hover.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\16x16\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\16x16\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\32x32\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\32x32\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\64x64\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\64x64\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\128x128\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\128x128\folder.png;$(SolutionDir)..\libs\qtutil\qtutil.qrc;"
+					Outputs="$(SolutionDir)libs\qtutil\qrc_qtutil.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating qrc_qtutil.cxx"
+					CommandLine="D:\qt\4.4.3\bin\rcc.exe -name qtutil -o $(SolutionDir)libs/qtutil/qrc_qtutil.cxx $(SolutionDir)..\libs/qtutil/qtutil.qrc"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\pics\clear.png;$(SolutionDir)..\libs\qtutil\pics\refresh.png;$(SolutionDir)..\libs\qtutil\pics\parent_folder.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\down.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\down_hover.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\right.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\right_hover.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\up.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\up_hover.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\16x16\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\16x16\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\32x32\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\32x32\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\64x64\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\64x64\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\128x128\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\128x128\folder.png;$(SolutionDir)..\libs\qtutil\qtutil.qrc;"
+					Outputs="$(SolutionDir)libs\qtutil\qrc_qtutil.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating qrc_qtutil.cxx"
+					CommandLine="D:\qt\4.4.3\bin\rcc.exe -name qtutil -o $(SolutionDir)libs/qtutil/qrc_qtutil.cxx $(SolutionDir)..\libs/qtutil/qtutil.qrc"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\pics\clear.png;$(SolutionDir)..\libs\qtutil\pics\refresh.png;$(SolutionDir)..\libs\qtutil\pics\parent_folder.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\down.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\down_hover.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\right.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\right_hover.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\up.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\up_hover.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\16x16\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\16x16\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\32x32\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\32x32\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\64x64\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\64x64\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\128x128\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\128x128\folder.png;$(SolutionDir)..\libs\qtutil\qtutil.qrc;"
+					Outputs="$(SolutionDir)libs\qtutil\qrc_qtutil.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating qrc_qtutil.cxx"
+					CommandLine="D:\qt\4.4.3\bin\rcc.exe -name qtutil -o $(SolutionDir)libs/qtutil/qrc_qtutil.cxx $(SolutionDir)..\libs/qtutil/qtutil.qrc"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\pics\clear.png;$(SolutionDir)..\libs\qtutil\pics\refresh.png;$(SolutionDir)..\libs\qtutil\pics\parent_folder.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\down.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\down_hover.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\right.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\right_hover.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\up.png;$(SolutionDir)..\libs\qtutil\pics\expand_button\up_hover.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\16x16\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\16x16\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\32x32\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\32x32\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\64x64\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\64x64\folder.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\128x128\file.png;$(SolutionDir)..\libs\qtutil\pics\desktopservice\128x128\folder.png;$(SolutionDir)..\libs\qtutil\qtutil.qrc;"
+					Outputs="$(SolutionDir)libs\qtutil\qrc_qtutil.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/qtutil/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\CMakeLists.txt;$(SolutionDir)..\libs\qtutil\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/qtutil/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\CMakeLists.txt;$(SolutionDir)..\libs\qtutil\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/qtutil/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\CMakeLists.txt;$(SolutionDir)..\libs\qtutil\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/qtutil/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\CMakeLists.txt;$(SolutionDir)..\libs\qtutil\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_EventFilter.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_QObjectThreadSafe.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_NonResizeableWidget.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_WengoStyleLabel.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ToolTipLineEdit.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClickableLabel.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_Wizard.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ThreadEventFilter.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_AnimatedButton.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_UpQComboBox.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_LinkLabel.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ScrollFrame.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ImageSelector.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_DropDownWindow.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClearLineEdit.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailManager.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailDirModel.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\qrc_qtutil.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\EventFilter.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\KeyEventFilter.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\MouseEventFilter.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\PaintEventFilter.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\EnabledChangeEventFilter.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\WidgetFactory.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\Object.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\QObjectThreadSafe.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\ResizeEventFilter.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\NonResizeableWidget.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\StringListConvert.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\Widget.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\WengoStyleLabel.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\ToolTipLineEdit.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\ClickableLabel.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\WidgetBackgroundImage.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\Wizard.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\ThreadEventFilter.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\PixmapMerging.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\SafeConnect.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\LanguageChangeEventFilter.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\CloseEventFilter.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\AnimatedButton.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\DesktopService.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\UpQComboBox.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\LinkLabel.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\ScrollFrame.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\ImageSelector.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\ThumbnailView.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\QtThumbnailDirModel.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\QtThumbnailManager.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\WidgetRatioEnforcer.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\WidgetUtils.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\ExpandButton.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\OsdButton.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\FSResourceFileEngineHandler.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\KeywordTranslator.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\DropDownWindow.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\IconLineEdit.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\ClearLineEdit.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\src\WindowsDesktopService.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_WindowsDesktopService.cxx">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\ui_Wizard.h">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\ui_ImageSelector.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="CMake Rules"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_EventFilter.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_EventFilter.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_EventFilter.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\EventFilter.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_EventFilter.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_EventFilter.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_EventFilter.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\EventFilter.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_EventFilter.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_EventFilter.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_EventFilter.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\EventFilter.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_EventFilter.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_EventFilter.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_EventFilter.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\EventFilter.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_EventFilter.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_QObjectThreadSafe.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_QObjectThreadSafe.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QObjectThreadSafe.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\QObjectThreadSafe.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_QObjectThreadSafe.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_QObjectThreadSafe.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QObjectThreadSafe.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\QObjectThreadSafe.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_QObjectThreadSafe.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_QObjectThreadSafe.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QObjectThreadSafe.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\QObjectThreadSafe.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_QObjectThreadSafe.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_QObjectThreadSafe.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QObjectThreadSafe.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\QObjectThreadSafe.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_QObjectThreadSafe.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_NonResizeableWidget.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_NonResizeableWidget.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_NonResizeableWidget.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\NonResizeableWidget.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_NonResizeableWidget.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_NonResizeableWidget.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_NonResizeableWidget.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\NonResizeableWidget.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_NonResizeableWidget.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_NonResizeableWidget.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_NonResizeableWidget.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\NonResizeableWidget.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_NonResizeableWidget.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_NonResizeableWidget.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_NonResizeableWidget.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\NonResizeableWidget.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_NonResizeableWidget.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_WengoStyleLabel.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_WengoStyleLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_WengoStyleLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\WengoStyleLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_WengoStyleLabel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_WengoStyleLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_WengoStyleLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\WengoStyleLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_WengoStyleLabel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_WengoStyleLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_WengoStyleLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\WengoStyleLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_WengoStyleLabel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_WengoStyleLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_WengoStyleLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\WengoStyleLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_WengoStyleLabel.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ToolTipLineEdit.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ToolTipLineEdit.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ToolTipLineEdit.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ToolTipLineEdit.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ToolTipLineEdit.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ToolTipLineEdit.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ToolTipLineEdit.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ToolTipLineEdit.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ToolTipLineEdit.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ToolTipLineEdit.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ToolTipLineEdit.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ToolTipLineEdit.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ToolTipLineEdit.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ToolTipLineEdit.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ToolTipLineEdit.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ToolTipLineEdit.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ToolTipLineEdit.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClickableLabel.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ClickableLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ClickableLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ClickableLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClickableLabel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ClickableLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ClickableLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ClickableLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClickableLabel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ClickableLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ClickableLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ClickableLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClickableLabel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ClickableLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ClickableLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ClickableLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClickableLabel.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_Wizard.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_Wizard.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_Wizard.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\Wizard.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_Wizard.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_Wizard.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_Wizard.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\Wizard.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_Wizard.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_Wizard.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_Wizard.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\Wizard.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_Wizard.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_Wizard.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_Wizard.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\Wizard.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_Wizard.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ThreadEventFilter.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ThreadEventFilter.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ThreadEventFilter.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ThreadEventFilter.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ThreadEventFilter.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ThreadEventFilter.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ThreadEventFilter.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ThreadEventFilter.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ThreadEventFilter.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ThreadEventFilter.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ThreadEventFilter.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ThreadEventFilter.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ThreadEventFilter.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ThreadEventFilter.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ThreadEventFilter.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ThreadEventFilter.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ThreadEventFilter.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_AnimatedButton.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_AnimatedButton.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_AnimatedButton.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\AnimatedButton.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_AnimatedButton.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_AnimatedButton.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_AnimatedButton.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\AnimatedButton.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_AnimatedButton.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_AnimatedButton.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_AnimatedButton.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\AnimatedButton.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_AnimatedButton.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_AnimatedButton.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_AnimatedButton.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\AnimatedButton.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_AnimatedButton.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_UpQComboBox.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_UpQComboBox.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_UpQComboBox.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\UpQComboBox.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_UpQComboBox.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_UpQComboBox.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_UpQComboBox.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\UpQComboBox.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_UpQComboBox.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_UpQComboBox.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_UpQComboBox.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\UpQComboBox.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_UpQComboBox.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_UpQComboBox.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_UpQComboBox.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\UpQComboBox.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_UpQComboBox.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_LinkLabel.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_LinkLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_LinkLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\LinkLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_LinkLabel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_LinkLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_LinkLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\LinkLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_LinkLabel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_LinkLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_LinkLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\LinkLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_LinkLabel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_LinkLabel.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_LinkLabel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\LinkLabel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_LinkLabel.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ScrollFrame.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ScrollFrame.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ScrollFrame.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ScrollFrame.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ScrollFrame.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ScrollFrame.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ScrollFrame.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ScrollFrame.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ScrollFrame.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ScrollFrame.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ScrollFrame.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ScrollFrame.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ScrollFrame.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ScrollFrame.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ScrollFrame.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ScrollFrame.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ScrollFrame.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ImageSelector.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ImageSelector.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ImageSelector.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ImageSelector.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ImageSelector.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ImageSelector.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ImageSelector.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ImageSelector.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ImageSelector.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ImageSelector.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ImageSelector.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ImageSelector.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ImageSelector.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ImageSelector.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ImageSelector.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ImageSelector.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ImageSelector.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_DropDownWindow.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_DropDownWindow.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_DropDownWindow.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\DropDownWindow.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_DropDownWindow.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_DropDownWindow.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_DropDownWindow.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\DropDownWindow.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_DropDownWindow.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_DropDownWindow.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_DropDownWindow.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\DropDownWindow.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_DropDownWindow.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_DropDownWindow.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_DropDownWindow.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\DropDownWindow.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_DropDownWindow.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClearLineEdit.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ClearLineEdit.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ClearLineEdit.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ClearLineEdit.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClearLineEdit.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ClearLineEdit.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ClearLineEdit.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ClearLineEdit.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClearLineEdit.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ClearLineEdit.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ClearLineEdit.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ClearLineEdit.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClearLineEdit.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_ClearLineEdit.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_ClearLineEdit.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\ClearLineEdit.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_ClearLineEdit.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailManager.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating src/moc_QtThumbnailManager.cxx"
+					CommandLine="cd src&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtThumbnailManager.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\QtThumbnailManager.h;"
+					Outputs="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailManager.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating src/moc_QtThumbnailManager.cxx"
+					CommandLine="cd src&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtThumbnailManager.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\QtThumbnailManager.h;"
+					Outputs="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailManager.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating src/moc_QtThumbnailManager.cxx"
+					CommandLine="cd src&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtThumbnailManager.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\QtThumbnailManager.h;"
+					Outputs="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailManager.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating src/moc_QtThumbnailManager.cxx"
+					CommandLine="cd src&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtThumbnailManager.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\QtThumbnailManager.h;"
+					Outputs="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailManager.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailDirModel.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating src/moc_QtThumbnailDirModel.cxx"
+					CommandLine="cd src&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtThumbnailDirModel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\QtThumbnailDirModel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailDirModel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating src/moc_QtThumbnailDirModel.cxx"
+					CommandLine="cd src&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtThumbnailDirModel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\QtThumbnailDirModel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailDirModel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating src/moc_QtThumbnailDirModel.cxx"
+					CommandLine="cd src&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtThumbnailDirModel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\QtThumbnailDirModel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailDirModel.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating src/moc_QtThumbnailDirModel.cxx"
+					CommandLine="cd src&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtThumbnailDirModel.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\src\QtThumbnailDirModel.h;"
+					Outputs="$(SolutionDir)libs\qtutil\src\moc_QtThumbnailDirModel.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\include\qtutil\moc_WindowsDesktopService.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_WindowsDesktopService.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_WindowsDesktopService.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\WindowsDesktopService.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_WindowsDesktopService.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_WindowsDesktopService.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_WindowsDesktopService.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\WindowsDesktopService.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_WindowsDesktopService.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_WindowsDesktopService.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_WindowsDesktopService.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\WindowsDesktopService.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_WindowsDesktopService.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating include/qtutil/moc_WindowsDesktopService.cxx"
+					CommandLine="cd include\qtutil&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_WindowsDesktopService.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\include\qtutil\WindowsDesktopService.h;"
+					Outputs="$(SolutionDir)libs\qtutil\include\qtutil\moc_WindowsDesktopService.cxx"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

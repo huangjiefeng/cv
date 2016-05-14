@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0F2FA9D9-45D8-43F2-9619-E5C4AE23829F}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>osip2.dir\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>osip2.dir\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\wifo\libosip2\include;..\..\..\wifo\libosip2\include\osipparser2;..\..\..\wifo\libosip2\src\osip2;..\..\..\wifo\libosip2\src\osipparser2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;WIN32;DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)Debug/osip2.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)Debug\osip2.lib</OutputFile>
+    </Lib>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;WIN32;DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)\$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)" /Y</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;WIN32;DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\libosip2\src\osip2;$(SolutionDir)..\wifo\libosip2\src\osipparser2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\wifo\libosip2\include;..\..\..\wifo\libosip2\include\osipparser2;..\..\..\wifo\libosip2\src\osip2;..\..\..\wifo\libosip2\src\osipparser2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;WIN32;DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)Release/osip2.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)Release\osip2.lib</OutputFile>
+    </Lib>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;WIN32;DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)\$(Configuration)\$(ProjectName).lib" "$(SolutionDir)\_lib\Release\" /Y</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;WIN32;DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\libosip2\src\osip2;$(SolutionDir)..\wifo\libosip2\src\osipparser2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\fsm_misc.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\ict.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\ict_fsm.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\ist.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\ist_fsm.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\nict.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\nict_fsm.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\nist.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\nist_fsm.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\osip.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_accept.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_accept_encoding.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_accept_language.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_alert_info.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_allow.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_authentication_info.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_authorization.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_body.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_call_id.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_call_info.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_contact.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_content_disposition.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_content_encoding.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_content_length.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_content_type.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_cseq.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\osip_dialog.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_error_info.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\osip_event.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_from.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_header.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_list.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_md5c.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_message.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_message_parse.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_message_to_str.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_mime_version.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_parser_cfg.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_port.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_proxy_authenticate.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_proxy_authentication_info.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_proxy_authorization.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_record_route.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_route.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\osip_time.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_to.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\osip_transaction.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_uri.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_via.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\osip_www_authenticate.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\port_condv.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\port_fifo.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\port_sema.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osip2\port_thread.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\sdp_accessor.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\libosip2\src\osipparser2\sdp_message.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(SolutionDir)..\wifo\libosip2\CMakeLists.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Text>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

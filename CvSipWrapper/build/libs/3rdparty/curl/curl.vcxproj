@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07F0C439-AB80-4F9D-A381-F99F6717F95B}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>curl.dir\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>curl.dir\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <OutDir>MinSizeRel\</OutDir>
+    <IntDir>curl.dir\MinSizeRel\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <OutDir>RelWithDebInfo\</OutDir>
+    <IntDir>curl.dir\RelWithDebInfo\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling />
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="Debug";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)libs/3rdparty/curl/Debug/curl.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="Debug";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="Debug";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)debug/</Message>
+      <Command>xcopy "$(TargetPath)" "$(SolutionDir)$(Configuration)\" /Y
+xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).pdb" "$(SolutionDir)$(Configuration)\" /Y
+xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)libs\3rdparty\curl\Debug\curl.dll</OutputFile>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\..\..\..\libs\3rdparty\openssl\binary-lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SolutionDir)libs\3rdparty\curl\Debug\curl.pdb</ProgramDatabaseFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(SolutionDir)libs\3rdparty\curl\Debug\curl.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling />
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="Release";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)libs/3rdparty/curl/Release/curl.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="Release";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="Release";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)release\</Message>
+      <Command>xcopy "$(TargetPath)" "$(SolutionDir)$(Configuration)\" /Y
+xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib;..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)libs\3rdparty\curl\Release\curl.dll</OutputFile>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir);..\..\..\..\libs\3rdparty\openssl\binary-lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SolutionDir)libs\3rdparty\curl\Release\curl.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)libs\3rdparty\curl\Release\curl.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling />
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="MinSizeRel";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)libs/3rdparty/curl/MinSizeRel/curl.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="MinSizeRel";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="MinSizeRel";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)debug/</Message>
+      <Command>D:\cmake2.6\bin\cmake.exe -E copy_if_different "$(SolutionDir)libs/3rdparty/curl/curl.dll" "$(SolutionDir)debug/"
+D:\cmake2.6\bin\cmake.exe -E copy_if_different "$(SolutionDir)libs/3rdparty/curl/curl.pdb" "$(SolutionDir)debug/"</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib;..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib;..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)libs\3rdparty\curl\MinSizeRel\curl.dll</OutputFile>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir);..\..\..\..\libs\3rdparty\openssl\binary-lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SolutionDir)libs\3rdparty\curl\MinSizeRel\curl.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)libs\3rdparty\curl\MinSizeRel\curl.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling />
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="RelWithDebInfo";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)libs/3rdparty/curl/RelWithDebInfo/curl.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\curl\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="RelWithDebInfo";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_DISABLE_FILE;CURL_DISABLE_LDAP;CURL_DISABLE_DICT;CURL_DISABLE_TELNET;CURL_DISABLE_TFTP;USE_SSLEAY;USE_OPENSSL;DEBUG;CMAKE_INTDIR="RelWithDebInfo";BUILD_CURL_DLL -DCURL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)debug/</Message>
+      <Command>D:\cmake2.6\bin\cmake.exe -E copy_if_different "$(SolutionDir)libs/3rdparty/curl/curl.dll" "$(SolutionDir)debug/"
+D:\cmake2.6\bin\cmake.exe -E copy_if_different "$(SolutionDir)libs/3rdparty/curl/curl.pdb" "$(SolutionDir)debug/"</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib;..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib;..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)libs\3rdparty\curl\RelWithDebInfo\curl.dll</OutputFile>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir);..\..\..\..\libs\3rdparty\openssl\binary-lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SolutionDir)libs\3rdparty\curl\RelWithDebInfo\curl.pdb</ProgramDatabaseFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(SolutionDir)libs\3rdparty\curl\RelWithDebInfo\curl.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule $(SolutionDir)..\libs/3rdparty/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(CMAKE_DIR)\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule $(SolutionDir)..\libs/3rdparty/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule $(SolutionDir)..\libs/3rdparty/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule $(SolutionDir)..\libs/3rdparty/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\base64.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\connect.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\content_encoding.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\cookie.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\easy.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\escape.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\formdata.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\ftp.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\getenv.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\getinfo.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\gtls.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\hash.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\hostares.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\hostasyn.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\hostip.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\hostip4.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\hostip6.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\hostsyn.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\hostthre.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\http.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\http_chunks.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\http_digest.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\http_negotiate.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\http_ntlm.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\if2ip.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\inet_ntop.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\inet_pton.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\krb4.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\llist.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\md5.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\memdebug.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\mprintf.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\multi.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\netrc.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\parsedate.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\progress.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\security.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\select.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\sendf.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\share.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\socks.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\speedcheck.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\splay.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\sslgen.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\ssluse.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\strequal.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\strerror.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\strtok.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\strtoofft.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\timeval.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\transfer.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\url.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\curl\lib\version.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

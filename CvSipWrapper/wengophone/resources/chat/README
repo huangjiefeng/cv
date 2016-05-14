@@ -1,0 +1,73 @@
+# Introduction
+
+This document presents the very beginning of a theme system for chat messages.
+It is loosely based on Adium themes [adium]. This does not mean the WengoPhone
+can use Adium themes (we have to wait for QtWebKit for this), it just seemed
+smarter to base our system on an existing one, rather than reinvent the wheel.
+
+# Theme template files
+
+For now the theme is made of the following HTML templates:
+- incoming/content.html
+- incoming/nextcontent.html
+- outgoing/content.html
+- outgoing/nextcontent.html
+- footer.html
+- status.html
+
+When the user sends a message, WengoPhone applies templates from the outgoing/
+folder.  If it's the first message of the chat or if the previous message was not
+send by us, WengoPhone uses content.html, otherwise it uses nextcontent.html.
+
+When the user receives a message, WengoPhone does the same, but with the
+templates from the incoming/ folder.
+
+Each time the message origin changes, WengoPhone applies footer.html.
+
+When a user goes offline or online, WengoPhone close the message with
+footer.html if necessary, then uses status.html.
+
+# Keywords
+
+A theme file can contains keywords. A keyword is enclosed in '%' characters.
+
+## content.html and nextcontent.html
+
+These files can contains the following keywords:
+- sender: name of the user
+- senderId: a unique id, used to include avatars (see below)
+- time: the time of the message
+- message: the actual message text
+
+## footer.html
+
+footer.html does not use any variable.
+
+## status.html
+
+status.html can contains the following variables:
+- message: reason for the status message
+- time: the time of the message
+
+
+# Avatars
+
+It is possible to display the user avatar in content.html or nextcontent.html.
+The syntax is:
+
+	<img src='avatar:%senderId%'>
+
+If you want to get a resized version of the avatar, add a size parameter, like
+this:
+
+	<img src='avatar:%senderId%?size=48'>
+
+# Note on HTML
+
+It is not possible to use sophisticated HTML due to the limited subset of HTML
+supported by the QTextBrowser widget, hence the basic, old school, HTML code.
+
+Furthermore, you can't open a table in content.html and close it in footer.html,
+because QTextBrowser will close any opened table.
+
+[adium]: http://www.adiumx.com

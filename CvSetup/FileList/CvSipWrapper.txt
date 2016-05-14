@@ -1,0 +1,11 @@
+curl.dll                          
+CvSipWrapper.exe
+glib.dll                          
+iconv.dll
+intl.dll                          
+owbase.dll
+owsl.dll                          
+owutil.dll
+phapi.dll                         
+phapiutil.dll
+pthread.dll                       

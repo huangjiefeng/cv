@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="GraphController">
+      <UniqueIdentifier>{9ceb291f-8e05-4858-ad59-a236dca565b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{0a8ddcfd-a8cd-43fc-b2c5-9e9d40311e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{4dc6d940-c3d8-41e3-b290-3a72c5cdb9ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FilterContainer">
+      <UniqueIdentifier>{6379b6b7-52ed-4092-b24d-94d3e90ad5f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="msdx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\log\Log.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportUtil_RecvGraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportUtil_SendGraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportUtil_SmallvideoGraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportUtil_TestGraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AACUtil.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphControllerFactory.cpp">
+      <Filter>GraphController</Filter>
+    </ClCompile>
+    <ClCompile Include="SendGraphController.cpp">
+      <Filter>GraphController</Filter>
+    </ClCompile>
+    <ClCompile Include="SmallGraphController.cpp">
+      <Filter>GraphController</Filter>
+    </ClCompile>
+    <ClCompile Include="RecvGraphController.cpp">
+      <Filter>GraphController</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGraphController.cpp">
+      <Filter>GraphController</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphUtil.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaTypeUtil.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportUtil_Common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFilterContainer.cpp">
+      <Filter>FilterContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="CodecFilterContainer.cpp">
+      <Filter>FilterContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="RTPFilterContainer.cpp">
+      <Filter>FilterContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="OtherFilterContainer.cpp">
+      <Filter>FilterContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphContainer.cpp">
+      <Filter>FilterContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="FilePlayGraphController.cpp">
+      <Filter>GraphController</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\msdx\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="msdx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceDefination.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\log\Log.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AACUtil.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="IGraphController.h">
+      <Filter>GraphController</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphControllerFactory.h">
+      <Filter>GraphController</Filter>
+    </ClInclude>
+    <ClInclude Include="SendGraphController.h">
+      <Filter>GraphController</Filter>
+    </ClInclude>
+    <ClInclude Include="SmallGraphController.h">
+      <Filter>GraphController</Filter>
+    </ClInclude>
+    <ClInclude Include="TestGraphController.h">
+      <Filter>GraphController</Filter>
+    </ClInclude>
+    <ClInclude Include="RecvGraphController.h">
+      <Filter>GraphController</Filter>
+    </ClInclude>
+    <ClInclude Include="DxDefinitions.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="LogUtil.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphUtil.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaTypeUtil.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterContainer.h">
+      <Filter>FilterContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphContainer.h">
+      <Filter>FilterContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="FilePlayGraphController.h">
+      <Filter>GraphController</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="msdx.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

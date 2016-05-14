@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.BfcpServer">
+	<signal name="ServerControlSignal">
+	  <arg type="i" name="control_error" direction="out" />
+	</signal>
+	<signal name="ConferenceControlSignal">
+	  <arg type="i" name="control_error" direction="out" />
+	  <arg type="u" name="conference_id" direction="out" />
+	</signal>
+	<signal name="FloorControlSignal">
+	  <arg type="i" name="control_error" direction="out" />
+	  <arg type="u" name="conference_id" direction="out" />
+	  <arg type="q" name="floor_id" direction="out" />
+	</signal>
+	<signal name="UserControlSignal">
+	  <arg type="i" name="control_error" direction="out" />
+	  <arg type="u" name="conference_id" direction="out" />
+	  <arg type="q" name="user_id" direction="out" />
+	</signal>
+	<signal name="ChairControlSignal">
+	  <arg type="i" name="control_error" direction="out" />
+	  <arg type="u" name="conference_id" direction="out" />
+	  <arg type="q" name="floor_id" direction="out" />
+	  <arg type="q" name="user_id" direction="out" />
+	</signal>
+	<signal name="ConferenceIDsSignal">
+	  <arg type="i" name="control_error" direction="out" />
+	  <arg type="ay" name="conference_ids" direction="out" />
+	</signal>
+	<signal name="ConferenceInfoSignal">
+	  <arg type="i" name="control_error" direction="out" />
+	  <arg type="u" name="conference_id" direction="out" />
+	  <arg type="s" name="conference_info" direction="out" />
+	</signal>
+	<method name="Start">
+	  <arg type="ay" name="server_arg" direction="in" />
+    </method>
+	<method name="Stop" />
+	<method name="Quit" />
+	<method name="AddConference">
+	  <arg type="u" name="conference_id" direction="in" />
+	  <arg type="ay" name="conference_arg" direction="in" />
+	</method>
+	<method name="RemoveConference">
+	  <arg type="u" name="conference_id" direction="in" />
+	</method>
+	<method name="ModifyConference">
+	  <arg type="u" name="conference_id" direction="in" />
+	  <arg type="ay" name="conference_arg" direction="in" />
+	</method>
+	<method name="AddFloor">
+	  <arg type="u" name="conference_id" direction="in" />
+	  <arg type="q" name="floor_id" direction="in" />
+	  <arg type="ay" name="floor_arg" direction="in" />
+	</method>
+	<method name="RemoveFloor">
+	  <arg type="u" name="conference_id" direction="in" />
+	  <arg type="q" name="floor_id" direction="in" />
+	</method>
+	<method name="ModifyFloor">
+	  <arg type="u" name="conference_id" direction="in" />
+	  <arg type="q" name="floor_id" direction="in" />
+	  <arg type="ay" name="floor_arg" direction="in" />
+	</method>
+	<method name="AddUser">
+	  <arg type="u" name="conference_id" direction="in" />
+	  <arg type="q" name="user_id" direction="in" />
+	  <arg type="ay" name="user_arg" direction="in" />
+	</method>
+	<method name="RemoveUser">
+	  <arg type="u" name="conference_id" direction="in" />
+	  <arg type="q" name="user_id" direction="in" />
+	</method>
+	<method name="SetChair">
+	  <arg type="u" name="conference_id" direction="in" />
+	  <arg type="q" name="floor_id" direction="in" />
+	  <arg type="q" name="user_id" direction="in" />
+	</method>
+	<method name="RemoveChair">
+	  <arg type="u" name="conference_id" direction="in" />
+	  <arg type="q" name="floor_id" direction="in" />
+	</method>
+	<method name="GetConferenceIDs" />
+	<method name="GetConferenceInfo">
+	  <arg type="u" name="conference_id" direction="in" />
+	</method>
+  </interface>
+</node>

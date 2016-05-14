@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+D:/qutecom-2.2/wifo/srtp/CMakeLists.txt
+D:/qutecom-2.2/wifo/srtp/ConfigureChecks.cmake
+D:/CMake26/share/cmake-2.6/Modules/CheckIncludeFiles.cmake
+D:/CMake26/share/cmake-2.6/Modules/CheckSymbolExists.cmake
+D:/CMake26/share/cmake-2.6/Modules/CheckFunctionExists.cmake
+D:/qutecom-2.2/wifo/srtp/config.h.cmake

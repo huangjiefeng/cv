@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BA68C491-812E-4B02-84CD-27C83F490582}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>owsl.dir\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>owsl.dir\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\wifo\owsl\include;..\..\..\wifo\owbase\include;..\..\..\wifo\owsl\src;..\..\..\libs\3rdparty\curl\include;..\..\..\libs\3rdparty\openssl\include;..\..\..\libs\3rdparty\pthread\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OWBASE_DLL;CURL_DLL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Debug";BUILD_OWSL_DLL -DOWSL_DLL;BUILD_OWSL_DLL;OWSL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)Debug/owsl.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>owbase.lib;curl.lib;libeay32.lib;ssleay32.lib;pthread.lib;ws2_32.lib;iphlpapi.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)Debug\owsl.dll</OutputFile>
+      <Version>0.0</Version>
+      <AdditionalLibraryDirectories>$(SolutionDir)\_lib\debug;$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)Debug\owsl.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(ProjectDir)Debug\owsl.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OWBASE_DLL;CURL_DLL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Debug";BUILD_OWSL_DLL -DOWSL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)debug/</Message>
+      <Command>xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)" /Y
+xcopy "$(TargetPath)" "$(SolutionDir)\$(Configuration)\" /Y
+xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).pdb" "$(SolutionDir)$(Configuration)\" /Y
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OWBASE_DLL;CURL_DLL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Debug";BUILD_OWSL_DLL -DOWSL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\owsl\src;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\pthread\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\wifo\owsl\include;..\..\..\wifo\owbase\include;..\..\..\wifo\owsl\src;..\..\..\libs\3rdparty\curl\include;..\..\..\libs\3rdparty\openssl\include;..\..\..\libs\3rdparty\pthread\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OWBASE_DLL;CURL_DLL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Release";BUILD_OWSL_DLL;DOWSL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)Release/owsl.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>owbase.lib;curl.lib;libeay32.lib;ssleay32.lib;pthread.lib;ws2_32.lib;iphlpapi.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)Release\owsl.dll</OutputFile>
+      <Version>0.0</Version>
+      <AdditionalLibraryDirectories>$(SolutionDir)\_lib\Release;$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(ProjectDir)Release\owsl.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(ProjectDir)Release\owsl.lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OWBASE_DLL;CURL_DLL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Release";BUILD_OWSL_DLL -DOWSL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)release/</Message>
+      <Command>xcopy "$(ProjectDir)\$(Configuration)\$(ProjectName).lib" "$(SolutionDir)\_lib\Release\" /Y
+xcopy "$(TargetPath)" "$(SolutionDir)$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OWBASE_DLL;CURL_DLL;PTHREAD_DLL;DEBUG;CMAKE_INTDIR="Release";BUILD_OWSL_DLL -DOWSL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\owsl\src;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\3rdparty\openssl\include;$(SolutionDir)..\libs\3rdparty\pthread\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\core\owsl.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\core\owsl_address.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\core\owsl_asynchronous.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\protocols\owsl_base.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\core\owsl_monitor.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\core\owsl_openssl.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\core\owsl_socket.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\core\owsl_socket_type.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\core\owsl_system_socket.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\protocols\owsl_tcp.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\protocols\owsl_tls.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\protocols\owsl_udp.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\protocols\owsl_uoh.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\protocols\owsl_uoh_common.c" />
+    <ClCompile Include="$(SolutionDir)..\wifo\owsl\src\protocols\owsl_uohs.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(SolutionDir)..\wifo\owsl\CMakeLists.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\owbase\owbase.vcxproj">
+      <Project>{ed8f68ed-2dfd-4213-8b9c-4d9356067ca1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

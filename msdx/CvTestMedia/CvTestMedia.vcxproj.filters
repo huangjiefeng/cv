@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="dbus_service">
+      <UniqueIdentifier>{355262c3-af8b-42cd-babe-b0a0b4b12768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{3af93ce6-9f6b-4712-9277-368d602649a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbus_client">
+      <UniqueIdentifier>{34226e32-d082-4262-8dd1-2ee4a468d85e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvTestMediaAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_CvTestMediaAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvTestMediaAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvTestMediaService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvTestMediaService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_CvTestMediaService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channel\type\testMedia\service\CvTestMediaAdaptor.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="CvTestMediaService.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\log\Log.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channelDispatcher\client\ChannelDispatcherIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CvTestMedia.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\include\dbus\channel\type\testMedia\service\CvTestMediaAdaptor.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CvTestMediaService.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channelDispatcher\client\ChannelDispatcherIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\testMedia\common\TestMediaServiceCommon.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\log\Log.h">
+      <Filter>log</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

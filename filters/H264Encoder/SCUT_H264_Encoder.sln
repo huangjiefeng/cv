@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x264Enc", "NEXT\NEXT.vcxproj", "{473CBFA7-1095-46DE-8E5B-8014FB800830}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{473CBFA7-1095-46DE-8E5B-8014FB800830}.Debug|Win32.ActiveCfg = Debug|Win32
+		{473CBFA7-1095-46DE-8E5B-8014FB800830}.Debug|Win32.Build.0 = Debug|Win32
+		{473CBFA7-1095-46DE-8E5B-8014FB800830}.Release|Win32.ActiveCfg = Release|Win32
+		{473CBFA7-1095-46DE-8E5B-8014FB800830}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

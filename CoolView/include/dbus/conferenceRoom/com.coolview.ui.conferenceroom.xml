@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.coolview.ui.conferenceroom">
+    <method name="AddMediaWindow">
+      <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="__client_request_cb"/>
+       <arg type="b"  name="send" direction="in" />  	     //send or receive
+       <arg type="ay" name="input_garray" direction="in" />  //MediaInfo
+	   <arg type="i"  name="screenIndex"  direction="in" />  //Screen Index
+       <arg type="i"  name="seet" direction="in" /> 	     //video frame position
+    </method>
+    <method name="CloseMediaWindow">
+       <arg type="s" name="user_id" direction="in" />  //user id
+    </method>
+    <method name="ChangeLayout">
+	   <arg type="i" name="screenIndex" direction="in" />	//Screen Index
+       <arg type="i" name="displayModel" direction="in" />  //display model for video windows
+    </method>
+    <method name="ShowRtcpMsg">
+	   <arg type="i" name="screenIndex" direction="in" />	
+       <arg type="b" name="show" direction="in" />  
+    </method>
+    <method name="UpdateRtcpMsg">
+      <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="__client_request_cb"/>
+       <arg type="ay" name="input_garray" direction="in" />  //RtcpInfo
+    </method>
+    <method name="ModifyMediaWindow">
+    	<arg type="s" name="user_id" direction="in" />
+		<arg type="i" name="actionIdex" direction="in" />
+		<arg type="ay" name="arguments" direction="in" />
+    </method>
+	<method name="OpenScreenShareFile">
+    	<arg type="s" name="filePath" direction="in" />
+		<arg type="i" name="screenIndex" direction="in" />
+    </method>
+    <method name="CloseWindow">
+    </method>
+    <method name="ExitConference">
+    </method>
+	
+	 <method name="RecoveryRecvMediaProcess">
+       <arg type="ay" name="input_garray" direction="in" />  //MediaInfo
+	   <arg type="i"  name="screenIndex"  direction="in" />  //Screen Index
+       <arg type="i"  name="seet" direction="in" /> 	     //video frame position
+    </method>
+	
+  </interface>
+</node>

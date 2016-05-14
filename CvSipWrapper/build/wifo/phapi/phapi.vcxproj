@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{811EFDA4-7E32-4F4D-A3D9-E3DCFD83E735}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>phapi.dir\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>phapi.dir\Release\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /EHs-c- /wd4251 /wd4275 /wd4675 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\..\wifo\phapi;..\..\..\wifo\msdx;..\..\..\wifo\libosip2\include;..\..\..\wifo\libosip2\include\osipparser2;..\..\..\wifo\eXosip\transport_manager;..\..\..\wifo\owsl\include;..\..\..\wifo\owbase\include;..\..\..\wifo\sVoIP\include;..\..\..\wifo\eXosip\include;..\..\..\wifo\eXosip\include\eXosip;..\..\..\wifo\eXosip\src\ow_osip;..\..\..\wifo\ortp\include;..\..\..\wifo\ortp\include\ortp;..\..\..\wifo\phapi\stun;..\..\..\wifo\phapi\gsm;..\..\..\libs\owutil;..\..\..\libs\owutil\cutil\msvc;..\..\..\libs\owutil\cutil\strndup;..\..\..\wifo\phapi-util\include;..\..\..\wifo\phapi-util\include\phapi-util\msvc;..\..\..\wifo\phapi\fidlib\include;..\..\..\wifo\phapi\speexec\include;..\..\..\libs\timer\include;..\..\..\libs\3rdparty\pthread\include;..\..\..\wifo\phapi\g722;..\..\..\wifo\phapi\g726\dummy;..\..\..\wifo\phapi\msdirent;..\..\..\libs\3rdparty\ffmpeg\include\ffmpeg;..\..\..\libs\pixertool\include;..\..\libs\pixertool;..\..\..\libs\webcam\include;..\..\..\libs\3rdparty\portaudio\include;..\..\..\libs\3rdparty\glib\glib-2.18.1\glib;..\..\..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(BoostDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;OWBASE_DLL;OWSL_DLL;ORTP_DEBUG_MODE;ORTP_STATIC;PHAPIUTIL_DLL;PTHREAD_DLL;USE_PCM=1;NEED_ECMUX=1;MINIMIZE_COPYING=1;SCHEDULING_MODE=0;BLOCKING_MODE=0;DO_ECHO_CAN=1;USE_WAVEIN_CBK=1;PSEUDO_AEC=0;NO_ECHO__SUPPRESSOR=1;PH_VIDEO_USELOCK=1;USE_SPXEC=1;PH_FORCE_16KHZ=1;USE_FLV1_OVER_H261=1;ENABLE_ILBC=1;SUBVERSION_REVISION=3ef77e19b903;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;WEBCAM_DLL;T_MSVC;PORTAUDIO_DLL;ENABLE_PORTAUDIO;DEBUG;CMAKE_INTDIR="Debug";BUILD_PHAPI_DLL -DPHAPI_DLL;BUILD_PHAPI_DLL;PHAPI_DLL;PHAPI_VIDEO_SUPPORT;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)Debug/phapi.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>osip2.lib;transport_manager.lib;svoip.lib;exosip.lib;ortp.lib;stun.lib;gsm.lib;owcutil.lib;fidlib.lib;wtimer.lib;msdirent.lib;srtp.lib;owbase.lib;owsl.lib;owutil.lib;owthread.lib;pthread.lib;curl.lib;glib.lib;phapiutil.lib;libeay32.lib;ssleay32.lib;user32.lib;winmm.lib;ws2_32.lib;wininet.lib;iphlpapi.lib;comsupp.lib;comsuppw.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)Debug\phapi.dll</OutputFile>
+      <Version>0.0</Version>
+      <AdditionalLibraryDirectories>$(SolutionDir)_lib\debug;$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)Debug\phapi.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(ProjectDir)Debug\phapi.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;OWBASE_DLL;OWSL_DLL;ORTP_DEBUG_MODE;ORTP_STATIC;PHAPIUTIL_DLL;PTHREAD_DLL;USE_PCM=1;NEED_ECMUX=1;MINIMIZE_COPYING=1;SCHEDULING_MODE=0;BLOCKING_MODE=0;DO_ECHO_CAN=1;USE_WAVEIN_CBK=1;PSEUDO_AEC=0;NO_ECHO__SUPPRESSOR=1;PH_VIDEO_USELOCK=1;USE_SPXEC=1;PH_FORCE_16KHZ=1;USE_FLV1_OVER_H261=1;ENABLE_ILBC=1;WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev3ef77e19b903/trunk/;SUBVERSION_REVISION=3ef77e19b903;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;WEBCAM_DLL;PHAPI_VIDEO_SUPPORT;T_MSVC;PORTAUDIO_DLL;ENABLE_PORTAUDIO;DEBUG;CMAKE_INTDIR="Debug";BUILD_PHAPI_DLL -DPHAPI_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)debug/</Message>
+      <Command>xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)" /Y
+xcopy "$(TargetPath)" "$(SolutionDir)$(Configuration)\" /Y
+xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).pdb" "$(SolutionDir)$(Configuration)\" /Y
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;OWBASE_DLL;OWSL_DLL;ORTP_DEBUG_MODE;ORTP_STATIC;PHAPIUTIL_DLL;PTHREAD_DLL;USE_PCM=1;NEED_ECMUX=1;MINIMIZE_COPYING=1;SCHEDULING_MODE=0;BLOCKING_MODE=0;DO_ECHO_CAN=1;USE_WAVEIN_CBK=1;PSEUDO_AEC=0;NO_ECHO__SUPPRESSOR=1;PH_VIDEO_USELOCK=1;USE_SPXEC=1;PH_FORCE_16KHZ=1;USE_FLV1_OVER_H261=1;ENABLE_ILBC=1;WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev3ef77e19b903/trunk/;SUBVERSION_REVISION=3ef77e19b903;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;WEBCAM_DLL;PHAPI_VIDEO_SUPPORT;T_MSVC;PORTAUDIO_DLL;ENABLE_PORTAUDIO;DEBUG;CMAKE_INTDIR="Debug";BUILD_PHAPI_DLL -DPHAPI_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\wifo\ortp\include;$(SolutionDir)..\wifo\ortp\include\ortp;$(SolutionDir)..\wifo\phapi\stun;$(SolutionDir)..\wifo\phapi\gsm;$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\phapi\fidlib\include;$(SolutionDir)..\wifo\phapi\speexec\include;$(SolutionDir)..\libs\timer\include;$(SolutionDir)..\libs\3rdparty\pthread\include;$(SolutionDir)..\wifo\phapi\g722;$(SolutionDir)..\wifo\phapi\g726\dummy;$(SolutionDir)..\wifo\phapi\msdirent;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\3rdparty\portaudio\include;D:\boost\boost_1_34_1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /EHs-c- /wd4251 /wd4275 /wd4675 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\..\wifo\phapi;..\..\..\wifo\msdx;..\..\..\wifo\libosip2\include;..\..\..\wifo\libosip2\include\osipparser2;..\..\..\wifo\eXosip\transport_manager;..\..\..\wifo\owsl\include;..\..\..\wifo\owbase\include;..\..\..\wifo\sVoIP\include;..\..\..\wifo\eXosip\include;..\..\..\wifo\eXosip\include\eXosip;..\..\..\wifo\eXosip\src\ow_osip;..\..\..\wifo\ortp\include;..\..\..\wifo\ortp\include\ortp;..\..\..\wifo\phapi\stun;..\..\..\wifo\phapi\gsm;..\..\..\libs\owutil;..\..\..\libs\owutil\cutil\msvc;..\..\..\libs\owutil\cutil\strndup;..\..\..\wifo\phapi-util\include;..\..\..\wifo\phapi-util\include\phapi-util\msvc;..\..\..\wifo\phapi\fidlib\include;..\..\..\wifo\phapi\speexec\include;..\..\..\libs\timer\include;..\..\..\libs\3rdparty\pthread\include;..\..\..\wifo\phapi\g722;..\..\..\wifo\phapi\g726\dummy;..\..\..\wifo\phapi\msdirent;..\..\..\libs\3rdparty\ffmpeg\include\ffmpeg;..\..\..\libs\pixertool\include;..\..\libs\pixertool;..\..\..\libs\webcam\include;..\..\..\libs\3rdparty\portaudio\include;..\..\..\libs\3rdparty\glib\glib-2.18.1\glib;..\..\..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(BoostDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;OWBASE_DLL;OWSL_DLL;ORTP_RELEASE_MODE;ORTP_STATIC;PHAPIUTIL_DLL;PTHREAD_DLL;USE_PCM=1;NEED_ECMUX=1;MINIMIZE_COPYING=1;SCHEDULING_MODE=0;BLOCKING_MODE=0;DO_ECHO_CAN=1;USE_WAVEIN_CBK=1;PSEUDO_AEC=0;NO_ECHO__SUPPRESSOR=1;PH_VIDEO_USELOCK=1;USE_SPXEC=1;PH_FORCE_16KHZ=1;USE_FLV1_OVER_H261=1;ENABLE_ILBC=1;SUBVERSION_REVISION=3ef77e19b903;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;WEBCAM_DLL;PHAPI_VIDEO_SUPPORT;T_MSVC;PORTAUDIO_DLL;ENABLE_PORTAUDIO;RELEASE;CMAKE_INTDIR="Release";BUILD_PHAPI_DLL;DPHAPI_DLL;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)Release/phapi.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>osip2.lib;transport_manager.lib;svoip.lib;exosip.lib;ortp.lib;stun.lib;gsm.lib;owcutil.lib;fidlib.lib;wtimer.lib;msdirent.lib;srtp.lib;owbase.lib;owsl.lib;owutil.lib;owthread.lib;pthread.lib;curl.lib;glib.lib;phapiutil.lib;libeay32.lib;ssleay32.lib;user32.lib;winmm.lib;ws2_32.lib;wininet.lib;iphlpapi.lib;comsupp.lib;comsuppw.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)Release\phapi.dll</OutputFile>
+      <Version>0.0</Version>
+      <AdditionalLibraryDirectories>$(SolutionDir)_lib\Release;$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(ProjectDir)Release\phapi.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(ProjectDir)Release\phapi.lib</ImportLibrary>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;OWBASE_DLL;OWSL_DLL;ORTP_DEBUG_MODE;ORTP_STATIC;PHAPIUTIL_DLL;PTHREAD_DLL;USE_PCM=1;NEED_ECMUX=1;MINIMIZE_COPYING=1;SCHEDULING_MODE=0;BLOCKING_MODE=0;DO_ECHO_CAN=1;USE_WAVEIN_CBK=1;PSEUDO_AEC=0;NO_ECHO__SUPPRESSOR=1;PH_VIDEO_USELOCK=1;USE_SPXEC=1;PH_FORCE_16KHZ=1;USE_FLV1_OVER_H261=1;ENABLE_ILBC=1;WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev3ef77e19b903/trunk/;SUBVERSION_REVISION=3ef77e19b903;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;WEBCAM_DLL;PHAPI_VIDEO_SUPPORT;T_MSVC;PORTAUDIO_DLL;ENABLE_PORTAUDIO;DEBUG;CMAKE_INTDIR="Release";BUILD_PHAPI_DLL -DPHAPI_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)Release/</Message>
+      <Command>xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\Release\" /Y
+xcopy "$(TargetPath)" "$(SolutionDir)$(Configuration)\" /Y
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSIP_MT;ENABLE_TRACE;HAVE_STRUCT_TIMEVAL;OWBASE_DLL;OWSL_DLL;ORTP_DEBUG_MODE;ORTP_STATIC;PHAPIUTIL_DLL;PTHREAD_DLL;USE_PCM=1;NEED_ECMUX=1;MINIMIZE_COPYING=1;SCHEDULING_MODE=0;BLOCKING_MODE=0;DO_ECHO_CAN=1;USE_WAVEIN_CBK=1;PSEUDO_AEC=0;NO_ECHO__SUPPRESSOR=1;PH_VIDEO_USELOCK=1;USE_SPXEC=1;PH_FORCE_16KHZ=1;USE_FLV1_OVER_H261=1;ENABLE_ILBC=1;WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev3ef77e19b903/trunk/;SUBVERSION_REVISION=3ef77e19b903;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;WEBCAM_DLL;PHAPI_VIDEO_SUPPORT;T_MSVC;PORTAUDIO_DLL;ENABLE_PORTAUDIO;DEBUG;CMAKE_INTDIR="Release";BUILD_PHAPI_DLL -DPHAPI_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\wifo\libosip2\include;$(SolutionDir)..\wifo\libosip2\include\osipparser2;$(SolutionDir)..\wifo\eXosip\transport_manager;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\sVoIP\include;$(SolutionDir)..\wifo\eXosip\include;$(SolutionDir)..\wifo\eXosip\include\eXosip;$(SolutionDir)..\wifo\eXosip\src\ow_osip;$(SolutionDir)..\wifo\ortp\include;$(SolutionDir)..\wifo\ortp\include\ortp;$(SolutionDir)..\wifo\phapi\stun;$(SolutionDir)..\wifo\phapi\gsm;$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\wifo\phapi-util\include;$(SolutionDir)..\wifo\phapi-util\include\phapi-util\msvc;$(SolutionDir)..\wifo\phapi\fidlib\include;$(SolutionDir)..\wifo\phapi\speexec\include;$(SolutionDir)..\libs\timer\include;$(SolutionDir)..\libs\3rdparty\pthread\include;$(SolutionDir)..\wifo\phapi\g722;$(SolutionDir)..\wifo\phapi\g726\dummy;$(SolutionDir)..\wifo\phapi\msdirent;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\3rdparty\portaudio\include;D:\boost\boost_1_34_1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\wifo\phapi\owpl_adapter.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\wifo\phapi\owpl_log.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\wifo\phapi\owpl_plugin.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\wifo\phapi\phapi-old.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\wifo\phapi\phapi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\wifo\phapi\phevents.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\wifo\phapi\phlog.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\wifo\phapi\phmedia.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\wifo\phapi\phvline.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)..\wifo\phapi\wlm.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)..\wifo\phapi\owpl.h" />
+    <ClInclude Include="$(SolutionDir)..\wifo\phapi\owpl_plugin.h" />
+    <ClInclude Include="$(SolutionDir)..\wifo\phapi\phapi-old.h" />
+    <ClInclude Include="$(SolutionDir)..\wifo\phapi\phapi.h" />
+    <ClInclude Include="$(SolutionDir)..\wifo\phapi\phcall.h" />
+    <ClInclude Include="$(SolutionDir)..\wifo\phapi\phevents.h" />
+    <ClInclude Include="$(SolutionDir)..\wifo\phapi\phglobal.h" />
+    <ClInclude Include="..\..\..\wifo\phapi\phmedia.h" />
+    <ClInclude Include="$(SolutionDir)..\wifo\phapi\phvline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\3rdparty\glib\glib-2.18.1\glib\glib.vcxproj">
+      <Project>{fa141b81-02c0-4d6b-a99a-57231e125904}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\eXosip\exosip.vcxproj">
+      <Project>{6894f0e5-38f2-46f9-98a9-790f81322322}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libosip2\osip2.vcxproj">
+      <Project>{0f2fa9d9-45d8-43f2-9619-e5c4ae23829f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\owbase\owbase.vcxproj">
+      <Project>{ed8f68ed-2dfd-4213-8b9c-4d9356067ca1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\owsl\owsl.vcxproj">
+      <Project>{ba68c491-812e-4b02-84cd-27c83f490582}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

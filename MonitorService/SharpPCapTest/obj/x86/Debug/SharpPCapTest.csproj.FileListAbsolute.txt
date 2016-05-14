@@ -1,0 +1,1 @@
+D:\vs2012\trunk\MonitorService\SharpPCapTest\obj\x86\Debug\SharpPCapTest.csprojResolveAssemblyReference.cache

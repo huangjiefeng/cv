@@ -1,0 +1,2 @@
+1、如果编译时提示缺少WeblibUploader.lib链接库，则需要Checkout ..\WeblibUploader目录，编译其中的Debug_DLL（或Release_DLL）配置，将生成的DLL和LIB文件复制到Debug（或Release）目录中。
+2、编译后程序无法直接运行，因为缺少依赖的其他程序。需要Checkout ..\CvSetup目录，运行BuildCoolViewDevDir.bat脚本，生成调试需要的文件。

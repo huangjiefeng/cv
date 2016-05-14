@@ -1,0 +1,228 @@
+<ui version="4.0" >
+ <class>ChatMainWindow</class>
+ <widget class="QMainWindow" name="ChatMainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>351</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <property name="toolButtonStyle" >
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" >
+    <property name="margin" >
+     <number>6</number>
+    </property>
+    <property name="spacing" >
+     <number>3</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>351</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Edit" >
+    <property name="title" >
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionCut" />
+    <addaction name="actionCopy" />
+    <addaction name="actionPaste" />
+   </widget>
+   <widget class="QMenu" name="menuContact" >
+    <property name="title" >
+     <string>&amp;Contact</string>
+    </property>
+    <addaction name="actionAddContact" />
+    <addaction name="actionSearchWengoContact" />
+   </widget>
+   <widget class="QMenu" name="menuWengo" >
+    <property name="title" >
+     <string>@company@</string>
+    </property>
+    <addaction name="actionShowWengoAccount" />
+    <addaction name="actionEditMyProfile" />
+    <addaction name="actionWengoServices" />
+    <addaction name="separator" />
+    <addaction name="actionClose" />
+   </widget>
+   <widget class="QMenu" name="menuActions" >
+    <property name="title" >
+     <string>&amp;Actions</string>
+    </property>
+    <addaction name="actionCreateConferenceCall" />
+    <addaction name="actionSendSms" />
+    <addaction name="separator" />
+    <addaction name="actionSaveHistoryAs" />
+   </widget>
+   <widget class="QMenu" name="menuTools" >
+    <property name="title" >
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="actionShowFileTransfer" />
+   </widget>
+   <addaction name="menuWengo" />
+   <addaction name="menu_Edit" />
+   <addaction name="menuContact" />
+   <addaction name="menuActions" />
+   <addaction name="menuTools" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" >
+   <property name="autoFillBackground" >
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar" >
+   <property name="windowTitle" >
+    <string>Main Toolbar</string>
+   </property>
+   <property name="movable" >
+    <bool>false</bool>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize" >
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea" >
+    <number>4</number>
+   </attribute>
+   <addaction name="actionCallContact" />
+   <addaction name="actionSendSms" />
+   <addaction name="actionSendFile" />
+   <addaction name="actionContactInfo" />
+   <addaction name="actionCreateChatConf" />
+  </widget>
+  <action name="actionShowWengoAccount" />
+  <action name="actionEditMyProfile" />
+  <action name="actionWengoServices" />
+  <action name="actionClose" >
+   <property name="text" >
+    <string>&amp;Close</string>
+   </property>
+  </action>
+  <action name="actionAddContact" />
+  <action name="actionSearchWengoContact" />
+  <action name="actionSendSms" />
+  <action name="actionCreateConferenceCall" />
+  <action name="actionCallContact" >
+   <property name="icon" >
+    <iconset resource="../../../../resources/wengophone.qrc" >:/pics/contact/call.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Call Contact</string>
+   </property>
+   <property name="iconText" >
+    <string>Call Contact</string>
+   </property>
+   <property name="toolTip" >
+    <string>Call Contact</string>
+   </property>
+  </action>
+  <action name="actionSendFile" >
+   <property name="icon" >
+    <iconset resource="../../../../resources/wengophone.qrc" >:/pics/filetransfer/send-file.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Send a File</string>
+   </property>
+   <property name="iconText" >
+    <string>Send a File</string>
+   </property>
+   <property name="toolTip" >
+    <string>Send a File</string>
+   </property>
+  </action>
+  <action name="actionCreateChatConf" >
+   <property name="icon" >
+    <iconset resource="../../../../resources/wengophone.qrc" >:/pics/chat/chat-room.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Start Chat Conference</string>
+   </property>
+   <property name="iconText" >
+    <string>Conference</string>
+   </property>
+  </action>
+  <action name="actionContactInfo" >
+   <property name="icon" >
+    <iconset resource="../../../../resources/wengophone.qrc" >:/pics/chat/contact-details.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Show Contact Info</string>
+   </property>
+   <property name="iconText" >
+    <string>Show Contact Info</string>
+   </property>
+   <property name="toolTip" >
+    <string>Show Contact Info</string>
+   </property>
+  </action>
+  <action name="actionBlockContact" >
+   <property name="icon" >
+    <iconset resource="../../../../resources/wengophone.qrc" >:/pics/chat/block-a.png</iconset>
+   </property>
+   <property name="text" >
+    <string>blockContact</string>
+   </property>
+  </action>
+  <action name="actionShowFileTransfer" >
+   <property name="text" >
+    <string/>
+   </property>
+  </action>
+  <action name="actionSaveHistoryAs" >
+   <property name="icon" >
+    <iconset/>
+   </property>
+   <property name="text" >
+    <string>&amp;Save History As...</string>
+   </property>
+  </action>
+  <action name="actionCut" >
+   <property name="text" >
+    <string>Cu&amp;t</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionCopy" >
+   <property name="text" >
+    <string>&amp;Copy</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste" >
+   <property name="text" >
+    <string>&amp;Paste</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../../../resources/wengophone.qrc" />
+ </resources>
+ <connections/>
+</ui>

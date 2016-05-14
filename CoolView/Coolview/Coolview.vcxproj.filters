@@ -1,0 +1,1788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="dbus">
+      <UniqueIdentifier>{5f4c907d-9154-4aa9-b006-a7eb5d67f608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{e0285d90-f9db-4987-9b56-f570d8f03430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profile">
+      <UniqueIdentifier>{72d120f1-d79e-40f7-b992-9266e841b18c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{e75b5430-04f1-43ed-9d2c-92b68383d400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbus_service">
+      <UniqueIdentifier>{4d8a9ae4-201b-47cd-b281-fbb17e5b6e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{5cadea63-83e4-49a4-86c2-37b8387c3572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="importDLL">
+      <UniqueIdentifier>{60141089-86fc-4005-98b4-49d790d3902b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="monitorConfig">
+      <UniqueIdentifier>{9783d078-5dd2-4f73-9a01-ae6ffa3ad5e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="manualConfig">
+      <UniqueIdentifier>{674d2576-98be-4c96-b480-8bac08a203cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{0a3acd09-090b-4c24-b354-db6cd052b2bb}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{21327c04-8e14-470c-8eba-58c2ea1a2d62}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="controller">
+      <UniqueIdentifier>{99f9c103-5f32-4f16-8acb-8b09fcdb0dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="controller\interface">
+      <UniqueIdentifier>{42be60aa-8eaf-4b02-926a-d7b0d66a0783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="controller\impl">
+      <UniqueIdentifier>{f5087013-392e-47a2-9a50-ff4776a291c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{56849b7e-d6d3-4fcf-9ca5-d8cba6ba400a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{5ee2038c-ea4f-4400-899c-6a9f82288ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\interface">
+      <UniqueIdentifier>{b78f5f5b-0f08-46b1-81da-885ce511beef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\sip">
+      <UniqueIdentifier>{5b208d7d-1af6-431a-b702-1903591d930a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\description">
+      <UniqueIdentifier>{bb45ad5a-40ac-4966-9d6b-c7f73cf99d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\util">
+      <UniqueIdentifier>{9492df8a-6b0f-4202-b7df-18e9e151b321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="launcher">
+      <UniqueIdentifier>{6f80e706-24b6-4655-a267-e69d0f0144bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\udp">
+      <UniqueIdentifier>{5b036599-9116-4ee0-b7f2-55aa21e51fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="setting">
+      <UniqueIdentifier>{1fb707ad-5387-44a2-afd0-dd4e69c3643e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Setting">
+      <UniqueIdentifier>{84294980-9b72-4fb6-a57d-5137330289c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Tx">
+      <UniqueIdentifier>{4eb4d8ed-47f0-4c83-8d23-c5909d94cff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx">
+      <UniqueIdentifier>{dfb9841f-0c2e-4142-8130-99d0e7c7bccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\setting">
+      <UniqueIdentifier>{c5393d25-9035-4483-856a-af6590efc39c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\ui">
+      <UniqueIdentifier>{64e58c67-7224-4a0c-9111-43ad49824297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\controller">
+      <UniqueIdentifier>{95ba85c6-86f2-49c1-9d39-cb5ab3068ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\controller\interface">
+      <UniqueIdentifier>{8bec4a9d-f1dd-48f8-8738-17c8aec71096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\controller\impl">
+      <UniqueIdentifier>{ce08610b-74a1-4c55-b986-d0bb24428f5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\config">
+      <UniqueIdentifier>{ee460977-4c97-40db-b229-46f48295da1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\dbus">
+      <UniqueIdentifier>{6fea072e-e657-4ab5-a7a7-ff21d0c5de4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\util">
+      <UniqueIdentifier>{ed7cb552-18e2-4d27-bc53-ffa40f67590a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Tx\Setting">
+      <UniqueIdentifier>{7369962d-6cd8-48e5-9257-1dbc5048d73d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\soap">
+      <UniqueIdentifier>{635b357f-d0c7-4d4a-b100-e4e5671a0c67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\button">
+      <UniqueIdentifier>{c54ed75f-6229-4753-88ab-95afe5ed0700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="preprocessor">
+      <UniqueIdentifier>{d2ce133d-41d8-4526-ac4f-48ecffd89f53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="virtualConf">
+      <UniqueIdentifier>{c50a3c78-b67e-44f0-9660-eff5b1bcade3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="virtualConf\network">
+      <UniqueIdentifier>{de55b81b-283b-4753-b10a-8c680892081a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="virtualConf\network\sip">
+      <UniqueIdentifier>{3436de84-2003-4c41-bee3-d9a0202b0737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="virtualConf\controller">
+      <UniqueIdentifier>{f7045aa6-ab3f-47a3-933e-d9733a2d9e0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="virtualConf\controller\impl">
+      <UniqueIdentifier>{383bdbfb-f542-43ab-93b4-05a5ee67f79a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="virtualConf\controller\interface">
+      <UniqueIdentifier>{90e85871-203c-4a0d-9bd6-27325197532d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="virtualConf\ui">
+      <UniqueIdentifier>{c1333d0e-8198-4b0c-b7c4-f1fa712df71f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\VirtualConf">
+      <UniqueIdentifier>{599e77e1-5a61-465e-9d29-26376274d60b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\sdp">
+      <UniqueIdentifier>{b80903f7-c11c-4b92-87df-c0cfa861f873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\soap\common">
+      <UniqueIdentifier>{0b321c12-3602-43a4-bf27-0b333ef4b63e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\soap\monitor">
+      <UniqueIdentifier>{70b230c5-2c86-4d2e-a6ec-47d7d665a728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\dbus_service">
+      <UniqueIdentifier>{f3585bd7-fd75-4261-a2a4-80d66037c3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\network">
+      <UniqueIdentifier>{fc317943-b0e1-494a-adcd-eea6c8a6c8ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tx\network\soap">
+      <UniqueIdentifier>{f43bd13e-de55-4401-b202-71311ff9db3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Core">
+      <UniqueIdentifier>{4a19cae3-5b72-4ad0-991a-ea95ca806c60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CoolviewCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_accountproxy.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_accountproxy.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ConferenceManager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConferenceManager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConferenceRoomIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ConferenceRoomIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvCoreAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvCoreAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvPerfMonitorIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvPerfMonitorIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvPerfProcessIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvPerfProcessIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvScreenMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvScreenMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvSipWrapperIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvSipWrapperIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvStreamedMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvStreamedMediaIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MediaManager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MediaManager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TelecontrollerIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TelecontrollerIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Uploader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Uploader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ZipDir.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ZipDir.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_CoolView.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channelDispatcher\client\ChannelDispatcherIf.cpp">
+      <Filter>dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\conferenceRoom\client\ConferenceRoomIf.cpp">
+      <Filter>dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\performance\monitor\client\CvPerfMonitorIf.cpp">
+      <Filter>dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\performance\process\client\CvPerfProcessIf.cpp">
+      <Filter>dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channel\type\screenMedia\client\CvScreenMediaIf.cpp">
+      <Filter>dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\sipwrapper\client\CvSipWrapperIf.cpp">
+      <Filter>dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channel\type\streamedMedia\client\CvStreamedMediaIf.cpp">
+      <Filter>dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\telecontroller\client\TelecontrollerIf.cpp">
+      <Filter>dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="util\ConferenceManager.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\CVMsgParser.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\GetFileVersion.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\MediaManager.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\NetworkUtil.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\report\RTCPReportReader.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\sharememory\SingalMemoryMap.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\STcpSender.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\udp\UdpReceiver.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\udp\UdpSender.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\Uploader\Uploader.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\zip\ZipDir.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="profile\RunningProfile.cpp">
+      <Filter>profile</Filter>
+    </ClCompile>
+    <ClCompile Include="config\RunningConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\core\service\CvCoreAdaptor.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\log\Log.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="monitorConfig\MonitorConfig.cpp">
+      <Filter>monitorConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="manualconfig.cpp">
+      <Filter>manualConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ini\Ini.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_main_control_window.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_main_control_window.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_conference_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_conference_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_display_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_display_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_local_terminal_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_local_terminal_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_terminal_list_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_terminal_list_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_terminal_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_terminal_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_login_form.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_login_form.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ip_setting_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ip_setting_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_screen_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_screen_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_seat_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_seat_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="conference_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="display_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ip_setting_dialog.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="login_form.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="local_terminal_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="main_control_window.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="seat_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="terminal_list_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="terminal_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_display_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_display_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_session_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_session_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tx_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tx_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="screen_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_session_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_session_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_display_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_display_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_device_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_device_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="device_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_conference_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_conference_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tx_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tx_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_conference_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_conference_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="voice_volume_setting_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_voice_volume_setting_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_voice_volume_setting_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_controller_manager_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_controller_manager_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_controller_manager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_controller_manager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="conference_controller.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="controller_manager.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="display_controller.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="session_controller.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_manager.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ui_manager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ui_manager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_msg_receiver_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_msg_receiver_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_msg_sender_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_msg_sender_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="sip_msg_builder.cpp">
+      <Filter>network\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="sip_msg_parser.cpp">
+      <Filter>network\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sip_msg_receiver.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sip_msg_receiver.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="sip_msg_receiver.cpp">
+      <Filter>network\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="sip_msg_sender.cpp">
+      <Filter>network\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_msg_manager_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_msg_manager_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sip_msg_sender.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sip_msg_sender.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sip_msg_manager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sip_msg_manager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="sip_msg_manager.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="stream_receiver_info_manager.cpp">
+      <Filter>controller</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpWrapper.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HttpWrapper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HttpWrapper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="terminal_description.cpp">
+      <Filter>network\description</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_media_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_media_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="media_controller.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="terminal_manager.cpp">
+      <Filter>controller</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_media_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_media_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_system_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_system_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_system_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_system_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="system_controller.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_virtual_terminal_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_virtual_terminal_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual_terminal_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_local_mic_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_local_mic_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_local_speaker_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_local_speaker_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="local_speaker_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="local_mic_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="launcher.cpp">
+      <Filter>launcher</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_http_msg_manager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_http_msg_manager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="http_msg_manager.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_launcher.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_launcher.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_udp_report_receiver.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_udp_report_receiver.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="udp_report_receiver.cpp">
+      <Filter>network\udp</Filter>
+    </ClCompile>
+    <ClCompile Include="devicelist_widget.cpp">
+      <Filter>setting</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_devicelist_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_devicelist_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_monitor_tab.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_monitor_tab.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="monitor_tab.cpp">
+      <Filter>setting</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_device_test_tab.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_device_test_tab.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tx_setting_tab.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tx_setting_tab.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="device_test_tab.cpp">
+      <Filter>setting</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_record_status_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_record_status_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tx_control_window.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tx_control_window.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="tx_setting_tab.cpp">
+      <Filter>tx\setting</Filter>
+    </ClCompile>
+    <ClCompile Include="record_status_widget.cpp">
+      <Filter>tx\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="tx_control_window.cpp">
+      <Filter>tx\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="tx_controller.cpp">
+      <Filter>tx\controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ini\TxConfig.cpp">
+      <Filter>tx\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ini\CVIniConfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_monitor_client.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_monitor_client.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_monitor_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_monitor_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_monitor_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_monitor_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="monitor_controller.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_web_page_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_web_page_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="web_page_widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_audio_setting_tab.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_audio_setting_tab.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_setting_tab.cpp">
+      <Filter>setting</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_video_setting_tab.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_video_setting_tab.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="video_setting_tab.cpp">
+      <Filter>setting</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_daemon_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_daemon_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_daemon_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_daemon_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="daemon_controller.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_audio_send_control_button.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_audio_send_control_button.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_send_control_button.cpp">
+      <Filter>ui\button</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_video_send_control_button.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_video_send_control_button.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="video_send_control_button.cpp">
+      <Filter>ui\button</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_hand_up_button.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_hand_up_button.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="hand_up_button.cpp">
+      <Filter>ui\button</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_preprocessor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_preprocessor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocessor.cpp">
+      <Filter>preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="config\config_helper.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="PROTOCOL.cpp">
+      <Filter>setting</Filter>
+    </ClCompile>
+    <ClCompile Include="ptz_tab.cpp">
+      <Filter>setting</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ptz_tab.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ptz_tab.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_udp_report_sender.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_udp_report_sender.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="udp_report_sender.cpp">
+      <Filter>network\udp</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ptz_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ptz_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ptz_controller.cpp">
+      <Filter>setting</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_control_panel_booter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_control_panel_booter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="control_panel_booter.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="speaker_volume_control_button.cpp">
+      <Filter>ui\button</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_speaker_volume_control_button.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_speaker_volume_control_button.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="config_manager.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_offline_session_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_offline_session_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="offline_session_controller.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="vconf_sip_msg_manager.cpp">
+      <Filter>virtualConf\network</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_vconf_sip_msg_manager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_vconf_sip_msg_manager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="vconf_sip_msg_sender.cpp">
+      <Filter>virtualConf\network\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_vconf_sip_msg_sender.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_vconf_sip_msg_sender.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="vconf_sip_msg_receiver.cpp">
+      <Filter>virtualConf\network\sip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_vconf_sip_msg_receiver.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_vconf_sip_msg_receiver.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fileplay_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fileplay_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="fileplay_controller.cpp">
+      <Filter>virtualConf\controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fileplay_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fileplay_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fileplay_ctrl_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fileplay_ctrl_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="fileplay_ctrl_widget.cpp">
+      <Filter>virtualConf\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tx_client_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tx_client_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tx_client_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tx_client_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="tx_client_controller.cpp">
+      <Filter>tx\controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="tx_util.cpp">
+      <Filter>tx\util</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TxMonitorIf.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TxMonitorIf.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\txMonitor\client\TxMonitorIf.cpp">
+      <Filter>tx\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_floor_controller_interface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_floor_controller_interface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="sdp_parser.cpp">
+      <Filter>network\sdp</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_bfcp_client_proxy.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_bfcp_client_proxy.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\BfcpClient\client\bfcp_client_proxy.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="floor_controller.cpp">
+      <Filter>controller\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\BfcpClient\client\BfcpClientIf.cpp">
+      <Filter>dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BfcpClientIf.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BfcpClientIf.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TxControllerAdaptor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TxControllerAdaptor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\gSoap\common\stdsoap2.cpp">
+      <Filter>network\soap\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\gSoap\env\envC.cpp">
+      <Filter>network\soap\common</Filter>
+    </ClCompile>
+    <ClCompile Include="monitor_client.cpp">
+      <Filter>network\soap\monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\monitor\WebService\monitor\monitor_soapBasicHttpBinding_USCOREIMonitorServiceProxy.cpp">
+      <Filter>network\soap\monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\monitor\WebService\monitor\monitor_soapC.cpp">
+      <Filter>network\soap\monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\txController\service\TxControllerAdaptor.cpp">
+      <Filter>tx\dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\tx\WebService\cvtx\tx_soapC.cpp">
+      <Filter>tx\network\soap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\tx\WebService\cvtx\tx_soapCvTxProxy.cpp">
+      <Filter>tx\network\soap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\desktop\screen_helper.cpp">
+      <Filter>ui\util</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_screen_helper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_screen_helper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tx_client_setting_tab.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tx_client_setting_tab.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="tx_client_setting_tab.cpp">
+      <Filter>tx\setting</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tx_display_controller.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tx_display_controller.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="tx_display_controller.cpp">
+      <Filter>tx\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\ProcessManager.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="help-widget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\core\service\CvCoreService.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvCoreService.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvCoreService.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Coolview.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CoolView.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\im\jabber\client\accountproxy.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channelDispatcher\client\ChannelDispatcherIf.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\conferenceRoom\client\ConferenceRoomIf.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\performance\monitor\client\CvPerfMonitorIf.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\performance\process\client\CvPerfProcessIf.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\screenMedia\client\CvScreenMediaIf.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\sipwrapper\client\CvSipWrapperIf.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\streamedMedia\client\CvStreamedMediaIf.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\telecontroller\client\TelecontrollerIf.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="util\ConferenceManager.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="util\MediaManager.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\Uploader\Uploader.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\zip\ZipDir.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\core\service\CvCoreAdaptor.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="image\application.ico" />
+    <CustomBuild Include="icon1.ico" />
+    <CustomBuild Include="ClassDiagram1.cd" />
+    <CustomBuild Include="GeneratedFiles\ui_HelpWidget.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\msdx\common\MsdxServiceCommon.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\screenMedia\common\ScreenMediaServiceCommon.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\sipwrapper\common\SipWrapperCommonService.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\streamedMedia\common\StreamedMediaServiceCommon.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\testMedia\TestMediaServiceCommon.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\ini\Ini.h">
+      <Filter>config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="util\CVMsgParser.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="util\GetFileVersion.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="util\NetworkUtil.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="util\QoSDef.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="util\RemoteReceiver.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\report\RTCPReportReader.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\sharememory\SingalMemoryMap.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="util\STcpSender.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\udp\UdpReceiver.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\udp\UdpSender.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\zip\zip.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="profile\RunningProfile.h">
+      <Filter>profile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="config\RunningConfig.h">
+      <Filter>config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\core\common\CvCoreServiceCommon.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\performance\monitor\common\MonitorConfigCommon.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\log\Log.h">
+      <Filter>log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\DeviceManager\DeviceManager.h">
+      <Filter>importDLL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="monitorConfig\MonitorConfig.h">
+      <Filter>monitorConfig</Filter>
+    </CustomBuild>
+    <CustomBuild Include="manualconfig.h">
+      <Filter>manualConfig</Filter>
+    </CustomBuild>
+    <CustomBuild Include="display_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="main_control_window.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="terminal_list_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="local_terminal_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="terminal_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="login_form.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ip_setting_dialog.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="screen_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="seat_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="conference_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="seat_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="login_form.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="terminal_list_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="terminal_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="main_control_window.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="display_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ip_setting_dialog.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="screen_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="local_terminal_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="session_controller_interface.h">
+      <Filter>controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="display_controller_interface.h">
+      <Filter>controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="device_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="device_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="conference_controller_interface.h">
+      <Filter>controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="voice_volume_setting_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="voice_volume_setting_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="controller_manager_interface.h">
+      <Filter>controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="session_controller.h">
+      <Filter>controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="conference_controller.h">
+      <Filter>controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="controller_manager.h">
+      <Filter>controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="display_controller.h">
+      <Filter>controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui_manager.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="msg_receiver_interface.h">
+      <Filter>network\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="msg_sender_interface.h">
+      <Filter>network\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sip_msg_builder.h">
+      <Filter>network\sip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sip_msg_parser.h">
+      <Filter>network\sip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sip_msg_receiver.h">
+      <Filter>network\sip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sip_msg_sender.h">
+      <Filter>network\sip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="msg_manager_interface.h">
+      <Filter>network\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sip_msg_manager.h">
+      <Filter>network</Filter>
+    </CustomBuild>
+    <CustomBuild Include="stream_receiver_info_manager.h">
+      <Filter>controller</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HttpWrapper.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="media_controller.h">
+      <Filter>controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="terminal_manager.h">
+      <Filter>controller</Filter>
+    </CustomBuild>
+    <CustomBuild Include="media_controller_interface.h">
+      <Filter>controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="system_controller_interface.h">
+      <Filter>controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="system_controller.h">
+      <Filter>controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="virtual_terminal_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="virtual_terminal_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="local_mic_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="local_speaker_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="local_speaker_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="local_mic_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="http_msg_manager.h">
+      <Filter>network</Filter>
+    </CustomBuild>
+    <CustomBuild Include="launcher.h">
+      <Filter>launcher</Filter>
+    </CustomBuild>
+    <CustomBuild Include="udp_report_receiver.h">
+      <Filter>network\udp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="devicelist_widget.h">
+      <Filter>setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="monitor_tab.ui">
+      <Filter>Form Files\Setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="monitor_tab.h">
+      <Filter>setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="device_test_tab.ui">
+      <Filter>Form Files\Setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="device_setting_widget.ui">
+      <Filter>Form Files\Setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="device_test_tab.h">
+      <Filter>setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="record_status_widget.ui">
+      <Filter>Form Files\Tx</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_control_window.ui">
+      <Filter>Form Files\Tx</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_setting_tab.h">
+      <Filter>tx\setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="record_status_widget.h">
+      <Filter>tx\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_control_window.h">
+      <Filter>tx\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_controller.h">
+      <Filter>tx\controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_controller_interface.h">
+      <Filter>tx\controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_setting_tab.ui">
+      <Filter>Form Files\Tx\Setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="monitor_controller_interface.h">
+      <Filter>controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="monitor_controller.h">
+      <Filter>controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="web_page_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="web_page_widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="audio_setting_tab.ui">
+      <Filter>Form Files\Setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="audio_setting_tab.h">
+      <Filter>setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="video_setting_tab.ui">
+      <Filter>Form Files\Setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="video_setting_tab.h">
+      <Filter>setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="daemon_controller_interface.h">
+      <Filter>controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="daemon_controller.h">
+      <Filter>controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="audio_send_control_button.h">
+      <Filter>ui\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="video_send_control_button.h">
+      <Filter>ui\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hand_up_button.h">
+      <Filter>ui\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pending_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="preprocessor.h">
+      <Filter>preprocessor</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ptz_tab.ui">
+      <Filter>Form Files\Setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ptz_tab.h">
+      <Filter>setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="udp_report_sender.h">
+      <Filter>network\udp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ptz_controller.h">
+      <Filter>setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="control_panel_booter.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="control_panel_booter.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="conference_list_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="conference_widget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="speaker_volume_control_button.h">
+      <Filter>ui\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="offline_session_controller.h">
+      <Filter>controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="vconf_sip_msg_manager.h">
+      <Filter>virtualConf\network</Filter>
+    </CustomBuild>
+    <CustomBuild Include="vconf_sip_msg_sender.h">
+      <Filter>virtualConf\network\sip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="vconf_sip_msg_receiver.h">
+      <Filter>virtualConf\network\sip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fileplay_controller_interface.h">
+      <Filter>virtualConf\controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fileplay_controller.h">
+      <Filter>virtualConf\controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fileplay_ctrl_widget.h">
+      <Filter>virtualConf\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fileplay_ctrl_widget.ui">
+      <Filter>Form Files\VirtualConf</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_client_controller_interface.h">
+      <Filter>tx\controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_client_controller.h">
+      <Filter>tx\controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\txMonitor\client\TxMonitorIf.h">
+      <Filter>tx\dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="floor_controller_interface.h">
+      <Filter>controller\interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\BfcpClient\client\bfcp_client_proxy.h">
+      <Filter>controller\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\BfcpClient\client\BfcpClientIf.h">
+      <Filter>dbus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="monitor_client.h">
+      <Filter>network\soap\monitor</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\txController\service\TxControllerAdaptor.h">
+      <Filter>tx\dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\desktop\screen_helper.h">
+      <Filter>ui\util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_client_setting_tab.ui">
+      <Filter>Form Files\Tx\Setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_client_setting_tab.h">
+      <Filter>tx\setting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tx_display_controller.h">
+      <Filter>tx\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="help-widget.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CoolviewCommon.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\core\service\CvCoreService.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HelpWidget.ui">
+      <Filter>Form Files\Core</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_main_control_window.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_display_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_local_terminal_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_terminal_list_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_terminal_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_login_form.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ip_setting_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_screen_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_seat_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_device_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_voice_volume_setting_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_builder_interface.h">
+      <Filter>network\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="terminal_description.h">
+      <Filter>network\description</Filter>
+    </ClInclude>
+    <ClInclude Include="conference_description.h">
+      <Filter>network\description</Filter>
+    </ClInclude>
+    <ClInclude Include="media_description.h">
+      <Filter>network\description</Filter>
+    </ClInclude>
+    <ClInclude Include="qos_description.h">
+      <Filter>network\description</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_virtual_terminal_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mime_text_parser_and_builder.h">
+      <Filter>ui\util</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_local_mic_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_local_speaker_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_record_status_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_monitor_tab.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_device_test_tab.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_tx_setting_tab.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_device_setting_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_tx_control_window.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\ini\TxConfig.h">
+      <Filter>tx\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\ini\CVIniConfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_web_page_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_audio_setting_tab.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_video_setting_tab.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="terminal_config_type.h">
+      <Filter>setting</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_pending_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config\config_helper.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ptz_tab.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PROTOCOL.h">
+      <Filter>setting</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_control_panel_booter.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_conference_list_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_conference_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config_manager.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config_description.h">
+      <Filter>network\description</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_fileplay_ctrl_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xml_configure_manager.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tx_util.h">
+      <Filter>tx\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\dbus\txMonitor\common\TxMonitorServiceCommon.h">
+      <Filter>tx\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="floor_control_info_description.h">
+      <Filter>network\description</Filter>
+    </ClInclude>
+    <ClInclude Include="sdp_parser.h">
+      <Filter>network\sdp</Filter>
+    </ClInclude>
+    <ClInclude Include="floor_controller.h">
+      <Filter>controller\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\dbus\BfcpClient\common\BfcpClientServiceCommon.h">
+      <Filter>dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gSoap\common\stdsoap2.h">
+      <Filter>network\soap\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gSoap\env\envH.h">
+      <Filter>network\soap\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gSoap\env\envStub.h">
+      <Filter>network\soap\common</Filter>
+    </ClInclude>
+    <ClInclude Include="hardware_info_description.h">
+      <Filter>network\soap\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\monitor\WebService\monitor\monitor_soapBasicHttpBinding_USCOREIMonitorServiceProxy.h">
+      <Filter>network\soap\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\monitor\WebService\monitor\monitor_soapH.h">
+      <Filter>network\soap\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\monitor\WebService\monitor\monitor_soapStub.h">
+      <Filter>network\soap\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\dbus\txController\common\TxControllerServiceCommon.h">
+      <Filter>tx\dbus_service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tx\WebService\cvtx\tx_soapCvTxProxy.h">
+      <Filter>tx\network\soap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tx\WebService\cvtx\tx_soapH.h">
+      <Filter>tx\network\soap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tx\WebService\cvtx\tx_soapStub.h">
+      <Filter>tx\network\soap</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_tx_client_setting_tab.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\monitor\WebService\monitor\monitor_soap.nsmap">
+      <Filter>network\soap\monitor</Filter>
+    </None>
+  </ItemGroup>
+</Project>

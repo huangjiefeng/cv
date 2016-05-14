@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=QuteCom
+Comment=Talk to people over the Internet and send instant messages over multiple protocols
+Comment[fr]=Discuter avec des personnes sur Internet e envoie des messages instantanés en utilisant divers protocoles
+Comment[it]=Comunicare con le persone via Internet e inviare messaggi istantanei multiprotocollo
+GenericName=VoIP softphone and IM client
+GenericName[fr]=Téléphone VoIP e client IM
+GenericName[it]=Programma VoIP e client IM
+Exec=qutecom
+Icon=qutecom
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Qt;Network;Telephony;VideoConference;

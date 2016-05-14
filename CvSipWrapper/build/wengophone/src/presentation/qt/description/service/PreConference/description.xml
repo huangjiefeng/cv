@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+   <specVersion>
+      <major>1</major>
+      <minor>0</minor>
+   </specVersion>
+   <actionList>
+      <action>
+         <name>ChooseMeeting</name>
+         <argumentList>
+            <argument>
+               <name>MeetingName</name>
+               <direction>in</direction>
+               <relatedStateVariable>meetingName</relatedStateVariable>
+            </argument>           
+         </argumentList>
+      </action>
+      <action>
+         <name>EnterMeeting</name>
+         <argumentList>
+            <argument>
+               <name>MeetingName</name>
+               <direction>in</direction>
+               <relatedStateVariable>meetingName</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>MeetingPassword</name>
+               <direction>in</direction>
+               <relatedStateVariable>meetingPassword</relatedStateVariable>
+            </argument>            
+         </argumentList>
+      </action>
+      <action>
+         <name>GetMeetingList</name>
+         <argumentList>
+            <argument>
+               <name>MeetingList</name>
+               <direction>out</direction>
+               <relatedStateVariable>meetingList</relatedStateVariable>
+            </argument>
+         </argumentList>
+      </action>
+      <action>
+         <name>CreateMeeting</name>
+         <argumentList>
+            <argument>
+               <name>Title</name>
+               <direction>in</direction>
+               <relatedStateVariable>title</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>Description</name>
+               <direction>in</direction>
+               <relatedStateVariable>description</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>ControlModel</name>
+               <direction>in</direction>
+               <relatedStateVariable>controlModel</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>Method</name>
+               <direction>in</direction>
+               <relatedStateVariable>method</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>Password</name>
+               <direction>in</direction>
+               <relatedStateVariable>password</relatedStateVariable>
+            </argument>
+         </argumentList>
+      </action>
+   </actionList>
+   <serviceStateTable>
+      <stateVariable sendEvents="no">
+         <name>meetingName</name>
+         <dataType>string</dataType>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>meetingPassword</name>
+         <dataType>string</dataType>
+      </stateVariable> 
+      <stateVariable sendEvents="no">
+         <name>meetingList</name>
+         <dataType>string</dataType>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>title</name>
+         <dataType>string</dataType>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>description</name>
+         <dataType>string</dataType>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>controlModel</name>
+         <dataType>string</dataType>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>method</name>
+         <dataType>string</dataType>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>password</name>
+         <dataType>string</dataType>
+      </stateVariable>
+   </serviceStateTable>
+</scpd>

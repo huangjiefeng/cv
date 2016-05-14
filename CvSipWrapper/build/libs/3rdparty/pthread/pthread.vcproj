@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="pthread"
+	ProjectGUID="{0D600D71-B0A8-43FF-AF69-A4C8788A0854}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="pthread.dir\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				BasicRuntimeChecks="1"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/pthread/Debug/pthread.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/pthread/pthread.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/pthread/pthread.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="ws2_32.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\pthread\Debug\pthread.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories=""
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\pthread\Debug\pthread.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\pthread\Debug\pthread.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="pthread.dir\Release"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/pthread/Release/pthread.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/pthread/pthread.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/pthread/pthread.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="ws2_32.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\pthread\Release\pthread.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories=""
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\pthread\Release\pthread.pdb"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\pthread\Release\pthread.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="pthread.dir\MinSizeRel"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/pthread/MinSizeRel/pthread.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/pthread/pthread.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/pthread/pthread.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="ws2_32.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\pthread\MinSizeRel\pthread.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories=""
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\pthread\MinSizeRel\pthread.pdb"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\pthread\MinSizeRel\pthread.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="pthread.dir\RelWithDebInfo"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/pthread/RelWithDebInfo/pthread.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\pthread\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,__CLEANUP_C,_WIN32_WINNT=0x400,HAVE_CONFIG_H,PTW32_RC_MSC,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_PTHREAD_DLL -DPTHREAD_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/pthread/pthread.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/pthread/pthread.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="ws2_32.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\pthread\RelWithDebInfo\pthread.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories=""
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\pthread\RelWithDebInfo\pthread.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\pthread\RelWithDebInfo\pthread.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/pthread/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/pthread/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/pthread/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/pthread/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists-internal.txt;$(SolutionDir)..\libs\3rdparty\pthread\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\attr.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\barrier.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\cancel.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\cleanup.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\condvar.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\create.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\dll.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\errno.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\exit.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\fork.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\global.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\misc.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\mutex.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\nonportable.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\private.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\rwlock.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\sched.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\semaphore.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\signal.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\spin.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\sync.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\tsd.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\pthread\src\version.rc">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

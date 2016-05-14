@@ -1,0 +1,1 @@
+regsvr32 SCUT_X264_Encoder.dll

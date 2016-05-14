@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="owutil"
+	ProjectGUID="{2EAF7F4E-F73B-4169-8163-FC95CDDB1D51}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="owutil.dir\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				Optimization="0"
+				InlineFunctionExpansion="0"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;DEBUG;CMAKE_INTDIR=\&quot;Debug\&quot;;OS_WIN32;OWUTIL_DLL;BUILD_OWUTIL_DLL;DOWUTIL_DLL"
+				ExceptionHandling="TRUE"
+				BasicRuntimeChecks="1"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(ProjectDir)Debug/owutil.pdb"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+				CompileAs="2"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="owcutil.lib Rpcrt4.lib"
+				OutputFile="$(ProjectDir)Debug\owutil.dll"
+				Version="0.0"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="&quot;D:\boost\boost_1_34_1\lib\$(OutDir)&quot;;D:\boost\boost_1_34_1\lib;&quot;$(SolutionDir)\_lib&quot;"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(ProjectDir)Debug\owutil.pdb"
+				ImportLibrary="$(ProjectDir)Debug\owutil.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_OWUTIL_DLL -DOWUTIL_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copying file $(SolutionDir)debug/"
+				CommandLine="xcopy &quot;$(ProjectDir)\$(ConfigurationName)\$(ProjectName).lib&quot; &quot;$(SolutionDir)\_lib\&quot; /Y
+xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)\$(ConfigurationName)\&quot; /Y
+xcopy &quot;$(ProjectDir)\$(ConfigurationName)\$(ProjectName).pdb&quot; &quot;$(SolutionDir)\$(ConfigurationName)\&quot; /Y
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_OWUTIL_DLL -DOWUTIL_DLL&quot;"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="owutil.dir\Release"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				Optimization="2"
+				InlineFunctionExpansion="2"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;DEBUG;CMAKE_INTDIR=\&quot;Release\&quot;;OWUTIL_DLL;BUILD_OWUTIL_DLL;DOWUTIL_DLL"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(ProjectDir)Release/owutil.pdb"
+				WarningLevel="3"
+				CompileAs="2"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\cutil\Release\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(ProjectDir)Release\owutil.dll"
+				Version="0.0"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\cutil\Release\$(OutDir),..\cutil\Release"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				ProgramDatabaseFile="$(ProjectDir)Release\owutil.pdb"
+				ImportLibrary="$(ProjectDir)Release\owutil.lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_OWUTIL_DLL -DOWUTIL_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copying file $(SolutionDir)debug/"
+				CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(ProjectDir)owutil.dll&quot; &quot;$(SolutionDir)debug/&quot;
+D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(ProjectDir)owutil.pdb&quot; &quot;$(SolutionDir)debug/&quot;
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_OWUTIL_DLL -DOWUTIL_DLL&quot;"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;D:\boost\boost_1_34_1;"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\Base64.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\CountryList.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\Date.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\File.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\Identifiable.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\Logger.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\NonCopyable.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\OWPicture.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\Path.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\String.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\StringList.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\Time.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\Uuid.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\win\UuidWin.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\owutil\util\src\WebBrowser.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

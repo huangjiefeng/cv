@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Struct Name="b64ErrorString_t_" Collapsed="true">
+    <Position X="35" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAIAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\b64.c</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__STRUCT_SHARED_DATA__" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\dll_entry.c</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="thread_param" Collapsed="true">
+    <Position X="16.5" Y="37.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\port.c</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RtpEndpoint" Collapsed="true">
+    <Position X="38.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\event.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_OrtpEventData" Collapsed="true">
+    <Position X="12.5" Y="37.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIAIAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\event.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="OrtpEvQueue" Collapsed="true">
+    <Position X="36.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAIAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\event.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_PayloadType" Collapsed="true">
+    <Position X="32.5" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAACIACAAAQBAABAEAAAAQQAAgAAAQ=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\payloadtype.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_RtpProfile" Collapsed="true">
+    <Position X="32.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\payloadtype.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_OrtpMemoryFunctions" Collapsed="true">
+    <Position X="32.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAEAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rtcp_common_header" Collapsed="true">
+    <Position X="32.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAACABAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="sender_info" Collapsed="true">
+    <Position X="32.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgCAEAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="report_block" Collapsed="true">
+    <Position X="32.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAABAiAAAAAAAAIAAAAAACA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="sdes_chunk" Collapsed="true">
+    <Position X="0.5" Y="34.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="sdes_item" Collapsed="true">
+    <Position X="28.5" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rtcp_bye_reason" Collapsed="true">
+    <Position X="24.5" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rtcp_bye" Collapsed="true">
+    <Position X="28.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACCAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rtcp_sr" Collapsed="true">
+    <Position X="20.5" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEAAAAAAAAACCAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rtcp_rr" Collapsed="true">
+    <Position X="28.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAACCAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rtcp_app" Collapsed="true">
+    <Position X="16.5" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACCEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rtp_header" Collapsed="true">
+    <Position X="28.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAECABAAAAAAAAAAAgBAAAAiAAKAAAAEAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rtp_stats" Collapsed="true">
+    <Position X="12.5" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAICEAgAAAQAABAAAAAgBAAAAAAAAAAAAAAACBAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtp.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_JBParameters" Collapsed="true">
+    <Position X="28.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACCAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAY=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_JitterControl" Collapsed="true">
+    <Position X="28.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAQAHICAAAAAACAQAAAAAAFEAAAAAAE=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_WaitPoint" Collapsed="true">
+    <Position X="28.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAEAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_RtpTransport" Collapsed="true">
+    <Position X="4.5" Y="29.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAEACAAAAAAAAAAAAAQQAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_RtpStream" Collapsed="true">
+    <Position X="0.5" Y="29.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAABAEQAgBgIEEAAMAxACAIZCoQAGFgACsgIAYBAEI=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_RtcpStream" Collapsed="true">
+    <Position X="24.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAIAAAAACAAAAAAAAQAAAAAAEgAAAAAEA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_RtpSession" Collapsed="true">
+    <Position X="24.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgoogAEICAAAQACAABQQAEAQgAACAFEAEEAgABqBAKw=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_RtpSignalTable" Collapsed="true">
+    <Position X="24.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAABAEAAAAQAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsignaltable.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_RtpTimer" Collapsed="true">
+    <Position X="24.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAIAAAAAACAAAAAAAAEgAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\rtptimer.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_RtpScheduler" Collapsed="true">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAgEAEGAAICEAAEAAAAgAAAAIAEAAAAAAAAAqAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\scheduler.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0070_1" Collapsed="true">
+    <Position X="20.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\sessionset.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_SessionSet" Collapsed="true">
+    <Position X="16.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\sessionset.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="msgb" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAEAAAAAAIAAAAAAAAACAAAAEQAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\str_utils.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="datab" Collapsed="true">
+    <Position X="12.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAgAAAAAAAQAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\str_utils.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_queue" Collapsed="true">
+    <Position X="8.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\str_utils.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_msgb_allocator" Collapsed="true">
+    <Position X="20.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\str_utils.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_1" Collapsed="true">
+    <Position X="20.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_2" Collapsed="true">
+    <Position X="20.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAEACAAABAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_3" Collapsed="true">
+    <Position X="4.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_4" Collapsed="true">
+    <Position X="20.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_5" Collapsed="true">
+    <Position X="0.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAACAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_6" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_7" Collapsed="true">
+    <Position X="16.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAgAAQAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_8" Collapsed="true">
+    <Position X="12.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_9" Collapsed="true">
+    <Position X="8.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_10" Collapsed="true">
+    <Position X="16.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_11" Collapsed="true">
+    <Position X="16.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAQAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_12" Collapsed="true">
+    <Position X="16.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAA0AAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_13" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_14" Collapsed="true">
+    <Position X="4.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_15" Collapsed="true">
+    <Position X="0.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAQAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_16" Collapsed="true">
+    <Position X="12.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_17" Collapsed="true">
+    <Position X="8.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_18" Collapsed="true">
+    <Position X="12.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_20" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_21" Collapsed="true">
+    <Position X="4.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAIAAAIAERAPAwPABwAQMEqCAQCIAAIQsOQQ0ANAAw=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_23" Collapsed="true">
+    <Position X="8.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAQABAABAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_0094_24" Collapsed="true">
+    <Position X="8.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEEgABAAAAAAAIAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_telephone_event" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAgACAQA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\telephonyevents.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_OList" Collapsed="true">
+    <Position X="4.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAIAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\utils.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_dwsplit_t" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\utils.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="LPSHARED_DATA" Collapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\dll_entry.c</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SHARED_DATA" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\dll_entry.c</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="thread_param_t" Collapsed="true">
+    <Position X="16.5" Y="35.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\port.c</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OrtpEvent" Collapsed="true">
+    <Position X="0.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\event.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OrtpEventType" Collapsed="true">
+    <Position X="43.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\event.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OrtpEventData" Collapsed="true">
+    <Position X="12.5" Y="35.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\event.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OrtpLogLevel" Collapsed="true">
+    <Position X="8.5" Y="35.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\ortp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OrtpLogFunc" Collapsed="true">
+    <Position X="35" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\ortp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PayloadType" Collapsed="true">
+    <Position X="32.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\payloadtype.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpProfile" Collapsed="true">
+    <Position X="32.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\payloadtype.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint64_t" Collapsed="true">
+    <Position X="43.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int64_t" Collapsed="true">
+    <Position X="42" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint16_t" Collapsed="true">
+    <Position X="36.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint32_t" Collapsed="true">
+    <Position X="40.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int32_t" Collapsed="true">
+    <Position X="38.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint8_t" Collapsed="true">
+    <Position X="36.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int16_t" Collapsed="true">
+    <Position X="36.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ortp_socket_t" Collapsed="true">
+    <Position X="40.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ortp_cond_t" Collapsed="true">
+    <Position X="35" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ortp_mutex_t" Collapsed="true">
+    <Position X="36.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ortp_thread_t" Collapsed="true">
+    <Position X="42" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="bool_t" Collapsed="true">
+    <Position X="35" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OrtpMemoryFunctions" Collapsed="true">
+    <Position X="32.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ortp_pipe_t" Collapsed="true">
+    <Position X="38.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\port.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rtcp_type_t" Collapsed="true">
+    <Position X="32.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rtcp_common_header_t" Collapsed="true">
+    <Position X="32.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="sender_info_t" Collapsed="true">
+    <Position X="32.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="report_block_t" Collapsed="true">
+    <Position X="32.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rtcp_sdes_type_t" Collapsed="true">
+    <Position X="4.5" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="sdes_chunk_t" Collapsed="true">
+    <Position X="0.5" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="sdes_item_t" Collapsed="true">
+    <Position X="28.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rtcp_bye_reason_t" Collapsed="true">
+    <Position X="24.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rtcp_bye_t" Collapsed="true">
+    <Position X="28.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rtcp_sr_t" Collapsed="true">
+    <Position X="20.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rtcp_rr_t" Collapsed="true">
+    <Position X="28.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rtcp_app_t" Collapsed="true">
+    <Position X="16.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SdesItemFoundCallback" Collapsed="true">
+    <Position X="42" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rtp_header_t" Collapsed="true">
+    <Position X="28.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rtp_stats_t" Collapsed="true">
+    <Position X="12.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpSessionMode" Collapsed="true">
+    <Position X="8.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="JBParameters" Collapsed="true">
+    <Position X="28.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="JitterControl" Collapsed="true">
+    <Position X="28.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="WaitPoint" Collapsed="true">
+    <Position X="28.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpTransport" Collapsed="true">
+    <Position X="4.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpStream" Collapsed="true">
+    <Position X="0.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtcpStream" Collapsed="true">
+    <Position X="24.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpSession" Collapsed="true">
+    <Position X="24.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpSessionFlags" Collapsed="true">
+    <Position X="24.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\rtpsession_priv.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpCallback" Collapsed="true">
+    <Position X="38.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsignaltable.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpSignalTable" Collapsed="true">
+    <Position X="24.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsignaltable.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpTimerFunc" Collapsed="true">
+    <Position X="40.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\rtptimer.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpTimer" Collapsed="true">
+    <Position X="24.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\rtptimer.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RtpScheduler" Collapsed="true">
+    <Position X="24.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\scheduler.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ortp__fd_mask" Collapsed="true">
+    <Position X="43.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\sessionset.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ortp_fd_set" Collapsed="true">
+    <Position X="20.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\sessionset.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SessionSet" Collapsed="true">
+    <Position X="16.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\sessionset.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="mblk_t" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\str_utils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="dblk_t" Collapsed="true">
+    <Position X="12.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\str_utils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="queue_t" Collapsed="true">
+    <Position X="8.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\str_utils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="msgb_allocator_t" Collapsed="true">
+    <Position X="20.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\str_utils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="UInt8" Collapsed="true">
+    <Position X="35" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="UInt16" Collapsed="true">
+    <Position X="35" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="UInt32" Collapsed="true">
+    <Position X="38.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="UInt64" Collapsed="true">
+    <Position X="42" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="UInt96" Collapsed="true">
+    <Position X="20.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunMsgHdr" Collapsed="true">
+    <Position X="20.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunAtrHdr" Collapsed="true">
+    <Position X="4.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunAddress4" Collapsed="true">
+    <Position X="20.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunAtrAddress4" Collapsed="true">
+    <Position X="0.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunAtrChangeRequest" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunAtrError" Collapsed="true">
+    <Position X="16.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunAtrUnknown" Collapsed="true">
+    <Position X="12.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TurnAtrChannelNumber" Collapsed="true">
+    <Position X="8.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TurnAtrLifetime" Collapsed="true">
+    <Position X="16.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TurnAtrData" Collapsed="true">
+    <Position X="16.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TurnAtrRequestedTransport" Collapsed="true">
+    <Position X="16.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TurnAtrReservationToken" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunAtrFingerprint" Collapsed="true">
+    <Position X="4.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunAtrString" Collapsed="true">
+    <Position X="0.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="IceAtrPriority" Collapsed="true">
+    <Position X="12.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="IceAtrIceControll" Collapsed="true">
+    <Position X="8.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunAtrIntegrity" Collapsed="true">
+    <Position X="12.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunHmacStatus" Collapsed="true">
+    <Position X="12.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TurnAtrUnknown" Collapsed="true">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunMessage" Collapsed="true">
+    <Position X="4.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="NatType" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunMediaRelay" Collapsed="true">
+    <Position X="8.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StunServerInfo" Collapsed="true">
+    <Position X="8.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Socket" Collapsed="true">
+    <Position X="43.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun_udp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Int64" Collapsed="true">
+    <Position X="40.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun_udp.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="telephone_event_t" Collapsed="true">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\telephonyevents.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OList" Collapsed="true">
+    <Position X="4.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\utils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="dwsplit_t" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\utils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="poly32_t" Collapsed="true">
+    <Position X="36.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\utils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="__unnamed_006c_1" Collapsed="true">
+    <Position X="8.5" Y="37.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAABAAAAAAAAAAEAAAAAAAQAAQAAAABAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\ortp.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_0071_1" Collapsed="true">
+    <Position X="32.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAEAAAgAAAAAAg=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_0071_2" Collapsed="true">
+    <Position X="4.5" Y="34.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAACAQAEBAAAQAAAAAAAAAAAAAABABAQAAAAAAEA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtcp.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_006d_1" Collapsed="true">
+    <Position X="8.5" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\rtpsession.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_0077_1" Collapsed="true">
+    <Position X="24.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACQkQAAABAgAAAAAAgQAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\src\rtpsession_priv.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_0094_19" Collapsed="true">
+    <Position X="12.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAIAAAAAAAAAAAAAAAAIAIAABAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_0094_22" Collapsed="true">
+    <Position X="0.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAAAAEAAAAgAAAIAAAAAAACAgAAAIACAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\stun.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="b64::B64_RC" Collapsed="true">
+    <Position X="36.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAIACAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\b64.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="b64::B64_FLAGS" Collapsed="true">
+    <Position X="35" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAEAAAAACAQAEQgIAAAAAQAA=</HashCode>
+      <FileName>d:\Code\osRTP\ortp-0.16.1\include\ortp\b64.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

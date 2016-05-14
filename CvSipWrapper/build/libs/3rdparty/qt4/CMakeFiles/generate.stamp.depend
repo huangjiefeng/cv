@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/qutecom-2.2/libs/3rdparty/qt4/CMakeLists.txt
+D:/CMake26/share/cmake-2.6/Modules/FindQt4.cmake
+D:/CMake26/share/cmake-2.6/Modules/CheckSymbolExists.cmake
+D:/CMake26/share/cmake-2.6/Modules/MacroAddFileDependencies.cmake
+D:/CMake26/share/cmake-2.6/Modules/FindPackageMessage.cmake

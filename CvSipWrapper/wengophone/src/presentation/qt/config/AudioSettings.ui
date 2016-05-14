@@ -1,0 +1,171 @@
+<ui version="4.0" >
+ <class>AudioSettings</class>
+ <widget class="QWidget" name="AudioSettings" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2" >
+   <item>
+    <widget class="QGroupBox" name="inputGroupBox" >
+     <property name="title" >
+      <string>声音输入设备</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3" >
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_19" >
+        <item>
+         <widget class="QLabel" name="label_9" >
+          <property name="text" >
+           <string>输入设备</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="inputDeviceComboBox" />
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" >
+        <item>
+         <widget class="QLabel" name="label_10" >
+          <property name="text" >
+           <string>音量控制</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="_inputVolumeSlider" >
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="outputGroupBox" >
+     <property name="title" >
+      <string>声音输出设备</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_18" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_17" >
+        <property name="text" >
+         <string>输出设备</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2" >
+       <widget class="QComboBox" name="outputDeviceComboBox" />
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_18" >
+        <property name="text" >
+         <string>音量控制</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2" >
+       <widget class="QSlider" name="_outputVolumeSlider" >
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <spacer name="horizontalSpacer_12" >
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0" >
+         <size>
+          <width>64</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="1" >
+       <spacer name="horizontalSpacer_13" >
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0" >
+         <size>
+          <width>106</width>
+          <height>22</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="2" >
+       <widget class="QPushButton" name="testOutputDeviceButton" >
+        <property name="text" >
+         <string>测试</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_4" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>263</width>
+       <height>19</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_14" >
+     <item>
+      <spacer name="horizontalSpacer_14" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveButton" >
+       <property name="text" >
+        <string>保存</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton_2" >
+       <property name="text" >
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

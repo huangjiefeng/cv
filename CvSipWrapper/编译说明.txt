@@ -1,0 +1,5 @@
+1、解决方案在build目录中
+2、解决方案中CvSipWrapper为主项目，其余为依赖项目；解决方案中包含所有依赖项目，完整编译即可。
+   如果升级VS平台，相关第三方库需要重新编译，项目位于SVN的3rdParty目录中，请参考该目录下的说明文件找到CvSipWrapper需要的项目。
+3、项目依赖于Boost库，请从Weblib下载。然后设置BoostDir环境变量指向其跟目录。
+4、请将生成后的exe连同Release目录下的其他DLL一同复制到CoolView目录调试。

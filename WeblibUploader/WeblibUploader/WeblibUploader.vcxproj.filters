@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{02063c88-63aa-4253-b5f0-20db0b1bad32}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{200b7496-1608-4bec-a211-fceb32488697}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="worker">
+      <UniqueIdentifier>{c70f5791-0bab-4777-a62b-164be6960610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="worker\settings">
+      <UniqueIdentifier>{7b93e980-d95d-43d1-91c3-5f5807aa7f57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="worker\head files">
+      <UniqueIdentifier>{3f0fe81b-3f55-46cf-b71f-c9148ceed455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="worker\source files">
+      <UniqueIdentifier>{2f22f426-348d-4f1b-bebb-5cf7fbe1858b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="worker\service">
+      <UniqueIdentifier>{eb3684ed-7a35-48a1-813b-d5e414571c35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="worker\dllexport">
+      <UniqueIdentifier>{7039ab66-2076-4cfa-a8f7-c918066864a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{c57bfbed-994f-41de-89a6-d50f044a1b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\delegates">
+      <UniqueIdentifier>{32977427-211b-4b97-a141-be1854839898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\form files">
+      <UniqueIdentifier>{77d81f19-3820-41c5-a3a9-b8536ceccd76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\head files">
+      <UniqueIdentifier>{3c5fc475-ebae-463b-9610-4da49027085b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\source files">
+      <UniqueIdentifier>{164b80cd-033c-48bd-9892-33dd66073fb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\images">
+      <UniqueIdentifier>{8233c6b9-f89e-45ab-aaed-946b57c85a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\model">
+      <UniqueIdentifier>{d9ee304c-b1d1-431c-be1a-8770749c9391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\dllexport">
+      <UniqueIdentifier>{eae64419-07b1-4a16-a204-0c45a25e7416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{9d039316-067f-4fba-9283-c751ba638c74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug_DLL">
+      <UniqueIdentifier>{b09eb4ba-4e6e-462e-b3ef-53243bd830dd}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release_DLL">
+      <UniqueIdentifier>{bc68e365-d4a2-42f4-a9fa-2422ad11d342}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="worker\log">
+      <UniqueIdentifier>{ce2934e2-8aab-4756-a143-47fa515b9dd4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\qrc_weblibuploader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aliveworker.cpp">
+      <Filter>worker\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="connectionmanager.cpp">
+      <Filter>worker\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="filescaner.cpp">
+      <Filter>worker\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileuploader.cpp">
+      <Filter>worker\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="uploadfile.cpp">
+      <Filter>worker\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="uploadoperator.cpp">
+      <Filter>worker\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="uploadworker.cpp">
+      <Filter>worker\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="workerservice.cpp">
+      <Filter>worker\service</Filter>
+    </ClCompile>
+    <ClCompile Include="fileicondelegate.cpp">
+      <Filter>ui\delegates</Filter>
+    </ClCompile>
+    <ClCompile Include="progressbardelegate.cpp">
+      <Filter>ui\delegates</Filter>
+    </ClCompile>
+    <ClCompile Include="groupselector.cpp">
+      <Filter>ui\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ui\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>ui\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="uploadsetting.cpp">
+      <Filter>ui\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="weblibupload.cpp">
+      <Filter>ui\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="itemmodel.cpp">
+      <Filter>ui\model</Filter>
+    </ClCompile>
+    <ClCompile Include="WeblibUIComponont.cpp">
+      <Filter>ui\dllexport</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_workerservice.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_workerservice.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_workerservice.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_workerservice.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_weblibupload.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_weblibupload.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_weblibupload.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_weblibupload.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_uploadworker.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_uploadworker.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_uploadworker.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_uploadworker.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_uploadsetting.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_uploadsetting.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_uploadsetting.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_uploadsetting.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_uploadoperator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_uploadoperator.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_uploadoperator.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_uploadoperator.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_progressbardelegate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_progressbardelegate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_progressbardelegate.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_progressbardelegate.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainwindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainwindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_mainwindow.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_mainwindow.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_itemmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_itemmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_itemmodel.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_itemmodel.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_groupselector.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_groupselector.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_groupselector.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_groupselector.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fileuploader.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fileuploader.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_fileuploader.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_fileuploader.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_filescaner.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_filescaner.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_filescaner.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_filescaner.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fileicondelegate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fileicondelegate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_fileicondelegate.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_fileicondelegate.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_connectionmanager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_connectionmanager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_connectionmanager.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_connectionmanager.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aliveworker.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aliveworker.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_aliveworker.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_aliveworker.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_uploadhistory.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_uploadhistory.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_uploadhistory.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_uploadhistory.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="uploadhistory.cpp">
+      <Filter>ui\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="itemfinishedmodel.cpp">
+      <Filter>ui\model</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release_DLL\moc_itemfinishedmodel.cpp">
+      <Filter>Generated Files\Release_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug_DLL\moc_itemfinishedmodel.cpp">
+      <Filter>Generated Files\Debug_DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_itemfinishedmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_itemfinishedmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_groupselector.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_uploadsetting.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_weblibupload.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="weblibsetting.h">
+      <Filter>worker\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="uploadfile.h">
+      <Filter>worker\head files</Filter>
+    </ClInclude>
+    <ClInclude Include="dllexports.h">
+      <Filter>worker\dllexport</Filter>
+    </ClInclude>
+    <ClInclude Include="WeblibUIComponont.h">
+      <Filter>ui\dllexport</Filter>
+    </ClInclude>
+    <ClInclude Include="commonstruts.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_uploadhistory.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>worker\log</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="image\tx\weblib\category.png">
+      <Filter>ui\images</Filter>
+    </Image>
+    <Image Include="image\tx\weblib\Done.gif">
+      <Filter>ui\images</Filter>
+    </Image>
+    <Image Include="image\tx\weblib\Error.gif">
+      <Filter>ui\images</Filter>
+    </Image>
+    <Image Include="image\tx\weblib\Failed.gif">
+      <Filter>ui\images</Filter>
+    </Image>
+    <Image Include="image\tx\weblib\group.gif">
+      <Filter>ui\images</Filter>
+    </Image>
+    <Image Include="image\tx\weblib\Pending.gif">
+      <Filter>ui\images</Filter>
+    </Image>
+    <Image Include="image\tx\weblib\Unknown.gif">
+      <Filter>ui\images</Filter>
+    </Image>
+    <Image Include="image\tx\weblib\Uploading.gif">
+      <Filter>ui\images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="weblibuploader.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aliveworker.h">
+      <Filter>worker\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="connectionmanager.h">
+      <Filter>worker\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="filescaner.h">
+      <Filter>worker\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fileuploader.h">
+      <Filter>worker\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uploadoperator.h">
+      <Filter>worker\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uploadworker.h">
+      <Filter>worker\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="workerservice.h">
+      <Filter>worker\service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fileicondelegate.h">
+      <Filter>ui\delegates</Filter>
+    </CustomBuild>
+    <CustomBuild Include="progressbardelegate.h">
+      <Filter>ui\delegates</Filter>
+    </CustomBuild>
+    <CustomBuild Include="groupselector.ui">
+      <Filter>ui\form files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <Filter>ui\form files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uploadsetting.ui">
+      <Filter>ui\form files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="weblibupload.ui">
+      <Filter>ui\form files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="groupselector.h">
+      <Filter>ui\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>ui\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uploadsetting.h">
+      <Filter>ui\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="weblibupload.h">
+      <Filter>ui\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="itemmodel.h">
+      <Filter>ui\model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uploadhistory.ui">
+      <Filter>ui\form files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uploadhistory.h">
+      <Filter>ui\head files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="itemfinishedmodel.h">
+      <Filter>ui\model</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

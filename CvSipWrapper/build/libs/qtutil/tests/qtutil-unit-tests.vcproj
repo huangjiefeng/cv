@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="qtutil-unit-tests"
+	ProjectGUID="{4472EF73-77A5-4651-8DFA-6865EC06AF08}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="qtutil-unit-tests.dir\Debug"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				BasicRuntimeChecks="1"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/qtutil/tests/Debug/qtutil-unit-tests.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/qtutil/tests/qtutil-unit-tests.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/qtutil/tests/qtutil-unit-tests.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\owutil\cutil\Debug\owcutil.lib ..\..\owutil\util\Debug\owutil.lib ..\..\owutil\thread\Debug\owthread.lib ..\Debug\owqtutil.lib D:\boost\boost_1_34_1\lib\boost_unit_test_framework-vc71-mt-gd-1_34_1.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\owutil\thread\Debug\owthread.lib ..\..\owutil\util\Debug\owutil.lib ..\..\owutil\cutil\Debug\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\qtutil\tests\Debug\qtutil-unit-tests.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\owutil\cutil\Debug\$(OutDir),..\..\owutil\cutil\Debug,..\..\owutil\util\Debug\$(OutDir),..\..\owutil\util\Debug,..\..\owutil\thread\Debug\$(OutDir),..\..\owutil\thread\Debug,..\Debug\$(OutDir),..\Debug"
+				ProgramDataBaseFile="$(SolutionDir)libs/qtutil/tests/Debug/qtutil-unit-tests.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\qtutil\tests\Debug\qtutil-unit-tests.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="qtutil-unit-tests.dir\Release"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/qtutil/tests/Release/qtutil-unit-tests.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/qtutil/tests/qtutil-unit-tests.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/qtutil/tests/qtutil-unit-tests.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\owutil\cutil\Release\owcutil.lib ..\..\owutil\util\Release\owutil.lib ..\..\owutil\thread\Release\owthread.lib ..\Release\owqtutil.lib D:\boost\boost_1_34_1\lib\boost_unit_test_framework-vc71-mt-gd-1_34_1.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\owutil\thread\Release\owthread.lib ..\..\owutil\util\Release\owutil.lib ..\..\owutil\cutil\Release\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\qtutil\tests\Release\qtutil-unit-tests.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\owutil\cutil\Release\$(OutDir),..\..\owutil\cutil\Release,..\..\owutil\util\Release\$(OutDir),..\..\owutil\util\Release,..\..\owutil\thread\Release\$(OutDir),..\..\owutil\thread\Release,..\Release\$(OutDir),..\Release"
+				ProgramDataBaseFile="$(SolutionDir)libs/qtutil/tests/Release/qtutil-unit-tests.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\qtutil\tests\Release\qtutil-unit-tests.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="qtutil-unit-tests.dir\MinSizeRel"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/qtutil/tests/MinSizeRel/qtutil-unit-tests.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/qtutil/tests/qtutil-unit-tests.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/qtutil/tests/qtutil-unit-tests.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\owutil\cutil\MinSizeRel\owcutil.lib ..\..\owutil\util\MinSizeRel\owutil.lib ..\..\owutil\thread\MinSizeRel\owthread.lib ..\MinSizeRel\owqtutil.lib D:\boost\boost_1_34_1\lib\boost_unit_test_framework-vc71-mt-gd-1_34_1.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\owutil\thread\MinSizeRel\owthread.lib ..\..\owutil\util\MinSizeRel\owutil.lib ..\..\owutil\cutil\MinSizeRel\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\qtutil\tests\MinSizeRel\qtutil-unit-tests.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\owutil\cutil\MinSizeRel\$(OutDir),..\..\owutil\cutil\MinSizeRel,..\..\owutil\util\MinSizeRel\$(OutDir),..\..\owutil\util\MinSizeRel,..\..\owutil\thread\MinSizeRel\$(OutDir),..\..\owutil\thread\MinSizeRel,..\MinSizeRel\$(OutDir),..\MinSizeRel"
+				ProgramDataBaseFile="$(SolutionDir)libs/qtutil/tests/MinSizeRel/qtutil-unit-tests.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\qtutil\tests\MinSizeRel\qtutil-unit-tests.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="qtutil-unit-tests.dir\RelWithDebInfo"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/qtutil/tests/RelWithDebInfo/qtutil-unit-tests.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/qtutil/tests/qtutil-unit-tests.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/qtutil/tests/qtutil-unit-tests.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\owutil\cutil\RelWithDebInfo\owcutil.lib ..\..\owutil\util\RelWithDebInfo\owutil.lib ..\..\owutil\thread\RelWithDebInfo\owthread.lib ..\RelWithDebInfo\owqtutil.lib D:\boost\boost_1_34_1\lib\boost_unit_test_framework-vc71-mt-gd-1_34_1.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\owutil\thread\RelWithDebInfo\owthread.lib ..\..\owutil\util\RelWithDebInfo\owutil.lib ..\..\owutil\cutil\RelWithDebInfo\owcutil.lib Rpcrt4.lib "
+				OutputFile="$(SolutionDir)libs\qtutil\tests\RelWithDebInfo\qtutil-unit-tests.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\owutil\cutil\RelWithDebInfo\$(OutDir),..\..\owutil\cutil\RelWithDebInfo,..\..\owutil\util\RelWithDebInfo\$(OutDir),..\..\owutil\util\RelWithDebInfo,..\..\owutil\thread\RelWithDebInfo\$(OutDir),..\..\owutil\thread\RelWithDebInfo,..\RelWithDebInfo\$(OutDir),..\RelWithDebInfo"
+				ProgramDataBaseFile="$(SolutionDir)libs/qtutil/tests/RelWithDebInfo/qtutil-unit-tests.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\qtutil\tests\RelWithDebInfo\qtutil-unit-tests.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\tests\test.qm">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\tests\fallback.qm">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\tests\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/qtutil/tests/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\tests\CMakeLists.txt;$(SolutionDir)..\libs\qtutil\tests\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/qtutil/tests/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\tests\CMakeLists.txt;$(SolutionDir)..\libs\qtutil\tests\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/qtutil/tests/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\tests\CMakeLists.txt;$(SolutionDir)..\libs\qtutil\tests\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/qtutil/tests/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\qtutil\tests\CMakeLists.txt;$(SolutionDir)..\libs\qtutil\tests\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\libs\qtutil\tests\main.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="CMake Rules"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\tests\test.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating test.qm"
+					CommandLine="D:\qt\4.4.3\bin\lrelease.exe $(SolutionDir)..\libs/qtutil/tests/test.ts -qm $(SolutionDir)libs/qtutil/tests/test.qm"
+					AdditionalDependencies="$(SolutionDir)libs\qtutil\tests\test.qm.rule"
+					Outputs="$(SolutionDir)libs\qtutil\tests\test.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating test.qm"
+					CommandLine="D:\qt\4.4.3\bin\lrelease.exe $(SolutionDir)..\libs/qtutil/tests/test.ts -qm $(SolutionDir)libs/qtutil/tests/test.qm"
+					AdditionalDependencies="$(SolutionDir)libs\qtutil\tests\test.qm.rule"
+					Outputs="$(SolutionDir)libs\qtutil\tests\test.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating test.qm"
+					CommandLine="D:\qt\4.4.3\bin\lrelease.exe $(SolutionDir)..\libs/qtutil/tests/test.ts -qm $(SolutionDir)libs/qtutil/tests/test.qm"
+					AdditionalDependencies="$(SolutionDir)libs\qtutil\tests\test.qm.rule"
+					Outputs="$(SolutionDir)libs\qtutil\tests\test.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating test.qm"
+					CommandLine="D:\qt\4.4.3\bin\lrelease.exe $(SolutionDir)..\libs/qtutil/tests/test.ts -qm $(SolutionDir)libs/qtutil/tests/test.qm"
+					AdditionalDependencies="$(SolutionDir)libs\qtutil\tests\test.qm.rule"
+					Outputs="$(SolutionDir)libs\qtutil\tests\test.qm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)libs\qtutil\tests\fallback.qm.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating fallback.qm"
+					CommandLine="D:\qt\4.4.3\bin\lrelease.exe $(SolutionDir)..\libs/qtutil/tests/fallback.ts -qm $(SolutionDir)libs/qtutil/tests/fallback.qm"
+					AdditionalDependencies="$(SolutionDir)libs\qtutil\tests\fallback.qm.rule"
+					Outputs="$(SolutionDir)libs\qtutil\tests\fallback.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating fallback.qm"
+					CommandLine="D:\qt\4.4.3\bin\lrelease.exe $(SolutionDir)..\libs/qtutil/tests/fallback.ts -qm $(SolutionDir)libs/qtutil/tests/fallback.qm"
+					AdditionalDependencies="$(SolutionDir)libs\qtutil\tests\fallback.qm.rule"
+					Outputs="$(SolutionDir)libs\qtutil\tests\fallback.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating fallback.qm"
+					CommandLine="D:\qt\4.4.3\bin\lrelease.exe $(SolutionDir)..\libs/qtutil/tests/fallback.ts -qm $(SolutionDir)libs/qtutil/tests/fallback.qm"
+					AdditionalDependencies="$(SolutionDir)libs\qtutil\tests\fallback.qm.rule"
+					Outputs="$(SolutionDir)libs\qtutil\tests\fallback.qm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating fallback.qm"
+					CommandLine="D:\qt\4.4.3\bin\lrelease.exe $(SolutionDir)..\libs/qtutil/tests/fallback.ts -qm $(SolutionDir)libs/qtutil/tests/fallback.qm"
+					AdditionalDependencies="$(SolutionDir)libs\qtutil\tests\fallback.qm.rule"
+					Outputs="$(SolutionDir)libs\qtutil\tests\fallback.qm"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

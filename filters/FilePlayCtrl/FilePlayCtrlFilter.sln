@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FilePlayCtrlFilter", "FilePlayCtrlFilter\FilePlayCtrlFilter.vcxproj", "{7D1E6971-DD10-453B-A87C-B5F9C66CA869}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D1E6971-DD10-453B-A87C-B5F9C66CA869}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7D1E6971-DD10-453B-A87C-B5F9C66CA869}.Debug|Win32.Build.0 = Debug|Win32
+		{7D1E6971-DD10-453B-A87C-B5F9C66CA869}.Release|Win32.ActiveCfg = Release|Win32
+		{7D1E6971-DD10-453B-A87C-B5F9C66CA869}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

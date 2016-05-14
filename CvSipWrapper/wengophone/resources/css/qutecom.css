@@ -1,0 +1,135 @@
+/* Turn the border of all lists to red, and it's background to light gray: */
+
+ 
+  QMainWindow,QDialog,QWidget#centralWidget
+  {
+	 background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+    /* border: 0.3px solid gray;
+     /*border-radius: 1px;
+     margin-top: 3ex; /* leave space at the top for the title */
+ }
+ /*QLabel
+  {
+	 background-color:solid gray
+     
+  }*/
+ /*QTreeView#treeView
+ {
+	background-image: url(:/pics/arcor.png);
+	background-repeat: no-repeat;
+    background-position:bottom  right;
+ }
+ 
+ QTreeWidget#treeWidget
+ {
+	background-image: url(:/pics/arcor.png);
+	background-repeat: no-repeat;
+    background-position:bottom  right;
+ }*/
+ 
+QLineEdit
+{
+	 border: 1px solid grey;
+	 border-radius: 5px;
+	/*    padding: 10px;*/
+}
+
+QComboBox
+{
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding-left: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	/*   padding-right:15px;*/
+}
+ 
+QComboBox::down-arrow 
+{
+	image: url(:/pics/history/filter.png);
+	background-color:White;
+}
+
+QComboBox QAbstractItemView 
+{
+	border: 1px solid grey;
+} 
+
+
+QComboBox::drop-down 
+{
+	 subcontrol-origin: padding;
+	 subcontrol-position: top right;
+	 width: 20px;
+
+	 border-left-width: 1px;
+	 border-left-color: darkgray;
+	 border-left-style: solid;
+	 border-top-right-radius: 5px; 
+	 border-bottom-right-radius: 5px;
+}
+              
+QDateTimeEdit
+{
+	border: 1px solid grey;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	padding-left: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	/*   padding-right:15px;*/
+}
+ 
+ /*QGroupBox {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+     border: 2px solid gray;
+     border-radius: 5px;
+     margin-top: 1ex; /* leave space at the top for the title 
+ }*/
+ 
+  QHeaderView::section {
+     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #616161, stop: 0.5 #505050,
+                                       stop: 0.6 #434343, stop:1 #656565);
+     color: white;
+     padding-left: 4px;
+     border: 1px solid #6c6c6c;
+ }
+ /*
+ QLineEdit {
+     border: 2px solid gray;
+     border-radius: 10px;
+     padding: 0 8px;
+     background: white;
+     selection-background-color: darkgray;
+ }
+ 
+ QLineEdit[echoMode="2"] {
+     lineedit-password-character: 9679;
+ }
+ 
+ QLineEdit:read-only {
+     background: lightblue;
+ }
+ 
+ /*QMenu {
+     background-color: lightblue; /* sets background of the menu */
+     /*border: 1px solid black;
+ }
+
+ QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different 
+     background-color: transparent;
+ }
+
+ QMenu::item:selected { /* when user selects item using mouse or keyboard 
+     background-color: white;
+ }*/
+     
+QLabel#loginLabel
+{
+	background-image: url(:/pics/headers/login.png);
+}

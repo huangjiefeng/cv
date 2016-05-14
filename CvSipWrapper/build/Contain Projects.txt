@@ -1,0 +1,14 @@
+webcam
+owbase
+owsl
+netlib
+osip2
+transport_manager
+exosip
+phapi
+owsipwrapper
+owphapiwrapper
+owphone
+QuteCom
+owbuildid
+glib

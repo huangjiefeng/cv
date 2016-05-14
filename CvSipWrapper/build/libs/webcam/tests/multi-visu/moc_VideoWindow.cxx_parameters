@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:/qutecom-2.2/build/libs/webcam/tests/multi-visu/moc_VideoWindow.cxx
+D:/qutecom-2.2/libs/webcam/tests/multi-visu/VideoWindow.h

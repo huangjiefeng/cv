@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/tx/weblib/category.png</file>
+        <file>image/tx/weblib/Done.gif</file>
+        <file>image/tx/weblib/Error.gif</file>
+        <file>image/tx/weblib/Failed.gif</file>
+        <file>image/tx/weblib/group.gif</file>
+        <file>image/tx/weblib/Pending.gif</file>
+        <file>image/tx/weblib/Unknown.gif</file>
+        <file>image/tx/weblib/Uploading.gif</file>
+    </qresource>
+</RCC>

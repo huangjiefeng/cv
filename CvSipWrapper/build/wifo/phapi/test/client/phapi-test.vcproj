@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="phapi-test"
+	ProjectGUID="{C01050B4-BBE7-4506-AB92-9EE24D9FE742}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="phapi-test.dir\Debug"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\phapi;"
+				BasicRuntimeChecks="1"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/phapi/test/client/Debug/phapi-test.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\phapi;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/test/client/phapi-test.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/test/client/phapi-test.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\..\owbase\Debug\owbase.lib ..\..\..\owsl\Debug\owsl.lib ..\..\Debug\phapi.lib ..\..\..\libosip2\Debug\osip2.lib ..\..\..\eXosip\transport_manager\Debug\transport_manager.lib ..\..\..\sVoIP\Debug\svoip.lib ..\..\..\eXosip\Debug\exosip.lib ..\..\..\ortp\Debug\ortp.lib ..\..\stun\Debug\stun.lib ..\..\gsm\Debug\gsm.lib ..\..\..\..\libs\owutil\cutil\Debug\owcutil.lib ..\..\..\phapi-util\Debug\phapiutil.lib ..\..\fidlib\Debug\fidlib.lib ..\..\speexec\Debug\speexec.lib ..\..\..\..\libs\timer\Debug\wtimer.lib ..\..\..\..\libs\3rdparty\pthread\Debug\pthread.lib ..\..\g722\Debug\g722.lib ..\..\g726\Debug\g726.lib ..\..\msdirent\Debug\msdirent.lib ..\..\..\..\libs\owutil\util\Debug\owutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\..\libs\pixertool\Debug\pixertool.lib ..\..\..\..\libs\owutil\thread\Debug\owthread.lib ..\..\..\..\libs\webcam\Debug\webcam.lib winmm.lib ws2_32.lib user32.lib shell32.lib advapi32.lib wininet.lib iphlpapi.lib strmiids.lib ole32.lib comsupp.lib ..\..\..\..\libs\3rdparty\portaudio\Debug\portaudio.lib ..\..\..\eXosip\transport_manager\Debug\transport_manager.lib ..\..\..\owsl\Debug\owsl.lib ..\..\..\owbase\Debug\owbase.lib ..\..\..\..\libs\3rdparty\curl\Debug\curl.lib ..\..\..\sVoIP\Debug\svoip.lib ..\..\..\libosip2\Debug\osip2.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\..\srtp\Debug\srtp.lib ..\..\..\ortp\Debug\ortp.lib ..\..\..\..\libs\3rdparty\pthread\Debug\pthread.lib ws2_32.lib ..\..\..\..\libs\pixertool\Debug\pixertool.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\..\libs\owutil\thread\Debug\owthread.lib ..\..\..\..\libs\owutil\util\Debug\owutil.lib ..\..\..\..\libs\owutil\cutil\Debug\owcutil.lib Rpcrt4.lib comsuppw.lib ws2_32.lib advapi32.lib iphlpapi.lib strmiids.lib comsupp.lib winmm.lib "
+				OutputFile="$(SolutionDir)wifo\phapi\test\client\Debug\phapi-test.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\..\..\owbase\Debug\$(OutDir),..\..\..\owbase\Debug,..\..\..\owsl\Debug\$(OutDir),..\..\..\owsl\Debug,..\..\Debug\$(OutDir),..\..\Debug,..\..\..\libosip2\Debug\$(OutDir),..\..\..\libosip2\Debug,..\..\..\eXosip\transport_manager\Debug\$(OutDir),..\..\..\eXosip\transport_manager\Debug,..\..\..\sVoIP\Debug\$(OutDir),..\..\..\sVoIP\Debug,..\..\..\eXosip\Debug\$(OutDir),..\..\..\eXosip\Debug,..\..\..\ortp\Debug\$(OutDir),..\..\..\ortp\Debug,..\..\stun\Debug\$(OutDir),..\..\stun\Debug,..\..\gsm\Debug\$(OutDir),..\..\gsm\Debug,..\..\..\..\libs\owutil\cutil\Debug\$(OutDir),..\..\..\..\libs\owutil\cutil\Debug,..\..\..\phapi-util\Debug\$(OutDir),..\..\..\phapi-util\Debug,..\..\fidlib\Debug\$(OutDir),..\..\fidlib\Debug,..\..\speexec\Debug\$(OutDir),..\..\speexec\Debug,..\..\..\..\libs\timer\Debug\$(OutDir),..\..\..\..\libs\timer\Debug,..\..\..\..\libs\3rdparty\pthread\Debug\$(OutDir),..\..\..\..\libs\3rdparty\pthread\Debug,..\..\g722\Debug\$(OutDir),..\..\g722\Debug,..\..\g726\Debug\$(OutDir),..\..\g726\Debug,..\..\msdirent\Debug\$(OutDir),..\..\msdirent\Debug,..\..\..\..\libs\owutil\util\Debug\$(OutDir),..\..\..\..\libs\owutil\util\Debug,$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\..\libs\pixertool\Debug\$(OutDir),..\..\..\..\libs\pixertool\Debug,..\..\..\..\libs\owutil\thread\Debug\$(OutDir),..\..\..\..\libs\owutil\thread\Debug,..\..\..\..\libs\webcam\Debug\$(OutDir),..\..\..\..\libs\webcam\Debug,..\..\..\..\libs\3rdparty\portaudio\Debug\$(OutDir),..\..\..\..\libs\3rdparty\portaudio\Debug,..\..\..\..\libs\3rdparty\curl\Debug\$(OutDir),..\..\..\..\libs\3rdparty\curl\Debug,$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32,..\..\..\srtp\Debug\$(OutDir),..\..\..\srtp\Debug"
+				ProgramDataBaseFile="$(SolutionDir)wifo/phapi/test/client/Debug/phapi-test.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)wifo\phapi\test\client\Debug\phapi-test.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="phapi-test.dir\Release"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\phapi;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/phapi/test/client/Release/phapi-test.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\phapi;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/test/client/phapi-test.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/test/client/phapi-test.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\..\owbase\Release\owbase.lib ..\..\..\owsl\Release\owsl.lib ..\..\Release\phapi.lib ..\..\..\libosip2\Release\osip2.lib ..\..\..\eXosip\transport_manager\Release\transport_manager.lib ..\..\..\sVoIP\Release\svoip.lib ..\..\..\eXosip\Release\exosip.lib ..\..\..\ortp\Release\ortp.lib ..\..\stun\Release\stun.lib ..\..\gsm\Release\gsm.lib ..\..\..\..\libs\owutil\cutil\Release\owcutil.lib ..\..\..\phapi-util\Release\phapiutil.lib ..\..\fidlib\Release\fidlib.lib ..\..\speexec\Release\speexec.lib ..\..\..\..\libs\timer\Release\wtimer.lib ..\..\..\..\libs\3rdparty\pthread\Release\pthread.lib ..\..\g722\Release\g722.lib ..\..\g726\Release\g726.lib ..\..\msdirent\Release\msdirent.lib ..\..\..\..\libs\owutil\util\Release\owutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\..\libs\pixertool\Release\pixertool.lib ..\..\..\..\libs\owutil\thread\Release\owthread.lib ..\..\..\..\libs\webcam\Release\webcam.lib winmm.lib ws2_32.lib user32.lib shell32.lib advapi32.lib wininet.lib iphlpapi.lib strmiids.lib ole32.lib comsupp.lib ..\..\..\..\libs\3rdparty\portaudio\Release\portaudio.lib ..\..\..\eXosip\transport_manager\Release\transport_manager.lib ..\..\..\owsl\Release\owsl.lib ..\..\..\owbase\Release\owbase.lib ..\..\..\..\libs\3rdparty\curl\Release\curl.lib ..\..\..\sVoIP\Release\svoip.lib ..\..\..\libosip2\Release\osip2.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\..\srtp\Release\srtp.lib ..\..\..\ortp\Release\ortp.lib ..\..\..\..\libs\3rdparty\pthread\Release\pthread.lib ws2_32.lib ..\..\..\..\libs\pixertool\Release\pixertool.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\..\libs\owutil\thread\Release\owthread.lib ..\..\..\..\libs\owutil\util\Release\owutil.lib ..\..\..\..\libs\owutil\cutil\Release\owcutil.lib Rpcrt4.lib comsuppw.lib ws2_32.lib advapi32.lib iphlpapi.lib strmiids.lib comsupp.lib winmm.lib "
+				OutputFile="$(SolutionDir)wifo\phapi\test\client\Release\phapi-test.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\..\..\owbase\Release\$(OutDir),..\..\..\owbase\Release,..\..\..\owsl\Release\$(OutDir),..\..\..\owsl\Release,..\..\Release\$(OutDir),..\..\Release,..\..\..\libosip2\Release\$(OutDir),..\..\..\libosip2\Release,..\..\..\eXosip\transport_manager\Release\$(OutDir),..\..\..\eXosip\transport_manager\Release,..\..\..\sVoIP\Release\$(OutDir),..\..\..\sVoIP\Release,..\..\..\eXosip\Release\$(OutDir),..\..\..\eXosip\Release,..\..\..\ortp\Release\$(OutDir),..\..\..\ortp\Release,..\..\stun\Release\$(OutDir),..\..\stun\Release,..\..\gsm\Release\$(OutDir),..\..\gsm\Release,..\..\..\..\libs\owutil\cutil\Release\$(OutDir),..\..\..\..\libs\owutil\cutil\Release,..\..\..\phapi-util\Release\$(OutDir),..\..\..\phapi-util\Release,..\..\fidlib\Release\$(OutDir),..\..\fidlib\Release,..\..\speexec\Release\$(OutDir),..\..\speexec\Release,..\..\..\..\libs\timer\Release\$(OutDir),..\..\..\..\libs\timer\Release,..\..\..\..\libs\3rdparty\pthread\Release\$(OutDir),..\..\..\..\libs\3rdparty\pthread\Release,..\..\g722\Release\$(OutDir),..\..\g722\Release,..\..\g726\Release\$(OutDir),..\..\g726\Release,..\..\msdirent\Release\$(OutDir),..\..\msdirent\Release,..\..\..\..\libs\owutil\util\Release\$(OutDir),..\..\..\..\libs\owutil\util\Release,$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\..\libs\pixertool\Release\$(OutDir),..\..\..\..\libs\pixertool\Release,..\..\..\..\libs\owutil\thread\Release\$(OutDir),..\..\..\..\libs\owutil\thread\Release,..\..\..\..\libs\webcam\Release\$(OutDir),..\..\..\..\libs\webcam\Release,..\..\..\..\libs\3rdparty\portaudio\Release\$(OutDir),..\..\..\..\libs\3rdparty\portaudio\Release,..\..\..\..\libs\3rdparty\curl\Release\$(OutDir),..\..\..\..\libs\3rdparty\curl\Release,$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32,..\..\..\srtp\Release\$(OutDir),..\..\..\srtp\Release"
+				ProgramDataBaseFile="$(SolutionDir)wifo/phapi/test/client/Release/phapi-test.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)wifo\phapi\test\client\Release\phapi-test.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="phapi-test.dir\MinSizeRel"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\phapi;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/phapi/test/client/MinSizeRel/phapi-test.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\phapi;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/test/client/phapi-test.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/test/client/phapi-test.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\..\owbase\MinSizeRel\owbase.lib ..\..\..\owsl\MinSizeRel\owsl.lib ..\..\MinSizeRel\phapi.lib ..\..\..\libosip2\MinSizeRel\osip2.lib ..\..\..\eXosip\transport_manager\MinSizeRel\transport_manager.lib ..\..\..\sVoIP\MinSizeRel\svoip.lib ..\..\..\eXosip\MinSizeRel\exosip.lib ..\..\..\ortp\MinSizeRel\ortp.lib ..\..\stun\MinSizeRel\stun.lib ..\..\gsm\MinSizeRel\gsm.lib ..\..\..\..\libs\owutil\cutil\MinSizeRel\owcutil.lib ..\..\..\phapi-util\MinSizeRel\phapiutil.lib ..\..\fidlib\MinSizeRel\fidlib.lib ..\..\speexec\MinSizeRel\speexec.lib ..\..\..\..\libs\timer\MinSizeRel\wtimer.lib ..\..\..\..\libs\3rdparty\pthread\MinSizeRel\pthread.lib ..\..\g722\MinSizeRel\g722.lib ..\..\g726\MinSizeRel\g726.lib ..\..\msdirent\MinSizeRel\msdirent.lib ..\..\..\..\libs\owutil\util\MinSizeRel\owutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\..\libs\pixertool\MinSizeRel\pixertool.lib ..\..\..\..\libs\owutil\thread\MinSizeRel\owthread.lib ..\..\..\..\libs\webcam\MinSizeRel\webcam.lib winmm.lib ws2_32.lib user32.lib shell32.lib advapi32.lib wininet.lib iphlpapi.lib strmiids.lib ole32.lib comsupp.lib ..\..\..\..\libs\3rdparty\portaudio\MinSizeRel\portaudio.lib ..\..\..\eXosip\transport_manager\MinSizeRel\transport_manager.lib ..\..\..\owsl\MinSizeRel\owsl.lib ..\..\..\owbase\MinSizeRel\owbase.lib ..\..\..\..\libs\3rdparty\curl\MinSizeRel\curl.lib ..\..\..\sVoIP\MinSizeRel\svoip.lib ..\..\..\libosip2\MinSizeRel\osip2.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\..\srtp\MinSizeRel\srtp.lib ..\..\..\ortp\MinSizeRel\ortp.lib ..\..\..\..\libs\3rdparty\pthread\MinSizeRel\pthread.lib ws2_32.lib ..\..\..\..\libs\pixertool\MinSizeRel\pixertool.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\..\libs\owutil\thread\MinSizeRel\owthread.lib ..\..\..\..\libs\owutil\util\MinSizeRel\owutil.lib ..\..\..\..\libs\owutil\cutil\MinSizeRel\owcutil.lib Rpcrt4.lib comsuppw.lib ws2_32.lib advapi32.lib iphlpapi.lib strmiids.lib comsupp.lib winmm.lib "
+				OutputFile="$(SolutionDir)wifo\phapi\test\client\MinSizeRel\phapi-test.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\..\..\owbase\MinSizeRel\$(OutDir),..\..\..\owbase\MinSizeRel,..\..\..\owsl\MinSizeRel\$(OutDir),..\..\..\owsl\MinSizeRel,..\..\MinSizeRel\$(OutDir),..\..\MinSizeRel,..\..\..\libosip2\MinSizeRel\$(OutDir),..\..\..\libosip2\MinSizeRel,..\..\..\eXosip\transport_manager\MinSizeRel\$(OutDir),..\..\..\eXosip\transport_manager\MinSizeRel,..\..\..\sVoIP\MinSizeRel\$(OutDir),..\..\..\sVoIP\MinSizeRel,..\..\..\eXosip\MinSizeRel\$(OutDir),..\..\..\eXosip\MinSizeRel,..\..\..\ortp\MinSizeRel\$(OutDir),..\..\..\ortp\MinSizeRel,..\..\stun\MinSizeRel\$(OutDir),..\..\stun\MinSizeRel,..\..\gsm\MinSizeRel\$(OutDir),..\..\gsm\MinSizeRel,..\..\..\..\libs\owutil\cutil\MinSizeRel\$(OutDir),..\..\..\..\libs\owutil\cutil\MinSizeRel,..\..\..\phapi-util\MinSizeRel\$(OutDir),..\..\..\phapi-util\MinSizeRel,..\..\fidlib\MinSizeRel\$(OutDir),..\..\fidlib\MinSizeRel,..\..\speexec\MinSizeRel\$(OutDir),..\..\speexec\MinSizeRel,..\..\..\..\libs\timer\MinSizeRel\$(OutDir),..\..\..\..\libs\timer\MinSizeRel,..\..\..\..\libs\3rdparty\pthread\MinSizeRel\$(OutDir),..\..\..\..\libs\3rdparty\pthread\MinSizeRel,..\..\g722\MinSizeRel\$(OutDir),..\..\g722\MinSizeRel,..\..\g726\MinSizeRel\$(OutDir),..\..\g726\MinSizeRel,..\..\msdirent\MinSizeRel\$(OutDir),..\..\msdirent\MinSizeRel,..\..\..\..\libs\owutil\util\MinSizeRel\$(OutDir),..\..\..\..\libs\owutil\util\MinSizeRel,$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\..\libs\pixertool\MinSizeRel\$(OutDir),..\..\..\..\libs\pixertool\MinSizeRel,..\..\..\..\libs\owutil\thread\MinSizeRel\$(OutDir),..\..\..\..\libs\owutil\thread\MinSizeRel,..\..\..\..\libs\webcam\MinSizeRel\$(OutDir),..\..\..\..\libs\webcam\MinSizeRel,..\..\..\..\libs\3rdparty\portaudio\MinSizeRel\$(OutDir),..\..\..\..\libs\3rdparty\portaudio\MinSizeRel,..\..\..\..\libs\3rdparty\curl\MinSizeRel\$(OutDir),..\..\..\..\libs\3rdparty\curl\MinSizeRel,$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32,..\..\..\srtp\MinSizeRel\$(OutDir),..\..\..\srtp\MinSizeRel"
+				ProgramDataBaseFile="$(SolutionDir)wifo/phapi/test/client/MinSizeRel/phapi-test.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)wifo\phapi\test\client\MinSizeRel\phapi-test.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="phapi-test.dir\RelWithDebInfo"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\phapi;"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/phapi/test/client/RelWithDebInfo/phapi-test.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\wifo\phapi;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OSIP_MT,ENABLE_TRACE,HAVE_STRUCT_TIMEVAL,OWBASE_DLL,OWSL_DLL,ORTP_DEBUG_MODE,ORTP_STATIC,PHAPIUTIL_DLL,PTHREAD_DLL,USE_PCM=1,NEED_ECMUX=1,MINIMIZE_COPYING=1,SCHEDULING_MODE=0,BLOCKING_MODE=0,DO_ECHO_CAN=1,USE_WAVEIN_CBK=1,PSEUDO_AEC=0,NO_ECHO__SUPPRESSOR=1,PH_VIDEO_USELOCK=1,USE_SPXEC=1,PH_FORCE_16KHZ=1,USE_FLV1_OVER_H261=1,ENABLE_ILBC=1,WENGOPHONE_UA=wengo/v1/wengophoneng/wengo/rev/trunk/,SUBVERSION_REVISION=,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,WEBCAM_DLL,PHAPI_VIDEO_SUPPORT,T_MSVC,PORTAUDIO_DLL,ENABLE_PORTAUDIO,OWBASE_DLL,OWSL_DLL,PHAPI_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/test/client/phapi-test.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/test/client/phapi-test.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\..\owbase\RelWithDebInfo\owbase.lib ..\..\..\owsl\RelWithDebInfo\owsl.lib ..\..\RelWithDebInfo\phapi.lib ..\..\..\libosip2\RelWithDebInfo\osip2.lib ..\..\..\eXosip\transport_manager\RelWithDebInfo\transport_manager.lib ..\..\..\sVoIP\RelWithDebInfo\svoip.lib ..\..\..\eXosip\RelWithDebInfo\exosip.lib ..\..\..\ortp\RelWithDebInfo\ortp.lib ..\..\stun\RelWithDebInfo\stun.lib ..\..\gsm\RelWithDebInfo\gsm.lib ..\..\..\..\libs\owutil\cutil\RelWithDebInfo\owcutil.lib ..\..\..\phapi-util\RelWithDebInfo\phapiutil.lib ..\..\fidlib\RelWithDebInfo\fidlib.lib ..\..\speexec\RelWithDebInfo\speexec.lib ..\..\..\..\libs\timer\RelWithDebInfo\wtimer.lib ..\..\..\..\libs\3rdparty\pthread\RelWithDebInfo\pthread.lib ..\..\g722\RelWithDebInfo\g722.lib ..\..\g726\RelWithDebInfo\g726.lib ..\..\msdirent\RelWithDebInfo\msdirent.lib ..\..\..\..\libs\owutil\util\RelWithDebInfo\owutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\..\libs\pixertool\RelWithDebInfo\pixertool.lib ..\..\..\..\libs\owutil\thread\RelWithDebInfo\owthread.lib ..\..\..\..\libs\webcam\RelWithDebInfo\webcam.lib winmm.lib ws2_32.lib user32.lib shell32.lib advapi32.lib wininet.lib iphlpapi.lib strmiids.lib ole32.lib comsupp.lib ..\..\..\..\libs\3rdparty\portaudio\RelWithDebInfo\portaudio.lib ..\..\..\eXosip\transport_manager\RelWithDebInfo\transport_manager.lib ..\..\..\owsl\RelWithDebInfo\owsl.lib ..\..\..\owbase\RelWithDebInfo\owbase.lib ..\..\..\..\libs\3rdparty\curl\RelWithDebInfo\curl.lib ..\..\..\sVoIP\RelWithDebInfo\svoip.lib ..\..\..\libosip2\RelWithDebInfo\osip2.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ..\..\..\srtp\RelWithDebInfo\srtp.lib ..\..\..\ortp\RelWithDebInfo\ortp.lib ..\..\..\..\libs\3rdparty\pthread\RelWithDebInfo\pthread.lib ws2_32.lib ..\..\..\..\libs\pixertool\RelWithDebInfo\pixertool.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\..\libs\owutil\thread\RelWithDebInfo\owthread.lib ..\..\..\..\libs\owutil\util\RelWithDebInfo\owutil.lib ..\..\..\..\libs\owutil\cutil\RelWithDebInfo\owcutil.lib Rpcrt4.lib comsuppw.lib ws2_32.lib advapi32.lib iphlpapi.lib strmiids.lib comsupp.lib winmm.lib "
+				OutputFile="$(SolutionDir)wifo\phapi\test\client\RelWithDebInfo\phapi-test.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\..\..\owbase\RelWithDebInfo\$(OutDir),..\..\..\owbase\RelWithDebInfo,..\..\..\owsl\RelWithDebInfo\$(OutDir),..\..\..\owsl\RelWithDebInfo,..\..\RelWithDebInfo\$(OutDir),..\..\RelWithDebInfo,..\..\..\libosip2\RelWithDebInfo\$(OutDir),..\..\..\libosip2\RelWithDebInfo,..\..\..\eXosip\transport_manager\RelWithDebInfo\$(OutDir),..\..\..\eXosip\transport_manager\RelWithDebInfo,..\..\..\sVoIP\RelWithDebInfo\$(OutDir),..\..\..\sVoIP\RelWithDebInfo,..\..\..\eXosip\RelWithDebInfo\$(OutDir),..\..\..\eXosip\RelWithDebInfo,..\..\..\ortp\RelWithDebInfo\$(OutDir),..\..\..\ortp\RelWithDebInfo,..\..\stun\RelWithDebInfo\$(OutDir),..\..\stun\RelWithDebInfo,..\..\gsm\RelWithDebInfo\$(OutDir),..\..\gsm\RelWithDebInfo,..\..\..\..\libs\owutil\cutil\RelWithDebInfo\$(OutDir),..\..\..\..\libs\owutil\cutil\RelWithDebInfo,..\..\..\phapi-util\RelWithDebInfo\$(OutDir),..\..\..\phapi-util\RelWithDebInfo,..\..\fidlib\RelWithDebInfo\$(OutDir),..\..\fidlib\RelWithDebInfo,..\..\speexec\RelWithDebInfo\$(OutDir),..\..\speexec\RelWithDebInfo,..\..\..\..\libs\timer\RelWithDebInfo\$(OutDir),..\..\..\..\libs\timer\RelWithDebInfo,..\..\..\..\libs\3rdparty\pthread\RelWithDebInfo\$(OutDir),..\..\..\..\libs\3rdparty\pthread\RelWithDebInfo,..\..\g722\RelWithDebInfo\$(OutDir),..\..\g722\RelWithDebInfo,..\..\g726\RelWithDebInfo\$(OutDir),..\..\g726\RelWithDebInfo,..\..\msdirent\RelWithDebInfo\$(OutDir),..\..\msdirent\RelWithDebInfo,..\..\..\..\libs\owutil\util\RelWithDebInfo\$(OutDir),..\..\..\..\libs\owutil\util\RelWithDebInfo,$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\..\libs\pixertool\RelWithDebInfo\$(OutDir),..\..\..\..\libs\pixertool\RelWithDebInfo,..\..\..\..\libs\owutil\thread\RelWithDebInfo\$(OutDir),..\..\..\..\libs\owutil\thread\RelWithDebInfo,..\..\..\..\libs\webcam\RelWithDebInfo\$(OutDir),..\..\..\..\libs\webcam\RelWithDebInfo,..\..\..\..\libs\3rdparty\portaudio\RelWithDebInfo\$(OutDir),..\..\..\..\libs\3rdparty\portaudio\RelWithDebInfo,..\..\..\..\libs\3rdparty\curl\RelWithDebInfo\$(OutDir),..\..\..\..\libs\3rdparty\curl\RelWithDebInfo,$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32,..\..\..\srtp\RelWithDebInfo\$(OutDir),..\..\..\srtp\RelWithDebInfo"
+				ProgramDataBaseFile="$(SolutionDir)wifo/phapi/test/client/RelWithDebInfo/phapi-test.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)wifo\phapi\test\client\RelWithDebInfo\phapi-test.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\wifo\phapi\test\client\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/phapi/test/client/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\phapi\test\client\CMakeLists.txt;$(SolutionDir)..\wifo\phapi\test\client\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/phapi/test/client/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\phapi\test\client\CMakeLists.txt;$(SolutionDir)..\wifo\phapi\test\client\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/phapi/test/client/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\phapi\test\client\CMakeLists.txt;$(SolutionDir)..\wifo\phapi\test\client\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/phapi/test/client/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\phapi\test\client\CMakeLists.txt;$(SolutionDir)..\wifo\phapi\test\client\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\wifo\phapi\test\client\PhApiTest.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\wifo\phapi\test\client\wlm_password.c">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

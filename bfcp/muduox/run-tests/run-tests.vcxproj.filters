@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{02750fbd-9052-456a-b745-e47023185c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\failtest">
+      <UniqueIdentifier>{168c1604-2929-4b8c-8968-758ea0a17c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\passtest">
+      <UniqueIdentifier>{c3649dc5-90e5-4612-a001-2b20248d5e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{06a173cb-786f-401a-85a3-3167cbec407c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\passtest">
+      <UniqueIdentifier>{d6625141-a465-4f2b-a444-df37b5bab360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\failtest">
+      <UniqueIdentifier>{295a04df-ad2f-43f5-a9df-c844c1941eeb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="basename.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="base\AsyncLogging_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Atomic_unittest.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\BlockingQueue_bench.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\BlockingQueue_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\BoundedBlockingQueue_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Date_unittest.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Exception_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\FileUtil_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\GzipFile_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\LogFile_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Logging_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\LogStream_bench.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Mutex_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Singleton_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Thread_bench.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Thread_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ThreadPool_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Timestamp_unittest.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Fork_test.cc">
+      <Filter>base\failtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ProcessInfo_test.cc">
+      <Filter>base\failtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\SingletonThreadLocal_test.cc">
+      <Filter>base\failtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ThreadLocal_test.cc">
+      <Filter>base\failtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ThreadLocalSingleton_test.cc">
+      <Filter>base\failtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\TimeZone_unittest.cc">
+      <Filter>base\failtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Buffer_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\TimerQueue_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\InetAddress_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EventLoop_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EventLoopThread_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EventLoopThreadPool_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\ZlibStream_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EchoServer_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EchoClient_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\TcpClient_reg1.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\TcpClient_reg2.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\TcpClient_reg3.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="base\LogStream_test.cc">
+      <Filter>base\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EchoUdpServer_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+    <ClCompile Include="net\EchoUdpClient_unittest.cc">
+      <Filter>net\passtest</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

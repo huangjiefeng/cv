@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="dbus_service">
+      <UniqueIdentifier>{f3272b1c-7b71-44ed-8882-edff4d6e2413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{e5c8c579-f8ab-4ee5-8035-ba12a1844a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbus_client">
+      <UniqueIdentifier>{fb413d9a-e3c0-4447-86f7-e20cea0d5aec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{41b3bc58-e048-4c2e-9f76-cbef98e3faaa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QosReportSender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UdpSender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChannelDispatcherIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvStreamedMediaAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_CvStreamedMediaAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvStreamedMediaAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvStreamedMediaService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DEBUG_NOAEC\moc_CvStreamedMediaService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvStreamedMediaService.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channel\type\streamedMedia\service\CvStreamedMediaAdaptor.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="CvStreamedMediaService.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\log\Log.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\channelDispatcher\client\ChannelDispatcherIf.cpp">
+      <Filter>dbus_client</Filter>
+    </ClCompile>
+    <ClCompile Include="Ini.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="NConfig.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\report\RTCPReportReader.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\report\RTCPReportWriter.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\sharememory\SingalMemoryMap.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\util\BackupManager\BackupManager.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CvStreamedMedia.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\include\dbus\channel\type\streamedMedia\service\CvStreamedMediaAdaptor.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CvStreamedMediaService.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channelDispatcher\client\ChannelDispatcherIf.h">
+      <Filter>dbus_client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NonCopyable.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QoSDef.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QosReportSender.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UdpSender.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\msdx\common\MsdxServiceCommon.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\channel\type\streamedMedia\common\StreamedMediaServiceCommon.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\log\Log.h">
+      <Filter>log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\BackupManager\BackupManager.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ini.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NConfig.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\report\ReporterCommon.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\report\RTCPReportReader.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\report\RTCPReportWriter.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\util\sharememory\SingalMemoryMap.h">
+      <Filter>util</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="gmodule"
+	ProjectGUID="{8D2CB4CD-6027-4075-B49A-1A3E8B09D1B9}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="gmodule.dir\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\..\config;"
+				BasicRuntimeChecks="1"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/Debug/gmodule.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\..\config;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/gmodule.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/gmodule.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\glib\Debug\glib.lib ..\..\..\..\..\..\libs\3rdparty\libintl\gettext-0.13.1\lib\intl.lib ws2_32.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\Debug\gmodule.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\glib\Debug\$(OutDir),..\glib\Debug,$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\lib\$(OutDir),$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\lib"
+				ModuleDefinitionFile="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\gmodule.def"
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\Debug\gmodule.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\Debug\gmodule.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="gmodule.dir\Release"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\..\config;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/Release/gmodule.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\..\config;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/gmodule.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/gmodule.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\glib\Release\glib.lib ..\..\..\..\..\..\libs\3rdparty\libintl\gettext-0.13.1\lib\intl.lib ws2_32.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\Release\gmodule.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\glib\Release\$(OutDir),..\glib\Release,$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\lib\$(OutDir),$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\lib"
+				ModuleDefinitionFile="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\gmodule.def"
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\Release\gmodule.pdb"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\Release\gmodule.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="gmodule.dir\MinSizeRel"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\..\config;"
+				CompileAs="1"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/MinSizeRel/gmodule.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\..\config;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/gmodule.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/gmodule.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\glib\MinSizeRel\glib.lib ..\..\..\..\..\..\libs\3rdparty\libintl\gettext-0.13.1\lib\intl.lib ws2_32.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\MinSizeRel\gmodule.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\glib\MinSizeRel\$(OutDir),..\glib\MinSizeRel,$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\lib\$(OutDir),$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\lib"
+				ModuleDefinitionFile="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\gmodule.def"
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\MinSizeRel\gmodule.pdb"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\MinSizeRel\gmodule.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="gmodule.dir\RelWithDebInfo"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\..\config;"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/RelWithDebInfo/gmodule.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\..\config;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,GLIB_DLL,HAVE_CONFIG_H,G_LOG_DOMAIN=\&quot;GModule\&quot;,G_DISABLE_DEPRECATED,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_GMODULE_DLL -DGMODULE_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/gmodule.dll&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/3rdparty/glib/glib-2.18.1/gmodule/gmodule.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\glib\RelWithDebInfo\glib.lib ..\..\..\..\..\..\libs\3rdparty\libintl\gettext-0.13.1\lib\intl.lib ws2_32.lib "
+				OutputFile="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\RelWithDebInfo\gmodule.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\glib\RelWithDebInfo\$(OutDir),..\glib\RelWithDebInfo,$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\lib\$(OutDir),$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\lib"
+				ModuleDefinitionFile="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\gmodule.def"
+				ProgramDataBaseFile="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\RelWithDebInfo\gmodule.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)libs\3rdparty\glib\glib-2.18.1\gmodule\RelWithDebInfo\gmodule.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/glib/glib-2.18.1/gmodule/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/glib/glib-2.18.1/gmodule/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/glib/glib-2.18.1/gmodule/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/3rdparty/glib/glib-2.18.1/gmodule/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\CMakeLists.txt;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\gmodule.def">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\gmodule\gmodule.c">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

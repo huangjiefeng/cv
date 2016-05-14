@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="webcam-multi-visu-test"
+	ProjectGUID="{271E7259-82A5-4C50-8900-65AB9C2D6059}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="webcam-multi-visu-test.dir\Debug"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\webcam\tests\multi-visu;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				BasicRuntimeChecks="1"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/webcam/tests/multi-visu/Debug/webcam-multi-visu-test.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\webcam\tests\multi-visu;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/webcam/tests/multi-visu/webcam-multi-visu-test.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/webcam/tests/multi-visu/webcam-multi-visu-test.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\..\owutil\cutil\Debug\owcutil.lib ..\..\..\owutil\util\Debug\owutil.lib ..\..\..\owutil\thread\Debug\owthread.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\qtutil\Debug\owqtutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\pixertool\Debug\pixertool.lib ..\..\Debug\webcam.lib winmm.lib strmiids.lib comsuppw.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\owutil\thread\Debug\owthread.lib ..\..\..\owutil\util\Debug\owutil.lib Rpcrt4.lib ..\..\..\pixertool\Debug\pixertool.lib ..\..\..\owutil\cutil\Debug\owcutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib comsupp.lib winmm.lib strmiids.lib "
+				OutputFile="$(SolutionDir)libs\webcam\tests\multi-visu\Debug\webcam-multi-visu-test.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\..\..\owutil\cutil\Debug\$(OutDir),..\..\..\owutil\cutil\Debug,..\..\..\owutil\util\Debug\$(OutDir),..\..\..\owutil\util\Debug,..\..\..\owutil\thread\Debug\$(OutDir),..\..\..\owutil\thread\Debug,..\..\..\qtutil\Debug\$(OutDir),..\..\..\qtutil\Debug,$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\pixertool\Debug\$(OutDir),..\..\..\pixertool\Debug,..\..\Debug\$(OutDir),..\..\Debug"
+				ProgramDataBaseFile="$(SolutionDir)libs/webcam/tests/multi-visu/Debug/webcam-multi-visu-test.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\webcam\tests\multi-visu\Debug\webcam-multi-visu-test.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="webcam-multi-visu-test.dir\Release"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\webcam\tests\multi-visu;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/webcam/tests/multi-visu/Release/webcam-multi-visu-test.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\webcam\tests\multi-visu;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/webcam/tests/multi-visu/webcam-multi-visu-test.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/webcam/tests/multi-visu/webcam-multi-visu-test.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\..\owutil\cutil\Release\owcutil.lib ..\..\..\owutil\util\Release\owutil.lib ..\..\..\owutil\thread\Release\owthread.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\qtutil\Release\owqtutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\pixertool\Release\pixertool.lib ..\..\Release\webcam.lib winmm.lib strmiids.lib comsuppw.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\owutil\thread\Release\owthread.lib ..\..\..\owutil\util\Release\owutil.lib Rpcrt4.lib ..\..\..\pixertool\Release\pixertool.lib ..\..\..\owutil\cutil\Release\owcutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib comsupp.lib winmm.lib strmiids.lib "
+				OutputFile="$(SolutionDir)libs\webcam\tests\multi-visu\Release\webcam-multi-visu-test.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\..\..\owutil\cutil\Release\$(OutDir),..\..\..\owutil\cutil\Release,..\..\..\owutil\util\Release\$(OutDir),..\..\..\owutil\util\Release,..\..\..\owutil\thread\Release\$(OutDir),..\..\..\owutil\thread\Release,..\..\..\qtutil\Release\$(OutDir),..\..\..\qtutil\Release,$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\pixertool\Release\$(OutDir),..\..\..\pixertool\Release,..\..\Release\$(OutDir),..\..\Release"
+				ProgramDataBaseFile="$(SolutionDir)libs/webcam/tests/multi-visu/Release/webcam-multi-visu-test.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\webcam\tests\multi-visu\Release\webcam-multi-visu-test.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="webcam-multi-visu-test.dir\MinSizeRel"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\webcam\tests\multi-visu;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/webcam/tests/multi-visu/MinSizeRel/webcam-multi-visu-test.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\webcam\tests\multi-visu;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/webcam/tests/multi-visu/webcam-multi-visu-test.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/webcam/tests/multi-visu/webcam-multi-visu-test.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\..\..\owutil\cutil\MinSizeRel\owcutil.lib ..\..\..\owutil\util\MinSizeRel\owutil.lib ..\..\..\owutil\thread\MinSizeRel\owthread.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\qtutil\MinSizeRel\owqtutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\pixertool\MinSizeRel\pixertool.lib ..\..\MinSizeRel\webcam.lib winmm.lib strmiids.lib comsuppw.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\owutil\thread\MinSizeRel\owthread.lib ..\..\..\owutil\util\MinSizeRel\owutil.lib Rpcrt4.lib ..\..\..\pixertool\MinSizeRel\pixertool.lib ..\..\..\owutil\cutil\MinSizeRel\owcutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib comsupp.lib winmm.lib strmiids.lib "
+				OutputFile="$(SolutionDir)libs\webcam\tests\multi-visu\MinSizeRel\webcam-multi-visu-test.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\..\..\owutil\cutil\MinSizeRel\$(OutDir),..\..\..\owutil\cutil\MinSizeRel,..\..\..\owutil\util\MinSizeRel\$(OutDir),..\..\..\owutil\util\MinSizeRel,..\..\..\owutil\thread\MinSizeRel\$(OutDir),..\..\..\owutil\thread\MinSizeRel,..\..\..\qtutil\MinSizeRel\$(OutDir),..\..\..\qtutil\MinSizeRel,$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\pixertool\MinSizeRel\$(OutDir),..\..\..\pixertool\MinSizeRel,..\..\MinSizeRel\$(OutDir),..\..\MinSizeRel"
+				ProgramDataBaseFile="$(SolutionDir)libs/webcam/tests/multi-visu/MinSizeRel/webcam-multi-visu-test.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\webcam\tests\multi-visu\MinSizeRel\webcam-multi-visu-test.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="webcam-multi-visu-test.dir\RelWithDebInfo"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\webcam\tests\multi-visu;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/webcam/tests/multi-visu/RelWithDebInfo/webcam-multi-visu-test.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\libs\3rdparty\ffmpeg\include\ffmpeg;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)libs\pixertool;$(SolutionDir)..\libs\webcam\include;$(SolutionDir)..\libs\webcam\tests\multi-visu;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,QT_DLL,QT_NO_KEYWORDS,WEBCAM_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/webcam/tests/multi-visu/webcam-multi-visu-test.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/webcam/tests/multi-visu/webcam-multi-visu-test.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\..\..\owutil\cutil\RelWithDebInfo\owcutil.lib ..\..\..\owutil\util\RelWithDebInfo\owutil.lib ..\..\..\owutil\thread\RelWithDebInfo\owthread.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\qtutil\RelWithDebInfo\owqtutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib ..\..\..\pixertool\RelWithDebInfo\pixertool.lib ..\..\RelWithDebInfo\webcam.lib winmm.lib strmiids.lib comsuppw.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\owutil\thread\RelWithDebInfo\owthread.lib ..\..\..\owutil\util\RelWithDebInfo\owutil.lib Rpcrt4.lib ..\..\..\pixertool\RelWithDebInfo\pixertool.lib ..\..\..\owutil\cutil\RelWithDebInfo\owcutil.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avcodec-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avformat-51.lib ..\..\..\..\..\libs\3rdparty\ffmpeg\binary-lib\msvc\avutil-49.lib comsupp.lib winmm.lib strmiids.lib "
+				OutputFile="$(SolutionDir)libs\webcam\tests\multi-visu\RelWithDebInfo\webcam-multi-visu-test.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\..\..\owutil\cutil\RelWithDebInfo\$(OutDir),..\..\..\owutil\cutil\RelWithDebInfo,..\..\..\owutil\util\RelWithDebInfo\$(OutDir),..\..\..\owutil\util\RelWithDebInfo,..\..\..\owutil\thread\RelWithDebInfo\$(OutDir),..\..\..\owutil\thread\RelWithDebInfo,..\..\..\qtutil\RelWithDebInfo\$(OutDir),..\..\..\qtutil\RelWithDebInfo,$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc\$(OutDir),$(SolutionDir)..\libs\3rdparty\ffmpeg\binary-lib\msvc,..\..\..\pixertool\RelWithDebInfo\$(OutDir),..\..\..\pixertool\RelWithDebInfo,..\..\RelWithDebInfo\$(OutDir),..\..\RelWithDebInfo"
+				ProgramDataBaseFile="$(SolutionDir)libs/webcam/tests/multi-visu/RelWithDebInfo/webcam-multi-visu-test.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\webcam\tests\multi-visu\RelWithDebInfo\webcam-multi-visu-test.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\libs\webcam\tests\multi-visu\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/webcam/tests/multi-visu/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\webcam\tests\multi-visu\CMakeLists.txt;$(SolutionDir)..\libs\webcam\tests\multi-visu\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/webcam/tests/multi-visu/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\webcam\tests\multi-visu\CMakeLists.txt;$(SolutionDir)..\libs\webcam\tests\multi-visu\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/webcam/tests/multi-visu/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\webcam\tests\multi-visu\CMakeLists.txt;$(SolutionDir)..\libs\webcam\tests\multi-visu\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/webcam/tests/multi-visu/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\webcam\tests\multi-visu\CMakeLists.txt;$(SolutionDir)..\libs\webcam\tests\multi-visu\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\webcam\tests\multi-visu\moc_VideoWindow.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\webcam\tests\multi-visu\main.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\webcam\tests\multi-visu\VideoWindow.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="CMake Rules"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\webcam\tests\multi-visu\moc_VideoWindow.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_VideoWindow.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_VideoWindow.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\webcam\tests\multi-visu\VideoWindow.h;"
+					Outputs="$(SolutionDir)libs\webcam\tests\multi-visu\moc_VideoWindow.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_VideoWindow.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_VideoWindow.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\webcam\tests\multi-visu\VideoWindow.h;"
+					Outputs="$(SolutionDir)libs\webcam\tests\multi-visu\moc_VideoWindow.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_VideoWindow.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_VideoWindow.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\webcam\tests\multi-visu\VideoWindow.h;"
+					Outputs="$(SolutionDir)libs\webcam\tests\multi-visu\moc_VideoWindow.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_VideoWindow.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_VideoWindow.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\webcam\tests\multi-visu\VideoWindow.h;"
+					Outputs="$(SolutionDir)libs\webcam\tests\multi-visu\moc_VideoWindow.cxx"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

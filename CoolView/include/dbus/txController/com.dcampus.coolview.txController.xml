@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.txController">
+    <method name="ControlRecord">
+      <arg type="i" name="op" direction="in" />   <!--operation-->
+      <arg type="ay" name="param" direction="in" />	<!--param-->
+      <arg type="i" name="result" direction="out" />	<!--operation result-->
+    </method>
+    <method name="GetRecordStatus">
+      <arg type="s" name="focus" direction="in" />   <!--focus-->
+      <arg type="s" name="uri" direction="in" />   <!--uri, optional-->
+      <arg type="ay" name="status" direction="out" />	<!--terminals info-->
+    </method>
+  </interface>
+</node>

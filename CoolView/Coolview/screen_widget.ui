@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScreenWidget</class>
+ <widget class="QWidget" name="ScreenWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>288</width>
+    <height>162</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>288</width>
+    <height>162</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>288</width>
+    <height>162</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>ScreenWidget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>1</number>
+      </property>
+      <property name="rightMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <property name="spacing">
+       <number>1</number>
+      </property>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+  <action name="oneMultiOneAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>1*1</string>
+   </property>
+  </action>
+  <action name="twoMultiTwoAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>2*2</string>
+   </property>
+  </action>
+  <action name="threeMultiThreeAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>3*3</string>
+   </property>
+  </action>
+  <action name="onePlusFiveLAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>1+5</string>
+   </property>
+  </action>
+  <action name="showRTCPAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>QoS实时信息</string>
+   </property>
+   <property name="toolTip">
+    <string>QoS实时信息</string>
+   </property>
+  </action>
+  <action name="documentAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>屏幕共享(本地文件)</string>
+   </property>
+   <property name="toolTip">
+    <string>屏幕共享(本地文件)</string>
+   </property>
+  </action>
+  <action name="autoLayoutAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>自动布局</string>
+   </property>
+  </action>
+  <action name="oneMultiTwoTopAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>上半屏幕1*2</string>
+   </property>
+   <property name="toolTip">
+    <string>上半屏幕1*2</string>
+   </property>
+  </action>
+  <action name="fourMultiFourAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>4*4</string>
+   </property>
+   <property name="toolTip">
+    <string>4*4</string>
+   </property>
+  </action>
+  <action name="airplayAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>屏幕共享(AirPlay)</string>
+   </property>
+   <property name="toolTip">
+    <string>屏幕共享(AirPlay)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

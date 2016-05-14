@@ -1,0 +1,217 @@
+<ui version="4.0" >
+ <class>GeneralSettings</class>
+ <widget class="QWidget" name="GeneralSettings" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>494</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="autoStartGroupBox" >
+     <property name="title" >
+      <string>When I start my computer</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="0" column="0" >
+       <widget class="QCheckBox" name="startWengoPhoneCheckBox" >
+        <property name="text" >
+         <string>Automatically start @product@</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3" >
+     <property name="title" >
+      <string>When I double-click on a contact </string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="0" column="1" >
+       <widget class="QRadioButton" name="startFreeCallRadioButton" >
+        <property name="text" >
+         <string>Start a free call if applicable</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2" >
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" >
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType" >
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>41</width>
+            <height>21</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1" >
+         <widget class="QCheckBox" name="callCellPhoneCheckBox" >
+          <property name="text" >
+           <string>Call cell phone or land line if contact not online</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_4" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>0</hsizetype>
+          <vsizetype>5</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pixmap" >
+         <pixmap resource="../../../../resources/wengophone.qrc" >:/pics/contact/chat.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_3" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>0</hsizetype>
+          <vsizetype>5</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pixmap" >
+         <pixmap resource="../../../../resources/wengophone.qrc" >:/pics/contact/call.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="QRadioButton" name="startChatOnlyRadioButton" >
+        <property name="text" >
+         <string>Always start a chat</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4" >
+     <property name="title" >
+      <string>Idle status</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_2" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>0</hsizetype>
+          <vsizetype>5</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pixmap" >
+         <pixmap resource="../../../../resources/wengophone.qrc" >:/pics/status/away.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" >
+       <widget class="QLabel" name="label" >
+        <property name="text" >
+         <string>minutes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" >
+       <widget class="QSpinBox" name="awaySpinBox" >
+        <property name="maximumSize" >
+         <size>
+          <width>40</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="minimum" >
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QCheckBox" name="showAwayCheckBox" >
+        <property name="text" >
+         <string>Show me as "Away" when I am inactive for:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>startWengoPhoneCheckBox</tabstop>
+  <tabstop>startFreeCallRadioButton</tabstop>
+  <tabstop>callCellPhoneCheckBox</tabstop>
+  <tabstop>startChatOnlyRadioButton</tabstop>
+  <tabstop>showAwayCheckBox</tabstop>
+  <tabstop>awaySpinBox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../../../resources/wengophone.qrc" />
+ </resources>
+ <connections/>
+</ui>

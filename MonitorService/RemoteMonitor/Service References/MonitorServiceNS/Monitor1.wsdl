@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Monitor" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://202.38.254.167:8010/MonitorService/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://202.38.254.167:8010/MonitorService/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://202.38.254.167:8010/MonitorService/?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMonitorService_GetTerminalInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_GetTerminalInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_GetProcessInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProcessInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_GetProcessInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProcessInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_GetThreadInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetThreadInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_GetThreadInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetThreadInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_KillProcess_InputMessage">
+    <wsdl:part name="parameters" element="tns:KillProcess" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_KillProcess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KillProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_SetProcessPriority_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetProcessPriority" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_SetProcessPriority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetProcessPriorityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_SetThreadPriority_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetThreadPriority" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_SetThreadPriority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetThreadPriorityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_ShutDown_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShutDown" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorService_Restart_InputMessage">
+    <wsdl:part name="parameters" element="tns:Restart" />
+  </wsdl:message>
+  <wsdl:portType name="IMonitorService">
+    <wsdl:operation name="GetTerminalInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorService/GetTerminalInfo" message="tns:IMonitorService_GetTerminalInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorService/GetTerminalInfoResponse" message="tns:IMonitorService_GetTerminalInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorService/GetProcessInfo" message="tns:IMonitorService_GetProcessInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorService/GetProcessInfoResponse" message="tns:IMonitorService_GetProcessInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetThreadInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorService/GetThreadInfo" message="tns:IMonitorService_GetThreadInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorService/GetThreadInfoResponse" message="tns:IMonitorService_GetThreadInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="KillProcess">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorService/KillProcess" message="tns:IMonitorService_KillProcess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorService/KillProcessResponse" message="tns:IMonitorService_KillProcess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetProcessPriority">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorService/SetProcessPriority" message="tns:IMonitorService_SetProcessPriority_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorService/SetProcessPriorityResponse" message="tns:IMonitorService_SetProcessPriority_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetThreadPriority">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorService/SetThreadPriority" message="tns:IMonitorService_SetThreadPriority_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorService/SetThreadPriorityResponse" message="tns:IMonitorService_SetThreadPriority_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShutDown">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorService/ShutDown" message="tns:IMonitorService_ShutDown_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Restart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorService/Restart" message="tns:IMonitorService_Restart_InputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMonitorService" type="tns:IMonitorService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTerminalInfo">
+      <soap:operation soapAction="http://tempuri.org/IMonitorService/GetTerminalInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessInfo">
+      <soap:operation soapAction="http://tempuri.org/IMonitorService/GetProcessInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThreadInfo">
+      <soap:operation soapAction="http://tempuri.org/IMonitorService/GetThreadInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KillProcess">
+      <soap:operation soapAction="http://tempuri.org/IMonitorService/KillProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetProcessPriority">
+      <soap:operation soapAction="http://tempuri.org/IMonitorService/SetProcessPriority" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetThreadPriority">
+      <soap:operation soapAction="http://tempuri.org/IMonitorService/SetThreadPriority" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShutDown">
+      <soap:operation soapAction="http://tempuri.org/IMonitorService/ShutDown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="Restart">
+      <soap:operation soapAction="http://tempuri.org/IMonitorService/Restart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Monitor">
+    <wsdl:port name="BasicHttpBinding_IMonitorService" binding="tns:BasicHttpBinding_IMonitorService">
+      <soap:address location="http://202.38.254.167:8010/MonitorService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

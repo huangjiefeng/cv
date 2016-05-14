@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.kinect">
+    <signal name="GestureOccur">
+      <arg name="to" type="s" direction="out"/>
+      <arg name="type" type="i" direction="out"/>
+    </signal>
+	<signal name="KinectMessage">
+      <arg name="type" type="i" direction="out"/>
+      <arg name="message" type="s" direction="out"/>
+    </signal>
+  </interface>
+</node>

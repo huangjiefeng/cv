@@ -1,0 +1,97 @@
+<ui version="4.0" >
+ <class>GlobalServiceDialog</class>
+ <widget class="QDialog" name="GlobalServiceDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>334</width>
+    <height>146</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>CoolView - Global Service</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>IPv4 Global Service</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="3" >
+    <widget class="QLineEdit" name="globalServiceV4" />
+   </item>
+   <item row="1" column="0" >
+    <widget class="QLabel" name="label_2" >
+     <property name="text" >
+      <string>IPv6 Global Service</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="3" >
+    <widget class="QLineEdit" name="globalServiceV6" />
+   </item>
+   <item row="2" column="0" >
+    <spacer name="horizontalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="3" >
+    <widget class="QPushButton" name="cancelButton" >
+     <property name="text" >
+      <string>取消</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" >
+    <widget class="QPushButton" name="saveButton" >
+     <property name="text" >
+      <string>保存</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" >
+    <spacer name="horizontalSpacer_2" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>GlobalServiceDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>286</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>166</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

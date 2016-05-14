@@ -1,0 +1,23 @@
+<UI version="4.0" stdSetDef="1" >
+ <class>CvConferenceRoomClass</class>
+ <widget class="QWidget" name="CvConferenceRoomClass" >
+  <property name="objectName" >
+   <string notr="true">CvConferenceRoomClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+	<x>0</x>
+	<y>0</y>
+	<width>600</width>
+	<height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>CvConferenceRoom</string>
+  </property>
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections/>
+</UI>

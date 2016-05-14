@@ -1,0 +1,1 @@
+regsvr32 Debug\SCUT_H264_Decoder.dll

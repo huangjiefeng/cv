@@ -1,0 +1,2 @@
+1、编译时，请Checkout上级3rdparty目录的Libav库，并保持其相对位置。
+2、要对该Filter进行注册时，记得将dll与Libav文件夹中的dll放在一起，才能注册成功。

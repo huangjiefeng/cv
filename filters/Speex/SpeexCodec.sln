@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpeexDec", "SpeexDec.vcxproj", "{6190BC81-E5C2-4B76-A579-7E79DB358FBF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpeexEnc", "SpeexEnc.vcxproj", "{9F8381A6-B924-4986-B971-C8E80C5A8A25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6190BC81-E5C2-4B76-A579-7E79DB358FBF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6190BC81-E5C2-4B76-A579-7E79DB358FBF}.Debug|Win32.Build.0 = Debug|Win32
+		{6190BC81-E5C2-4B76-A579-7E79DB358FBF}.Release|Win32.ActiveCfg = Release|Win32
+		{6190BC81-E5C2-4B76-A579-7E79DB358FBF}.Release|Win32.Build.0 = Release|Win32
+		{9F8381A6-B924-4986-B971-C8E80C5A8A25}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9F8381A6-B924-4986-B971-C8E80C5A8A25}.Debug|Win32.Build.0 = Debug|Win32
+		{9F8381A6-B924-4986-B971-C8E80C5A8A25}.Release|Win32.ActiveCfg = Release|Win32
+		{9F8381A6-B924-4986-B971-C8E80C5A8A25}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

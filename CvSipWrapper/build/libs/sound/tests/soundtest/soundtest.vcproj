@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="soundtest"
+	ProjectGUID="{BA6684CA-A52B-4F80-82A1-58E91C5D096D}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="soundtest.dir\Debug"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\libs\sound\tests\soundtest\..\..;$(SolutionDir)libs\sound\tests\soundtest;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				BasicRuntimeChecks="1"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/sound/tests/soundtest/Debug/soundtest.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\libs\sound\tests\soundtest\..\..;$(SolutionDir)libs\sound\tests\soundtest;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/sound/tests/soundtest/soundtest.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/sound/tests/soundtest/soundtest.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\owutil\cutil\Debug\owcutil.lib ..\..\..\owutil\util\Debug\owutil.lib ..\..\..\owutil\thread\Debug\owthread.lib ..\..\Debug\owsound.lib winmm.lib advapi32.lib ..\..\..\3rdparty\portaudio\Debug\portaudio.lib ..\..\..\owutil\thread\Debug\owthread.lib ..\..\..\owutil\util\Debug\owutil.lib ..\..\..\owutil\cutil\Debug\owcutil.lib Rpcrt4.lib winmm.lib "
+				OutputFile="$(SolutionDir)libs\sound\tests\soundtest\Debug\soundtest.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\..\owutil\cutil\Debug\$(OutDir),..\..\..\owutil\cutil\Debug,..\..\..\owutil\util\Debug\$(OutDir),..\..\..\owutil\util\Debug,..\..\..\owutil\thread\Debug\$(OutDir),..\..\..\owutil\thread\Debug,..\..\Debug\$(OutDir),..\..\Debug,..\..\..\3rdparty\portaudio\Debug\$(OutDir),..\..\..\3rdparty\portaudio\Debug"
+				ProgramDataBaseFile="$(SolutionDir)libs/sound/tests/soundtest/Debug/soundtest.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\sound\tests\soundtest\Debug\soundtest.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="soundtest.dir\Release"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\libs\sound\tests\soundtest\..\..;$(SolutionDir)libs\sound\tests\soundtest;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/sound/tests/soundtest/Release/soundtest.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\libs\sound\tests\soundtest\..\..;$(SolutionDir)libs\sound\tests\soundtest;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/sound/tests/soundtest/soundtest.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/sound/tests/soundtest/soundtest.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\owutil\cutil\Release\owcutil.lib ..\..\..\owutil\util\Release\owutil.lib ..\..\..\owutil\thread\Release\owthread.lib ..\..\Release\owsound.lib winmm.lib advapi32.lib ..\..\..\3rdparty\portaudio\Release\portaudio.lib ..\..\..\owutil\thread\Release\owthread.lib ..\..\..\owutil\util\Release\owutil.lib ..\..\..\owutil\cutil\Release\owcutil.lib Rpcrt4.lib winmm.lib "
+				OutputFile="$(SolutionDir)libs\sound\tests\soundtest\Release\soundtest.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\..\owutil\cutil\Release\$(OutDir),..\..\..\owutil\cutil\Release,..\..\..\owutil\util\Release\$(OutDir),..\..\..\owutil\util\Release,..\..\..\owutil\thread\Release\$(OutDir),..\..\..\owutil\thread\Release,..\..\Release\$(OutDir),..\..\Release,..\..\..\3rdparty\portaudio\Release\$(OutDir),..\..\..\3rdparty\portaudio\Release"
+				ProgramDataBaseFile="$(SolutionDir)libs/sound/tests/soundtest/Release/soundtest.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\sound\tests\soundtest\Release\soundtest.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="soundtest.dir\MinSizeRel"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\libs\sound\tests\soundtest\..\..;$(SolutionDir)libs\sound\tests\soundtest;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/sound/tests/soundtest/MinSizeRel/soundtest.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\libs\sound\tests\soundtest\..\..;$(SolutionDir)libs\sound\tests\soundtest;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/sound/tests/soundtest/soundtest.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/sound/tests/soundtest/soundtest.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\owutil\cutil\MinSizeRel\owcutil.lib ..\..\..\owutil\util\MinSizeRel\owutil.lib ..\..\..\owutil\thread\MinSizeRel\owthread.lib ..\..\MinSizeRel\owsound.lib winmm.lib advapi32.lib ..\..\..\3rdparty\portaudio\MinSizeRel\portaudio.lib ..\..\..\owutil\thread\MinSizeRel\owthread.lib ..\..\..\owutil\util\MinSizeRel\owutil.lib ..\..\..\owutil\cutil\MinSizeRel\owcutil.lib Rpcrt4.lib winmm.lib "
+				OutputFile="$(SolutionDir)libs\sound\tests\soundtest\MinSizeRel\soundtest.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\..\owutil\cutil\MinSizeRel\$(OutDir),..\..\..\owutil\cutil\MinSizeRel,..\..\..\owutil\util\MinSizeRel\$(OutDir),..\..\..\owutil\util\MinSizeRel,..\..\..\owutil\thread\MinSizeRel\$(OutDir),..\..\..\owutil\thread\MinSizeRel,..\..\MinSizeRel\$(OutDir),..\..\MinSizeRel,..\..\..\3rdparty\portaudio\MinSizeRel\$(OutDir),..\..\..\3rdparty\portaudio\MinSizeRel"
+				ProgramDataBaseFile="$(SolutionDir)libs/sound/tests/soundtest/MinSizeRel/soundtest.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\sound\tests\soundtest\MinSizeRel\soundtest.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="soundtest.dir\RelWithDebInfo"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\libs\sound\tests\soundtest\..\..;$(SolutionDir)libs\sound\tests\soundtest;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/sound/tests/soundtest/RelWithDebInfo/soundtest.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\libs\sound\tests\soundtest\..\..;$(SolutionDir)libs\sound\tests\soundtest;D:\qt\4.4.3\include;D:\boost\boost_1_34_1;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,PORTAUDIO_DLL,QT_DLL,QT_NO_KEYWORDS,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,OWSOUND_PORTAUDIO_SUPPORT=1,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/sound/tests/soundtest/soundtest.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/sound/tests/soundtest/soundtest.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\..\..\owutil\cutil\RelWithDebInfo\owcutil.lib ..\..\..\owutil\util\RelWithDebInfo\owutil.lib ..\..\..\owutil\thread\RelWithDebInfo\owthread.lib ..\..\RelWithDebInfo\owsound.lib winmm.lib advapi32.lib ..\..\..\3rdparty\portaudio\RelWithDebInfo\portaudio.lib ..\..\..\owutil\thread\RelWithDebInfo\owthread.lib ..\..\..\owutil\util\RelWithDebInfo\owutil.lib ..\..\..\owutil\cutil\RelWithDebInfo\owcutil.lib Rpcrt4.lib winmm.lib "
+				OutputFile="$(SolutionDir)libs\sound\tests\soundtest\RelWithDebInfo\soundtest.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,..\..\..\owutil\cutil\RelWithDebInfo\$(OutDir),..\..\..\owutil\cutil\RelWithDebInfo,..\..\..\owutil\util\RelWithDebInfo\$(OutDir),..\..\..\owutil\util\RelWithDebInfo,..\..\..\owutil\thread\RelWithDebInfo\$(OutDir),..\..\..\owutil\thread\RelWithDebInfo,..\..\RelWithDebInfo\$(OutDir),..\..\RelWithDebInfo,..\..\..\3rdparty\portaudio\RelWithDebInfo\$(OutDir),..\..\..\3rdparty\portaudio\RelWithDebInfo"
+				ProgramDataBaseFile="$(SolutionDir)libs/sound/tests/soundtest/RelWithDebInfo/soundtest.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\sound\tests\soundtest\RelWithDebInfo\soundtest.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\libs\sound\tests\soundtest\SoundWidget.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_SoundWidget.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/sound/tests/soundtest/ui_SoundWidget.h $(SolutionDir)..\libs/sound/tests/soundtest/SoundWidget.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\SoundWidget.ui;"
+					Outputs="$(SolutionDir)libs\sound\tests\soundtest\ui_SoundWidget.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_SoundWidget.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/sound/tests/soundtest/ui_SoundWidget.h $(SolutionDir)..\libs/sound/tests/soundtest/SoundWidget.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\SoundWidget.ui;"
+					Outputs="$(SolutionDir)libs\sound\tests\soundtest\ui_SoundWidget.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_SoundWidget.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/sound/tests/soundtest/ui_SoundWidget.h $(SolutionDir)..\libs/sound/tests/soundtest/SoundWidget.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\SoundWidget.ui;"
+					Outputs="$(SolutionDir)libs\sound\tests\soundtest\ui_SoundWidget.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_SoundWidget.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)libs/sound/tests/soundtest/ui_SoundWidget.h $(SolutionDir)..\libs/sound/tests/soundtest/SoundWidget.ui"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\SoundWidget.ui;"
+					Outputs="$(SolutionDir)libs\sound\tests\soundtest\ui_SoundWidget.h"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\sound\tests\soundtest\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/sound/tests/soundtest/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\CMakeLists.txt;$(SolutionDir)..\libs\sound\tests\soundtest\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/sound/tests/soundtest/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\CMakeLists.txt;$(SolutionDir)..\libs\sound\tests\soundtest\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/sound/tests/soundtest/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\CMakeLists.txt;$(SolutionDir)..\libs\sound\tests\soundtest\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/sound/tests/soundtest/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\CMakeLists.txt;$(SolutionDir)..\libs\sound\tests\soundtest\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\sound\tests\soundtest\moc_SoundWidget.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\sound\tests\soundtest\SoundWidget.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\sound\tests\soundtest\main.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\sound\tests\soundtest\ui_SoundWidget.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="CMake Rules"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\sound\tests\soundtest\moc_SoundWidget.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_SoundWidget.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_SoundWidget.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\SoundWidget.h;"
+					Outputs="$(SolutionDir)libs\sound\tests\soundtest\moc_SoundWidget.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_SoundWidget.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_SoundWidget.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\SoundWidget.h;"
+					Outputs="$(SolutionDir)libs\sound\tests\soundtest\moc_SoundWidget.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_SoundWidget.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_SoundWidget.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\SoundWidget.h;"
+					Outputs="$(SolutionDir)libs\sound\tests\soundtest\moc_SoundWidget.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_SoundWidget.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_SoundWidget.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\sound\tests\soundtest\SoundWidget.h;"
+					Outputs="$(SolutionDir)libs\sound\tests\soundtest\moc_SoundWidget.cxx"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

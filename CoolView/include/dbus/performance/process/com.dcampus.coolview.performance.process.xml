@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.performance.process">
+	//recover specific process
+	<method name="Recover" >
+		<arg type="ay"  name="processImage"		direction="in" />	//binary image
+	</method>
+	//Exit Process
+	<method name="ExitProcess">
+	</method>
+  </interface>
+</node>

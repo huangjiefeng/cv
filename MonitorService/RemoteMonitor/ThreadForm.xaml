@@ -1,0 +1,32 @@
+﻿<Window x:Class="RemoteMonitor.ThreadForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        Title="线程窗口" Height="300" Width="321">
+    <Grid>
+        <DataGrid AutoGenerateColumns="false" HorizontalAlignment="Stretch" Name="ThreadView" VerticalAlignment="Stretch" FontFamily="Arial" SelectionMode="Single" GridLinesVisibility="Vertical" IsReadOnly="True" CanUserSortColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="线程ID" Binding="{Binding TID}"/>
+                <DataGridTextColumn Header="状态" Binding="{Binding State}" Width="*"/>
+                <DataGridTextColumn Header="CPU占用率" Binding="{Binding CpuUsage}"/>
+                <DataGridTemplateColumn Header="线程优先级" MinWidth="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox SelectedItem="{Binding Priority}" DropDownOpened="ComboBox_DropDownOpened" DropDownClosed="ComboBox_DropDownClosed">
+                                <ComboBox.Items>
+                                    <system:String>TimeCritical</system:String>
+                                    <system:String>Highest</system:String>
+                                    <system:String>AboveNormal</system:String>
+                                    <system:String>Normal</system:String>
+                                    <system:String>BelowNormal</system:String>
+                                    <system:String>Lowest</system:String>
+                                    <system:String>Idle</system:String>
+                                </ComboBox.Items>
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

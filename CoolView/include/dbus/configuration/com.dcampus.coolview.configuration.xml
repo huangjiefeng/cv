@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.configuration">
+    <method name="RefreshConfig">	<!--Refresh the terminal configuration -->
+    </method>
+	<method name="QueryAllConfig">									<!--get all configuration -->
+		<arg type="i"  name="subscribe_id" direction="in" />  	     <!--subscribe_id for controller-->
+	</method>
+	<method name="QueryCurrentConfig">							<!--get current configuration for terminal-->
+		<arg type="i"  name="subscribe_id" direction="in" />
+	</method>
+	<method name="SetCamera">
+		<arg type="s"  name="camera_name"  direction="in" />
+		<arg type="s"  name="crossbar_name" direction="in" />
+		<arg type="s"  name="crossbar_type" direction="in" />
+		<arg type="i"  name="video_width" direction="in" />
+		<arg type="i"  name="video_height" direction="in" />
+	</method>
+	<method name="SetIP">
+		<arg type="s"  name="ip"  direction="in" />
+	</method>
+	<method name="SetSpeaker">
+		<arg type="s"  name="speaker_name"  direction="in" />
+		<arg type="i"  name="speaker_volumn" direction="in" />
+	</method>
+	<method name="SetMic">
+		<arg type="s"  name="mic_name"  direction="in" />
+		<arg type="i"  name="mic_volumn" direction="in" />
+	</method>
+  </interface>
+</node>

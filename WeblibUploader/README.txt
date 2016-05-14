@@ -1,0 +1,3 @@
+编译选项Debug和Release用于生成测试用的EXE程序。
+Debug_DLL和Release_DLL生成可集成到CoolView中的DLL，生成文件后，记得将DLL和LIB、PDB（仅Debug_DLL）文件复制到CoolView的Debug或Release目录中更新对应的文件，以便测试。
+CvSetup文件更新脚本仅支持读取CoolView的Debug或Release调试目录下的WeblibUploader.dll文件。如果新生成的文件没有复制到CoolView的调试目录，则需要手动复制到CvSetup中。

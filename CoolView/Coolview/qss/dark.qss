@@ -1,0 +1,192 @@
+QWidget {
+  font: 9pt "Î¢ÈíÑÅºÚ";
+}
+
+QWidget#conferenceContents {
+	background-color: #383838;
+}
+
+QDialog, QWidget#scrollAreaWidgetContents, QWidget#conferenceInfoWidget, QWidget#HelpForm {
+	/*background-image: url(:/image/background-image.png);*/
+	background-color: #292929;
+}
+
+QWidget#scrollAreaWidgetContents1, QWidget#scrollAreaWidgetContents2 {
+	background-color: #262626;
+	/*background-image: url(:/image/background-image.png);*/
+}
+
+QWidget#ConferenceListWidget QLabel,  QWidget#HelpForm QLabel, QLabel#conferenceTitleLabel{
+	background-image: url();
+	color: white;
+}
+
+QWidget#scrollAreaWidgetContents QFrame#frame, QWidget#scrollAreaWidgetContents QFrame#frame_2 {
+	background-image: url();
+	background-color: #c8c8c8;
+}
+
+QWidget#LoginForm QCheckBox {
+	color: black;
+}
+
+QPushButton#refreshIPListButton {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+QPushButton#refreshIPListButton:pressed {
+	background-color: rgba(0, 0, 0, 50);
+}
+
+QPushButton#loginButton {
+	background-image: url(:/image/login_btn.png);
+	background-color: rgba(0, 0, 0, 0);
+	border-style:none;
+}
+
+QPushButton#loginButton:pressed {
+	background-image: url(:/image/login_btn_down.png);
+}
+
+QMessageBox QLabel, QGroupBox QLabel{
+	color: white;
+}
+
+QMessageBox QPushButton, QTabWidget::pane QPushButton, QWidget#conferenceInfoWidget QPushButton {
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(0, 170, 255);
+	background-image: url();
+	min-width: 50px;
+	min-height: 24px;
+}
+
+QMessageBox QPushButton:pressed, QTabWidget::pane QPushButton:pressed, QWidget#conferenceInfoWidget QPushButton:pressed {
+	color: black;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}
+
+QMessageBox QPushButton:disabled, QTabWidget::pane QPushButton:disabled, QWidget#conferenceInfoWidget QPushButton:disabled {
+	background-color: grey;
+}
+
+QToolBar {
+	background-image: url();
+	background-color: black;
+}
+
+QWidget#terminalContents {
+	background-color: #444b54;
+}
+
+QTabWidget::pane { /* The tab widget frame */
+    border-right: 1px solid #444b54;
+	background-image: url(:/image/background-image.png);
+}
+
+QTabWidget::pane QLabel, QRadioButton, QCheckBox {
+	color: white;
+}
+
+QTabBar::tab { 
+     border: 1px solid #444b54;
+     border-bottom-width: 0px;
+     min-width: 20ex;
+     padding: 2px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background-color: #48b0e4;
+    color: white;
+}
+
+QTabBar::tab:selected {
+    border-color: #9B9B9B;
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px; /* make non-selected tabs look smaller */
+    background-color: #99b7ce;
+}
+
+QGroupBox {
+	border: 1px solid rgb(0, 170, 255);
+	border-radius: 5px;
+	margin-top: 2ex;
+}
+
+QGroupBox::title {
+	color: white;
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* position at the top center */
+    padding: 0 3px;
+}
+
+QMainWindow QListView {
+	color: white;
+	border: 1px solid black;
+	border-top: 0px; 
+	border-bottom: 0px;
+	background-image: url();
+	background-color: #383838;
+    /*show-decoration-selected: 1; /* make the selection span the entire width of the view */
+}
+
+QMainWindow QListView::item {
+	color: white;
+	min-height: 50px;
+	background-color: #383838;
+}
+
+QMainWindow QListView::item:selected, QListView::item:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #47afe5, stop: 1 #2b7edb);
+}
+
+QScrollBar:vertical {
+	background: #383838;
+	width: 15px;
+	margin: 22px 0 22px 0;
+}
+QScrollBar::handle:vertical {
+	background:  rgb(0, 170, 255);
+	min-height: 20px;
+	border-radius: 3px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+QScrollBar::add-line:vertical {
+	border: none;
+	background: #383838;
+	height: 18px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+	border-radius: 5px;
+}
+
+QScrollBar::sub-line:vertical {
+	border: none;
+	background: #383838;
+	height: 18px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+	border-radius: 5px;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	width: 3px;
+	height: 10px;
+	background: rgb(0, 170, 255);
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+QMenu {
+	font-size: 16px;
+}
+

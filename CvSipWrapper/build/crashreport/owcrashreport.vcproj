@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="owcrashreport"
+	ProjectGUID="{42F6B26B-A320-4934-87C9-9F84FB899D47}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="owcrashreport.dir\Debug"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\crashreport;$(SolutionDir)crashreport;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				BasicRuntimeChecks="1"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)crashreport/Debug/owcrashreport.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\crashreport;$(SolutionDir)crashreport;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)crashreport/owcrashreport.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)crashreport/owcrashreport.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\libs\owutil\cutil\Debug\owcutil.lib ..\libs\owutil\util\Debug\owutil.lib ..\libs\owutil\thread\Debug\owthread.lib ..\libs\owutil\system\Debug\owsystem.lib ..\libs\3rdparty\curl\Debug\curl.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\libs\qtutil\Debug\owqtutil.lib ..\libs\owutil\serialization\Debug\owserialization.lib ..\libs\owutil\settings\Debug\owsettings.lib qtmain.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib winmm.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\libs\owutil\thread\Debug\owthread.lib ..\libs\owutil\serialization\Debug\owserialization.lib ..\libs\owutil\util\Debug\owutil.lib ..\libs\owutil\cutil\Debug\owcutil.lib Rpcrt4.lib ..\libs\3rdparty\tinyxml\Debug\tinyxml.lib "
+				OutputFile="$(SolutionDir)crashreport\Debug\owcrashreport.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\libs\owutil\cutil\Debug\$(OutDir),..\libs\owutil\cutil\Debug,..\libs\owutil\util\Debug\$(OutDir),..\libs\owutil\util\Debug,..\libs\owutil\thread\Debug\$(OutDir),..\libs\owutil\thread\Debug,..\libs\owutil\system\Debug\$(OutDir),..\libs\owutil\system\Debug,..\libs\3rdparty\curl\Debug\$(OutDir),..\libs\3rdparty\curl\Debug,..\libs\qtutil\Debug\$(OutDir),..\libs\qtutil\Debug,..\libs\owutil\serialization\Debug\$(OutDir),..\libs\owutil\serialization\Debug,..\libs\owutil\settings\Debug\$(OutDir),..\libs\owutil\settings\Debug,..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\libs\3rdparty\openssl\binary-lib\win32,..\libs\3rdparty\tinyxml\Debug\$(OutDir),..\libs\3rdparty\tinyxml\Debug"
+				ProgramDataBaseFile="$(SolutionDir)crashreport/Debug/owcrashreport.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)crashreport\Debug\owcrashreport.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="owcrashreport.dir\Release"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\crashreport;$(SolutionDir)crashreport;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)crashreport/Release/owcrashreport.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\crashreport;$(SolutionDir)crashreport;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)crashreport/owcrashreport.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)crashreport/owcrashreport.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\libs\owutil\cutil\Release\owcutil.lib ..\libs\owutil\util\Release\owutil.lib ..\libs\owutil\thread\Release\owthread.lib ..\libs\owutil\system\Release\owsystem.lib ..\libs\3rdparty\curl\Release\curl.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\libs\qtutil\Release\owqtutil.lib ..\libs\owutil\serialization\Release\owserialization.lib ..\libs\owutil\settings\Release\owsettings.lib qtmain.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib winmm.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\libs\owutil\thread\Release\owthread.lib ..\libs\owutil\serialization\Release\owserialization.lib ..\libs\owutil\util\Release\owutil.lib ..\libs\owutil\cutil\Release\owcutil.lib Rpcrt4.lib ..\libs\3rdparty\tinyxml\Release\tinyxml.lib "
+				OutputFile="$(SolutionDir)crashreport\Release\owcrashreport.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\libs\owutil\cutil\Release\$(OutDir),..\libs\owutil\cutil\Release,..\libs\owutil\util\Release\$(OutDir),..\libs\owutil\util\Release,..\libs\owutil\thread\Release\$(OutDir),..\libs\owutil\thread\Release,..\libs\owutil\system\Release\$(OutDir),..\libs\owutil\system\Release,..\libs\3rdparty\curl\Release\$(OutDir),..\libs\3rdparty\curl\Release,..\libs\qtutil\Release\$(OutDir),..\libs\qtutil\Release,..\libs\owutil\serialization\Release\$(OutDir),..\libs\owutil\serialization\Release,..\libs\owutil\settings\Release\$(OutDir),..\libs\owutil\settings\Release,..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\libs\3rdparty\openssl\binary-lib\win32,..\libs\3rdparty\tinyxml\Release\$(OutDir),..\libs\3rdparty\tinyxml\Release"
+				ProgramDataBaseFile="$(SolutionDir)crashreport/Release/owcrashreport.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)crashreport\Release\owcrashreport.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="owcrashreport.dir\MinSizeRel"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\crashreport;$(SolutionDir)crashreport;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)crashreport/MinSizeRel/owcrashreport.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\crashreport;$(SolutionDir)crashreport;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)crashreport/owcrashreport.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)crashreport/owcrashreport.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\libs\owutil\cutil\MinSizeRel\owcutil.lib ..\libs\owutil\util\MinSizeRel\owutil.lib ..\libs\owutil\thread\MinSizeRel\owthread.lib ..\libs\owutil\system\MinSizeRel\owsystem.lib ..\libs\3rdparty\curl\MinSizeRel\curl.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\libs\qtutil\MinSizeRel\owqtutil.lib ..\libs\owutil\serialization\MinSizeRel\owserialization.lib ..\libs\owutil\settings\MinSizeRel\owsettings.lib qtmain.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib winmm.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\libs\owutil\thread\MinSizeRel\owthread.lib ..\libs\owutil\serialization\MinSizeRel\owserialization.lib ..\libs\owutil\util\MinSizeRel\owutil.lib ..\libs\owutil\cutil\MinSizeRel\owcutil.lib Rpcrt4.lib ..\libs\3rdparty\tinyxml\MinSizeRel\tinyxml.lib "
+				OutputFile="$(SolutionDir)crashreport\MinSizeRel\owcrashreport.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\libs\owutil\cutil\MinSizeRel\$(OutDir),..\libs\owutil\cutil\MinSizeRel,..\libs\owutil\util\MinSizeRel\$(OutDir),..\libs\owutil\util\MinSizeRel,..\libs\owutil\thread\MinSizeRel\$(OutDir),..\libs\owutil\thread\MinSizeRel,..\libs\owutil\system\MinSizeRel\$(OutDir),..\libs\owutil\system\MinSizeRel,..\libs\3rdparty\curl\MinSizeRel\$(OutDir),..\libs\3rdparty\curl\MinSizeRel,..\libs\qtutil\MinSizeRel\$(OutDir),..\libs\qtutil\MinSizeRel,..\libs\owutil\serialization\MinSizeRel\$(OutDir),..\libs\owutil\serialization\MinSizeRel,..\libs\owutil\settings\MinSizeRel\$(OutDir),..\libs\owutil\settings\MinSizeRel,..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\libs\3rdparty\openssl\binary-lib\win32,..\libs\3rdparty\tinyxml\MinSizeRel\$(OutDir),..\libs\3rdparty\tinyxml\MinSizeRel"
+				ProgramDataBaseFile="$(SolutionDir)crashreport/MinSizeRel/owcrashreport.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)crashreport\MinSizeRel\owcrashreport.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="owcrashreport.dir\RelWithDebInfo"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /wd4251 /wd4275 /wd4675"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\crashreport;$(SolutionDir)crashreport;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)crashreport/RelWithDebInfo/owcrashreport.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\libs\owutil\cutil\strndup;$(SolutionDir)..\libs\3rdparty\curl\include;$(SolutionDir)..\libs\qtutil\include;$(SolutionDir)..\crashreport;$(SolutionDir)crashreport;D:\boost\boost_1_34_1;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,BOOST_ALL_DYN_LINK,BOOST_LIB_DIAGNOSTIC,OWUTIL_DLL,CURL_DLL,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)crashreport/owcrashreport.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)crashreport/owcrashreport.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\libs\owutil\cutil\RelWithDebInfo\owcutil.lib ..\libs\owutil\util\RelWithDebInfo\owutil.lib ..\libs\owutil\thread\RelWithDebInfo\owthread.lib ..\libs\owutil\system\RelWithDebInfo\owsystem.lib ..\libs\3rdparty\curl\RelWithDebInfo\curl.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\libs\qtutil\RelWithDebInfo\owqtutil.lib ..\libs\owutil\serialization\RelWithDebInfo\owserialization.lib ..\libs\owutil\settings\RelWithDebInfo\owsettings.lib qtmain.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib winmm.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\libs\owutil\thread\RelWithDebInfo\owthread.lib ..\libs\owutil\serialization\RelWithDebInfo\owserialization.lib ..\libs\owutil\util\RelWithDebInfo\owutil.lib ..\libs\owutil\cutil\RelWithDebInfo\owcutil.lib Rpcrt4.lib ..\libs\3rdparty\tinyxml\RelWithDebInfo\tinyxml.lib "
+				OutputFile="$(SolutionDir)crashreport\RelWithDebInfo\owcrashreport.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\boost\boost_1_34_1\lib\$(OutDir),D:\boost\boost_1_34_1\lib,D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\libs\owutil\cutil\RelWithDebInfo\$(OutDir),..\libs\owutil\cutil\RelWithDebInfo,..\libs\owutil\util\RelWithDebInfo\$(OutDir),..\libs\owutil\util\RelWithDebInfo,..\libs\owutil\thread\RelWithDebInfo\$(OutDir),..\libs\owutil\thread\RelWithDebInfo,..\libs\owutil\system\RelWithDebInfo\$(OutDir),..\libs\owutil\system\RelWithDebInfo,..\libs\3rdparty\curl\RelWithDebInfo\$(OutDir),..\libs\3rdparty\curl\RelWithDebInfo,..\libs\qtutil\RelWithDebInfo\$(OutDir),..\libs\qtutil\RelWithDebInfo,..\libs\owutil\serialization\RelWithDebInfo\$(OutDir),..\libs\owutil\serialization\RelWithDebInfo,..\libs\owutil\settings\RelWithDebInfo\$(OutDir),..\libs\owutil\settings\RelWithDebInfo,..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\libs\3rdparty\openssl\binary-lib\win32,..\libs\3rdparty\tinyxml\RelWithDebInfo\$(OutDir),..\libs\3rdparty\tinyxml\RelWithDebInfo"
+				ProgramDataBaseFile="$(SolutionDir)crashreport/RelWithDebInfo/owcrashreport.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)crashreport\RelWithDebInfo\owcrashreport.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\crashreport\CrashReport.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_CrashReport.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)crashreport/ui_CrashReport.h $(SolutionDir)..\crashreport/CrashReport.ui"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\CrashReport.ui;"
+					Outputs="$(SolutionDir)crashreport\ui_CrashReport.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_CrashReport.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)crashreport/ui_CrashReport.h $(SolutionDir)..\crashreport/CrashReport.ui"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\CrashReport.ui;"
+					Outputs="$(SolutionDir)crashreport\ui_CrashReport.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_CrashReport.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)crashreport/ui_CrashReport.h $(SolutionDir)..\crashreport/CrashReport.ui"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\CrashReport.ui;"
+					Outputs="$(SolutionDir)crashreport\ui_CrashReport.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating ui_CrashReport.h"
+					CommandLine="D:\qt\4.4.3\bin\uic.exe -o $(SolutionDir)crashreport/ui_CrashReport.h $(SolutionDir)..\crashreport/CrashReport.ui"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\CrashReport.ui;"
+					Outputs="$(SolutionDir)crashreport\ui_CrashReport.h"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\crashreport\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\crashreport/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\CMakeLists.txt;$(SolutionDir)..\crashreport\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\crashreport/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\CMakeLists.txt;$(SolutionDir)..\crashreport\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\crashreport/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\CMakeLists.txt;$(SolutionDir)..\crashreport\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\crashreport/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\CMakeLists.txt;$(SolutionDir)..\crashreport\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)crashreport\moc_FtpUpload.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)crashreport\moc_QtCrashReport.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\crashreport\main.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\crashreport\FtpUpload.cpp">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\crashreport\QtCrashReport.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)crashreport\ui_CrashReport.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="CMake Rules"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)crashreport\moc_FtpUpload.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_FtpUpload.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_FtpUpload.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\FtpUpload.h;"
+					Outputs="$(SolutionDir)crashreport\moc_FtpUpload.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_FtpUpload.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_FtpUpload.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\FtpUpload.h;"
+					Outputs="$(SolutionDir)crashreport\moc_FtpUpload.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_FtpUpload.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_FtpUpload.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\FtpUpload.h;"
+					Outputs="$(SolutionDir)crashreport\moc_FtpUpload.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_FtpUpload.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_FtpUpload.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\FtpUpload.h;"
+					Outputs="$(SolutionDir)crashreport\moc_FtpUpload.cxx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="$(SolutionDir)crashreport\moc_QtCrashReport.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_QtCrashReport.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtCrashReport.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\QtCrashReport.h;"
+					Outputs="$(SolutionDir)crashreport\moc_QtCrashReport.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_QtCrashReport.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtCrashReport.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\QtCrashReport.h;"
+					Outputs="$(SolutionDir)crashreport\moc_QtCrashReport.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_QtCrashReport.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtCrashReport.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\QtCrashReport.h;"
+					Outputs="$(SolutionDir)crashreport\moc_QtCrashReport.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_QtCrashReport.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_QtCrashReport.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\crashreport\QtCrashReport.h;"
+					Outputs="$(SolutionDir)crashreport\moc_QtCrashReport.cxx"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:\qutecom-2.2\build\wengophone\src\presentation\qt\toaster\moc_QtChatToaster.cxx
+D:\qutecom-2.2\wengophone\src\presentation\qt\toaster\QtChatToaster.h

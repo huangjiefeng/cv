@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/coolview3" >
+        <file>application.ico</file>
+        <file>cancel.jpg</file>
+        <file>goto.bmp</file>
+        <file>help.ico</file>
+        <file>kopeteavailable.bmp</file>
+        <file>member.jpg</file>
+        <file>message.jpg</file>
+        <file>phone.jpg</file>
+        <file>raisehand3.bmp</file>
+        <file>setting.bmp</file>
+        <file>settings.png</file>
+    </qresource>
+</RCC>

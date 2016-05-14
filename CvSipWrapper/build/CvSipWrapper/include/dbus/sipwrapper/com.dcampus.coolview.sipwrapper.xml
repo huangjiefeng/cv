@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.sipWrapper">
+	/**
+	 * Phone call state changed.
+	 *
+	 * @param sender this class
+	 * @param callId phone call identifier that changed its state
+	 * @param state new call state
+	 * @param from usually a SIP address (when state = PhoneCallStateIncoming) or empty string
+	 */
+	 <signal name="phoneCallStateChangedSignal">
+		<arg type="s" name="callId" direction="out" />
+		<arg type="i" name="state"  direction="out" />
+		<arg type="s" name="from"	direction="out" />
+	</signal>
+
+	/**
+	 * Phone line state changed.
+	 *
+	 * @param sender this class
+	 * @param lineId phone line identifier that changed its state
+	 * @param state new line state
+	 */
+	<signal name="phoneLineStateChangedSignal">
+		<arg type="s" name="lineId" direction="out" />
+		<arg type="i" name="state"  direction="out" />
+	</signal>
+
+
+	/**
+	 * Incoming SUBSCRIBE request
+	 *
+	 * @param sender this class
+	 * @param sid    Subsciption ID
+	 * @param from   subscription originator
+	 */
+	<signal name="incomingSubscribeSignal">
+		<arg type="i" name="sid" direction="out" />
+		<arg type="s" name="from"  direction="out" />
+		<arg type="s" name="evtType" direction="out" />
+	</signal>
+
+	/**
+	 * @name Initialization Methods
+	 * @{
+	 */
+
+	/**
+	 * Initializes the SIPWrapper.
+	 */
+	<method name="init">
+		<arg type="i"	name="ipv6_enable"	direction="in" />
+	</method>
+
+	/**
+	 * Terminates the SIP connection.
+	 */
+	<method	name="terminate">
+	</method>
+
+	/** @} */
+
+	/**
+	 * @name Virtual Line Methods
+	 * @{
+	 */
+
+	/**
+	 * Creates and adds a virtual phone line.
+	 */
+	<method name="addVirtualLine" >
+		<arg type="s"	name="displayName"	direction="in"	/>
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="s"	name="identity"	direction="in" />
+		<arg type="s"	name="password"	direction="in" />
+		<arg type="s"	name="realm"	direction="in" />
+		<arg type="s"	name="proxyServer"	direction="in" />
+		<arg type="s"	name="registerServer"	direction="in" />
+		<arg type="i"	name="address_family"	direction="in" />
+	</method>
+
+	/**
+	 * Registers a given virtual phone line.
+	 *
+	 * @param	lineId id of the virtual phone line to register
+	 * @return	0 if making a register succeeds, otherwise 1
+	 */
+	<method name="registerVirtualLine" >
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="s"	name="content"	direction="in" />
+	</method>
+	
+	
+	/**
+	 * Removes a given virtual phone line.
+	 *
+	 * @param	lineId id of the virtual phone line to remove
+	 * @param	force if true, forces the removal without waiting for the unregister
+				if false, removal is not forced
+	 */
+	<method name="removeVirtualLine" >
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="b"	name="force"	direction="in" />
+	</method>
+
+	/** @} */
+
+	/**
+	 * @name Call Methods
+	 * @{
+	 */
+	<!--SIP CALL-zhenHua.sun 20110513-->
+	/**
+	 * Dials a phone number.
+	 *
+	 * @param lineId line to use to dial the phone number
+	 * @param sipAddress SIP address to call (e.g phone number to dial)
+	 * @param enableVideo enable/disable video usage
+	 * @return the phone call id (callId)
+	 */
+	<method name="makeCall">
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="s"	name="memberURI"	direction="in" />
+		<arg type="ay"	name="sdpMessage"	direction="in" />
+	</method>
+
+	/**
+	 * Accepts a given phone call.
+	 *
+	 * @param callId id of the phone call to accept
+	 * @param enableVideo enable/disable video usage
+	 */
+	<method name="acceptCall" >
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="s"	name="memberURI"	direction="in"/>
+		<arg type="b"	name="enableVideo"	direction="in"/>
+		<arg type="ay"	name="sdpMessage"	direction="in"/>
+	</method>
+
+	/**
+	 * Rejects a given phone call.
+	 *
+	 * @param callId id of the phone call to reject
+	 */
+	<method name="rejectCall" >
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="s"	name="memberURI"	direction="in" />
+	</method>
+
+	/**
+	 * Closes a given phone call.
+	 *
+	 * @param callId id of the phone call to close
+	 */
+	<method name="closeCall" >
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="s"	name="memberURI"	direction="in" />
+	</method>
+
+	/**
+	 * Holds a given phone call.
+	 *
+	 * @param callId id of the phone call to hold
+	 */
+	<method name="holdCall" >
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="s"	name="memberURI"	direction="in" />
+	</method>
+
+	/**
+	 * Resumes a given phone call.
+	 *
+	 * @param callId id of the phone call to resume
+	 */
+	<method name="resumeCall" >
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="s"	name="memberURI"	direction="in"/>
+	</method>
+	/************************************************************************/
+	
+	<signal name="cvMessageReceivedEvent">
+		<arg type="s"	name="message"	direction="out" />
+		<arg type="s"	name="from"		direction="out" />
+	</signal>
+	
+	/**
+	 * make call to Conference UI
+	 *
+	 * @param	username username to make call
+	 */
+	<method name="startConference" >
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="s"	name="confURI"	direction="in" />
+		<arg type="s"	name="szContent" direction="in" />
+	</method>
+	
+	<method name="exitConference" >
+		<arg type="s"	name="confURI"	direction="in"	/>
+	</method>
+
+	<method name="makeJoinConfInvite" >
+		<arg type="s"	name="username"	direction="in" />
+		<arg type="s"	name="focusURI"	direction="in" />
+		<arg type="s"	name="szContent" direction="in" />
+		<arg type="ay"	name="sdpMessage"	direction="in" />
+	</method>
+	
+	<method name="makeInfoCall" >
+		<arg type="s"	name="sipURI" direction="in" />
+		<arg type="s"	name="szContent" direction="in" />
+	</method>
+
+	/**
+	 * @return  True if is Initialized
+	 */
+	<method name="isInitialized" >
+		<arg type="b"	name="isInitialized"	direction="out" />
+	</method>
+
+
+	/**
+	 * Sets proxy parameters.
+	 */
+	<method name="setProxy" >
+		<arg type="s"	name="address"	direction="in" />
+		<arg type="i"	name="port"		direction="in" />
+		<arg type="s"	name="login" 	direction="in" />
+		<arg type="s"	name="password"	direction="in" />
+	</method>
+
+	/**
+	 * Sets HTTP tunnel parameters.
+	 */
+	<method name="setTunnel" >
+		<arg type="s"	name="address"	direction="in"	/>
+		<arg type="i"	name="port"		direction="in"	/>
+		<arg type="b"	name="ssl"		direction="in"	/>
+	</method>
+
+	/**
+	 * Sets the NAT type.
+	 *
+	 * @see EnumNatType
+	 */
+	<method name="setNatType" >
+		<arg type="i"	name="natType"	direction="in"	/>
+	</method>
+
+	/**
+	 * Sets the SIP parameters.
+	 */
+	<method name="setSIP"	>
+		<arg type="s"	name="server"	direction="in"	/>
+		<arg type="i"	name="serverPort"		direction="in"	/>
+		<arg type="i"	name="localPort"		direction="in"	/>
+	</method>
+	
+	/** @} */
+
+
+	/**
+	   
+	 */
+	<method name="setUaName"	>
+		<arg type="s"	name="name"	direction="in"	/>
+	</method>
+	
+	<method name="setSipOptions" >
+		<arg type="s"	name="optname"	direction="in"	/>
+		<arg type="s"	name="optval"	direction="in"	/>
+	</method>
+
+	<method name="acceptSubscription" >
+		<arg type="i"	name="sid"		direction="in"	/>
+	</method>
+	
+	<method name="rejectSubscription" >
+		<arg type="i"	name="sid"		direction="in"	/>
+	</method>
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	/// @brief	向QOS服务器发送内容. 
+	///
+	/// @author	qhf
+	/// @date	2010-08-18
+	///
+	/// @param	lineId		Identifier for the line. 
+	/// @param	focusURI	URI of the focus. 
+	/// @param	szContent	The size content. 
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	<method name="sendQosPara"	>
+		<arg type="s"	name="currentUserID"	direction="in"	/>
+		<arg type="s"	name="focusURI"			direction="in"	/>
+		<arg type="s"	name="szContent"		direction="in"	/>
+	</method>
+
+	//发送一条sip消息给目标uri，一般是request消息，返回MessageId
+	<method name="sendSipMsg"	>
+		<arg type="s"	name="currentUserID"	direction="in"	/>
+		<arg type="s"	name="remoteURI"			direction="in"	/>
+		<arg type="s"	name="msgContent"		direction="in"	/>
+	</method>
+
+  </interface>
+</node>

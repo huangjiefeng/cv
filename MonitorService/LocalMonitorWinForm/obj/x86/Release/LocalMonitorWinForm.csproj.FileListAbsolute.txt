@@ -1,0 +1,12 @@
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\bin\Release\CvLocalMonitorWinForm.exe.config
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\bin\Release\CvLocalMonitorWinForm.exe
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\bin\Release\CvLocalMonitorWinForm.pdb
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\bin\Release\OpenHardwareMonitorLib.dll
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\bin\Release\PacketDotNet.dll
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\bin\Release\SharpPcap.dll
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\obj\x86\Release\LocalMonitorWinForm.csprojResolveAssemblyReference.cache
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\obj\x86\Release\LocalMonitorWinForm.Form1.resources
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\obj\x86\Release\LocalMonitorWinForm.Properties.Resources.resources
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\obj\x86\Release\LocalMonitorWinForm.csproj.GenerateResource.Cache
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\obj\x86\Release\CvLocalMonitorWinForm.exe
+D:\vs2012\trunk\MonitorService\LocalMonitorWinForm\obj\x86\Release\CvLocalMonitorWinForm.pdb

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{dbfd398b-ee59-4004-8765-d88236495915}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{02e6ee8d-c0ce-4ef1-9a60-440a54767c53}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="kiss_fft">
+      <UniqueIdentifier>{a4006092-0a91-4997-a27a-7fca73ad665f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aacquant.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backpred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bitstream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="channels.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fft.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filtbank.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="huffman.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ltp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="midside.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="psychkni.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kiss_fft\kiss_fft.c">
+      <Filter>kiss_fft</Filter>
+    </ClCompile>
+    <ClCompile Include="kiss_fft\kiss_fftr.c">
+      <Filter>kiss_fft</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aacquant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="backpred.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bitstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="channels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="coder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filtbank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="huffman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hufftab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ltp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="midside.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="psych.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kiss_fft\_kiss_fft_guts.h">
+      <Filter>kiss_fft</Filter>
+    </ClInclude>
+    <ClInclude Include="kiss_fft\kiss_fft.h">
+      <Filter>kiss_fft</Filter>
+    </ClInclude>
+    <ClInclude Include="kiss_fft\kiss_fftr.h">
+      <Filter>kiss_fft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\faac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\faaccfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libfaacdrm.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

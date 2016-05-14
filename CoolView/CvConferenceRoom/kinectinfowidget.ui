@@ -1,0 +1,53 @@
+<ui version="4.0" >
+ <class>KinectInfoWidgetClass</class>
+ <widget class="QWidget" name="KinectInfoWidgetClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>450</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>450</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="focusPolicy" >
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle" >
+   <string>Kinect信息窗口</string>
+  </property>
+  <widget class="QLabel" name="KinectInfoText" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>381</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet" >
+    <string notr="true" >font: 16pt "微软雅黑";</string>
+   </property>
+   <property name="text" >
+    <string>KinectInfoText</string>
+   </property>
+   <property name="scaledContents" >
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

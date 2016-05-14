@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Base">
+      <UniqueIdentifier>{d55c1a99-6027-446b-abb3-e11be8982e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\DataManagerBase">
+      <UniqueIdentifier>{99223f7f-c2c6-4898-8989-c5f28a448335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\MemPool">
+      <UniqueIdentifier>{52e9a92a-8802-45f1-9941-87a1d678d4a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\NetworkBase">
+      <UniqueIdentifier>{2d36e179-0366-4649-bc54-d5f08ba71ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\ThreadBase">
+      <UniqueIdentifier>{2f3fe872-6aa6-451f-9832-9bb8c215ab45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\NetworkManager">
+      <UniqueIdentifier>{a18ccd99-4242-4fae-b9bc-a7e5add32592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{73e450d0-a40d-4847-969c-59afbe8ff1c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other\MouseControl">
+      <UniqueIdentifier>{cbc0180a-4cde-47c5-a873-a1346c0b6a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other\ContextInput">
+      <UniqueIdentifier>{0b99aa14-0a0b-450f-876a-94d52c8877d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other\FileTrans">
+      <UniqueIdentifier>{9284beed-635c-4319-8742-1842e7fb19d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{9bd3117c-dd78-4bba-b9b1-e34f2f0e4e54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Communicate">
+      <UniqueIdentifier>{9fda1372-0ac6-4418-9ce9-a374c96addf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\MessageProcess">
+      <UniqueIdentifier>{2996b652-2bf5-4753-9d27-fb144d74ce69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\DataManager">
+      <UniqueIdentifier>{75b4ff28-79ed-435e-b011-291b86c7252c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbus_service">
+      <UniqueIdentifier>{18bd66a9-3265-469d-a3c3-135fbf6b443f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FloorControl">
+      <UniqueIdentifier>{6e040df4-a798-4aac-a279-cfa130b8eb90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{9d218cf8-94ae-4d4b-a8fe-cc8aadd48d11}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{c962c7a6-ddc7-4aec-b1d5-a1fd7bc310d0}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Base\DataManagerBase\DataTree.cpp">
+      <Filter>Base\DataManagerBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\DataManagerBase\StrHashMap.cpp">
+      <Filter>Base\DataManagerBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\MemPool\SimpleMemPool.cpp">
+      <Filter>Base\MemPool</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\NetWorkBase\CommonSocket.cpp">
+      <Filter>Base\NetworkBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ThreadBase\CommonThread.cpp">
+      <Filter>Base\ThreadBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\NetWorkManager\NetManager.cpp">
+      <Filter>Base\NetworkManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Other\MouseControl\MouseMove.cpp">
+      <Filter>Other\MouseControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Other\ContextInput\ContextInput.cpp">
+      <Filter>Other\ContextInput</Filter>
+    </ClCompile>
+    <ClCompile Include="Other\FileTrans\FileUD.cpp">
+      <Filter>Other\FileTrans</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConferenceRoomIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ConferenceRoomIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvCoreIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvCoreIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QtDbusServ.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtDbusServ.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TelecontrollerAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TelecontrollerAdaptor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TelecontrollerIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TelecontrollerIf.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Communicate\NetServ.cpp">
+      <Filter>Core\Communicate</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Communicate\QtDbusServ.cpp">
+      <Filter>Core\Communicate</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MessageProcess\CommonMessageProcess.cpp">
+      <Filter>Core\MessageProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MessageProcess\NMessageProcess.cpp">
+      <Filter>Core\MessageProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MessageProcess\OMessageProcess.cpp">
+      <Filter>Core\MessageProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MessageProcess\PMessageProcess.cpp">
+      <Filter>Core\MessageProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DataManager\DataManager.cpp">
+      <Filter>Core\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\conferenceRoom\client\ConferenceRoomIf.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\core\client\CvCoreIf.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\telecontroller\service\TelecontrollerAdaptor.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\telecontroller\client\TelecontrollerIf.cpp">
+      <Filter>dbus_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\BfcpServer\client\bfcp_server_proxy.cpp">
+      <Filter>FloorControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_floor_manager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_floor_manager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="floor_manager.cpp">
+      <Filter>FloorControl</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_bfcp_server_proxy.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_bfcp_server_proxy.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\BfcpClient\client\bfcp_client_proxy.cpp">
+      <Filter>FloorControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_bfcp_client_proxy.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_bfcp_client_proxy.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\BfcpClient\client\BfcpClientIf.cpp">
+      <Filter>FloorControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BfcpClientIf.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BfcpClientIf.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\dbus\BfcpServer\client\BfcpServerIf.cpp">
+      <Filter>FloorControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BfcpServerIf.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BfcpServerIf.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\VerRes.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Core\Communicate\QtDbusServ.h">
+      <Filter>Core\Communicate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\conferenceRoom\client\ConferenceRoomIf.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\core\client\CvCoreIf.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\telecontroller\service\TelecontrollerAdaptor.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\telecontroller\client\TelecontrollerIf.h">
+      <Filter>dbus_service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\DataManagerBase\DataTree.h">
+      <Filter>Base\DataManagerBase</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\DataManagerBase\StrHashMap.h">
+      <Filter>Base\DataManagerBase</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\MemPool\SimpleMemPool.h">
+      <Filter>Base\MemPool</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\NetWorkBase\CommonSocket.h">
+      <Filter>Base\NetworkBase</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\ThreadBase\CommonThread.h">
+      <Filter>Base\ThreadBase</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\NetWorkManager\NetManager.h">
+      <Filter>Base\NetworkManager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Other\MouseControl\MouseMove.h">
+      <Filter>Other\MouseControl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Other\ContextInput\ContextInput.h">
+      <Filter>Other\ContextInput</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Other\FileTrans\FileUD.h">
+      <Filter>Other\FileTrans</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\resource.h">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\Communicate\NetServ.h">
+      <Filter>Core\Communicate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\MessageProcess\CommonMessageProcess.h">
+      <Filter>Core\MessageProcess</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\MessageProcess\NMessageProcess.h">
+      <Filter>Core\MessageProcess</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\MessageProcess\OMessageProcess.h">
+      <Filter>Core\MessageProcess</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\MessageProcess\PMessageProcess.h">
+      <Filter>Core\MessageProcess</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\DataManager\DataManager.h">
+      <Filter>Core\DataManager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\BfcpServer\client\bfcp_server_proxy.h">
+      <Filter>FloorControl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="floor_manager.h">
+      <Filter>FloorControl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\BfcpClient\client\bfcp_client_proxy.h">
+      <Filter>FloorControl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\BfcpClient\client\BfcpClientIf.h">
+      <Filter>FloorControl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\include\dbus\BfcpServer\client\BfcpServerIf.h">
+      <Filter>FloorControl</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

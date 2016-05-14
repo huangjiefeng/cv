@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RtpWare3", "RtpWare3\RtpWare3.vcxproj", "{1A225578-C796-4474-B9D0-3295ED8FBF5D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{739D3805-B803-4CD7-86D8-34F0219C325A} = {739D3805-B803-4CD7-86D8-34F0219C325A}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "oRTP", "oRTP", "{98E1D94D-98BE-4A56-A4CA-1568216E37EF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oRTP", "ortp\build\win32native\oRTP.vcxproj", "{739D3805-B803-4CD7-86D8-34F0219C325A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "srtp", "3rdparty\srtp\srtp.vcxproj", "{EEF031CB-FED8-451E-A471-91EC8D4F6750}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A225578-C796-4474-B9D0-3295ED8FBF5D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1A225578-C796-4474-B9D0-3295ED8FBF5D}.Debug|Win32.Build.0 = Debug|Win32
+		{1A225578-C796-4474-B9D0-3295ED8FBF5D}.Release|Win32.ActiveCfg = Release|Win32
+		{1A225578-C796-4474-B9D0-3295ED8FBF5D}.Release|Win32.Build.0 = Release|Win32
+		{739D3805-B803-4CD7-86D8-34F0219C325A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{739D3805-B803-4CD7-86D8-34F0219C325A}.Debug|Win32.Build.0 = Debug|Win32
+		{739D3805-B803-4CD7-86D8-34F0219C325A}.Release|Win32.ActiveCfg = Release|Win32
+		{739D3805-B803-4CD7-86D8-34F0219C325A}.Release|Win32.Build.0 = Release|Win32
+		{EEF031CB-FED8-451E-A471-91EC8D4F6750}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EEF031CB-FED8-451E-A471-91EC8D4F6750}.Debug|Win32.Build.0 = Debug|Win32
+		{EEF031CB-FED8-451E-A471-91EC8D4F6750}.Release|Win32.ActiveCfg = Release|Win32
+		{EEF031CB-FED8-451E-A471-91EC8D4F6750}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{739D3805-B803-4CD7-86D8-34F0219C325A} = {98E1D94D-98BE-4A56-A4CA-1568216E37EF}
+		{EEF031CB-FED8-451E-A471-91EC8D4F6750} = {98E1D94D-98BE-4A56-A4CA-1568216E37EF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:/qutecom-2.2/build/wengophone/src/presentation/qt/config/moc_QtLanguagesSettings.cxx
+D:/qutecom-2.2/wengophone/src/presentation/qt/config/QtLanguagesSettings.h

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="owbase"
+	ProjectGUID="{ED8F68ED-2DFD-4213-8B9C-4D9356067CA1}"
+	RootNamespace="owbase"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="owbase.dir\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				Optimization="0"
+				InlineFunctionExpansion="0"
+				AdditionalIncludeDirectories="..\..\..\wifo\owbase\include;..\..\..\libs\3rdparty\pthread\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,DEBUG,PTHREAD_DLL,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_OWBASE_DLL -DOWBASE_DLL&quot;"
+				ExceptionHandling="FALSE"
+				BasicRuntimeChecks="1"
+				RuntimeLibrary="3"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(ProjectDir)Debug/owbase.pdb"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+				CompileAs="1"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="pthread.lib ws2_32.lib"
+				OutputFile="$(ProjectDir)Debug\owbase.dll"
+				Version="0.0"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)\_lib&quot;"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(ProjectDir)Debug\owbase.pdb"
+				ImportLibrary="$(ProjectDir)Debug\owbase.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,DEBUG,PTHREAD_DLL,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_OWBASE_DLL -DOWBASE_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copying file $(SolutionDir)debug/"
+				CommandLine="xcopy &quot;$(ProjectDir)\$(ConfigurationName)\$(ProjectName).lib&quot; &quot;$(SolutionDir)\_lib\&quot; /Y
+xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)\$(ConfigurationName)\&quot; /Y
+xcopy &quot;$(ProjectDir)\$(ConfigurationName)\$(ProjectName).pdb&quot; &quot;$(SolutionDir)\$(ConfigurationName)\&quot; /Y
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,DEBUG,PTHREAD_DLL,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_OWBASE_DLL -DOWBASE_DLL&quot;"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\libs\3rdparty\pthread\include;"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="owbase.dir\Release"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				Optimization="2"
+				InlineFunctionExpansion="2"
+				AdditionalIncludeDirectories="..\..\..\wifo\owbase\include;..\..\..\libs\3rdparty\pthread\include;"
+				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG;DEBUG;PTHREAD_DLL;CMAKE_INTDIR=\&quot;Release\&quot;;&quot;BUILD_OWBASE_DLL -DOWBASE_DLL&quot;;BUILD_OWBASE_DLL;DOWBASE_DLL"
+				ExceptionHandling="FALSE"
+				RuntimeLibrary="2"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(ProjectDir)Release/owbase.pdb"
+				WarningLevel="3"
+				CompileAs="1"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="pthread.lib ws2_32.lib"
+				OutputFile="$(ProjectDir)Release\owbase.dll"
+				Version="0.0"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)\_lib\Release&quot;"
+				IgnoreDefaultLibraryNames=""
+				ProgramDatabaseFile="$(ProjectDir)Release\owbase.pdb"
+				ImportLibrary="$(ProjectDir)Release\owbase.lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,PTHREAD_DLL,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_OWBASE_DLL -DOWBASE_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copying file $(SolutionDir)debug/"
+				CommandLine="xcopy &quot;$(ProjectDir)\$(ConfigurationName)\$(ProjectName).lib&quot; &quot;$(SolutionDir)\_lib\Release\&quot; /Y
+xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)\Debug\&quot; /Y"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,DEBUG,PTHREAD_DLL,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_OWBASE_DLL -DOWBASE_DLL&quot;"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\owbase\include;$(SolutionDir)..\libs\3rdparty\pthread\include;"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\wifo\owbase\src\owlist.c">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\wifo\owbase\src\owqueue.c">
+			</File>
+		</Filter>
+		<File
+			RelativePath="$(SolutionDir)..\wifo\owbase\CMakeLists.txt">
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

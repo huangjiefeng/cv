@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: Libav codec library
+Version: 53.35.0
+Requires: 
+Requires.private: libavutil = 51.22.1
+Conflicts:
+Libs: -L${libdir} -lavcodec 
+Libs.private: -lavicap32 -lws2_32 -lm -lpsapi
+Cflags: -I${includedir}

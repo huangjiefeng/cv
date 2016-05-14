@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:/qutecom-2.2/build/libs/qtutil/tests/moc_testexpandbutton.cxx
+D:/qutecom-2.2/libs/qtutil/tests/testexpandbutton.h

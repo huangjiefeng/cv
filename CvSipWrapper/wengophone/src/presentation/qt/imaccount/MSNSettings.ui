@@ -1,0 +1,176 @@
+<ui version="4.0" >
+ <class>MSNSettings</class>
+ <widget class="QWidget" name="MSNSettings" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>301</width>
+    <height>191</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MSN Settings</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label" >
+     <property name="pixmap" >
+      <pixmap resource="../../../../resources/wengophone.qrc" >:/pics/protocols/msn.png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <layout class="QGridLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item row="1" column="0" >
+      <widget class="QLabel" name="passwordLabel" >
+       <property name="text" >
+        <string>Password:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" >
+      <widget class="QLineEdit" name="loginLineEdit" />
+     </item>
+     <item row="0" column="0" >
+      <widget class="QLabel" name="loginLabel" >
+       <property name="text" >
+        <string>Login:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" >
+      <widget class="QLineEdit" name="passwordLineEdit" >
+       <property name="echoMode" >
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QCheckBox" name="useHttpMethodCheckBox" >
+       <property name="text" >
+        <string>Use HTTP method</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="1" >
+    <layout class="QGridLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item row="0" column="1" >
+      <widget class="LinkLabel" name="forgotPasswordLabel" >
+       <property name="text" >
+        <string>Forgot your MSN password?</string>
+       </property>
+       <property name="alignment" >
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="0" column="2" >
+      <widget class="QLabel" name="label_2" >
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="pixmap" >
+        <pixmap resource="../../../../resources/wengophone.qrc" >:/pics/help.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" >
+      <widget class="LinkLabel" name="createAccountLabel" >
+       <property name="text" >
+        <string>Get a new MSN Account</string>
+       </property>
+       <property name="alignment" >
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" >
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="1" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LinkLabel</class>
+   <extends>QLabel</extends>
+   <header>qtutil/LinkLabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>loginLineEdit</tabstop>
+  <tabstop>passwordLineEdit</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../../../resources/wengophone.qrc" />
+ </resources>
+ <connections/>
+</ui>

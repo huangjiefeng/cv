@@ -1,0 +1,4 @@
+resolution = 1080P
+crosstype1 = S
+crosstype2 = S
+crosstype3 = C

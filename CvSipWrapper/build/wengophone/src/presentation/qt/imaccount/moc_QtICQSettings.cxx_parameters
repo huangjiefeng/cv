@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:/qutecom-2.2/build/wengophone/src/presentation/qt/imaccount/moc_QtICQSettings.cxx
+D:/qutecom-2.2/wengophone/src/presentation/qt/imaccount/QtICQSettings.h

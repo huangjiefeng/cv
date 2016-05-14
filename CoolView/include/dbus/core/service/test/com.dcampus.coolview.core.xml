@@ -1,0 +1,13 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="com.dcampus.coolview.core">
+    <method name="TeleCommand">
+      <arg name="command_index" type="i" direction="in"/>
+      <arg name="intput_array" type="ay" direction="in"/>
+    </method>
+    <method name="MoveToMainThreadSlot">
+    </method>
+    <method name="CloseCoolViewSlotDbus">
+    </method>
+  </interface>
+</node>

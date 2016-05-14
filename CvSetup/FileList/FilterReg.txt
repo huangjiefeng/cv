@@ -1,0 +1,12 @@
+AudioAECFilter.dll               
+encoder_aac.dll
+mp4mux.dll
+MultiSmartTee.dll                
+RGB24toYUV2.dll
+SCUT_H264_Decoder.dll            
+SCUT_H264_Encoder.dll
+SpeexDec.dll                     
+SpeexEnc.dll
+FilePlayCtrlFilter.dll
+Rtpware3.dll
+LMVYUVxf.dll

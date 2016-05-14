@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="testnetlib"
+	ProjectGUID="{5190F66B-B965-4414-9E9D-6CBEC3BDAABB}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="testnetlib.dir\Debug"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\netlib\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				BasicRuntimeChecks="1"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,OWBASE_DLL,OWSL_DLL,CURL_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(ProjectDir)Debug/testnetlib.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\netlib\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,OWBASE_DLL,OWSL_DLL,CURL_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,OWBASE_DLL,OWSL_DLL,CURL_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(ProjectDir)testnetlib.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(ProjectDir)testnetlib.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\Debug\netlib.lib ..\..\owbase\Debug\owbase.lib ..\..\owsl\Debug\owsl.lib ..\..\..\libs\3rdparty\curl\Debug\curl.lib user32.lib shell32.lib ws2_32.lib advapi32.lib wininet.lib urlmon.lib ..\..\owbase\Debug\owbase.lib ..\..\..\libs\3rdparty\pthread\Debug\pthread.lib ws2_32.lib iphlpapi.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib winmm.lib ws2_32.lib "
+				OutputFile="$(ProjectDir)Debug\testnetlib.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\Debug\$(OutDir),..\Debug,..\..\owbase\Debug\$(OutDir),..\..\owbase\Debug,..\..\owsl\Debug\$(OutDir),..\..\owsl\Debug,..\..\..\libs\3rdparty\curl\Debug\$(OutDir),..\..\..\libs\3rdparty\curl\Debug,..\..\..\libs\3rdparty\pthread\Debug\$(OutDir),..\..\..\libs\3rdparty\pthread\Debug,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32"
+				ProgramDataBaseFile="$(ProjectDir)Debug/testnetlib.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(ProjectDir)Debug\testnetlib.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="testnetlib.dir\Release"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\netlib\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OWBASE_DLL,OWSL_DLL,CURL_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(ProjectDir)Release/testnetlib.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\netlib\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OWBASE_DLL,OWSL_DLL,CURL_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,OWBASE_DLL,OWSL_DLL,CURL_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(ProjectDir)testnetlib.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(ProjectDir)testnetlib.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\Release\netlib.lib ..\..\owbase\Release\owbase.lib ..\..\owsl\Release\owsl.lib ..\..\..\libs\3rdparty\curl\Release\curl.lib user32.lib shell32.lib ws2_32.lib advapi32.lib wininet.lib urlmon.lib ..\..\owbase\Release\owbase.lib ..\..\..\libs\3rdparty\pthread\Release\pthread.lib ws2_32.lib iphlpapi.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib winmm.lib ws2_32.lib "
+				OutputFile="$(ProjectDir)Release\testnetlib.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\Release\$(OutDir),..\Release,..\..\owbase\Release\$(OutDir),..\..\owbase\Release,..\..\owsl\Release\$(OutDir),..\..\owsl\Release,..\..\..\libs\3rdparty\curl\Release\$(OutDir),..\..\..\libs\3rdparty\curl\Release,..\..\..\libs\3rdparty\pthread\Release\$(OutDir),..\..\..\libs\3rdparty\pthread\Release,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32"
+				ProgramDataBaseFile="$(ProjectDir)Release/testnetlib.pdb"
+				SubSystem="1"
+				ImportLibrary="$(ProjectDir)Release\testnetlib.lib"/>
+		</Configuration>
+				
+			</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\wifo\netlib\tests\CMakeLists.txt">
+						
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\wifo\netlib\tests\testnetlib.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

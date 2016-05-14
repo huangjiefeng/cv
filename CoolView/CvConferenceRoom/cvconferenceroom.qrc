@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/CvConferenceRoom">
+        <file>Resources/application.png</file>
+        <file>Resources/close_normal.png</file>
+        <file>Resources/qt_zh_CN.qm</file>
+        <file>Resources/stopaudio.png</file>
+        <file>Resources/stopvideo.png</file>
+        <file>Resources/VideoStateStop.png</file>
+        <file>Resources/mediaWaiting.png</file>
+        <file>Resources/MicrophoneRed.png</file>
+        <file>Resources/Record-Start.png</file>
+        <file>Resources/Record-Stop.png</file>
+        <file>Resources/Record-Edit.png</file>
+    </qresource>
+</RCC>

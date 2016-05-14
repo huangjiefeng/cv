@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="testtrayicon"
+	ProjectGUID="{816C278B-D2AC-42A3-845D-C4314B5DE735}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="testtrayicon.dir\Debug"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\trayicon;D:\qt\4.4.3\include;"
+				BasicRuntimeChecks="1"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/trayicon/test/Debug/testtrayicon.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\trayicon;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/trayicon/test/testtrayicon.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/trayicon/test/testtrayicon.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\Debug\owtrayicon.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib "
+				OutputFile="$(SolutionDir)libs\trayicon\test\Debug\testtrayicon.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\Debug\$(OutDir),..\Debug"
+				ProgramDataBaseFile="$(SolutionDir)libs/trayicon/test/Debug/testtrayicon.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\trayicon\test\Debug\testtrayicon.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="testtrayicon.dir\Release"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\trayicon;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/trayicon/test/Release/testtrayicon.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\trayicon;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/trayicon/test/testtrayicon.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/trayicon/test/testtrayicon.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\Release\owtrayicon.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib "
+				OutputFile="$(SolutionDir)libs\trayicon\test\Release\testtrayicon.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\Release\$(OutDir),..\Release"
+				ProgramDataBaseFile="$(SolutionDir)libs/trayicon/test/Release/testtrayicon.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\trayicon\test\Release\testtrayicon.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="testtrayicon.dir\MinSizeRel"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\trayicon;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="1"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/trayicon/test/MinSizeRel/testtrayicon.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\trayicon;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/trayicon/test/testtrayicon.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/trayicon/test/testtrayicon.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\MinSizeRel\owtrayicon.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib "
+				OutputFile="$(SolutionDir)libs\trayicon\test\MinSizeRel\testtrayicon.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\MinSizeRel\$(OutDir),..\MinSizeRel"
+				ProgramDataBaseFile="$(SolutionDir)libs/trayicon/test/MinSizeRel/testtrayicon.pdb"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\trayicon\test\MinSizeRel\testtrayicon.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="testtrayicon.dir\RelWithDebInfo"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\trayicon;D:\qt\4.4.3\include;"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				ExceptionHandling="TRUE"
+				InlineFunctionExpansion="1"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)libs/trayicon/test/RelWithDebInfo/testtrayicon.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\libs\trayicon;D:\qt\4.4.3\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,QT_DLL,QT_NO_KEYWORDS,QT_DLL,QT_NO_KEYWORDS,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/trayicon/test/testtrayicon.exe&quot; &quot;$(SolutionDir)debug/&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)libs/trayicon/test/testtrayicon.pdb&quot; &quot;$(SolutionDir)debug/&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib ..\RelWithDebInfo\owtrayicon.lib D:\qt\4.4.3\lib\QtCored4.lib D:\qt\4.4.3\lib\QtGuid4.lib D:\qt\4.4.3\lib\QtNetworkd4.lib D:\qt\4.4.3\lib\QtXmld4.lib D:\qt\4.4.3\lib\QtSvgd4.lib QtUiToolsd.lib "
+				OutputFile="$(SolutionDir)libs\trayicon\test\RelWithDebInfo\testtrayicon.exe"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="D:\qt\4.4.3\lib\$(OutDir),D:\qt\4.4.3\lib,..\RelWithDebInfo\$(OutDir),..\RelWithDebInfo"
+				ProgramDataBaseFile="$(SolutionDir)libs/trayicon/test/RelWithDebInfo/testtrayicon.pdb"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				ImportLibrary="$(SolutionDir)libs\trayicon\test\RelWithDebInfo\testtrayicon.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\libs\trayicon\test\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/trayicon/test/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\trayicon\test\CMakeLists.txt;$(SolutionDir)..\libs\trayicon\test\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/trayicon/test/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\trayicon\test\CMakeLists.txt;$(SolutionDir)..\libs\trayicon\test\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/trayicon/test/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\trayicon\test\CMakeLists.txt;$(SolutionDir)..\libs\trayicon\test\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\libs/trayicon/test/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\libs\trayicon\test\CMakeLists.txt;$(SolutionDir)..\libs\trayicon\test\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\trayicon\test\moc_TestTray.cxx">
+			</File>
+			<File
+				RelativePath="$(SolutionDir)..\libs\trayicon\test\TestTray.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="CMake Rules"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)libs\trayicon\test\moc_TestTray.cxx.rule">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_TestTray.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_TestTray.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\trayicon\test\TestTray.h;"
+					Outputs="$(SolutionDir)libs\trayicon\test\moc_TestTray.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_TestTray.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_TestTray.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\trayicon\test\TestTray.h;"
+					Outputs="$(SolutionDir)libs\trayicon\test\moc_TestTray.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_TestTray.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_TestTray.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\trayicon\test\TestTray.h;"
+					Outputs="$(SolutionDir)libs\trayicon\test\moc_TestTray.cxx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Generating moc_TestTray.cxx"
+					CommandLine="cd .&#x0D;&#x0A;D:&#x0D;&#x0A;D:\qt\4.4.3\bin\moc.exe @moc_TestTray.cxx_parameters"
+					AdditionalDependencies="$(SolutionDir)..\libs\trayicon\test\TestTray.h;"
+					Outputs="$(SolutionDir)libs\trayicon\test\moc_TestTray.cxx"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

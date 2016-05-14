@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.channel.type.streamedMedia">
+    <method name="SetMediaInfo">
+      <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="__client_request_cb"/>
+	  <arg type="i" name="action_id" direction="in" />
+      <arg type="ay" name="input_garray" direction="in" />  <!--media params-->
+    </method>
+	<method name="GetMediaInfo">		<!--get media info -->
+		<arg type="i" name="info_type" direction="in" />
+		<arg type="ay" name="output_garray" direction="out" />
+	</method>
+	<method name="Run">		<!--run media-->
+	</method>
+	<method name="Pause">	<!--pause media-->
+	</method>
+	<method name="Stop">	<!--stop media -->
+	</method>
+	<method name="Destroy">	<!--destroy media-->
+	</method>
+	<signal name="QosNofity">
+		<arg type="ay" name="output_garray" direction="out" />
+		<arg type="i" name="notify_index" direction="out" />
+	</signal>
+	<signal name="RunningStateChanged">
+		<arg type="s" name="media_id"  direction="out" />
+		<arg type="i" name="current_state" direction="out" />
+	</signal>
+  </interface>
+</node>

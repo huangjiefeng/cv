@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D6126F5B-5F2E-4CB3-BAD7-310D3DF23D1C}</ProjectGuid>
+    <RootNamespace>CvSipWrapper</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(Configuration);$(QTDIR)\include;$(QTDIR)\include\QtCore;$(BoostDir);$(ProjectDir)\include;$(SolutionDir)..\libs\sipwrapper\src\phapi;$(SolutionDir)..\libs\sipwrapper\include;$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\owutil\cutil\msvc;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)..\libs\sound\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;CURL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;G_GNUC_NULL_TERMINATED=;LIBPURPLE_DLL;OWSOUND_PORTAUDIO_SUPPORT=1;PHAPI_DLL;PHAPIUTIL_DLL;SFP_PLUGIN_DLL;WEBCAM_DLL;OWBASE_DLL;OWSL_DLL;QT_DLL;QT_NO_KEYWORDS;ENABLE_ILBC=1;PSIIDLE_DLL;MULTIIMWRAPPER;OWMEMORYDUMP_DLL;ENABLE_CRASHREPORT;DISABLE_CALL_FORWARD;DISABLE_SMS;DISABLE_VOICE_MAIL;CMAKE_INTDIR="Release";WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;Qt5Core.lib;Qt5DBus.lib;owimwrapper.lib;tinyxml.lib;owsettings.lib;owsound.lib;exosip.lib;glib.lib;netlib.lib;osip2.lib;owbase.lib;owbuildid.lib;owphapiwrapper.lib;owsipwrapper.lib;owsl.lib;owutil.lib;phapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(BoostDir)\lib32-msvc-11.0;$(SolutionDir)_lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32\*.dll" "$(SolutionDir)$(Configuration)" /Y
+xcopy "$(SolutionDir)..\libs\3rdparty\iconv\iconv-1.9.2\bin\*.dll" "$(SolutionDir)$(Configuration)" /Y
+xcopy "$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\bin\*.dll" "$(SolutionDir)$(Configuration)" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(BoostDir);.\GeneratedFiles\$(Configuration);$(ProjectDir)\include;$(SolutionDir)..\libs\sipwrapper\src\phapi;$(SolutionDir)..\wifo\phapi;$(SolutionDir)..\libs\owutil;$(SolutionDir)..\libs\sipwrapper\include;$(SolutionDir)..\libs\imwrapper\include;$(SolutionDir)..\libs\pixertool\include;$(SolutionDir)..\libs\sound\include;$(SolutionDir)..\libs\owutil\cutil\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;BOOST_ALL_DYN_LINK;BOOST_LIB_DIAGNOSTIC;OWUTIL_DLL;CURL_DLL;GLIB_DLL;GTHREAD_DLL;GMODULE_DLL;GOBJECT_DLL;G_GNUC_NULL_TERMINATED=;LIBPURPLE_DLL;OWSOUND_PORTAUDIO_SUPPORT=1;PHAPI_DLL;PHAPIUTIL_DLL;SFP_PLUGIN_DLL;WEBCAM_DLL;OWBASE_DLL;OWSL_DLL;QT_DLL;QT_NO_KEYWORDS;ENABLE_ILBC=1;PSIIDLE_DLL;MULTIIMWRAPPER;OWMEMORYDUMP_DLL;ENABLE_CRASHREPORT;DISABLE_CALL_FORWARD;DISABLE_SMS;DISABLE_VOICE_MAIL;DEBUG;CMAKE_INTDIR="Debug";WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5DBusd.lib;owimwrapper.lib;tinyxml.lib;owsettings.lib;owsound.lib;exosip.lib;glib.lib;netlib.lib;osip2.lib;owbase.lib;owbuildid.lib;owphapiwrapper.lib;owsipwrapper.lib;owsl.lib;owutil.lib;phapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(BoostDir)\lib32-msvc-11.0;$(SolutionDir)_lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\libs\3rdparty\openssl\binary-lib\win32\*.dll" "$(SolutionDir)$(Configuration)" /Y
+xcopy "$(SolutionDir)..\libs\3rdparty\iconv\iconv-1.9.2\bin\*.dll" "$(SolutionDir)$(Configuration)" /Y
+xcopy "$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\bin\*.dll" "$(SolutionDir)$(Configuration)" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CvSipWrapperService.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_CvPerfMonitorIf.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvPerfMonitorIf.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvPerfProcessAdaptor.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvPerfProcessAdaptor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvSipWrapperAdaptor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvSipWrapperAdaptor.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CvSipWrapperService.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CvSipWrapperService.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="include\log\Log.cpp" />
+    <ClCompile Include="include\dbus\performance\process\service\CvPerfProcessAdaptor.cpp" />
+    <ClCompile Include="include\dbus\sipwrapper\service\CvSipWrapperAdaptor.cpp" />
+    <ClCompile Include="include\dbus\performance\monitor\client\CvPerfMonitorIf.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CvSipWrapperService.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CvSipWrapperService.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QtDir)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DBOOST_ALL_DYN_LINK -DBOOST_LIB_DIAGNOSTIC -DOWUTIL_DLL -DCURL_DLL -DGLIB_DLL -DGTHREAD_DLL -DGMODULE_DLL -DGOBJECT_DLL -DG_GNUC_NULL_TERMINATED= -DLIBPURPLE_DLL -DOWSOUND_PORTAUDIO_SUPPORT=1 -DPHAPI_DLL -DPHAPIUTIL_DLL -DSFP_PLUGIN_DLL -DWEBCAM_DLL -DOWBASE_DLL -DOWSL_DLL -DQT_DLL -DQT_NO_KEYWORDS -DENABLE_ILBC=1 -DPSIIDLE_DLL -DMULTIIMWRAPPER -DOWMEMORYDUMP_DLL -DENABLE_CRASHREPORT -DDISABLE_CALL_FORWARD -DDISABLE_SMS -DDISABLE_VOICE_MAIL -DDEBUG -DCMAKE_INTDIR=\"Debug\"  -I"D:\qt\4.4.3\include\." -I".\GeneratedFiles\$(Configuration)\." -I"D:\qt\4.4.3\include\QtCore\." -I"$(ProjectDir)\include\." -I"$(SolutionDir)..\libs\sipwrapper\src\phapi\." -I"$(SolutionDir)..\wifo\phapi\." -I"$(SolutionDir)..\libs\owutil\." -I"$(SolutionDir)..\libs\sipwrapper\include\." -I"$(SolutionDir)..\libs\imwrapper\include\." -I"D:\boost\boost_1_34_1\." -I"$(SolutionDir)..\libs\pixertool\include\." -I"$(SolutionDir)..\libs\sound\include\." -I"$(SolutionDir)..\libs\owutil\cutil\msvc\." ".\CvSipWrapperService.h" -o ".\GeneratedFiles\$(Configuration)\moc_CvSipWrapperService.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QtDir)\bin\moc.exe;.\CvSipWrapperService.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_CvSipWrapperService.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CvSipWrapperService.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QtDir)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -I"$(QtDir)\include\." -I".\GeneratedFiles\$(Configuration)\." -I".\." -I"$(QtDir)\include\QtCore\." ".\CvSipWrapperService.h" -o ".\GeneratedFiles\$(Configuration)\moc_CvSipWrapperService.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QtDir)\bin\moc.exe;.\CvSipWrapperService.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_CvSipWrapperService.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="include\log\Log.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="include\dbus\performance\process\service\CvPerfProcessAdaptor.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CvPerfProcessAdaptor.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QtDir)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DBOOST_ALL_DYN_LINK -DBOOST_LIB_DIAGNOSTIC -DOWUTIL_DLL -DCURL_DLL -DGLIB_DLL -DGTHREAD_DLL -DGMODULE_DLL -DGOBJECT_DLL -DG_GNUC_NULL_TERMINATED= -DLIBPURPLE_DLL -DOWSOUND_PORTAUDIO_SUPPORT=1 -DPHAPI_DLL -DPHAPIUTIL_DLL -DSFP_PLUGIN_DLL -DWEBCAM_DLL -DOWBASE_DLL -DOWSL_DLL -DQT_DLL -DQT_NO_KEYWORDS -DENABLE_ILBC=1 -DPSIIDLE_DLL -DMULTIIMWRAPPER -DOWMEMORYDUMP_DLL -DENABLE_CRASHREPORT -DDISABLE_CALL_FORWARD -DDISABLE_SMS -DDISABLE_VOICE_MAIL -DDEBUG -DCMAKE_INTDIR=\"Debug\" -I"D:\qt\4.4.3\include\." -I".\GeneratedFiles\$(Configuration)\." -I"D:\qt\4.4.3\include\QtCore\." -I"$(ProjectDir)\include\." -I"$(SolutionDir)..\libs\sipwrapper\src\phapi\." -I"$(SolutionDir)..\wifo\phapi\." -I"$(SolutionDir)..\libs\owutil\." -I"$(SolutionDir)..\libs\sipwrapper\include\." -I"$(SolutionDir)..\libs\imwrapper\include\." -I"D:\boost\boost_1_34_1\." -I"$(SolutionDir)..\libs\pixertool\include\." -I"$(SolutionDir)..\libs\sound\include\." -I"$(SolutionDir)..\libs\owutil\cutil\msvc\." ".\include\dbus\performance\process\service\CvPerfProcessAdaptor.h" -o ".\GeneratedFiles\$(Configuration)\moc_CvPerfProcessAdaptor.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QtDir)\bin\moc.exe;.\include\dbus\performance\process\service\CvPerfProcessAdaptor.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_CvPerfProcessAdaptor.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CvPerfProcessAdaptor.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QtDir)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -I"$(QtDir)\include\." -I".\GeneratedFiles\$(Configuration)\." -I".\." -I"$(QtDir)\include\QtCore\." ".\include\dbus\performance\process\service\CvPerfProcessAdaptor.h" -o ".\GeneratedFiles\$(Configuration)\moc_CvPerfProcessAdaptor.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QtDir)\bin\moc.exe;.\include\dbus\performance\process\service\CvPerfProcessAdaptor.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_CvPerfProcessAdaptor.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="include\dbus\sipwrapper\service\CvSipWrapperAdaptor.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CvSipWrapperAdaptor.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QtDir)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DBOOST_ALL_DYN_LINK -DBOOST_LIB_DIAGNOSTIC -DOWUTIL_DLL -DCURL_DLL -DGLIB_DLL -DGTHREAD_DLL -DGMODULE_DLL -DGOBJECT_DLL -DG_GNUC_NULL_TERMINATED= -DLIBPURPLE_DLL -DOWSOUND_PORTAUDIO_SUPPORT=1 -DPHAPI_DLL -DPHAPIUTIL_DLL -DSFP_PLUGIN_DLL -DWEBCAM_DLL -DOWBASE_DLL -DOWSL_DLL -DQT_DLL -DQT_NO_KEYWORDS -DENABLE_ILBC=1 -DPSIIDLE_DLL -DMULTIIMWRAPPER -DOWMEMORYDUMP_DLL -DENABLE_CRASHREPORT -DDISABLE_CALL_FORWARD -DDISABLE_SMS -DDISABLE_VOICE_MAIL -DDEBUG -DCMAKE_INTDIR=\"Debug\"  -I"D:\qt\4.4.3\include\." -I".\GeneratedFiles\$(Configuration)\." -I"D:\qt\4.4.3\include\QtCore\." -I"$(ProjectDir)\include\." -I"$(SolutionDir)..\libs\sipwrapper\src\phapi\." -I"$(SolutionDir)..\wifo\phapi\." -I"$(SolutionDir)..\libs\owutil\." -I"$(SolutionDir)..\libs\sipwrapper\include\." -I"$(SolutionDir)..\libs\imwrapper\include\." -I"D:\boost\boost_1_34_1\." -I"$(SolutionDir)..\libs\pixertool\include\." -I"$(SolutionDir)..\libs\sound\include\." -I"$(SolutionDir)..\libs\owutil\cutil\msvc\." ".\include\dbus\sipwrapper\service\CvSipWrapperAdaptor.h" -o ".\GeneratedFiles\$(Configuration)\moc_CvSipWrapperAdaptor.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QtDir)\bin\moc.exe;.\include\dbus\sipwrapper\service\CvSipWrapperAdaptor.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_CvSipWrapperAdaptor.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CvSipWrapperAdaptor.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QtDir)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -I"$(QtDir)\include\." -I".\GeneratedFiles\$(Configuration)\." -I".\." -I"$(QtDir)\include\QtCore\." ".\include\dbus\sipwrapper\service\CvSipWrapperAdaptor.h" -o ".\GeneratedFiles\$(Configuration)\moc_CvSipWrapperAdaptor.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QtDir)\bin\moc.exe;.\include\dbus\sipwrapper\service\CvSipWrapperAdaptor.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_CvSipWrapperAdaptor.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="include\dbus\sipwrapper\common\SipWrapperCommonService.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="include\dbus\performance\monitor\client\CvPerfMonitorIf.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CvPerfMonitorIf.h... $(QtDir)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QtDir)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DBOOST_ALL_DYN_LINK -DBOOST_LIB_DIAGNOSTIC -DOWUTIL_DLL -DCURL_DLL -DGLIB_DLL -DGTHREAD_DLL -DGMODULE_DLL -DGOBJECT_DLL -DG_GNUC_NULL_TERMINATED= -DLIBPURPLE_DLL -DOWSOUND_PORTAUDIO_SUPPORT=1 -DPHAPI_DLL -DPHAPIUTIL_DLL -DSFP_PLUGIN_DLL -DWEBCAM_DLL -DOWBASE_DLL -DOWSL_DLL -DQT_DLL -DQT_NO_KEYWORDS -DENABLE_ILBC=1 -DPSIIDLE_DLL -DMULTIIMWRAPPER -DOWMEMORYDUMP_DLL -DENABLE_CRASHREPORT -DDISABLE_CALL_FORWARD -DDISABLE_SMS -DDISABLE_VOICE_MAIL -DDEBUG -DCMAKE_INTDIR=\"Debug\" -I"D:\qt\4.4.3\include\." -I".\GeneratedFiles\$(Configuration)\." -I"D:\qt\4.4.3\include\QtCore\." -I"$(ProjectDir)\include\." -I"$(SolutionDir)..\libs\sipwrapper\src\phapi\." -I"$(SolutionDir)..\wifo\phapi\." -I"$(SolutionDir)..\libs\owutil\." -I"$(SolutionDir)..\libs\sipwrapper\include\." -I"$(SolutionDir)..\libs\imwrapper\include\." -I"D:\boost\boost_1_34_1\." -I"$(SolutionDir)..\libs\pixertool\include\." -I"$(SolutionDir)..\libs\sound\include\." -I"$(SolutionDir)..\libs\owutil\cutil\msvc\." ".\include\dbus\performance\monitor\client\CvPerfMonitorIf.h" -o ".\GeneratedFiles\$(Configuration)\moc_CvPerfMonitorIf.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QtDir)\bin\moc.exe;.\include\dbus\performance\monitor\client\CvPerfMonitorIf.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_CvPerfMonitorIf.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CvPerfMonitorIf.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QtDir)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -I"$(QtDir)\include\." -I".\GeneratedFiles\$(Configuration)\." -I".\." -I"$(QtDir)\include\QtCore\." ".\include\dbus\performance\monitor\client\CvPerfMonitorIf.h" -o ".\GeneratedFiles\$(Configuration)\moc_CvPerfMonitorIf.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QtDir)\bin\moc.exe;.\include\dbus\performance\monitor\client\CvPerfMonitorIf.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_CvPerfMonitorIf.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="include\dbus\performance\monitor\common\CvPerfMonitorServiceCommon.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CvSipWrapper.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libs\3rdparty\glib\glib-2.18.1\glib\glib.vcxproj">
+      <Project>{fa141b81-02c0-4d6b-a99a-57231e125904}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libs\owutil\util\owutil.vcxproj">
+      <Project>{2eaf7f4e-f73b-4169-8163-fc95cddb1d51}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libs\sipwrapper\owsipwrapper.vcxproj">
+      <Project>{58da6dab-cabd-4754-9436-edab7bfc3434}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libs\sipwrapper\src\phapi\owphapiwrapper.vcxproj">
+      <Project>{0354df39-7a7c-4d61-9404-f23639042fe2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\wengophone\src\buildid\owbuildid.vcxproj">
+      <Project>{a1cf6424-dbee-4b46-93ef-e7290b4e0c53}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\wifo\eXosip\exosip.vcxproj">
+      <Project>{6894f0e5-38f2-46f9-98a9-790f81322322}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\wifo\libosip2\osip2.vcxproj">
+      <Project>{0f2fa9d9-45d8-43f2-9619-e5c4ae23829f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\wifo\netlib\netlib.vcxproj">
+      <Project>{94e9fa2a-f0cf-4605-9821-d1d526e3f3e1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\wifo\owbase\owbase.vcxproj">
+      <Project>{ed8f68ed-2dfd-4213-8b9c-4d9356067ca1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\wifo\owsl\owsl.vcxproj">
+      <Project>{ba68c491-812e-4b02-84cd-27c83f490582}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\wifo\phapi\phapi.vcxproj">
+      <Project>{811efda4-7e32-4f4d-a3d9-e3dcfd83e735}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" QtVersion="4.4.3" RccDir=".\GeneratedFiles" UicDir=".\GeneratedFiles" Qt5Version_x0020_Win32="$(DefaultQtVersion)" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

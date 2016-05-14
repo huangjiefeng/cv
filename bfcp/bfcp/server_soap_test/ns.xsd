@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <schema targetNamespace="urn:BFCPService"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns="urn:BFCPService"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+  <simpleType name="ErrorCode"><!-- ns__ErrorCode -->
+
+   <restriction base="xsd:string">
+    <enumeration value="kNoError"/><!-- ns__ErrorCode::kNoError -->
+    <!-- = 0 -->
+    <enumeration value="kUserNotExist"/><!-- ns__ErrorCode::kUserNotExist -->
+    <!-- = 1 -->
+    <enumeration value="kUserAlreadyExist"/><!-- ns__ErrorCode::kUserAlreadyExist -->
+    <!-- = 2 -->
+    <enumeration value="kFloorNotExist"/><!-- ns__ErrorCode::kFloorNotExist -->
+    <!-- = 3 -->
+    <enumeration value="kFloorAlreadyExist"/><!-- ns__ErrorCode::kFloorAlreadyExist -->
+    <!-- = 4 -->
+    <enumeration value="kChairNotExost"/><!-- ns__ErrorCode::kChairNotExost -->
+    <!-- = 5 -->
+    <enumeration value="kChairAlreadyExist"/><!-- ns__ErrorCode::kChairAlreadyExist -->
+    <!-- = 6 -->
+    <enumeration value="kConferenceNotExist"/><!-- ns__ErrorCode::kConferenceNotExist -->
+    <!-- = 7 -->
+    <enumeration value="kConferenceAlreadyExist"/><!-- ns__ErrorCode::kConferenceAlreadyExist -->
+    <!-- = 8 -->
+    <enumeration value="kServerNotStart"/><!-- ns__ErrorCode::kServerNotStart -->
+    <!-- = 9 -->
+    <enumeration value="kServerAlreadyStart"/><!-- ns__ErrorCode::kServerAlreadyStart -->
+    <!-- = 10 -->
+   </restriction>
+  </simpleType>
+  <simpleType name="Policy"><!-- ns__Policy -->
+
+   <restriction base="xsd:string">
+    <enumeration value="kAutoAccept"/><!-- ns__Policy::kAutoAccept -->
+    <!-- = 0 -->
+    <enumeration value="kAutoDeny"/><!-- ns__Policy::kAutoDeny -->
+    <!-- = 1 -->
+   </restriction>
+  </simpleType>
+  <!-- operation request element -->
+  <element name="port" type="xsd:unsignedShort"/>
+  <!-- operation request element -->
+  <element name="enbaleConnectionThread" type="xsd:boolean"/>
+  <!-- operation request element -->
+  <element name="workThreadNum" type="xsd:int"/>
+  <!-- operation response element -->
+  <element name="errorCode" type="ns:ErrorCode"/>
+  <!-- operation request element -->
+  <element name="conferenceID" type="xsd:unsignedInt"/>
+  <!-- operation request element -->
+  <element name="maxFloorRequest" type="xsd:unsignedShort"/>
+  <!-- operation request element -->
+  <element name="policy" type="ns:Policy"/>
+  <!-- operation request element -->
+  <element name="timeForChairAction" type="xsd:double"/>
+  <!-- operation request element -->
+  <element name="timeForChairActoin" type="xsd:double"/>
+  <!-- operation request element -->
+  <element name="floorID" type="xsd:unsignedShort"/>
+  <!-- operation request element -->
+  <element name="maxGrantedNum" type="xsd:unsignedShort"/>
+  <!-- operation request element -->
+  <element name="userID" type="xsd:unsignedShort"/>
+  <!-- operation request element -->
+  <element name="userName" type="xsd:string"/>
+  <!-- operation request element -->
+  <element name="userURI" type="xsd:string"/>
+  <!-- operation response element -->
+  <element name="conferenceIDs" type="xsd:unsignedInt"/>
+  <!-- operation response element -->
+  <element name="conferenceInfo" type="xsd:string"/>
+ </schema>
+

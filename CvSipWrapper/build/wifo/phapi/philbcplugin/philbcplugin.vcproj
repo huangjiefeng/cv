@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="philbcplugin"
+	ProjectGUID="{86DE0AD6-E5A4-4CF7-820A-7EEB3C0228A0}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="philbcplugin.dir\Debug"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /EHs-c-"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\phapi\ilbc;$(SolutionDir)..\libs\3rdparty\pthread\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				BasicRuntimeChecks="1"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				EnableEnhancedInstructionSet="1"
+				EnableIntrinsicFunctions="TRUE"
+				ExceptionHandling="FALSE"
+				FavorSizeOrSpeed="1"
+				InlineFunctionExpansion="0"
+				OmitFramePointers="TRUE"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="FALSE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"
+				AssemblerListingLocation="Debug"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/phapi/philbcplugin/Debug/philbcplugin.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\phapi\ilbc;$(SolutionDir)..\libs\3rdparty\pthread\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Debug\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/phapi-plugins/./"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/philbcplugin/philbcplugin.dll&quot; &quot;$(SolutionDir)debug/phapi-plugins/./&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/philbcplugin/philbcplugin.pdb&quot; &quot;$(SolutionDir)debug/phapi-plugins/./&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\ilbc\Debug\ilbc.lib ..\..\..\libs\3rdparty\pthread\Debug\pthread.lib ..\..\owbase\Debug\owbase.lib ..\..\owsl\Debug\owsl.lib ..\..\owbase\Debug\owbase.lib ..\..\..\libs\3rdparty\pthread\Debug\pthread.lib ws2_32.lib ..\..\..\libs\3rdparty\curl\Debug\curl.lib winmm.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib iphlpapi.lib "
+				OutputFile="$(SolutionDir)wifo\phapi\philbcplugin\Debug\philbcplugin.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\ilbc\Debug\$(OutDir),..\ilbc\Debug,..\..\..\libs\3rdparty\pthread\Debug\$(OutDir),..\..\..\libs\3rdparty\pthread\Debug,..\..\owbase\Debug\$(OutDir),..\..\owbase\Debug,..\..\owsl\Debug\$(OutDir),..\..\owsl\Debug,..\..\..\libs\3rdparty\curl\Debug\$(OutDir),..\..\..\libs\3rdparty\curl\Debug,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32"
+				ProgramDataBaseFile="$(SolutionDir)wifo\phapi\philbcplugin\Debug\philbcplugin.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)wifo\phapi\philbcplugin\Debug\philbcplugin.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="philbcplugin.dir\Release"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /EHs-c-"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\phapi\ilbc;$(SolutionDir)..\libs\3rdparty\pthread\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				CompileAs="1"
+				EnableEnhancedInstructionSet="1"
+				EnableIntrinsicFunctions="TRUE"
+				ExceptionHandling="FALSE"
+				FavorSizeOrSpeed="1"
+				InlineFunctionExpansion="2"
+				OmitFramePointers="TRUE"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="FALSE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"
+				AssemblerListingLocation="Release"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/phapi/philbcplugin/Release/philbcplugin.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\phapi\ilbc;$(SolutionDir)..\libs\3rdparty\pthread\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;Release\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/phapi-plugins/./"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/philbcplugin/philbcplugin.dll&quot; &quot;$(SolutionDir)debug/phapi-plugins/./&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/philbcplugin/philbcplugin.pdb&quot; &quot;$(SolutionDir)debug/phapi-plugins/./&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\ilbc\Release\ilbc.lib ..\..\..\libs\3rdparty\pthread\Release\pthread.lib ..\..\owbase\Release\owbase.lib ..\..\owsl\Release\owsl.lib ..\..\owbase\Release\owbase.lib ..\..\..\libs\3rdparty\pthread\Release\pthread.lib ws2_32.lib ..\..\..\libs\3rdparty\curl\Release\curl.lib winmm.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib iphlpapi.lib "
+				OutputFile="$(SolutionDir)wifo\phapi\philbcplugin\Release\philbcplugin.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\ilbc\Release\$(OutDir),..\ilbc\Release,..\..\..\libs\3rdparty\pthread\Release\$(OutDir),..\..\..\libs\3rdparty\pthread\Release,..\..\owbase\Release\$(OutDir),..\..\owbase\Release,..\..\owsl\Release\$(OutDir),..\..\owsl\Release,..\..\..\libs\3rdparty\curl\Release\$(OutDir),..\..\..\libs\3rdparty\curl\Release,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32"
+				ProgramDataBaseFile="$(SolutionDir)wifo\phapi\philbcplugin\Release\philbcplugin.pdb"
+				ImportLibrary="$(SolutionDir)wifo\phapi\philbcplugin\Release\philbcplugin.lib"/>
+		</Configuration>
+		<Configuration
+			Name="MinSizeRel|Win32"
+			OutputDirectory="MinSizeRel"
+			IntermediateDirectory="philbcplugin.dir\MinSizeRel"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /EHs-c-"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\phapi\ilbc;$(SolutionDir)..\libs\3rdparty\pthread\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				CompileAs="1"
+				EnableEnhancedInstructionSet="1"
+				EnableIntrinsicFunctions="TRUE"
+				ExceptionHandling="FALSE"
+				FavorSizeOrSpeed="1"
+				InlineFunctionExpansion="1"
+				OmitFramePointers="TRUE"
+				Optimization="1"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="FALSE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"
+				AssemblerListingLocation="MinSizeRel"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/phapi/philbcplugin/MinSizeRel/philbcplugin.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\phapi\ilbc;$(SolutionDir)..\libs\3rdparty\pthread\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;MinSizeRel\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/phapi-plugins/./"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/philbcplugin/philbcplugin.dll&quot; &quot;$(SolutionDir)debug/phapi-plugins/./&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/philbcplugin/philbcplugin.pdb&quot; &quot;$(SolutionDir)debug/phapi-plugins/./&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386"
+				AdditionalDependencies="..\ilbc\MinSizeRel\ilbc.lib ..\..\..\libs\3rdparty\pthread\MinSizeRel\pthread.lib ..\..\owbase\MinSizeRel\owbase.lib ..\..\owsl\MinSizeRel\owsl.lib ..\..\owbase\MinSizeRel\owbase.lib ..\..\..\libs\3rdparty\pthread\MinSizeRel\pthread.lib ws2_32.lib ..\..\..\libs\3rdparty\curl\MinSizeRel\curl.lib winmm.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib iphlpapi.lib "
+				OutputFile="$(SolutionDir)wifo\phapi\philbcplugin\MinSizeRel\philbcplugin.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\ilbc\MinSizeRel\$(OutDir),..\ilbc\MinSizeRel,..\..\..\libs\3rdparty\pthread\MinSizeRel\$(OutDir),..\..\..\libs\3rdparty\pthread\MinSizeRel,..\..\owbase\MinSizeRel\$(OutDir),..\..\owbase\MinSizeRel,..\..\owsl\MinSizeRel\$(OutDir),..\..\owsl\MinSizeRel,..\..\..\libs\3rdparty\curl\MinSizeRel\$(OutDir),..\..\..\libs\3rdparty\curl\MinSizeRel,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32"
+				ProgramDataBaseFile="$(SolutionDir)wifo\phapi\philbcplugin\MinSizeRel\philbcplugin.pdb"
+				ImportLibrary="$(SolutionDir)wifo\phapi\philbcplugin\MinSizeRel\philbcplugin.lib"/>
+		</Configuration>
+		<Configuration
+			Name="RelWithDebInfo|Win32"
+			OutputDirectory="RelWithDebInfo"
+			IntermediateDirectory="philbcplugin.dir\RelWithDebInfo"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /Zm1000 /EHs-c-"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\phapi\ilbc;$(SolutionDir)..\libs\3rdparty\pthread\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				CompileAs="1"
+				DebugInformationFormat="3"
+				EnableEnhancedInstructionSet="1"
+				EnableIntrinsicFunctions="TRUE"
+				ExceptionHandling="FALSE"
+				FavorSizeOrSpeed="1"
+				InlineFunctionExpansion="1"
+				OmitFramePointers="TRUE"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="FALSE"
+				WarningLevel="3"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"
+				AssemblerListingLocation="RelWithDebInfo"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(SolutionDir)wifo/phapi/philbcplugin/RelWithDebInfo/philbcplugin.pdb"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="$(SolutionDir)..\wifo\phapi\ilbc;$(SolutionDir)..\libs\3rdparty\pthread\include;$(SolutionDir)..\wifo\owsl\include;$(SolutionDir)..\wifo\owbase\include;"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,PTHREAD_DLL,OWBASE_DLL,OWSL_DLL,DEBUG,CMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;,&quot;BUILD_PHILBCPLUGIN_DLL -DPHILBCPLUGIN_DLL&quot;"
+				MkTypLibCompatible="FALSE"
+				TargetEnvironment="1"
+				GenerateStublessProxies="TRUE"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCManifestTool"
+				UseFAT32Workaround="true"
+			/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+Description="Copying file $(SolutionDir)debug/phapi-plugins/./"
+CommandLine="D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/philbcplugin/philbcplugin.dll&quot; &quot;$(SolutionDir)debug/phapi-plugins/./&quot;&#x0D;&#x0A;D:\cmake2.6\bin\cmake.exe -E copy_if_different &quot;$(SolutionDir)wifo/phapi/philbcplugin/philbcplugin.pdb&quot; &quot;$(SolutionDir)debug/phapi-plugins/./&quot;"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /STACK:10000000 /machine:I386 /debug"
+				AdditionalDependencies="..\ilbc\RelWithDebInfo\ilbc.lib ..\..\..\libs\3rdparty\pthread\RelWithDebInfo\pthread.lib ..\..\owbase\RelWithDebInfo\owbase.lib ..\..\owsl\RelWithDebInfo\owsl.lib ..\..\owbase\RelWithDebInfo\owbase.lib ..\..\..\libs\3rdparty\pthread\RelWithDebInfo\pthread.lib ws2_32.lib ..\..\..\libs\3rdparty\curl\RelWithDebInfo\curl.lib winmm.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\libeay32.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\openssl.lib ..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\ssleay32.lib ws2_32.lib iphlpapi.lib "
+				OutputFile="$(SolutionDir)wifo\phapi\philbcplugin\RelWithDebInfo\philbcplugin.dll"
+				Version="0.0"
+				IgnoreDefaultLibraryNames="MSVCRT.LIB"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\ilbc\RelWithDebInfo\$(OutDir),..\ilbc\RelWithDebInfo,..\..\..\libs\3rdparty\pthread\RelWithDebInfo\$(OutDir),..\..\..\libs\3rdparty\pthread\RelWithDebInfo,..\..\owbase\RelWithDebInfo\$(OutDir),..\..\owbase\RelWithDebInfo,..\..\owsl\RelWithDebInfo\$(OutDir),..\..\owsl\RelWithDebInfo,..\..\..\libs\3rdparty\curl\RelWithDebInfo\$(OutDir),..\..\..\libs\3rdparty\curl\RelWithDebInfo,..\..\..\..\libs\3rdparty\openssl\binary-lib\win32\$(OutDir),..\..\..\..\libs\3rdparty\openssl\binary-lib\win32"
+				ProgramDataBaseFile="$(SolutionDir)wifo\phapi\philbcplugin\RelWithDebInfo\philbcplugin.pdb"
+				GenerateDebugInformation="TRUE"
+				ImportLibrary="$(SolutionDir)wifo\phapi\philbcplugin\RelWithDebInfo\philbcplugin.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="$(SolutionDir)..\wifo\phapi\philbcplugin\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/phapi/philbcplugin/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\phapi\philbcplugin\CMakeLists.txt;$(SolutionDir)..\wifo\phapi\philbcplugin\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/phapi/philbcplugin/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\phapi\philbcplugin\CMakeLists.txt;$(SolutionDir)..\wifo\phapi\philbcplugin\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="MinSizeRel|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/phapi/philbcplugin/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\phapi\philbcplugin\CMakeLists.txt;$(SolutionDir)..\wifo\phapi\philbcplugin\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="RelWithDebInfo|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule $(SolutionDir)..\wifo/phapi/philbcplugin/CMakeLists.txt"
+					CommandLine="D:\cmake2.6\bin\cmake.exe -H$(SolutionDir)..\ -B$(SolutionDir)..\build --check-stamp-file CMakeFiles/generate.stamp"
+					AdditionalDependencies="$(SolutionDir)..\wifo\phapi\philbcplugin\CMakeLists.txt;$(SolutionDir)..\wifo\phapi\philbcplugin\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="$(SolutionDir)..\wifo\phapi\phcodec-ilbc.c">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

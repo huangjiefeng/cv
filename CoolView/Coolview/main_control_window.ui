@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainControlWindow</class>
+ <widget class="QMainWindow" name="MainControlWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>592</width>
+    <height>527</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainControlWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="CoolView.qrc">
+    <normaloff>:/Resources/application.png</normaloff>:/Resources/application.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QScrollArea" name="memberVideoScrollArea">
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="conferenceContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>592</width>
+         <height>527</height>
+        </rect>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="CoolView.qrc">
+     <normaloff>:/image/computer_help.png</normaloff>:/image/computer_help.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于CoolView</string>
+   </property>
+   <property name="toolTip">
+    <string>关于CoolView</string>
+   </property>
+  </action>
+  <action name="actionLogOut">
+   <property name="icon">
+    <iconset resource="CoolView.qrc">
+     <normaloff>:/image/unlock.png</normaloff>:/image/unlock.png</iconset>
+   </property>
+   <property name="text">
+    <string>注销</string>
+   </property>
+   <property name="toolTip">
+    <string>注销</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="CoolView.qrc">
+     <normaloff>:/image/application-exit.png</normaloff>:/image/application-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionRestart">
+   <property name="icon">
+    <iconset resource="CoolView.qrc">
+     <normaloff>:/image/restart.png</normaloff>:/image/restart.png</iconset>
+   </property>
+   <property name="text">
+    <string>重启设备</string>
+   </property>
+   <property name="toolTip">
+    <string>重启设备</string>
+   </property>
+  </action>
+  <action name="actionDevice">
+   <property name="icon">
+    <iconset resource="CoolView.qrc">
+     <normaloff>:/image/tools.png</normaloff>:/image/tools.png</iconset>
+   </property>
+   <property name="text">
+    <string>终端设置</string>
+   </property>
+   <property name="toolTip">
+    <string>终端设置</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+  </action>
+  <action name="actionConference">
+   <property name="icon">
+    <iconset resource="CoolView.qrc">
+     <normaloff>:/image/users_chat.png</normaloff>:/image/users_chat.png</iconset>
+   </property>
+   <property name="text">
+    <string>会议列表</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionMouseSim">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/image/mouse.png</normaloff>:/image/mouse.png</iconset>
+   </property>
+   <property name="text">
+    <string>mouseSim</string>
+   </property>
+  </action>
+  <action name="SaviAction">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actionWebSite">
+   <property name="icon">
+    <iconset resource="CoolView.qrc">
+     <normaloff>:/image/home.png</normaloff>:/image/home.png</iconset>
+   </property>
+   <property name="text">
+    <string>会议管理</string>
+   </property>
+   <property name="toolTip">
+    <string>会议管理</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="CoolView.qrc"/>
+ </resources>
+ <connections/>
+</ui>

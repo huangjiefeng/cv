@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.performance.monitor">
+	
+	<signal name="cvMonitorCofMessageReceivedEvent">
+		<arg type="ay"	name="MonitorCofInfo"	direction="out" />
+	</signal>
+	
+	//向监控进程注册被监控信息
+	<method name="RegisterProcess"	>
+		<arg type="ay"	name="processInfo"		direction="in"	/>		//MonitoredProcess
+	</method>
+	
+	//向监控进程注册媒体进程监控信息
+	<method name="RegisterMediaProcess"	>
+		<arg type="ay"	name="processInfo"		direction="in"	/>		//MonitoredMediaProcess
+	</method>
+	
+   //取消监控进程对指定进程的监控
+	<method name="UnregisterProcess" >
+		<arg type="i"   name="processID"		direction="in" />
+	</method>
+ 
+    //取消监控进程对指定进程的监控
+	<method name="UnregisterMediaProcess" >
+		<arg type="i"   name="processID"		direction="in" />
+	</method>
+
+	//Hello报文，包含了进程的运行状态的二进制信息
+	<method name="HelloInfo" >
+		<arg type="i"   name="processID"		direction="in" />
+		<arg type="ay"  name="processImage"		direction="in" />	//进程二进制信息，用于恢复进程
+	</method>
+	
+	//创建测试媒体
+	<method name="CreateTestMedia">
+      <arg type="s" name="media_id" direction="in" />   <!--channel_id -->
+      <arg type="ay" name="input_garray" direction="in" />	<!--params for channel-->
+    </method>
+	
+	//销毁测试媒体
+	<method name="ReleaseTestMedia">
+		<arg type="s" name="media_id" direction="in" />  <!--channel_id-->
+	</method>
+	
+  </interface>
+</node>

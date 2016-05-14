@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.controller.telecontroller">
+    <method name="TeleInfo">
+       <arg type="i"  name="info_index" direction="in" />  //tele info index
+	   <arg type="i"  name="subscribe_id" direction="in" />		//Tele info to specific controller
+	   <arg type="ay" name="input_array" direction="in" />
+    </method>
+  </interface>
+</node>

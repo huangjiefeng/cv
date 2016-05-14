@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+   <specVersion>
+      <major>1</major>
+      <minor>0</minor>
+   </specVersion>
+   <actionList>
+      <action>
+         <name>Login</name>
+         <argumentList>
+            <argument>
+               <name>userName</name>
+               <direction>in</direction>
+               <relatedStateVariable>userName</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>userPassword</name>
+               <direction>in</direction>
+               <relatedStateVariable>userPassword</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>sipServer</name>
+               <direction>in</direction>
+               <relatedStateVariable>sipServer</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>rememberPassword</name>
+               <direction>in</direction>
+               <relatedStateVariable>rememberPassword</relatedStateVariable>
+            </argument>
+            <argument>
+               <name>IPVersion</name>
+               <direction>in</direction>
+               <relatedStateVariable>IPVersion</relatedStateVariable>
+            </argument> 
+            <argument>
+               <name>isMulticast</name>
+               <direction>in</direction>
+               <relatedStateVariable>isMulticast</relatedStateVariable>
+            </argument>                
+         </argumentList>
+      </action>
+   </actionList>
+   <serviceStateTable>
+      <stateVariable sendEvents="no">
+         <name>userName</name>
+         <dataType>string</dataType>
+         <defaultValue>null</defaultValue>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>userPassword</name>
+         <dataType>string</dataType>
+         <defaultValue>null</defaultValue>
+      </stateVariable>
+      <stateVariable sendEvents="no">
+         <name>sipServer</name>
+         <dataType>string</dataType>
+         <defaultValue>null</defaultValue>
+      </stateVariable>  
+      <stateVariable sendEvents="no">
+         <name>rememberPassword</name>
+         <dataType>boolean</dataType>
+         <defaultValue>0</defaultValue>
+      </stateVariable>  
+      <stateVariable sendEvents="no">
+         <name>IPVersion</name>
+         <dataType>boolean</dataType>
+         <defaultValue>0</defaultValue>
+      </stateVariable>  
+      <stateVariable sendEvents="no">
+         <name>isMulticast</name>
+         <dataType>boolean</dataType>
+         <defaultValue>0</defaultValue>
+      </stateVariable>      
+   </serviceStateTable>
+</scpd>

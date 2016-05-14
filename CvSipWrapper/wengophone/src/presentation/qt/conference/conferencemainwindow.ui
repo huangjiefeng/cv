@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>738</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>738</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowNestedDocks|QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="confInfoAction">
+   <property name="text">
+    <string>会议信息</string>
+   </property>
+  </action>
+  <action name="sipAction">
+   <property name="text">
+    <string>Sip呼叫</string>
+   </property>
+  </action>
+  <action name="userInfoAction">
+   <property name="text">
+    <string>用户信息</string>
+   </property>
+  </action>
+  <action name="exitConfAction">
+   <property name="text">
+    <string>离开会议</string>
+   </property>
+  </action>
+  <action name="audioSettingAction">
+   <property name="text">
+    <string>音频设置</string>
+   </property>
+  </action>
+  <action name="videoSettingAction">
+   <property name="text">
+    <string>视频设置</string>
+   </property>
+  </action>
+  <action name="qosSettingAction">
+   <property name="text">
+    <string>Qos设置</string>
+   </property>
+  </action>
+  <action name="helpAction">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </action>
+  <action name="aboutAction">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>主持人操作</string>
+   </property>
+  </action>
+  <action name="contactAction">
+   <property name="text">
+    <string>添加联系人</string>
+   </property>
+  </action>
+  <action name="exitAction">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="inviteAction">
+   <property name="text">
+    <string>邀请成员</string>
+   </property>
+  </action>
+  <action name="permissionAction">
+   <property name="text">
+    <string>成员权限设置</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="CoolView.qrc"/>
+  <include location="../ToolTest/tooltest/ToolTest.qrc"/>
+ </resources>
+ <connections/>
+</ui>

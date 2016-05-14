@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:/qutecom-2.2/build/wengophone/src/presentation/qt/profilebar/moc_QtEventWidget.cxx
+D:/qutecom-2.2/wengophone/src/presentation/qt/profilebar/QtEventWidget.h

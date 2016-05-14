@@ -1,0 +1,5 @@
+-DDEBUG
+-DWIN32
+-o
+D:\qutecom-2.2\build\libs\qtutil\include\qtutil\moc_EventFilter.cxx
+D:\qutecom-2.2\libs\qtutil\include\qtutil\EventFilter.h

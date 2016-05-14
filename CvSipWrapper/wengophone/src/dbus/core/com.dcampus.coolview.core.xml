@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+  <interface name="com.dcampus.coolview.core">
+    <method name="TeleCommand">
+       <arg type="s"  name="command" direction="in" />  //Command msg
+    </method>
+  </interface>
+</node>

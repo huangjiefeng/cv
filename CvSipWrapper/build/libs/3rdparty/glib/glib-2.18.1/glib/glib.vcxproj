@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FA141B81-02C0-4D6B-A99A-57231E125904}</ProjectGuid>
+    <RootNamespace>glib</RootNamespace>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>glib.dir\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>glib.dir\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 -FI msvc_recommended_pragmas.h %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\libs\3rdparty\glib\glib-2.18.1\glib;..\..\..\..\..\..\libs\3rdparty\glib\glib-2.18.1\glib\..;..\..\..\..\..\..\libs\3rdparty\libintl\gettext-0.13.1\include;..\..\..\..\..\..\libs\3rdparty\glib\glib-2.18.1\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_WINDOWS;_USRDLL;GLIB_COMPILATION;DLL_EXPORT;HAVE_CONFIG_H;G_DISABLE_DEPRECATED;PCRE_STATIC;LINK_SIZE=2;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;LIBDIR=/irrelevant/lib;G_LOG_DOMAIN=0;G_ENABLE_DEBUG;DEBUG;CMAKE_INTDIR="Debug";BUILD_GLIB_DLL -DGLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)Debug/glib.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>intl.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)\Debug\glib.dll</OutputFile>
+      <Version>0.0</Version>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\glib.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)\Debug\glib.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(ProjectDir)\Debug\glib.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_WINDOWS;_USRDLL;GLIB_COMPILATION;DLL_EXPORT;HAVE_CONFIG_H;G_DISABLE_DEPRECATED;PCRE_STATIC;LINK_SIZE=2;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;LIBDIR=/irrelevant/lib;G_LOG_DOMAIN=0;G_ENABLE_DEBUG;DEBUG;CMAKE_INTDIR="Debug";BUILD_GLIB_DLL -DGLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)debug/</Message>
+      <Command>xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)_lib\$(Configuration)" /Y
+xcopy "$(TargetPath)" "$(SolutionDir)\$(Configuration)\" /Y
+xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).pdb" "$(SolutionDir)$(Configuration)\" /Y
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_WINDOWS;_USRDLL;GLIB_COMPILATION;DLL_EXPORT;HAVE_CONFIG_H;G_DISABLE_DEPRECATED;PCRE_STATIC;LINK_SIZE=2;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;LIBDIR=/irrelevant/lib;G_LOG_DOMAIN=0;G_ENABLE_DEBUG;DEBUG;CMAKE_INTDIR="Debug";BUILD_GLIB_DLL -DGLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\include;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 -FI msvc_recommended_pragmas.h %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\libs\3rdparty\glib\glib-2.18.1\glib;..\..\..\..\..\..\libs\3rdparty\glib\glib-2.18.1\glib\..;..\..\..\..\..\..\libs\3rdparty\libintl\gettext-0.13.1\include;..\..\..\..\..\..\libs\3rdparty\glib\glib-2.18.1\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;GLIB_COMPILATION;DLL_EXPORT;HAVE_CONFIG_H;G_DISABLE_DEPRECATED;PCRE_STATIC;LINK_SIZE=2;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;LIBDIR=/irrelevant/lib;G_LOG_DOMAIN=0;G_ENABLE_DEBUG;DEBUG;CMAKE_INTDIR="Release";BUILD_GLIB_DLL -DGLIB_DLL;BUILD_GLIB_DLL;DGLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)\Release\glib.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> /STACK:10000000 /machine:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>intl.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)\Release\glib.dll</OutputFile>
+      <Version>0.0</Version>
+      <AdditionalLibraryDirectories>$(SolutionDir)\_lib\Release;$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\glib.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(ProjectDir)\Release\glib.pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(ProjectDir)\Release\glib.lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_WINDOWS;_USRDLL;GLIB_COMPILATION;DLL_EXPORT;HAVE_CONFIG_H;G_DISABLE_DEPRECATED;PCRE_STATIC;LINK_SIZE=2;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;LIBDIR=/irrelevant/lib;G_LOG_DOMAIN=0;G_ENABLE_DEBUG;DEBUG;CMAKE_INTDIR="Release";BUILD_GLIB_DLL -DGLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying file $(SolutionDir)Release/</Message>
+      <Command>xcopy "$(ProjectDir)$(Configuration)\$(ProjectName).lib" "$(SolutionDir)\_lib\Release\" /Y
+xcopy "$(TargetPath)" "$(SolutionDir)$(Configuration)\" /Y</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_WINDOWS;_USRDLL;GLIB_COMPILATION;DLL_EXPORT;HAVE_CONFIG_H;G_DISABLE_DEPRECATED;PCRE_STATIC;LINK_SIZE=2;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;LIBDIR=/irrelevant/lib;G_LOG_DOMAIN=0;G_ENABLE_DEBUG;DEBUG;CMAKE_INTDIR="Release";BUILD_GLIB_DLL -DGLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..;$(SolutionDir)..\libs\3rdparty\libintl\gettext-0.13.1\include;$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\..\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gnulib\asnprintf.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\garray.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gasyncqueue.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gatomic.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gbacktrace.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gbase64.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gbookmarkfile.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gcache.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gchecksum.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gcompletion.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gconvert.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gdataset.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gdate.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gdir.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gerror.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gfileutils.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\ghash.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\ghook.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\giochannel.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\giowin32.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gkeyfile.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\glist.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gmain.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gmappedfile.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gmarkup.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gmem.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gmessages.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gnode.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\goption.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gpattern.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gprimes.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gprintf.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gqsort.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gqueue.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\grand.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gregex.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\grel.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gscanner.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gsequence.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gshell.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gslice.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gslist.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gspawn-win32.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gstdio.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gstrfuncs.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gstring.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gtestutils.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gthread.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gthreadpool.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gtimer.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gtree.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gunibreak.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gunicollate.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gunidecomp.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\guniprop.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gurifuncs.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gutf8.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gutils.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gwin32.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\libcharset\localcharset.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_chartables.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_compile.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_config.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_dfa_exec.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_exec.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_fullinfo.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_get.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_globals.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_info.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_maketables.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_newline.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_ord2utf8.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_refcount.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_study.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_tables.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_try_flipped.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_ucp_searchfuncs.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_valid_utf8.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_version.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\pcre\pcre_xclass.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gnulib\printf-args.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gnulib\printf-parse.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gnulib\printf.c" />
+    <ClCompile Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\gnulib\vasnprintf.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\glib.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(SolutionDir)..\libs\3rdparty\glib\glib-2.18.1\glib\CMakeLists.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Text>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

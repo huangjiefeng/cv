@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="BFCPService"
+ targetNamespace="http://localhost:8011/BFCPService.wsdl"
+ xmlns:tns="http://localhost:8011/BFCPService.wsdl"
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns="urn:BFCPService"
+ xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/"
+ xmlns:HTTP="http://schemas.xmlsoap.org/wsdl/http/"
+ xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+ xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+ xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+ xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+ <schema targetNamespace="urn:BFCPService"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns="urn:BFCPService"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+  <simpleType name="ErrorCode"><!-- ns__ErrorCode -->
+
+   <restriction base="xsd:string">
+    <enumeration value="kNoError"/><!-- ns__ErrorCode::kNoError -->
+    <!-- = 0 -->
+    <enumeration value="kUserNotExist"/><!-- ns__ErrorCode::kUserNotExist -->
+    <!-- = 1 -->
+    <enumeration value="kUserAlreadyExist"/><!-- ns__ErrorCode::kUserAlreadyExist -->
+    <!-- = 2 -->
+    <enumeration value="kFloorNotExist"/><!-- ns__ErrorCode::kFloorNotExist -->
+    <!-- = 3 -->
+    <enumeration value="kFloorAlreadyExist"/><!-- ns__ErrorCode::kFloorAlreadyExist -->
+    <!-- = 4 -->
+    <enumeration value="kChairNotExost"/><!-- ns__ErrorCode::kChairNotExost -->
+    <!-- = 5 -->
+    <enumeration value="kChairAlreadyExist"/><!-- ns__ErrorCode::kChairAlreadyExist -->
+    <!-- = 6 -->
+    <enumeration value="kConferenceNotExist"/><!-- ns__ErrorCode::kConferenceNotExist -->
+    <!-- = 7 -->
+    <enumeration value="kConferenceAlreadyExist"/><!-- ns__ErrorCode::kConferenceAlreadyExist -->
+    <!-- = 8 -->
+    <enumeration value="kServerNotStart"/><!-- ns__ErrorCode::kServerNotStart -->
+    <!-- = 9 -->
+    <enumeration value="kServerAlreadyStart"/><!-- ns__ErrorCode::kServerAlreadyStart -->
+    <!-- = 10 -->
+   </restriction>
+  </simpleType>
+  <simpleType name="Policy"><!-- ns__Policy -->
+
+   <restriction base="xsd:string">
+    <enumeration value="kAutoAccept"/><!-- ns__Policy::kAutoAccept -->
+    <!-- = 0 -->
+    <enumeration value="kAutoDeny"/><!-- ns__Policy::kAutoDeny -->
+    <!-- = 1 -->
+   </restriction>
+  </simpleType>
+  <simpleType name="AddrFamily"><!-- ns__AddrFamily -->
+
+   <restriction base="xsd:string">
+    <enumeration value="kIPv4"/><!-- ns__AddrFamily::kIPv4 -->
+    <!-- = 0 -->
+    <enumeration value="kIPv6"/><!-- ns__AddrFamily::kIPv6 -->
+    <!-- = 1 -->
+   </restriction>
+  </simpleType>
+ </schema>
+
+</types>
+
+<message name="startRequest">
+ <part name="af" type="ns:AddrFamily"/><!-- ns__start::af -->
+ <part name="port" type="xsd:unsignedShort"/><!-- ns__start::port -->
+ <part name="enbaleConnectionThread" type="xsd:boolean"/><!-- ns__start::enbaleConnectionThread -->
+ <part name="workThreadNum" type="xsd:int"/><!-- ns__start::workThreadNum -->
+ <part name="userObsoletedTime" type="xsd:double"/><!-- ns__start::userObsoletedTime -->
+</message>
+
+<message name="startResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__start::errorCode -->
+</message>
+
+<message name="stopRequest">
+</message>
+
+<message name="stopResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__stop::errorCode -->
+</message>
+
+<message name="quit">
+</message>
+
+<message name="addConferenceRequest">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__addConference::conferenceID -->
+ <part name="maxFloorRequest" type="xsd:unsignedShort"/><!-- ns__addConference::maxFloorRequest -->
+ <part name="policy" type="ns:Policy"/><!-- ns__addConference::policy -->
+ <part name="timeForChairAction" type="xsd:double"/><!-- ns__addConference::timeForChairAction -->
+</message>
+
+<message name="addConferenceResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__addConference::errorCode -->
+</message>
+
+<message name="removeConferenceRequest">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__removeConference::conferenceID -->
+</message>
+
+<message name="removeConferenceResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__removeConference::errorCode -->
+</message>
+
+<message name="modifyConferenceRequest">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__modifyConference::conferenceID -->
+ <part name="maxFloorRequest" type="xsd:unsignedShort"/><!-- ns__modifyConference::maxFloorRequest -->
+ <part name="policy" type="ns:Policy"/><!-- ns__modifyConference::policy -->
+ <part name="timeForChairAction" type="xsd:double"/><!-- ns__modifyConference::timeForChairAction -->
+</message>
+
+<message name="modifyConferenceResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__modifyConference::errorCode -->
+</message>
+
+<message name="addFloorRequest">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__addFloor::conferenceID -->
+ <part name="floorID" type="xsd:unsignedShort"/><!-- ns__addFloor::floorID -->
+ <part name="maxGrantedNum" type="xsd:unsignedShort"/><!-- ns__addFloor::maxGrantedNum -->
+ <part name="maxHoldingTime" type="xsd:double"/><!-- ns__addFloor::maxHoldingTime -->
+</message>
+
+<message name="addFloorResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__addFloor::errorCode -->
+</message>
+
+<message name="removeFloorRequest">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__removeFloor::conferenceID -->
+ <part name="floorID" type="xsd:unsignedShort"/><!-- ns__removeFloor::floorID -->
+</message>
+
+<message name="removeFloorResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__removeFloor::errorCode -->
+</message>
+
+<message name="modifyFloorRequest">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__modifyFloor::conferenceID -->
+ <part name="floorID" type="xsd:unsignedShort"/><!-- ns__modifyFloor::floorID -->
+ <part name="maxGrantedNum" type="xsd:unsignedShort"/><!-- ns__modifyFloor::maxGrantedNum -->
+ <part name="maxHoldingTime" type="xsd:double"/><!-- ns__modifyFloor::maxHoldingTime -->
+</message>
+
+<message name="modifyFloorResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__modifyFloor::errorCode -->
+</message>
+
+<message name="addUserRequest">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__addUser::conferenceID -->
+ <part name="userID" type="xsd:unsignedShort"/><!-- ns__addUser::userID -->
+ <part name="userName" type="xsd:string"/><!-- ns__addUser::userName -->
+ <part name="userURI" type="xsd:string"/><!-- ns__addUser::userURI -->
+</message>
+
+<message name="addUserResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__addUser::errorCode -->
+</message>
+
+<message name="removeUserRequest">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__removeUser::conferenceID -->
+ <part name="userID" type="xsd:unsignedShort"/><!-- ns__removeUser::userID -->
+</message>
+
+<message name="removeUserResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__removeUser::errorCode -->
+</message>
+
+<message name="setChairRequest">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__setChair::conferenceID -->
+ <part name="floorID" type="xsd:unsignedShort"/><!-- ns__setChair::floorID -->
+ <part name="userID" type="xsd:unsignedShort"/><!-- ns__setChair::userID -->
+</message>
+
+<message name="setChairResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__setChair::errorCode -->
+</message>
+
+<message name="removeChairRequest">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__removeChair::conferenceID -->
+ <part name="floorID" type="xsd:unsignedShort"/><!-- ns__removeChair::floorID -->
+</message>
+
+<message name="removeChairResponse">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__removeChair::errorCode -->
+</message>
+
+<message name="getConferenceIDs">
+</message>
+
+<message name="ConferenceListResult">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__getConferenceIDs::errorCode -->
+ <part name="conferenceIDs" type="xsd:unsignedInt"/><!-- ns__getConferenceIDs::conferenceIDs -->
+</message>
+
+<message name="getConferenceInfo">
+ <part name="conferenceID" type="xsd:unsignedInt"/><!-- ns__getConferenceInfo::conferenceID -->
+</message>
+
+<message name="ConferenceInfoResult">
+ <part name="errorCode" type="ns:ErrorCode"/><!-- ns__getConferenceInfo::errorCode -->
+ <part name="conferenceInfo" type="xsd:string"/><!-- ns__getConferenceInfo::conferenceInfo -->
+</message>
+
+<portType name="BFCPServicePortType">
+ <operation name="start">
+  <documentation>the bfcp server</documentation>
+  <input message="tns:startRequest"/>
+  <output message="tns:startResponse"/>
+ </operation>
+ <operation name="stop">
+  <documentation>the bfcp server</documentation>
+  <input message="tns:stopRequest"/>
+  <output message="tns:stopResponse"/>
+ </operation>
+ <operation name="quit">
+  <documentation>the bfcp server and web service</documentation>
+  <input message="tns:quit"/>
+ </operation>
+ <operation name="addConference">
+  <documentation>Service definition of function ns__addConference</documentation>
+  <input message="tns:addConferenceRequest"/>
+  <output message="tns:addConferenceResponse"/>
+ </operation>
+ <operation name="removeConference">
+  <documentation>Service definition of function ns__removeConference</documentation>
+  <input message="tns:removeConferenceRequest"/>
+  <output message="tns:removeConferenceResponse"/>
+ </operation>
+ <operation name="modifyConference">
+  <documentation>Service definition of function ns__modifyConference</documentation>
+  <input message="tns:modifyConferenceRequest"/>
+  <output message="tns:modifyConferenceResponse"/>
+ </operation>
+ <operation name="addFloor">
+  <documentation>Service definition of function ns__addFloor</documentation>
+  <input message="tns:addFloorRequest"/>
+  <output message="tns:addFloorResponse"/>
+ </operation>
+ <operation name="removeFloor">
+  <documentation>Service definition of function ns__removeFloor</documentation>
+  <input message="tns:removeFloorRequest"/>
+  <output message="tns:removeFloorResponse"/>
+ </operation>
+ <operation name="modifyFloor">
+  <documentation>Service definition of function ns__modifyFloor</documentation>
+  <input message="tns:modifyFloorRequest"/>
+  <output message="tns:modifyFloorResponse"/>
+ </operation>
+ <operation name="addUser">
+  <documentation>Service definition of function ns__addUser</documentation>
+  <input message="tns:addUserRequest"/>
+  <output message="tns:addUserResponse"/>
+ </operation>
+ <operation name="removeUser">
+  <documentation>Service definition of function ns__removeUser</documentation>
+  <input message="tns:removeUserRequest"/>
+  <output message="tns:removeUserResponse"/>
+ </operation>
+ <operation name="setChair">
+  <documentation>Service definition of function ns__setChair</documentation>
+  <input message="tns:setChairRequest"/>
+  <output message="tns:setChairResponse"/>
+ </operation>
+ <operation name="removeChair">
+  <documentation>Service definition of function ns__removeChair</documentation>
+  <input message="tns:removeChairRequest"/>
+  <output message="tns:removeChairResponse"/>
+ </operation>
+ <operation name="getConferenceIDs">
+  <documentation>Service definition of function ns__getConferenceIDs</documentation>
+  <input message="tns:getConferenceIDs"/>
+  <output message="tns:ConferenceListResult"/>
+ </operation>
+ <operation name="getConferenceInfo">
+  <documentation>Service definition of function ns__getConferenceInfo</documentation>
+  <input message="tns:getConferenceInfo"/>
+  <output message="tns:ConferenceInfoResult"/>
+ </operation>
+</portType>
+
+<binding name="BFCPService" type="tns:BFCPServicePortType">
+ <SOAP:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+ <operation name="start">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="stop">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="quit">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+ </operation>
+ <operation name="addConference">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="removeConference">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="modifyConference">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="addFloor">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="removeFloor">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="modifyFloor">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="addUser">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="removeUser">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="setChair">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="removeChair">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getConferenceIDs">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+ <operation name="getConferenceInfo">
+  <SOAP:operation style="rpc" soapAction=""/>
+  <input>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </input>
+  <output>
+     <SOAP:body use="encoded" namespace="urn:BFCPService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </output>
+ </operation>
+</binding>
+
+<service name="BFCPService">
+ <documentation>gSOAP 2.8.21 generated service definition</documentation>
+ <port name="BFCPService" binding="tns:BFCPService">
+  <SOAP:address location="http://localhost:8011"/>
+ </port>
+</service>
+
+</definitions>

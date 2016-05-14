@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/qutecom-2.2/libs/3rdparty/python/CMakeLists.txt
+D:/CMake26/share/cmake-2.6/Modules/FindPythonLibs.cmake
+D:/CMake26/share/cmake-2.6/Modules/CMakeFindFrameworks.cmake
+D:/CMake26/share/cmake-2.6/Modules/FindPackageHandleStandardArgs.cmake
+D:/CMake26/share/cmake-2.6/Modules/FindPackageMessage.cmake

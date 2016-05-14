@@ -1,0 +1,173 @@
+<ui version="4.0" >
+ <class>Form</class>
+ <widget class="QWidget" name="Form" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>777</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" >
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout" >
+     <item>
+      <widget class="QWidget" native="1" name="localPlayWidget" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize" >
+        <size>
+         <width>176</width>
+         <height>144</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>176</width>
+         <height>144</height>
+        </size>
+       </property>
+       <property name="styleSheet" >
+        <string notr="true" >background-color: rgb(0, 0, 0);</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="tabWidget" >
+       <property name="maximumSize" >
+        <size>
+         <width>176</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="currentIndex" >
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab" >
+        <attribute name="title" >
+         <string>会议列表</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_2" >
+        <attribute name="title" >
+         <string>与会人员列表</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="tabWidget_2" >
+       <property name="maximumSize" >
+        <size>
+         <width>176</width>
+         <height>176</height>
+        </size>
+       </property>
+       <property name="currentIndex" >
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_Rtcp" >
+        <attribute name="title" >
+         <string>网络状况</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_4" >
+        <attribute name="title" >
+         <string>Tab 2</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="rtcpWidgetButton" >
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset resource="../../../../resources/wengophone.qrc" >
+         <normaloff>:/pics/chat/show_rtcp_widget.png</normaloff>:/pics/chat/show_rtcp_widget.png</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>30</width>
+         <height>13</height>
+        </size>
+       </property>
+       <property name="autoRaise" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2" >
+     <item>
+      <widget class="QTabWidget" name="tabWidget_3" >
+       <property name="currentIndex" >
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_confrence" >
+        <attribute name="title" >
+         <string>会场</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_shareScreen" >
+        <attribute name="title" >
+         <string>屏幕共享</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_WidgetBoard" >
+        <attribute name="title" >
+         <string>电子白板</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" native="1" name="TextMsgWidget" >
+       <property name="minimumSize" >
+        <size>
+         <width>0</width>
+         <height>100</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="textMsgWidgetButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="../../../../resources/wengophone.qrc" >
+         <normaloff>:/pics/chat/hide_rtcp_widget.png</normaloff>:/pics/chat/hide_rtcp_widget.png</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>31</width>
+         <height>13</height>
+        </size>
+       </property>
+       <property name="autoRaise" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../../resources/wengophone.qrc" />
+ </resources>
+ <connections/>
+</ui>

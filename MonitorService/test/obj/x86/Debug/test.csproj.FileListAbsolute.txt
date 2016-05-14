@@ -1,0 +1,9 @@
+D:\vs2012\trunk\MonitorService\test\bin\Debug\test.exe.config
+D:\vs2012\trunk\MonitorService\test\bin\Debug\test.exe
+D:\vs2012\trunk\MonitorService\test\bin\Debug\test.pdb
+D:\vs2012\trunk\MonitorService\test\obj\x86\Debug\test.csprojResolveAssemblyReference.cache
+D:\vs2012\trunk\MonitorService\test\obj\x86\Debug\test.Form1.resources
+D:\vs2012\trunk\MonitorService\test\obj\x86\Debug\test.Properties.Resources.resources
+D:\vs2012\trunk\MonitorService\test\obj\x86\Debug\test.csproj.GenerateResource.Cache
+D:\vs2012\trunk\MonitorService\test\obj\x86\Debug\test.exe
+D:\vs2012\trunk\MonitorService\test\obj\x86\Debug\test.pdb
